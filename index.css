@@ -7,7 +7,7 @@
 
 .box {
   background: #00ADB5;
-  height: 400px;
+  height: 420px;
   color: #ffff;
 }
 
@@ -41,4 +41,27 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
+}
+
+.picture-roomGirl {
+  position: absolute;
+  width: 865px;
+  height: 709px;
+  left: 575px;
+  top: 94px;
+}
+
+.head-web {
+  position: absolute;
+  width: 107px;
+  height: 33px;
+  left: 667px;
+  top: 814px;
+  
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
