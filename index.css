@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box {
+  background: #00ADB5;
+  height: 400px;
+  color: #ffff;
+}
+
+.box-text1 {
+  position: absolute;
+  width: 479px;
+  height: 33px;
+  left: 40px;
+  top: 170px;
+  font-size: 24px;
+}
+
+.box-text2 {
+  position: absolute;
+  width: 512px;
+  height: 132px;
+  left: 40px;
+  top: 225px;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 132px;
+}
+
+.box-text3 {
+  position: absolute;
+  width: 615px;
+  height: 99px;
+  left: 40px;
+  top: 380px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
