@@ -1,0 +1,86 @@
+.brand-list {
+  margin-top: 400px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.card-item {
+  width: 25%;
+  margin: 0 1.5% 30px;
+  border: 1.5px solid rgba(116, 116, 116, 1);
+  border-radius: 21px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 80%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-item {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.card-item:hover {
+  border: 2px solid #2AB9B5;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.link-icon {
+  margin-left: 5px;
+}
+
+.card-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1.5px solid #747474;
+  cursor: pointer;
+  color: #747474;
+}
+
+.card-like p {
+  margin-left: 5px;
+}
+
+.like-icon {
+  font-size: 16px
+}
+
+.card-like:hover {
+  color: #FD8A8A;
+  border: 2px solid #FD8A8A;
+}

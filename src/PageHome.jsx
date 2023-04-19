@@ -1,4 +1,5 @@
 import "./PageHome.css"
+import BrandsCard from "./components/BrandsCard/BrandsCard";
 import picturRoomGirl from "./assets/Room - Girl Working.png"
 
 function PageHome() {
@@ -11,6 +12,7 @@ function PageHome() {
           <img src={picturRoomGirl} alt="Image" class="picture-roomGirl" />
         </div>
         <p className="head-web">WEBSITE</p> 
+        <BrandsCard />
     </div>
     
   );

@@ -1,0 +1,59 @@
+
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Card 1",
+      "image": "./src/assets/brand01.jpg",
+      "like": 100
+    },
+    {
+      "id": 2,
+      "title": "Card 2",
+      "image": "./src/assets/brand02.jpg",
+      "like": 100
+    },
+    {
+      "id": 3,
+      "title": "Card 3",
+      "image": "./src/assets/brand03.jpg",
+      "like": 100
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "image": "./src/assets/brand04.jpg",
+      "like": 100
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "image": "./src/assets/brand05.jpg",
+      "like": 100
+    },
+    {
+      "id": 6,
+      "title": "Card 2",
+      "image": "./src/assets/brand06.jpg",
+      "like": 100
+    },
+    {
+      "id": 7,
+      "title": "Card 7",
+      "image": "./src/assets/brand07.jpg",
+      "like": 100
+    },
+    {
+      "id": 8,
+      "title": "Card 8",
+      "image": "./src/assets/brand08.jpg",
+      "like": 100
+    },
+    {
+      "id": 9,
+      "title": "Card 9",
+      "image": "./src/assets/brand09.jpg",
+      "like": 100
+    }
+  ]
+}

@@ -8,6 +8,7 @@
 .box {
   background: #00ADB5;
   height: 420px;
+  width: 100%;
   color: #ffff;
 }
 
@@ -17,7 +18,7 @@
   height: 33px;
   left: 40px;
   top: 170px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .box-text2 {
@@ -27,7 +28,7 @@
   left: 40px;
   top: 225px;
   font-weight: 400;
-  font-size: 96px;
+  font-size: 6em;
   line-height: 132px;
 }
 
@@ -39,14 +40,14 @@
   top: 380px;
 
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 33px;
 }
 
 .picture-roomGirl {
   position: absolute;
   width: 865px;
-  height: 709px;
+  height: auto;
   left: 560px;
   top: 94px;
 }
