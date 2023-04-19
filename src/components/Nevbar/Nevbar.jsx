@@ -13,7 +13,7 @@ class Nevbar extends React.Component {
   render() {
     return(
       <nev className="NevbarItems">
-        <img className="nevbar-logo" src="./src/assets/Logo.png" alt="Logo" />
+        <img className="nevbar-logo" src="./src/assets/Logo.png" alt="Logo"/>
         <div className="menu-icon" onClick={this.handleClick}>
           <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>

@@ -1,22 +1,27 @@
 export const MenuItems = [
   {
+    title: "Home",
+    url: "/",
+    cName: "nev-links"
+  },
+  {
     title: "Types of websites",
-    url: "#",
+    url: "/typesweb",
     cName: "nev-links"
   },
   {
     title: "Graph",
-    url: "#",
+    url: "/graph",
     cName: "nev-links"
   },
   {
     title: "Suggestion",
-    url: "#",
+    url: "/suggestion",
     cName: "nev-links"
   },
   {
     title: "Log in",
-    url: "#",
+    url: "/login",
     cName: "nev-links-mobile"
   }
 ]

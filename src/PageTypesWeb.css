@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.text-head {
+  width: 100%;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box {
+  background: #00ADB5;
+  height: 420px;
+  color: #ffff;
+}
+
+.box-text1 {
+  position: absolute;
+  width: 479px;
+  height: 33px;
+  left: 40px;
+  top: 170px;
+  font-size: 24px;
+}
+
+.box-text2 {
+  position: absolute;
+  width: 512px;
+  height: 132px;
+  left: 40px;
+  top: 225px;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 132px;
+}
+
+.box-text3 {
+  position: absolute;
+  width: 615px;
+  height: 99px;
+  left: 40px;
+  top: 380px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.picture-roomGirl {
+  position: absolute;
+  width: 865px;
+  height: 709px;
+  left: 560px;
+  top: 94px;
+}
+
+.head-web {
+  position: absolute;
+  width: 107px;
+  height: 33px;
+  left: 667px;
+  top: 814px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
