@@ -1,5 +1,5 @@
 .brand-list {
-  margin-top: 400px;
+  margin-top: 380px;
 }
 
 .card {
@@ -46,7 +46,7 @@
 }
 
 .card-item:hover {
-  border: 2px solid #2AB9B5;
+  border: 3px solid #2AB9B5;
 }
 
 .card-content {
@@ -82,5 +82,5 @@
 
 .card-like:hover {
   color: #FD8A8A;
-  border: 2px solid #FD8A8A;
+  border: 3px solid #FD8A8A;
 }

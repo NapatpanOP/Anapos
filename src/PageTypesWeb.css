@@ -8,9 +8,41 @@
 .text-head {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
+}
+
+select {
+  width: 150px;
+  margin: 30px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #747474;
+  background-color: #fff;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #99ccff;
+}
+
+option {
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
