@@ -1,4 +1,4 @@
-import './PageTypesWeb.css'
+import './TypesWebPage.css'
 
 function PageSug() {
   return (

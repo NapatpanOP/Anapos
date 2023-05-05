@@ -1,0 +1,89 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 90vh; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #F2F2F2 50%, #FFFFFF 50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  min-width: 500px;
+}
+
+.login-form  {
+  width: 50vh;
+}
+
+.login-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+/* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
+input[type="email"],
+input[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  border-bottom: 2px solid #E0E0E0; width: 100%;
+  
+}
+
+button[type="submit"] {
+  background-color: #37D295;;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+button[type="signup"] {
+  text-decoration: underline;
+  color: #FD8A8A;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+button[type="signup"]:hover {
+  color: #f32a2a;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #26996b;;
+}

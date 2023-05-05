@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import data from './components/BrandsCard/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import './PageTypesWeb.css';
+import './TypesWebPage.css';
 
 function Card() {
 

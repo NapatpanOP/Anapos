@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PageTypesWeb.css'
+import './TypesWebPage.css'
 
 
 function PageGraph() {

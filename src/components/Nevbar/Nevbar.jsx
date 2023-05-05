@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from '../Button'
 import './Nevbar.css'
+import { Link } from 'react-router-dom';
+
 
 class Nevbar extends React.Component {
   state = { clicked: false }
@@ -29,7 +31,9 @@ class Nevbar extends React.Component {
           })}
 
         </ul>
-        <Button>Log in</Button>
+        <Link to="../Login">
+          <Button>Log in</Button>
+        </Link>
       </nev>
     )
   }
