@@ -1,13 +1,7 @@
-.brand-list {
-  margin-top: 380px;
-}
-
-.card {
+.card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  margin: 0 2% 50px 2%;
   justify-content: center;
 }
 
@@ -83,4 +77,8 @@
 .card-like:hover {
   color: #FD8A8A;
   border: 3px solid #FD8A8A;
+}
+
+.active {
+  color: #FD8A8A;
 }

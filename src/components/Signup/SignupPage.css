@@ -4,21 +4,30 @@ body {
   padding: 0;
 }
 
-.login-container {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  min-height: 90vh; 
-}
-
-.container {
+.register-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.login-container form {
+.register-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  min-width: 500px;
+}
+
+.register-form-container {
+  width: 50%;
+  margin: auto;
+}
+
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,33 +38,48 @@ body {
   min-width: 500px;
 }
 
-.login-form  {
-  width: 80%;
-  margin: auto;
-}
-
-.login-form h2 {
+.form-container h2 {
   text-align: center;
+  margin: 5px
 }
 
 .form-group {
   margin: 10px;
+  width: 100%;
 }
 
 /* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
-input[type="email"],
-input[type="password"] {
+input[type="text"],
+input[type="password"],
+select {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
-  border-bottom: 2px solid #E0E0E0; width: 100%;
-  
+  border-bottom: 2px solid #E0E0E0;
+  width: 100%;
+}
+
+select {
+  height: 45px;
+}
+
+.signup-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-containersignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 
 button[type="submit"] {
-  background-color: #37D295;;
+  background-color: #37D295;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -65,14 +89,7 @@ button[type="submit"] {
   width: 100%;
 }
 
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-button[type="signup"] {
+button[type="login"] {
   text-decoration: underline;
   color: #FD8A8A;
   cursor: pointer;
@@ -80,11 +97,12 @@ button[type="signup"] {
   border: none;
 }
 
-button[type="signup"]:hover {
+button[type="login"]:hover {
   color: #f32a2a;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
-  border-bottom: 2px solid #26996b;;
+@media (max-width: 768px) {
+  .form-container {
+    min-width: 320px;
+  }
 }

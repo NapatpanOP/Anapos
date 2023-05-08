@@ -5,9 +5,13 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.full-size {
+  width: 100%;
+  height: 100vh;
+}
 .box {
   background: #00ADB5;
-  height: 420px;
+  height: 55%;
   width: 100%;
   color: #ffff;
 }
@@ -44,25 +48,82 @@
   line-height: 33px;
 }
 
-.picture-roomGirl {
+/* .picture-roomGirl {
   position: absolute;
   width: 865px;
   height: auto;
   left: 560px;
   top: 94px;
+  bottom: 0;
+} */
+
+.picture-roomGirl {
+  position: absolute;
+  width: 865px;
+  height: auto;
+  right: 0;
+  bottom: 0;
 }
 
 .head-web {
-  position: absolute;
-  width: 107px;
-  height: 33px;
-  left: 667px;
-  top: 814px;
+  /* position: absolute; */
+  /* width: 107px; */
+  /* height: 33px; */
+  /* left: 667px;
+  top: 814px; */
 
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+}
+/* orientation: landscape แนวนอน
+orientation: portrait แนวตั้ง */
+@media only screen and (max-width: 768px) {
+  .box {
+    height: 350px;
+  }
+  
+  .box-text1 {
+    width: 80%;
+    left: 10%;
+    top: 30%;
+    font-size: 1.2rem;
+  }
+  
+  .box-text2 {
+    width: 80%;
+    left: 10%;
+    top: 40%;
+    font-size: 3em;
+    line-height: 80px;
+  }
+  
+  .box-text3 {
+    width: 80%;
+    left: 10%;
+    top: 60%;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  
+  .picture-roomGirl {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 560px;
+    top: 94px;
+  }
+  
+  .head-web {
+    left: 40%;
+    top: 80%;
+    font-size: 20px;
+  }
+}
+
+.brands-list-home {
+  margin-top: 5%;
 }

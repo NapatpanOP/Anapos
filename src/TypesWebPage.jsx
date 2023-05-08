@@ -3,8 +3,10 @@ import data from './components/BrandsCard/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './TypesWebPage.css';
+import BrandsCard from './components/BrandsCard/BrandsCard';
 
-function Card() {
+
+function TypesWeb() {
 
   const [likes, setLikes] = useState([]);
 
@@ -37,22 +39,25 @@ function Card() {
 
   return (
     <div>
-      <div className="text-head ">
+      <div className="text-head">
         <p>Types Of Websites</p>
       </div>
 
-      <select onChange={handleFilter}>
-        <option value="All">All</option>
-        <option value="Portal">Portal</option>
-        <option value="New">New</option>
-        <option value="Business">Business</option>
-      </select>
+      <div className="type-page">
+        <select onChange={handleFilter}>
+          <option value="All">All</option>
+          <option value="Portal">Portal</option>
+          <option value="New">New</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
 
       <div className="card-container">
         {filteredCards.map((card) => (
           <div className="card-item" key={card.id}>
           <div className="card-image">
             <img src={card.image} alt={card.title} />
+            <p>Website Type: {card.type}</p>
           </div>
           <div className="card-content">
             <div className="card-like" onClick={() => handleLike(card.id)}>
@@ -70,4 +75,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default TypesWeb;

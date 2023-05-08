@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-select {
+.type-page select {
   width: 150px;
   margin: 30px;
   font-size: 16px;
@@ -27,12 +27,12 @@ select {
   color: #333;
 }
 
-select:focus {
+.type-page select:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #99ccff;
 }
 
-option {
+.type-page option {
   font-size: 16px;
   background-color: #fff;
   color: #333;
