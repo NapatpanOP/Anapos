@@ -5,33 +5,51 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { BrandAPI } from '../../apis/brandAPI';
 import { UserAPI } from '../../apis/userAPI';
 import './BrandsCard.css';
+import { useAuthContext } from '../../core/contexts/AuthProvider';
 
-function BrandsCard() {
-  var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
-  const [data, setData] = useState([]);
-  const [likes, setLikes] = useState();
+function BrandsCard({filter}) {
+  const { token } = useAuthContext();
+  console.log('init brands card')
+  // var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
+  var loginUser = token
+  const [cards, setData] = useState([]);
+  var [userLike, setUserLike] = useState([])
+
+  const refreshUserBrandsLike = () => {
+    if(!token) {return}
+    UserAPI.getUserLike({ id: loginUser._id }).then((res) => {
+      console.log(res)
+      setUserLike(res)
+    })
+  }
+
+  console.log('user like ', userLike)
   const refreshAllBrands = () => {
-     BrandAPI.getAll().then((v) => {
-    setData(v)
-  })}
+    BrandAPI.getAll().then((v) => {
+      setData(v)
+    })
+  }
   // const data = BrandAPI.getAll() ?? [];
   // console.log(data)
 
   const handleLike = (item, index) => {
-    if (!loginUser.brands_like.includes(item._id)) {
+    if(!token) {return}
+    if (!userLike.includes(item._id)) {
       var updateUser = loginUser
-      updateUser.brands_like.push(item._id)
+      userLike.push(item._id)
+      updateUser.brands_like = userLike
       console.log(updateUser)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
         loginUser = res
+        userLike = res.brands_like
         localStorage.setItem('user', JSON.stringify(loginUser))
       })
       console.log(loginUser._id)
       item.like.push(loginUser._id)
       console.log(item)
       BrandAPI.updateLike(item).then((res) => {
-        var m = data
+        var m = cards
         m[index] = res
         setData([...m])
       })
@@ -39,14 +57,16 @@ function BrandsCard() {
       // setLikes(likes.filter((id) => id !== itemId));
     } else {
       var updateUser = loginUser
-      const targetIndex = updateUser.brands_like.indexOf(item._id);
+      const targetIndex = userLike.indexOf(item._id);
       if (targetIndex > -1) { // only splice array when item is found
-        updateUser.brands_like.splice(targetIndex, 1); // 2nd parameter means remove one item only
+        userLike.splice(targetIndex, 1); // 2nd parameter means remove one item only
       }
+      updateUser.brands_like = userLike
       console.log(updateUser)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
         loginUser = res
+        userLike = res.brands_like
         localStorage.setItem('user', JSON.stringify(loginUser))
       })
       console.log(loginUser._id)
@@ -57,7 +77,7 @@ function BrandsCard() {
       }
       console.log(item)
       BrandAPI.updateLike(item).then((res) => {
-        var m = data
+        var m = cards
         m[index] = res
         setData([...m])
       })
@@ -67,30 +87,68 @@ function BrandsCard() {
     // }
   };
 
+  const [selectedType, setSelectedType] = useState('All');
+
+  const handleFilter = (event) => {
+    setSelectedType(event.target.value);
+  };
+
+  const filteredCards = cards.filter((card) => {
+    if (selectedType === 'All') {
+      return true;
+    } else {
+      return card.type === selectedType;
+    }
+  });
+
+  const renderWarning = () => {
+    if(!token) {
+      return <div class="warning-banner" >
+            please login for vote  your favorite ads
+          </div>
+    }
+  }
+
+  const renderFilter = () => {
+    if(filter) {
+      return <div className="type-page">
+      <select onChange={handleFilter}>
+        <option value="All">All</option>
+        <option value="Portal">Portal</option>
+        <option value="New">New</option>
+        <option value="Business">Business</option>
+      </select>
+    </div>
+    }
+  }
+
   useEffect(() => {
     refreshAllBrands()
+    refreshUserBrandsLike()
   }, [])
 
   return (
     <div className="brand-list">
-       <div className="card-container">
-        {data.map((card, index) => (
-        <div className="card-item" key={card._id}>
-          <div className="card-image">
-            <img src={card.image} alt={card.title} />
-            <p>Website Type: {card.type}</p>
-          </div>
-          <div className="card-content">
-            <div className="card-like" onClick={() => handleLike(card, index)}>
-              <FontAwesomeIcon
-                icon={faHeart}
-                className={card.like.includes(loginUser._id) ? 'like-icon active' : 'like-icon'}
-              />
-              <p>{card.like.length}</p>
+      {renderFilter()}
+      {renderWarning()}
+      <div className="card-container">
+        {filteredCards.map((card, index) => (
+          <div className="card-item" key={card._id}>
+            <div className="card-image">
+              <img src={card.image} alt={card.title} />
+              <p>Website Type: {card.type}</p>
+            </div>
+            <div className="card-content">
+              <div className="card-like" onClick={() => handleLike(card, index)}>
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  className={card.like.includes(loginUser?._id) ? 'like-icon active' : 'like-icon'}
+                />
+                <p>{card.like.length}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
       </div>
     </div>
   );

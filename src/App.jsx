@@ -16,16 +16,21 @@ import BananaPage from "./PositionPage/BananaPage"
 import AdvicePage from "./PositionPage/AdvicePage"
 import './App.css'
 import { Routes, Route } from "react-router-dom"
+import { useState } from "react"
+import AuthProvider from "./core/contexts/AuthProvider"
+import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 
 function App() {
-  const loginUser = localStorage.getItem('user') ?? false;
   return (
-    <div className="App">
+    <AuthProvider className="App">
       <Nevbar/>
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/typesweb" element={<TypesWebPage />}/>
-        <Route path="/graph" element={<GraphPage />}/>
+        <Route path="/graph" element={
+        <ProtectedRoute> 
+          <GraphPage />
+        </ProtectedRoute>}/>
         <Route path="/suggestion" element={<SugPage />}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
@@ -39,7 +44,7 @@ function App() {
         <Route path="/bananapage" element={<BananaPage />}/>
         <Route path="/advicepage" element={<AdvicePage />}/>
       </Routes>
-    </div>
+    </AuthProvider>
   );
 }
 

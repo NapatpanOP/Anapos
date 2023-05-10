@@ -1,85 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import data from './components/BrandsCard/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './TypesWebPage.css';
+import BrandsCard from './components/BrandsCard/BrandsCard';
 
-function TypesWeb() {
-
-  const [likes, setLikes] = useState([]);
-
-  const handleLike = (itemId) => {
-    if (likes.includes(itemId)) {
-      setLikes(likes.filter((id) => id !== itemId));
-    } else {
-      setLikes([...likes, itemId]);
-    }
-  };
-
-  const [cards, setCards] = useState([]);
-  const [selectedType, setSelectedType] = useState('All');
-
-  useEffect(() => {
-    setCards(data.cards);
-  }, []);
-
-  const handleFilter = (event) => {
-    setSelectedType(event.target.value);
-  };
-
-  const handleCardClick = (url) => {
-    window.location.href = url;
-  }
-
-  const filteredCards = cards.filter((card) => {
-    if (selectedType === 'All') {
-      return true;
-    } else {
-      return card.type === selectedType;
-    }
-  });
-
+const TypesWeb = () => {
   return (
-    <div>
-      <div className="text-head">
-        <p>Types Of Websites</p>
-      </div>
-
-      <div className="type-page">
-        <select onChange={handleFilter}>
-          <option value="All">All</option>
-          <option value="Portal">Portal</option>
-          <option value="New">New</option>
-          <option value="Business">Business</option>
-        </select>
-      </div>
-
-      <div className="card-container">
-        {filteredCards.map((card) => (
-          <div className="card-item" key={card.id}>
-          <div className="card-image">
-            <a href={card.link} target="_self" onClick={(e) => {
-              e.preventDefault();
-              handleCardClick(card.link);
-            }}>
-              <img src={card.image} alt={card.title} />
-            </a>
-            <p>Website Type: {card.type}</p>
-          </div>
-          <div className="card-content">
-            <div className="card-like" onClick={() => handleLike(card.id)}>
-              <FontAwesomeIcon
-                icon={faHeart}
-                className={likes.includes(card.id) ? 'like-icon active' : 'like-icon'}
-              />
-              <p>{card.like}</p>
-            </div>
-          </div>
-        </div>
-        ))}
-      </div>
-    </div>
-  );
+    <Fragment>
+      <BrandsCard filter={true}/>
+    </Fragment>
+  )
 }
 
 export default TypesWeb;

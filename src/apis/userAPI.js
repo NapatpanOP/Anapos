@@ -24,6 +24,15 @@ export const UserAPI = {
     }
     // returning the product returned by the API
   },
+  getUserLike: async function (data) {
+    try {
+      var response = await api.post('/users/brands-like', data)
+      console.log('like ', response)
+      return response.data
+    } catch (err) {
+      return err.response.status
+    }
+  }
 }
 
 const cancelApiObject = defineCancelApiObject(UserAPI)

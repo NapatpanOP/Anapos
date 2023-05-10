@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { LoginAPI } from "../../apis/auth/loginAPI";
 import CryptoJS from "crypto-js";
 
+import { useAuthContext } from "../../core/contexts/AuthProvider";
+
 const validateEmail = (email) => {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(String(email).toLowerCase());
@@ -14,6 +16,8 @@ const validatePassword = (password) => {
 };
 
 const LoginPage = () => {
+  const { AuthAction } = useAuthContext();
+
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -45,8 +49,10 @@ const LoginPage = () => {
   const login = async (user) => {
     user.password = CryptoJS.AES.encrypt(user.password, 'OKIOKI007').toString();
     const response = await LoginAPI.login(user)
-    console.log(response)
+    // console.log(response)
+    
     if(!response?.name) {
+      onLogin(response)
       localStorage.setItem("user", JSON.stringify(response))
        navigate("/")
     }
@@ -80,7 +86,7 @@ const LoginPage = () => {
             />
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
-          <button onClick={() => login({email: email, password: password})} type="submit" className="btn btn-primary">
+          <button onClick={() => AuthAction.onLogin({email: email, password: password})} type="submit" className="btn btn-primary">
             Log in
           </button>
           <div class="signup-container">

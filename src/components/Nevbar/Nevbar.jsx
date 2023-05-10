@@ -4,35 +4,33 @@ import { Button } from '../Button'
 import './Nevbar.css'
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-
+import { useAuthContext } from '../../core/contexts/AuthProvider';
 
 const Nevbar = () => {
+  const { token, AuthAction } = useAuthContext();
   const navigate = useNavigate();
-  var loginUser = localStorage.getItem('user') ?? false;
-  console.log(loginUser)
+  var loginUser = token;
+  console.log(token)
   const state = { clicked: false }
 
   const handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
-  const logoutHandle = () => {
-    localStorage.clear()
-    navigate('/')
-  }
+  
   const renderButton = () => {
     if(!loginUser)
        return <Link to="../Login" if>
        <Button>Log in</Button>
      </Link>;
-    return <Button onClick={() => logoutHandle()}>Log out</Button>
+    return <Button onClick={() => AuthAction.onLogout()}>Log out</Button>
   ;
  }
   const { pathname } = useLocation();
 
-  useEffect(() => {
-    loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
-    console.log(loginUser)
-  }, [pathname]);
+  // useEffect(() => {
+  //   loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
+  //   console.log(loginUser)
+  // }, [pathname]);
 
     return(
       <nev className="NevbarItems">
