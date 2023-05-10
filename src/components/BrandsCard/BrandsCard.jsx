@@ -7,7 +7,7 @@ import { UserAPI } from '../../apis/userAPI';
 import './BrandsCard.css';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
 
-function BrandsCard({filter}) {
+function BrandsCard({ filter }) {
   const { token } = useAuthContext();
   console.log('init brands card')
   // var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
@@ -16,7 +16,7 @@ function BrandsCard({filter}) {
   var [userLike, setUserLike] = useState([])
 
   const refreshUserBrandsLike = () => {
-    if(!token) {return}
+    if (!token) { return }
     UserAPI.getUserLike({ id: loginUser._id }).then((res) => {
       console.log(res)
       setUserLike(res)
@@ -33,7 +33,7 @@ function BrandsCard({filter}) {
   // console.log(data)
 
   const handleLike = (item, index) => {
-    if(!token) {return}
+    if (!token) { return }
     if (!userLike.includes(item._id)) {
       var updateUser = loginUser
       userLike.push(item._id)
@@ -102,23 +102,29 @@ function BrandsCard({filter}) {
   });
 
   const renderWarning = () => {
-    if(!token) {
+    if (!token) {
       return <div class="warning-banner" >
-            please login for vote  your favorite ads
-          </div>
+        please login for vote  your favorite ads
+      </div>
     }
   }
 
   const renderFilter = () => {
-    if(filter) {
+    if (filter) {
       return <div className="type-page">
-      <select onChange={handleFilter}>
-        <option value="All">All</option>
-        <option value="Portal">Portal</option>
-        <option value="New">New</option>
-        <option value="Business">Business</option>
-      </select>
-    </div>
+        <select onChange={handleFilter}>
+          <option value="All">All</option>
+          <option value="Portal">Portal</option>
+          <option value="New">New</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+    }
+  }
+
+  const handleCardClick = (url) => {
+    if(token) {
+      window.location.href = url;
     }
   }
 
@@ -135,7 +141,12 @@ function BrandsCard({filter}) {
         {filteredCards.map((card, index) => (
           <div className="card-item" key={card._id}>
             <div className="card-image">
-              <img src={card.image} alt={card.title} />
+              <a href={card.link} target="_self" onClick={(e) => {
+                e.preventDefault();
+                handleCardClick(card.link);
+              }}>
+                <img src={card.image} alt={card.title} />
+              </a>
               <p>Website Type: {card.type}</p>
             </div>
             <div className="card-content">
