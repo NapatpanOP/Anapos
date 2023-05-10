@@ -3,8 +3,6 @@ import data from './components/BrandsCard/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './TypesWebPage.css';
-import BrandsCard from './components/BrandsCard/BrandsCard';
-
 
 function TypesWeb() {
 
@@ -28,6 +26,10 @@ function TypesWeb() {
   const handleFilter = (event) => {
     setSelectedType(event.target.value);
   };
+
+  const handleCardClick = (url) => {
+    window.location.href = url;
+  }
 
   const filteredCards = cards.filter((card) => {
     if (selectedType === 'All') {
@@ -56,7 +58,12 @@ function TypesWeb() {
         {filteredCards.map((card) => (
           <div className="card-item" key={card.id}>
           <div className="card-image">
-            <img src={card.image} alt={card.title} />
+            <a href={card.link} target="_self" onClick={(e) => {
+              e.preventDefault();
+              handleCardClick(card.link);
+            }}>
+              <img src={card.image} alt={card.title} />
+            </a>
             <p>Website Type: {card.type}</p>
           </div>
           <div className="card-content">
