@@ -23,7 +23,6 @@ body {
 }
 
 .register-form-container {
-  width: 50%;
   margin: auto;
 }
 
@@ -101,8 +100,30 @@ button[type="login"]:hover {
   color: #f32a2a;
 }
 
-@media (max-width: 768px) {
+/* @media (min-width: 768px) {
   .form-container {
     min-width: 320px;
+  }
+} */
+
+/* apply styles for larger screens */
+@media screen and (min-width: 768px) {
+  .register-container {
+    min-height: 100vh;
+  }
+
+  .register-container form {
+    min-width: 600px;
+  }
+  .signup-container {
+    margin-bottom: 10%;
+  }
+
+}
+
+/* apply styles for smaller screens */
+@media screen and (max-width: 767px) {
+  .register-container form {
+    min-width: 80%;
   }
 }

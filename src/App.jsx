@@ -16,9 +16,9 @@ import BananaPage from "./PositionPage/BananaPage"
 import AdvicePage from "./PositionPage/AdvicePage"
 import './App.css'
 import { Routes, Route } from "react-router-dom"
-import { useState } from "react"
 import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
+
 
 function App() {
   return (

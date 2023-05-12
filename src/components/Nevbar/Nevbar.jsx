@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from '../Button'
 import './Nevbar.css'
@@ -11,15 +11,15 @@ const Nevbar = () => {
   const navigate = useNavigate();
   var loginUser = token;
   console.log(token)
-  const [state, setState] = useState({ clicked: false })
+  const state = { clicked: false }
 
   const handleClick = () => {
-    setState({ clicked: !state.clicked })
+    this.setState({ clicked: !this.state.clicked })
   }
-
+  
   const renderButton = () => {
     if(!loginUser)
-       return <Link to="../login" if>
+       return <Link to="../Login" if>
        <Button>Log in</Button>
      </Link>;
     return <Button onClick={() => AuthAction.onLogout()}>Log out</Button>

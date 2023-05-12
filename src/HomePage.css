@@ -17,31 +17,31 @@
 }
 
 .box-text1 {
-  position: absolute;
+  position: relative;
   width: 479px;
   height: 33px;
-  left: 40px;
-  top: 170px;
+  left: 4%;
+  top: 22%;
   font-size: 1.5rem;
 }
 
 .box-text2 {
-  position: absolute;
+  position: relative;
   width: 512px;
   height: 132px;
-  left: 40px;
-  top: 225px;
+  left: 4%;
+  top: 23%;
   font-weight: 400;
   font-size: 6em;
   line-height: 132px;
 }
 
 .box-text3 {
-  position: absolute;
+  position: relative;
   width: 615px;
   height: 99px;
-  left: 40px;
-  top: 380px;
+  left: 4%;
+  top: 24%;
 
   font-weight: 400;
   font-size: 1.5rem;
@@ -50,19 +50,13 @@
 
 .picture-roomGirl {
   position: absolute;
-  width: 865px;
+  width: 800px;
   height: auto;
   right: 0;
   bottom: 0;
 }
 
 .head-web {
-  /* position: absolute; */
-  /* width: 107px; */
-  /* height: 33px; */
-  /* left: 667px;
-  top: 814px; */
-
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
@@ -80,22 +74,21 @@ orientation: portrait แนวตั้ง */
   .box-text1 {
     width: 80%;
     left: 10%;
-    top: 30%;
+    top: 15%;
     font-size: 1.2rem;
   }
   
   .box-text2 {
     width: 80%;
     left: 10%;
-    top: 40%;
+    top: 15%;
     font-size: 3em;
-    line-height: 80px;
   }
   
   .box-text3 {
     width: 80%;
     left: 10%;
-    top: 60%;
+    top: 15%;
     font-size: 1rem;
     line-height: 22px;
   }
@@ -104,8 +97,8 @@ orientation: portrait แนวตั้ง */
     position: absolute;
     max-width: 100%;
     height: auto;
-    left: 560px;
-    top: 94px;
+    right: 0;
+    bottom: 10%;
   }
   
   .head-web {
