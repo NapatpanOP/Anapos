@@ -1,10 +1,11 @@
 import React, { Component, useState } from 'react'
 import { MenuItems } from "./MenuItems"
-import { Button } from '../Button'
+import Button from 'react-bootstrap/Button'
 import './Nevbar.css'
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
+import { colors } from '@material-ui/core';
 
 const Nevbar = () => {
   const { token, AuthAction } = useAuthContext();
@@ -27,7 +28,7 @@ const Nevbar = () => {
        return <Link to="../Login" if>
        <Button>Log in</Button>
      </Link>;
-    return <Button onClick={() => AuthAction.onLogout()}>Log out</Button>
+    return <Button onClick={() => AuthAction.onLogout()} >Log out</Button>
       ;
   }
   const { pathname } = useLocation();
@@ -41,14 +42,14 @@ const Nevbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="./src/assets/Logo.png" alt="Logo" />
+        <img src="./src/assets/Logo.png" alt="Logo"/>
       </div>
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul >
           {MenuItems.map((item, index) => {
             return (
               <li key={index} className={location.pathname == item.url ? 'active' : ''}>
-                <a className={item.cName} href={item.url}>
+                <a className={item.cName } href={item.url}>
                   {item.title}
                 </a>
               </li>
