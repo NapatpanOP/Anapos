@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from '../Button'
 import './Nevbar.css'
@@ -16,9 +16,14 @@ const Nevbar = () => {
   const handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
   
   const renderButton = () => {
-    if(!loginUser)
+    if(!token)
        return <Link to="../Login" if>
        <Button>Log in</Button>
      </Link>;
@@ -27,6 +32,7 @@ const Nevbar = () => {
   }
   const { pathname } = useLocation();
 
+  
   // useEffect(() => {
   //   loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
   //   console.log(loginUser)

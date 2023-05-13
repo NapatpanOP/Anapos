@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { LoginAPI } from "../../apis/auth/loginAPI";
 import CryptoJS from "crypto-js";
 
+import { useAuthContext } from "../../core/contexts/AuthProvider";
 const validateEmail = (email) => {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(String(email).toLowerCase());
@@ -14,6 +15,7 @@ const validatePassword = (password) => {
 };
 
 const LoginPage = () => {
+  const { AuthAction } = useAuthContext();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -80,7 +82,7 @@ const LoginPage = () => {
             />
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
-          <button onClick={() => login({email: email, password: password})} type="submit" className="btn btn-primary btn-success">
+          <button onClick={() => AuthAction.onLogin({email: email, password: password})} type="submit" className="btn btn-primary btn-success">
             Log in
           </button>
           <div class="signup-container">
