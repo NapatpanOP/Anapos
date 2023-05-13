@@ -18,6 +18,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom"
 import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
+import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
 
 
 function App() {
@@ -28,9 +29,9 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/typesweb" element={<TypesWebPage />}/>
         <Route path="/graph" element={
-        <ProtectedRoute> 
-          <GraphPage />
-        </ProtectedRoute>}/>
+          <ProtectedRoute> 
+            <GraphPage />
+          </ProtectedRoute>}/>
         <Route path="/suggestion" element={<SugPage />}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
@@ -43,6 +44,8 @@ function App() {
         <Route path="/dailynewspage" element={<DailynewsPage />}/>
         <Route path="/bananapage" element={<BananaPage />}/>
         <Route path="/advicepage" element={<AdvicePage />}/>
+        <Route path="/select-graphics-position" element={<SelectGraphicsPositionPage /> }/>
+        <Route path="/select-graphics-position/:id/:position" element={<SelectGraphicsPositionPage /> }/>
       </Routes>
     </AuthProvider>
   );

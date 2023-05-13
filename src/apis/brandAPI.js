@@ -13,6 +13,17 @@ export const BrandAPI = {
     }
     // returning the product returned by the API
   },
+  getById: async function (id) {
+    try {
+      var response = await api.get(`/brands/${id}`)
+      console.log(response)
+      return response.data
+    } catch (err) {
+      console.log('error')
+      return err.response.status
+    }
+    // returning the product returned by the API
+  },
   updateLike: async function (data) {
     try {
       var response = await api.post('/brands', data)
