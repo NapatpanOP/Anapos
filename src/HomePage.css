@@ -105,7 +105,12 @@ orientation: portrait แนวตั้ง */
     left: 40%;
     top: 80%;
     font-size: 20px;
+
+    
   }
+  .picture-roomGirl{
+      display: none;
+    }
 }
 
 .brands-list-home {

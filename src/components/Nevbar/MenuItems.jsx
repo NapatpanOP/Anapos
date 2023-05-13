@@ -19,9 +19,9 @@ export const MenuItems = [
     url: "/suggestion",
     cName: "nev-links"
   },
-  {
-    title: "Log in",
-    url: "/login",
-    cName: "nev-links-mobile"
-  }
+  // {
+  //   title: "Log in",
+  //   url: "/login",
+  //   cName: "nev-links-mobile"
+  // }
 ]

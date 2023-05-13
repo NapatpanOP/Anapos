@@ -23,8 +23,8 @@ const Nevbar = () => {
        <Button>Log in</Button>
      </Link>;
     return <Button onClick={() => AuthAction.onLogout()}>Log out</Button>
-  ;
- }
+      ;
+  }
   const { pathname } = useLocation();
 
   // useEffect(() => {
@@ -32,16 +32,16 @@ const Nevbar = () => {
   //   console.log(loginUser)
   // }, [pathname]);
 
-    return(
-      <nev className="NevbarItems">
-        <img className="nevbar-logo" src="./src/assets/Logo.png" alt="Logo"/>
-        <div className="menu-icon" onClick={() => handleClick()}>
-          <i className={state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-        </div>
-        <ul className={state.clicked  ? 'nav-menu active' : 'nev-menu'}>
-          { MenuItems.map((item, index) => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src="./src/assets/Logo.png" alt="Logo" />
+      </div>
+      <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
+        <ul >
+          {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index} className={location.pathname == item.url ? 'active' : ''}>
                 <a className={item.cName} href={item.url}>
                   {item.title}
                 </a>
@@ -51,12 +51,37 @@ const Nevbar = () => {
 
         </ul>
         {renderButton()}
-        {/* <Link to="../Login" if>
-          <Button>Log in</Button>
-        </Link> */}
-      </nev>
-    )
-  }
+      </div>
+      <div className={`${isMenuOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}`} onClick={handleMenuToggle}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    // <nav className="NevbarItems">
+    //   <img className="nevbar-logo" src="./src/assets/Logo.png" alt="Logo"/>
+    //   <div className="menu-icon" onClick={() => handleClick()}>
+    //     <i className={state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+    //   </div>
+    // <ul className={state.clicked  ? 'nav-menu active' : 'nev-menu'}>
+    //   { MenuItems.map((item, index) => {
+    //     return (
+    //       <li key={index}>
+    //         <a className={item.cName} href={item.url}>
+    //           {item.title}
+    //         </a>
+    //       </li>
+    //     )
+    //   })}
+
+    // </ul>
+    //   {renderButton()}
+    //   {/* <Link to="../Login" if>
+    //     <Button>Log in</Button>
+    //   </Link> */}
+    // </nav>
+  )
+}
 
 
 export default Nevbar
