@@ -160,11 +160,13 @@
 
 .navbar-logo img {
   height: 40px;
+  margin-left: 3rem;
 }
 
 .navbar-menu {
   display: flex;
   align-items: center;
+  margin-right: 3rem;
 }
 
 .navbar-menu ul {
@@ -226,6 +228,7 @@
   
   .navbar-hamburger {
     display: flex;
+    margin-right: 3rem;
   }
 
   .navbar-menu.open {
