@@ -19,6 +19,7 @@ import { Routes, Route } from "react-router-dom"
 import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
+import SelectPositionPage from "./PositionPage/SelectPositionPage"
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/bananapage" element={<BananaPage />}/>
         <Route path="/advicepage" element={<AdvicePage />}/>
         <Route path="/select-graphics-position" element={<SelectGraphicsPositionPage /> }/>
+        <Route path="/select-position" element={<SelectPositionPage /> }/>
         <Route path="/select-graphics-position/:id/:position" element={<SelectGraphicsPositionPage /> }/>
       </Routes>
     </AuthProvider>
