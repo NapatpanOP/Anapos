@@ -1,0 +1,9 @@
+.main-logo {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }

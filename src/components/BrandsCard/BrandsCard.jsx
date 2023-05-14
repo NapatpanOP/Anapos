@@ -6,9 +6,12 @@ import { BrandAPI } from '../../apis/brandAPI';
 import { UserAPI } from '../../apis/userAPI';
 import './BrandsCard.css';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
+import { useNavigate } from 'react-router';
 
 function BrandsCard({ filter }) {
   const { token } = useAuthContext();
+  const navigate = useNavigate();
+
   console.log('init brands card')
   // var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
   var loginUser = token
@@ -43,7 +46,7 @@ function BrandsCard({ filter }) {
         console.log(res)
         loginUser = res
         userLike = res.brands_like
-        localStorage.setItem('user', JSON.stringify(loginUser))
+        localStorage.setItem('token', JSON.stringify(loginUser))
       })
       console.log(loginUser._id)
       item.like.push(loginUser._id)
@@ -67,7 +70,7 @@ function BrandsCard({ filter }) {
         console.log(res)
         loginUser = res
         userLike = res.brands_like
-        localStorage.setItem('user', JSON.stringify(loginUser))
+        localStorage.setItem('token', JSON.stringify(loginUser))
       })
       console.log(loginUser._id)
       // item.like.push(loginUser._id)
@@ -128,6 +131,11 @@ function BrandsCard({ filter }) {
     }
   }
 
+  const positionSelectHandle = (id) => {
+    console.log('test ', id)
+    navigate("/select-position", {state:{id: id}})
+  }
+
   useEffect(() => {
     refreshAllBrands()
     refreshUserBrandsLike()
@@ -139,14 +147,15 @@ function BrandsCard({ filter }) {
       {renderWarning()}
       <div className="card-container">
         {filteredCards.map((card, index) => (
-          <div className="card-item" key={card._id}>
-            <div className="card-image">
-              <a href={card.link} target="_self" onClick={(e) => {
+          <div className="card-item" key={card._id} >
+            <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
+              {/* <a href={card.link} target="_self"> */}
+                {/* <a href={card.link} target="_self" onClick={(e) => {
                 e.preventDefault();
                 handleCardClick(card.link);
-              }}>
+              }}></a> */}
                 <img src={card.image} alt={card.title} />
-              </a>
+              {/* </a> */}
               <p>Website Type: {card.type}</p>
             </div>
             <div className="card-content">

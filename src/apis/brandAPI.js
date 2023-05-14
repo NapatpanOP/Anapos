@@ -35,6 +35,17 @@ export const BrandAPI = {
     }
     // returning the product returned by the API
   },
+  updateBrandById: async function (data) {
+    try {
+      var response = await api.post('/brands', data)
+      console.log(response)
+      return response.data
+    } catch (err) {
+      console.log('error')
+      return err.response.status
+    }
+    // returning the product returned by the API
+  },
 }
 
 const cancelApiObject = defineCancelApiObject(BrandAPI)

@@ -6,36 +6,49 @@ import PopupSanook from '../components/PositionPopup/Sanook/PopupSanook';
 import { useLocation, useNavigate } from 'react-router';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import { BrandAPI } from '../apis/brandAPI';
+import './SelectPositionPage.css'
 
 function SelectPositionPage() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    const onClickPositionHandle = () => {
+
+    var selectId = ''
+    const onClickGraphicHandle = (id, position) => {
+        console.log(id)
+        selectId = id
+        selectPosition = position
         setShow(true)
     };
-    // const [brand, setBrand] = useState(null)
-    const nevigate = useNavigate();
+    var selectPosition = 0
+    const [brand, setBrand] = useState(null)
+    const navigate = useNavigate();
     const location = useLocation()
 
-    var brand
-    var id, position
+    // var brand
     const setup = () => {
         console.log(location.state)
         if (location.state) {
-            id = location.state.id
+            selectId = location.state.id
             refreshData()
         } else {
-            nevigate('/')
+            navigate('/')
         }
     }
 
     const refreshData = () => {
-        BrandAPI.getById(id).then((res) => {
+        BrandAPI.getById(selectId).then((res) => {
             console.log(res)
-            // setBrand(res)
-            brand = res
+            setBrand(res)
+            // brand = res
         })
+    }
+
+    const confirmHandle = () => {
+        setShow(false)
+        console.log(selectId)
+        navigate("/select-graphics-position", {state:{id: brand._id, position: selectPosition}})
     }
 
     useEffect(() => {
@@ -45,10 +58,9 @@ function SelectPositionPage() {
 
     const renderButtonList = () => {
         console.log('test ', brand)
-        console.log(position)
         if (brand) {
-            return brand.adsPositions[position].images_urls.map((img, index) => {
-                return <button onClick={() => onClickPositionHandle()} type="button" key={index} className="btn btn-outline-dark">POSITION {index} {img.selected_counts}</button>
+            return brand.adsPositions.map((img, index) => {
+                return <button onClick={() => onClickGraphicHandle(brand._id, index)} type="button" key={index} className="btn btn-outline-dark">POSITION {index +1}</button>
             })
         } else {
             return
@@ -59,17 +71,17 @@ function SelectPositionPage() {
     
     return (
         <div>
-            <img src={logosanook} alt="logo-sanook" class="logo-sanook" />
+            <img src={brand?.logo_brand} alt="logo-sanook" className="main-logo" />
 
-            <div class="headtext">
+            <div className="headtext">
                 <p>VARIOUS POSITIONS</p>
             </div>
 
-            <div class="bt-position">
+            <div className="bt-position">
                 {renderButtonList()}
             </div>
 
-            <img src={positionsanook} alt="position-sanook" class="position-sanook" />
+            <img src={brand?.full_image ?? ''} alt="position-sanook" className="position-sanook" />
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -80,13 +92,8 @@ function SelectPositionPage() {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary btn-success" onClick={handleClose}>
-                        Save
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        <a href="/next-page" style={{ color: 'white', textDecoration: 'none' }}>
-                            Next
-                        </a>
+                    <Button variant="primary" onClick={() => confirmHandle()}>
+                        Next
                     </Button>
                 </Modal.Footer>
             </Modal>

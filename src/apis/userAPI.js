@@ -13,6 +13,17 @@ export const UserAPI = {
     }
     // returning the product returned by the API
   },
+  getById: async function (id) {
+    try {
+      var response = await api.get(`/users/${id}`)
+      console.log(response)
+      return response.data
+    } catch (err) {
+      console.log('error')
+      return err.response.status
+    }
+    // returning the product returned by the API
+  },
   updateBrandsLike: async function (data) {
     try {
       var response = await api.post('/users', data)
@@ -32,7 +43,18 @@ export const UserAPI = {
     } catch (err) {
       return err.response.status
     }
-  }
+  },
+  updateUserById: async function (data) {
+    try {
+      var response = await api.post('/users', data)
+      console.log(response)
+      return response.data
+    } catch (err) {
+      console.log('error')
+      return err.response.status
+    }
+    // returning the product returned by the API
+  },
 }
 
 const cancelApiObject = defineCancelApiObject(UserAPI)
