@@ -7,3 +7,69 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo-sanook {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 530px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headtext {
+  position: relative;
+  top: 0;
+  left: 5%;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.position-sanook {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bt-position {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.bt-position button {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .headtext {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo-sanook {
+    max-width: 320px;
+  }
+
+  .headtext {
+    font-size: 1.2rem;
+  }
+
+  .position-sanook {
+    max-width: 400px;
+  }
+}

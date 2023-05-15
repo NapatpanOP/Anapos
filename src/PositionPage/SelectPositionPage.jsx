@@ -1,8 +1,4 @@
 import React, { useState , useEffect } from 'react';
-import "./SanookPage.css"
-import logosanook from "../assets/logoBrands/sanook.jpg"
-import positionsanook from "../assets/positionPage/PositionSanook.jpg"
-import PopupSanook from '../components/PositionPopup/Sanook/PopupSanook';
 import { useLocation, useNavigate } from 'react-router';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
