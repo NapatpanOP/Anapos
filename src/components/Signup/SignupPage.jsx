@@ -99,8 +99,8 @@ function SignupPage() {
               <option value="18-25">18 - 25</option>
               <option value="26-35">26 - 35</option>
               <option value="36-45">36 - 45</option>
-              <option value="56-65">56 - 65</option>
-              <option value="<65">&lt;65</option>
+              <option value="46-55">46 - 55</option>
+              <option value="<55">&lt;55</option>
             </select>
             <div className="Signup-submit">
               <button onClick={() => register({ username: username, password: password, email: email, sex: sex, age_range: ageRange })} type="submit" className="btn btn-primary Signup-submit btn-success">

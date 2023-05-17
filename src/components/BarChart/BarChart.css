@@ -1,0 +1,19 @@
+.full-box {
+  position: relative;
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+.bar-chart {
+  width: 100%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .full-box {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+} 

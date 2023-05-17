@@ -67,7 +67,7 @@ function SelectPositionPage() {
     
     return (
         <div>
-            <img src={brand?.logo_brand} alt="logo-sanook" className="main-logo" />
+            <img src={brand?.logo_brand} alt="logo" className="main-logo" />
 
             <div className="headtext">
                 <p>VARIOUS POSITIONS</p>
@@ -77,7 +77,7 @@ function SelectPositionPage() {
                 {renderButtonList()}
             </div>
 
-            <img src={brand?.full_image ?? ''} alt="position-sanook" className="position-sanook" />
+            <img src={brand?.full_image ?? ''} alt="position" className="position" />
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

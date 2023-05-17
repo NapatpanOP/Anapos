@@ -1,4 +1,5 @@
 .main-logo {
+    top: 10px;
     position: relative;
     display: block;
     width: 100%;
@@ -6,6 +7,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    z-index: 0;
   }
 
 * {
@@ -15,7 +17,7 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.logo-sanook {
+.logo {
   position: relative;
   display: block;
   width: 100%;
@@ -35,7 +37,7 @@
   width: fit-content;
 }
 
-.position-sanook {
+.position {
   position: relative;
   display: block;
   width: 100%;
@@ -61,7 +63,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .logo-sanook {
+  .logo {
     max-width: 320px;
   }
 
@@ -69,7 +71,7 @@
     font-size: 1.2rem;
   }
 
-  .position-sanook {
+  .position {
     max-width: 400px;
   }
 }

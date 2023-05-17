@@ -12,7 +12,6 @@ import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
 import SelectPositionPage from "./PositionPage/SelectPositionPage"
 
-
 function App() {
   return (
     <AuthProvider className="App">

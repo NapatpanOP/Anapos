@@ -50,7 +50,7 @@ function SugPage() {
       <div className="sug-form">
         <form onSubmit={handleSubmit}>
           <div className="sug-header">
-            <h2>SUGGESTION</h2>
+            <h>SUGGESTION</h>
           </div>
           <div className="form-group">
             <label htmlFor="website-name">Website Name*:</label>

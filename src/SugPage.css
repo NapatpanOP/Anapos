@@ -11,7 +11,7 @@ body {
   padding: 50px;
 }
 
-.text-head {
+.sug-header {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -85,4 +85,16 @@ button[type="submit-sug"] {
 
 button[type='submit-sug']:hover {
   background-color: #26996b;
+}
+
+#website-type {
+  margin: 8px 0;
+}
+
+.note-form {
+  margin: 8px 0;
+}
+
+.url-form {
+  margin: 8px 0;
 }
