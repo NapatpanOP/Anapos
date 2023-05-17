@@ -11,6 +11,7 @@ import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
 import SelectPositionPage from "./PositionPage/SelectPositionPage"
+import GraphPosition from "./GraphPosition/GraphPositionPage"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/select-graphics-position" element={<SelectGraphicsPositionPage /> }/>
         <Route path="/select-position" element={<SelectPositionPage /> }/>
         <Route path="/select-graphics-position/:id/:position" element={<SelectGraphicsPositionPage /> }/>
+        <Route path="/graphposition" element={<GraphPosition /> }/>
       </Routes>
     </AuthProvider>
   );

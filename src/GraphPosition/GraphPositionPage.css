@@ -1,0 +1,85 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.text-head {
+  width: 100%;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.bt-graph {
+  margin-left: 5%;
+}
+
+.bt-graph button {
+  margin: 5px;
+}
+
+.graphPage select {
+  margin-left: 5.4%;
+  margin-top: 10px;
+  width: 150px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #747474;
+  background-color: #fff;
+  color: #333;
+}
+
+.position-photo {
+  width: 500px;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+.box-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 820px) {
+  .headtext {
+    font-size: 1.5rem;
+  }
+
+  .position-photo {
+    max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bt-graph button {
+    font-size: 14px;
+  }
+
+  .graphPage select {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .headtext {
+    font-size: 1.2rem;
+  }
+
+  .bt-graph button {
+    font-size: 14px;
+  }
+
+  .position-photo {
+    max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

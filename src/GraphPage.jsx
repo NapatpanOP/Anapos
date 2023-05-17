@@ -22,6 +22,7 @@ function PageGraph() {
   return (
     <div>
       <p className="text-head">Graph</p>
+
       <div class="bt-graph">
         <button type="button" className="btn btn-outline-dark ">
           SPECIFIC
@@ -43,6 +44,8 @@ function PageGraph() {
         </select>
       </div>
 
+      <a href="/graphposition">graphweb</a>
+      
       <BarAllLike />
 
       <BarTypePortalLike />

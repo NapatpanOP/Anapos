@@ -20,8 +20,6 @@
       "like_female": 10,
       "like_other": 1,
       "like_portal": 10, 
-      "name_position": ["Position1","Position2","Position3","Position4","Position5"],
-      "position": [2,3,1,5,3],
       "position1": 2,
       "position2": 3,
       "position3": 1,
