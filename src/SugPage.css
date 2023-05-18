@@ -98,3 +98,24 @@ button[type='submit-sug']:hover {
 .url-form {
   margin: 8px 0;
 }
+
+@media screen and (min-width: 768px) {
+  .sug-form {
+    min-height: 100vh;
+  }
+
+  .sug-form form {
+    min-width: 600px;
+  }
+  .submit-sug {
+    margin-bottom: 10%;
+  }
+
+}
+
+/* apply styles for smaller screens */
+@media screen and (max-width: 767px) {
+  .sug-form form {
+    min-width: 80%;
+  }
+}

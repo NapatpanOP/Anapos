@@ -17,6 +17,7 @@ body {
 }
 
 .bt-graph {
+  position: relative;
   margin-left: 5%;
 }
 

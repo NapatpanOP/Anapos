@@ -77,7 +77,7 @@ function SugPage() {
             <input className="url-form" type="url" id="website-url" value={websiteUrl} onChange={handleUrlChange} required />
           </div>
 
-          <button type="submit-sug">CONFIRM</button>
+          <button type="submit-sug" class='submit-sug'>CONFIRM</button>
         </form>
       </div>
     </div>
