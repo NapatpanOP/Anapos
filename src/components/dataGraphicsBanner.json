@@ -1,0 +1,19 @@
+{
+  "graphics": [
+    {
+      "id": 1,
+      "name_graphics": "Banner1",
+      "count_graphics": 2
+    },
+    {
+      "id": 2,
+      "name_graphics": "Banner2",
+      "count_graphics": 4
+    },
+    {
+      "id": 3,
+      "name_graphics": "Banner3",
+      "count_graphics": 1
+    }
+  ]
+}

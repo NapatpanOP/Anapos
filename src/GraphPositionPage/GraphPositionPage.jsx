@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./GraphPositionPage.css";
+import logo from '../assets/logoBrands/youtube.jpg'
 import youtubePosition from '../assets/positionPage/PositionYoutube.jpg'
 import BarPositionYoutube from '../components/BarChart/GraphYoutube/BarPositionYoutube'
 import BarPositionViu from "../components/BarChart/GraphViu/BarPositionViu";
 import BarPositionTrueID from "../components/BarChart/GraphTrueID/BarPositionTrueID";
 import BarPositionJib from "../components/BarChart/GraphJib/BarPositionJib";
+import BarGraphicsBanner from "../components/BarChart/BarChartGraphicsBanner/BarGraphicsBanner";
 
 function GraphPosition() {
 
@@ -12,7 +14,7 @@ function GraphPosition() {
 
   return (
     <div>
-      <p className="text-head">Youtube</p>
+      <img src={logo} alt="logo-banner" className="main-logo"/>
       <div class="bt-graph">
         <button type="button" className="btn btn-outline-dark ">
           POSITION
@@ -38,10 +40,13 @@ function GraphPosition() {
       
       <div class="box-content">
         <img src={youtubePosition} alt="position-photo" className="position-photo"/>
+
         {/* <BarPositionYoutube/> */}
         {/* <BarPositionViu/> */}
         {/* <BarPositionTrueID/> */}
-        <BarPositionJib/>
+        {/* <BarPositionJib/> */}
+        <BarGraphicsBanner/>
+
       </div>
 
     </div>

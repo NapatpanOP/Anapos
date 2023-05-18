@@ -11,7 +11,7 @@ import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
 import SelectPositionPage from "./PositionPage/SelectPositionPage"
-import GraphPosition from "./GraphPosition/GraphPositionPage"
+import GraphPosition from "./GraphPositionPage/GraphPositionPage"
 
 function App() {
   return (

@@ -26,9 +26,9 @@ const Nevbar = () => {
   const renderButton = () => {
     if(!token)
        return <Link to="../Login" if>
-       <Button>Log in</Button>
+       <Button id='bt-login'>Log in</Button>
      </Link>;
-    return <Button onClick={() => AuthAction.onLogout()} >Log out</Button>
+    return <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
       ;
   }
   const { pathname } = useLocation();
