@@ -1,0 +1,120 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-form h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 90vh; 
+  }
+  
+  /* apply styles for input fields and buttons */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .login-form  {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 10px;
+  }
+  
+  /* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    border-bottom: 2px solid #E0E0E0;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #37D295;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .signup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  
+  button[type="signup"] {
+    text-decoration: underline;
+    color: #FD8A8A;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+  }
+  
+  button[type="signup"]:hover {
+    color: #f32a2a;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #26996b;
+  }
+  
+  /* apply styles for larger screens */
+  @media screen and (min-width: 768px) {
+    .login-container {
+      min-height: 100vh;
+    }
+  
+    .login-container form {
+      min-width: 600px;
+    }
+    .signup-container {
+      margin-bottom: 10%;
+    }
+  
+  }
+  
+  /* apply styles for smaller screens */
+  @media screen and (max-width: 767px) {
+    .login-container form {
+      min-width: 80%;
+    }
+  }
+  

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./SignupPage.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CryptoJS from "crypto-js";
 import { RegisterAPI } from "../../apis/auth/registerAPI";
+import { useAuthContext } from "../../core/contexts/AuthProvider";
 
 function SignupPage() {
   const [username, setUsername] = useState("");
@@ -10,6 +11,10 @@ function SignupPage() {
   const [password, setPassword] = useState("");
   const [sex, setSex] = useState("");
   const [ageRange, setAgeRange] = useState("");
+
+  const [errorMessage, setErrorMessage] = useState();
+  const navigate = useNavigate()
+  const { AuthAction } = useAuthContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +41,13 @@ function SignupPage() {
     user['ad_template'] = []
     user.password = CryptoJS.AES.encrypt(user.password, 'OKIOKI007').toString();
     RegisterAPI.register(user).then((response) => {
-      console.log(response)
+      if(response?.message) {
+        setErrorMessage(response.message)
+      } else {
+        AuthAction.onSetUserSignin(response)
+        console.log(response)
+        navigate('/')
+    }
     })
   }
 
@@ -102,6 +113,7 @@ function SignupPage() {
               <option value="46-55">46 - 55</option>
               <option value="<55">&lt;55</option>
             </select>
+            <p className="text-error">{errorMessage}</p>
             <div className="Signup-submit">
               <button onClick={() => register({ username: username, password: password, email: email, sex: sex, age_range: ageRange })} type="submit" className="btn btn-primary Signup-submit btn-success">
                 CONFIRM

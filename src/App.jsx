@@ -6,17 +6,29 @@ import SugPage from "./SugPage"
 import LoginPage from "./components/Login/LoginPage"
 import SignupPage from "./components/Signup/SignupPage"
 import './App.css'
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import AuthProvider from "./core/contexts/AuthProvider"
 import ProtectedRoute from "./core/helpers/routers/ProtectedRoute"
 import SelectGraphicsPositionPage from "./components/selectGraphicsPositionPage/SelectGraphicsPositionPage"
 import SelectPositionPage from "./PositionPage/SelectPositionPage"
 import GraphPosition from "./GraphPositionPage/GraphPositionPage"
+import AdminSignin from "./admin/AdminSignin/AdminSignin"
+import AdminSignup from "./admin/AdminSignup/AdminSignup"
+import ConclusionPage from "./admin/Conclusion/ConclusionPage"
+import ProtectedAdminRoute from "./core/helpers/routers/ProtectedAdminRoute"
+import AdminGraphPage from "./admin/GraphPage/AdminGraphPage"
+import AdminSuggestionPage from "./admin/Suggestion/AdminSuggestionPage"
 
 function App() {
+  const curLocation = useLocation();
+  const renderNav = () => {
+    if(curLocation.pathname != '/admin' && curLocation.pathname != '/admin-signup') {
+      return <Nevbar/>
+    }
+  }
   return (
     <AuthProvider className="App">
-      <Nevbar/>
+      {renderNav()}
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/typesweb" element={<TypesWebPage />}/>
@@ -31,6 +43,20 @@ function App() {
         <Route path="/select-position" element={<SelectPositionPage /> }/>
         <Route path="/select-graphics-position/:id/:position" element={<SelectGraphicsPositionPage /> }/>
         <Route path="/graphposition" element={<GraphPosition /> }/>
+        <Route path="/admin" element={<AdminSignin />}/>
+        <Route path="/admin-signup" element={<AdminSignup />}/>
+        <Route path="/conclusion" element={
+          <ProtectedAdminRoute>
+            <ConclusionPage />
+          </ProtectedAdminRoute>}/>
+        <Route path="/admin-graph" element={
+          <ProtectedAdminRoute>
+            <AdminGraphPage />
+          </ProtectedAdminRoute>}/>
+        <Route path="/admin-suggestion" element={
+          <ProtectedAdminRoute>
+            <AdminSuggestionPage />
+          </ProtectedAdminRoute>}/>
       </Routes>
     </AuthProvider>
   );

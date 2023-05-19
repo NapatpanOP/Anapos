@@ -1,0 +1,140 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .register-form-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .register-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    min-width: 500px;
+  }
+  
+  .register-form-container {
+    margin: auto;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    min-width: 500px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin: 5px
+  }
+  
+  .form-group {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .text-error {
+    color: #f84343;
+  }
+  
+  /* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
+  input[type="text"],
+  input[type="password"],
+  select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    border-bottom: 2px solid #E0E0E0;
+    width: 100%;
+  }
+  
+  select {
+    height: 45px;
+  }
+  
+  .signup-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-containersignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+  
+  button[type="submit"] {
+    background-color: #37D295;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="login"] {
+    text-decoration: underline;
+    color: #FD8A8A;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+  }
+  
+  button[type="login"]:hover {
+    color: #f32a2a;
+  }
+  
+  /* @media (min-width: 768px) {
+    .form-container {
+      min-width: 320px;
+    }
+  } */
+  
+  /* apply styles for larger screens */
+  @media screen and (min-width: 768px) {
+    .register-container {
+      min-height: 100vh;
+    }
+  
+    .register-container form {
+      min-width: 600px;
+    }
+    .signup-container {
+      margin-bottom: 10%;
+    }
+  
+  }
+  
+  /* apply styles for smaller screens */
+  @media screen and (max-width: 767px) {
+    .register-container form {
+      min-width: 80%;
+    }
+  }
+  

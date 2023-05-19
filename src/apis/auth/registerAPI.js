@@ -3,10 +3,12 @@ import { defineCancelApiObject } from "../configs/axiosUtils"
 
 export const RegisterAPI = {
   register: async function (user) {
-    await api.post('/register', user)
-
-    // returning the product returned by the API
-    return response
+    try {
+      const response = await api.post('/register', user)
+      return response.data
+    } catch (err) {
+      return err
+    }
   },
 }
 

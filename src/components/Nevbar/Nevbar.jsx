@@ -2,14 +2,14 @@ import React, { Component, useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import Button from 'react-bootstrap/Button'
 import './Nevbar.css'
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
 import { colors } from '@material-ui/core';
 
 const Nevbar = () => {
   const { token, AuthAction } = useAuthContext();
-  const navigate = useNavigate();
+  const currentLocation = useLocation();
   var loginUser = token;
   console.log(token)
   const state = { clicked: false }
@@ -19,41 +19,54 @@ const Nevbar = () => {
   }
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [mode, setMode] = useState('user')
+
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen)
   }
-  
+
+  const adminPathList = [
+    '/conclusion',
+    '/admin-graph',
+    '/admin-suggestion'
+  ]
+
   const renderButton = () => {
-    if(!token)
-       return <Link to="../Login" if>
-       <Button id='bt-login'>Log in</Button>
-     </Link>;
-    return <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
-      ;
+    if (mode == 'user') {
+      if (!token) {
+        return <Link to="../Login" if>
+          <Button id='bt-login'>Log in</Button>
+        </Link>
+      } else {
+        return <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
+      }
+    } else {
+      return <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
+    }
   }
   const { pathname } = useLocation();
 
-  
-  // useEffect(() => {
-  //   loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
-  //   console.log(loginUser)
-  // }, [pathname]);
+
+  useEffect(() => {
+    setMode((adminPathList.indexOf(currentLocation.pathname) == -1 ? 'user' : 'admin'))
+  }, [currentLocation.pathname]);
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="./src/assets/Logo.png" alt="Logo"/>
+        <img src="./src/assets/Logo.png" alt="Logo" />
       </div>
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul >
           {MenuItems.map((item, index) => {
-            return (
-              <li key={index} className={location.pathname == item.url ? 'active' : ''}>
-                <a className={item.cName } href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            )
+            if (item.permission == mode)
+              return (
+                <li key={index} className={location.pathname == item.url ? 'active' : ''}>
+                  <a className={item.cName} href={item.url}>
+                    {item.title}
+                  </a>
+                </li>
+              )
           })}
 
         </ul>

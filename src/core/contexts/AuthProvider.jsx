@@ -2,6 +2,7 @@ import { createContext, useContext, useState } from "react";
 import { LoginAPI } from "../../apis/auth/loginAPI";
 import CryptoJS from "crypto-js";
 import { useNavigate, useLocation } from "react-router";
+import { SigninAPI } from "../../apis/admin/SigninAPI";
 
 const AuthContext = createContext({});
 const localTokenKey = 'token'
@@ -13,6 +14,10 @@ export function useAuthContext() {
 const AuthProvider = ({ children }) => {
   const localUser = JSON.parse(localStorage.getItem(localTokenKey)) ?? null
   const [token, setToken] = useState(localUser);
+
+  const localAdmin = JSON.parse(localStorage.getItem('adminToken')) ?? null
+  const [adminToken, setAdminToken] = useState(localAdmin);
+
   const navigate = useNavigate();
   const location = useLocation()
   const handleLogin = async (user) => {
@@ -34,11 +39,32 @@ const AuthProvider = ({ children }) => {
     navigate(origin);
   };
 
+  const setAdminSignin = async (admin) => {
+    localStorage.setItem('adminToken', JSON.stringify(admin));
+    setAdminToken(admin);
+  }
+
+  const setUserSignin = async (user) => {
+    localStorage.setItem(localTokenKey, JSON.stringify(user));
+    setToken(user);
+  }
+
+  const handleAdminLogout = () => {
+    localStorage.removeItem('adminToken');
+    setAdminToken(null);
+    // const origin = location.state?.from?.pathname || '/';
+    navigate('/admin');
+  };
+
   const authStore = {
     token,
+    adminToken,
     AuthAction: {
       onLogin: handleLogin,
-      onLogout: handleLogout
+      onLogout: handleLogout,
+      onSetAdminSignin: setAdminSignin,
+      onAdminLogout: handleAdminLogout,
+      onSetUserSignin: setUserSignin
     }
   };
 
