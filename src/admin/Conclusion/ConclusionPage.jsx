@@ -15,6 +15,8 @@ const ConclusionPage = () => {
                     <th>Male Like</th>
                     <th>Female Like</th>
                     <th>Other Like</th>
+                    <th>Position Max</th>
+                    <th>Position Min</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,6 +29,8 @@ const ConclusionPage = () => {
                     <td>{item.like_male}</td>
                     <td>{item.like_female}</td>
                     <td>{item.like_other}</td>
+                    <td>{item.position_max}</td>
+                    <td>{item.position_min}</td>
                     </tr>
                 ))}
             </tbody>
