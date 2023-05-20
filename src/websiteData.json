@@ -1,4 +1,6 @@
 {
+  "data": [
+    {
     "title": "Youtube",
     "image": "./src/assets/brand01.jpg",
     "full_image": "./src/assets/positionPage/PositionYoutube.jpg",
@@ -91,5 +93,618 @@
                 ],
                 "selected_counts": 0
             }
-    ]
+      ]
+    },
+    {
+      "title": "Viu",
+      "image": "./src/assets/brand02.jpg",
+      "full_image": "./src/assets/positionPage/PositionViu.jpg",
+      "type": "Portal",
+      "logo_brand": "./src/assets/logoBrands/viu.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            }
+        ]
+    },
+    {
+      "title": "TrueID",
+      "image": "./src/assets/brand03.jpg",
+      "full_image": "./src/assets/positionPage/PositionTrueID.jpg",
+      "type": "Portal",
+      "logo_brand": "./src/assets/logoBrands/trueID.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            }
+        ]
+    },
+    {
+      "title": "Sanook",
+      "image": "./src/assets/brand04.jpg",
+      "full_image": "./src/assets/positionPage/PositionSanook.jpg",
+      "type": "New",
+      "logo_brand": "./src/assets/logoBrands/sanook.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            }
+        ]
+    },
+    {
+      "title": "Dailynews",
+      "image": "./src/assets/brand05.jpg",
+      "full_image": "./src/assets/positionPage/PositionDailynews.jpg",
+      "type": "New",
+      "logo_brand": "./src/assets/logoBrands/dailynews.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            }
+        ]
+    },
+    {
+      "title": "ThaiRath",
+      "image": "./src/assets/brand06.jpg",
+      "full_image": "./src/assets/positionPage/PositionThairath.jpg",
+      "type": "New",
+      "logo_brand": "./src/assets/logoBrands/thairath.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            }
+        ]
+    }
+  ]
 }
