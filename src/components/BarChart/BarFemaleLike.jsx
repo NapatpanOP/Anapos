@@ -6,13 +6,12 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarFemaleLike({data, allUser}) {
-  var maleUser = allUser.filter((user) => user.sex == 'Female')
-  console.log(maleUser)
+  var maleUser = allUser.filter((user) => user.sex == 'FEMALE')
+
   var likeList = [] 
   data.forEach((brand) => {
     likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
   });
-  console.log(likeList)
   const [userData, setData] = useState({
     labels: data.map((data) => data.title),
     datasets: [{
@@ -31,6 +30,27 @@ function BarFemaleLike({data, allUser}) {
       ],
     }]
   }) 
+
+  useEffect(() => {
+    setData({
+      labels: data.map((data) => data.title),
+      datasets: [{
+        label: "FEMALE",
+        data: likeList.map((item) => item?.length),
+        backgroundColor: [
+          '#FD8A8A',
+          '#F1F7B5',
+          '#88D7B5',
+          '#00ADB5',
+          '#61A48D',
+          '#9EA1D4',
+          '#FF5858',
+          '#7371D9',
+          '#D071D9',
+        ],
+      }]
+    })
+  }, [data, allUser])
 
   return (
     <div class="full-box">

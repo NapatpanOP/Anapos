@@ -21,6 +21,21 @@ function BarTypePortalLike({data}) {
     }]
   })
 
+  useEffect(() => {
+    setData({
+      labels: filterredPortal.map((item) => item.title),
+      datasets: [{
+        label: "Portal Website",
+        data: data.map((item) => item.like.length),
+        backgroundColor: [
+          '#FD8A8A',
+          '#F1F7B5',
+          '#88D7B5',
+        ],
+      }]
+    })
+  }, [data])
+
   return (
     <div class="full-box">
       <div class="bar-chart">

@@ -24,6 +24,27 @@ function BarAllLike({data}) {
     }]
   }) 
 
+  useEffect(() => {
+    setData({
+      labels: data.map((item) => item.title),
+      datasets: [{
+        label: "OVERVIEW",
+        data: data.map((item) => item?.like?.length),
+        backgroundColor: [
+          '#FD8A8A',
+          '#F1F7B5',
+          '#88D7B5',
+          '#00ADB5',
+          '#61A48D',
+          '#9EA1D4',
+          '#FF5858',
+          '#7371D9',
+          '#D071D9',
+        ],
+      }]
+    })
+  },  [data])
+
   return (
     <div class="full-box">
       <div class="bar-chart">
