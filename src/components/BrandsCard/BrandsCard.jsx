@@ -190,13 +190,7 @@ function BrandsCard({ filter }) {
         {filteredCards.map((card, index) => (
           <div className="card-item" key={card._id} >
             <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
-              {/* <a href={card.link} target="_self"> */}
-              {/* <a href={card.link} target="_self" onClick={(e) => {
-                e.preventDefault();
-                handleCardClick(card.link);
-              }}></a> */}
               <img src={card.image} alt={card.title} />
-              {/* </a> */}
               <p>Website Type: {card.type}</p>
             </div>
             <div className="card-content">

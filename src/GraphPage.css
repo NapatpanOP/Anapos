@@ -32,3 +32,51 @@ body {
   background-color: #fff;
   color: #333;
 }
+
+.card-graph {
+  margin: 50px;
+}
+
+.card-grid {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2% 50px 2%;
+  justify-content: center;
+}
+
+.card-container-graph {
+  width: 25%;
+  margin: 0 1.5% 30px;
+  border: 1.5px solid rgba(116, 116, 116, 1);
+  border-radius: 21px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-container-graph:hover {
+  border: 3px solid #2AB9B5;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container-graph {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-container-graph {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+

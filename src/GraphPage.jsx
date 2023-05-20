@@ -11,6 +11,9 @@ import BarTypeNewLike from "./components/BarChart/BarTypeNewLike";
 import BarTypeBusinessLike from "./components/BarChart/BarTypeBusinessLike";
 import { BrandAPI } from "./apis/brandAPI";
 import { UserAPI } from "./apis/userAPI";
+import { data } from'./components/data.json'
+import { Link } from 'react-router-dom';
+import { Container } from "@material-ui/core";
 
 function PageGraph() {
   const { token } = useAuthContext();
@@ -62,8 +65,23 @@ function PageGraph() {
         </select>
       </div>
 
-      <a href="/graphposition">graphweb</a>
+    {/* Specific */}
+      <div class="card-graph">
+        <div class="card-grid">
+          {data.map((item) => (
+            <div class="card-container-graph">
+              <Link to={`/graphposition`} className="card">
+                <div className="product-card">
+                  <img src={item.image} alt={item.name} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
 
+
+      {/* กราฟ Overview */}
       <BarAllLike data={brands}/>
 
       <BarTypePortalLike  data={brands}/>

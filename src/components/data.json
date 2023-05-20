@@ -20,7 +20,9 @@
       "like_male": 13,
       "like_female": 10,
       "like_other": 1,
-      "like_portal": 10
+      "like_portal": 10,
+      "position_max": "Position1",
+      "position_min": "Position4"
     },
     {
       "id": 2,
@@ -41,7 +43,9 @@
       "like_male": 13,
       "like_female": 10,
       "like_other": 1,
-      "like_portal": 13
+      "like_portal": 13,
+      "position_max": "Position2",
+      "position_min": "Position5"
     },
     {
       "id": 3,
@@ -62,7 +66,9 @@
       "like_male": 10,
       "like_female": 10,
       "like_other": 10,
-      "like_portal": 4
+      "like_portal": 4,
+      "position_max": "Position2",
+      "position_min": "Position5"
     },
     {
       "id": 4,
@@ -83,7 +89,9 @@
       "like_male": 9,
       "like_female": 10,
       "like_other": 10,
-      "like_news": 1
+      "like_news": 1,
+      "position_max": "Position3",
+      "position_min": "Position6"
     },
     {
       "id": 5,
@@ -104,7 +112,9 @@
       "like_male": 10,
       "like_female": 10,
       "like_other": 10,
-      "like_news": 3
+      "like_news": 3,
+      "position_max": "Position1",
+      "position_min": "Position3"
     },
     {
       "id": 6,
@@ -125,7 +135,9 @@
       "like_male": 9,
       "like_female": 10,
       "like_other": 10,
-      "like_news": 9
+      "like_news": 9,
+      "position_max": "Position2",
+      "position_min": "Position6"
     },
     {
       "id": 7,
@@ -146,7 +158,9 @@
       "like_male": 10,
       "like_female": 14,
       "like_other": 10,
-      "like_business": 11
+      "like_business": 11,
+      "position_max": "Position3",
+      "position_min": "Position8"
     },
     {
       "id": 8,
@@ -167,7 +181,9 @@
       "like_male": 11,
       "like_female": 14,
       "like_other": 10,
-      "like_business": 2
+      "like_business": 2,
+      "position_max": "Position4",
+      "position_min": "Position9"
     },
     {
       "id": 9,
@@ -188,7 +204,9 @@
       "like_male": 10,
       "like_female": 10,
       "like_other": 10,
-      "like_business": 3
+      "like_business": 3,
+      "position_max": "Position2",
+      "position_min": "Position8"
     }
   ]
 }
