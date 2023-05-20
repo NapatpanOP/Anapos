@@ -1,0 +1,95 @@
+{
+    "title": "Youtube",
+    "image": "./src/assets/brand01.jpg",
+    "full_image": "./src/assets/positionPage/PositionYoutube.jpg",
+    "type": "Portal",
+    "logo_brand": "./src/assets/logoBrands/youtube.jpg",
+    "like": [],
+    "adsPositions": [
+        {
+        "images_urls": [ 
+                 { 
+                     "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-1.jpg",
+                     "selected_counts": 0
+                 },
+                 { 
+                     "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-2.jpg",
+                     "selected_counts": 0
+                 },
+                 { 
+                     "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-3.jpg",
+                     "selected_counts": 0
+                 }
+            ],
+            "selected_counts": 0
+        },
+        {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            }
+    ]
+}
