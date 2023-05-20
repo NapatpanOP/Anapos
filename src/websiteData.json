@@ -705,6 +705,512 @@
                   "selected_counts": 0
             }
         ]
+    },
+    {
+      "title": "Banana",
+      "image": "./src/assets/brand07.jpg",
+      "full_image": "./src/assets/positionPage/PositionBanana.jpg",
+      "type": "Business",
+      "logo_brand": "./src/assets/logoBrands/banana.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+              },
+              {
+                "images_urls": [ 
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-1.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-2.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-3.jpg",
+                             "selected_counts": 0
+                         }
+                    ],
+                    "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                }
+        ]
+    },
+    {
+      "title": "Jib",
+      "image": "./src/assets/brand08.jpg",
+      "full_image": "./src/assets/positionPage/PositionJib.jpg",
+      "type": "Business",
+      "logo_brand": "./src/assets/logoBrands/jib.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+              },
+              {
+                "images_urls": [ 
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-1.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-2.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-3.jpg",
+                             "selected_counts": 0
+                         }
+                    ],
+                    "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                }
+        ]
+    },
+    {
+      "title": "Advice",
+      "image": "./src/assets/brand09.jpg",
+      "full_image": "./src/assets/positionPage/PositionAdvice.jpg",
+      "type": "Business",
+      "logo_brand": "./src/assets/logoBrands/advice.jpg",
+      "like": [],
+      "adsPositions": [
+          {
+          "images_urls": [ 
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-1.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-2.jpg",
+                       "selected_counts": 0
+                   },
+                   { 
+                       "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-3.jpg",
+                       "selected_counts": 0
+                   }
+              ],
+              "selected_counts": 0
+          },
+          {
+            "images_urls": [ 
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-1.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-2.jpg",
+                         "selected_counts": 0
+                     },
+                     { 
+                         "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-3.jpg",
+                         "selected_counts": 0
+                     }
+                ],
+                "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP4/ADGP4-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP4/ADGP4-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/4/ADGP4-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+            },
+            {
+              "images_urls": [ 
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-1.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-2.jpg",
+                           "selected_counts": 0
+                       },
+                       { 
+                           "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-3.jpg",
+                           "selected_counts": 0
+                       }
+                  ],
+                  "selected_counts": 0
+              },
+              {
+                "images_urls": [ 
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-1.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-2.jpg",
+                             "selected_counts": 0
+                         },
+                         { 
+                             "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-3.jpg",
+                             "selected_counts": 0
+                         }
+                    ],
+                    "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP7/ADGP7-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/7/ADGP7-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP7/ADGP7-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                },
+                {
+                  "images_urls": [ 
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-1.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-2.jpg",
+                               "selected_counts": 0
+                           },
+                           { 
+                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-3.jpg",
+                               "selected_counts": 0
+                           }
+                      ],
+                      "selected_counts": 0
+                }
+        ]
     }
   ]
 }
