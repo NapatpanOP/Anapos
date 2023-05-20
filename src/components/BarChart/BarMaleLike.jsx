@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { data } from '../data.json'
+// import { data } from '../data.json'
+// import { allUser } from '../allUser.json'
 import BarChart from './BarChart';
 import './BarChart.css'
 
-function BarMaleLike() {
+function BarMaleLike({data, allUser}) {
+  var maleUser = allUser.filter((user) => user.sex == 'Male')
+  console.log(maleUser)
+  var likeList = [] 
+  data.forEach((brand) => {
+    likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
+  });
+  console.log(likeList)
   const [userData, setData] = useState({
-    labels: data.map((data) => data.name),
+    labels: data.map((item) => item.title),
     datasets: [{
       label: "Male",
-      data: data.map((data) => data.like_male),
+      data: likeList.map((item) => item?.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',

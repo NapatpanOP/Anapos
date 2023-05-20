@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { data } from '../data.json'
+// import { data } from '../data.json'
 import BarChart from './BarChart';
 import './BarChart.css'
 
-function BarTypePortalLike() {
+function BarTypePortalLike({data}) {
   const filterredPortal = data.filter((item) => {
       return item.type === "Portal";
   });

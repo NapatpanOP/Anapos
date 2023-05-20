@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { data } from '../data.json'
+// import { data } from '../data.json'
 import BarChart from './BarChart';
 import './BarChart.css'
 
-function BarTypeBusinessLike() {
+function BarTypeBusinessLike({data}) {
+  const filterredPortal = data.filter((item) => {
+    return item.type === "Business";
+});
   const [userData, setData] = useState({
-    labels: ['Banana', 'Jib', 'Advich'],
+    labels: filterredPortal.map((item) => item.title),
     datasets: [{
       label: "Busness Website",
-      data: data.map((data) => data.like_business),
+      data: data.map((item) => item.like.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',

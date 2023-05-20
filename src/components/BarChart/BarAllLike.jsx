@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { data } from '../data.json'
+// import { data } from '../data.json'
 import BarChart from './BarChart';
 import './BarChart.css'
 
-function BarAllLike() {
+function BarAllLike({data}) {
   const [userData, setData] = useState({
     labels: data.map((item) => item.title),
     datasets: [{

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./GraphPage.css";
 import { useAuthContext } from "./core/contexts/AuthProvider";
 import { useNavigate } from "react-router";
@@ -9,15 +9,33 @@ import BarOtherLike from "./components/BarChart/BarOtherLike";
 import BarTypePortalLike from "./components/BarChart/BarTypePortalLike";
 import BarTypeNewLike from "./components/BarChart/BarTypeNewLike";
 import BarTypeBusinessLike from "./components/BarChart/BarTypeBusinessLike";
+import { BrandAPI } from "./apis/brandAPI";
+import { UserAPI } from "./apis/userAPI";
 
 function PageGraph() {
   const { token } = useAuthContext();
   const navigate = useNavigate();
+  const [allUser, setAllUser] = useState([])
+  const [brands, setBrands] = useState([])
   if (!token) {
     navigate("/login");
   }
 
   const [viewGraph, setGraph] = useState("");
+
+  useEffect(() => {
+    const setup = () => {
+      BrandAPI.getAll().then((res) => {
+        console.log(res)
+        setBrands(res)
+        UserAPI.getAll().then((resUser) => {
+          setAllUser(resUser)
+        })
+      })
+    }
+
+    setup()
+  }, [])
 
   return (
     <div>
@@ -45,20 +63,20 @@ function PageGraph() {
       </div>
 
       <a href="/graphposition">graphweb</a>
-      
-      <BarAllLike />
 
-      <BarTypePortalLike />
+      <BarAllLike data={brands}/>
 
-      <BarTypeNewLike />
+      <BarTypePortalLike  data={brands}/>
 
-      <BarTypeBusinessLike />
+      <BarTypeNewLike data={brands} />
 
-      <BarMaleLike />
+      <BarTypeBusinessLike data={brands}/>
 
-      <BarFemaleLike />
+      <BarMaleLike data={brands} allUser={allUser} />
 
-      <BarOtherLike />
+      <BarFemaleLike data={brands} allUser={allUser}/>
+
+      <BarOtherLike data={brands} allUser={allUser}/>
     </div>
   );
 }
