@@ -13,8 +13,9 @@ function BrandsCard({ filter }) {
   const navigate = useNavigate();
 
   console.log('init brands card')
+  const [loginUser, setLoginUser] = useState(token)
   // var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
-  var loginUser = token
+
   const [cards, setData] = useState([]);
   var [userLike, setUserLike] = useState([])
 
@@ -44,7 +45,7 @@ function BrandsCard({ filter }) {
       console.log(updateUser)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
-        loginUser = res
+        setLoginUser(res)
         userLike = res.brands_like
         localStorage.setItem('token', JSON.stringify(loginUser))
       })
@@ -52,7 +53,7 @@ function BrandsCard({ filter }) {
       item.like.push(loginUser._id)
       console.log(item)
       BrandAPI.updateLike(item).then((res) => {
-        var m = cards
+        var m = filteredCards
         m[index] = res
         setData([...m])
       })
@@ -68,7 +69,7 @@ function BrandsCard({ filter }) {
       console.log(updateUser)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
-        loginUser = res
+        setLoginUser(res)
         userLike = res.brands_like
         localStorage.setItem('token', JSON.stringify(loginUser))
       })
@@ -80,7 +81,7 @@ function BrandsCard({ filter }) {
       }
       console.log(item)
       BrandAPI.updateLike(item).then((res) => {
-        var m = cards
+        var m = filteredCards
         m[index] = res
         setData([...m])
       })
@@ -126,20 +127,60 @@ function BrandsCard({ filter }) {
   }
 
   const handleCardClick = (url) => {
-    if(token) {
+    if (token) {
       window.location.href = url;
     }
   }
 
   const positionSelectHandle = (id) => {
     console.log('test ', id)
-    navigate("/select-position", {state:{id: id}})
+    navigate("/select-position", { state: { id: id } })
   }
 
   useEffect(() => {
+    const setup = () => {
+      UserAPI.getById(token._id).then((resUser) => {
+        console.log(resUser)
+        
+        setLoginUser(resUser)
+      })
+    }
+
+    setup()
     refreshAllBrands()
     refreshUserBrandsLike()
   }, [])
+
+  const renderVoteBanner = (id) => {
+    if(loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === id)) {
+      return <div className="voted-banner" onClick={() => handleLike(card, index)}>
+      Voted
+    </div>
+    }
+  }
+
+  const cancelVoteHandle = (index) => {
+    const userBrandSelected = loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === filteredCards[index]._id);
+    BrandAPI.addBrandPositionCount({
+      id: filteredCards[index]._id,
+      isUnselect: true,
+      currentPositionIndex: userBrandSelected?.ad_index_position ?? null,
+      currentGraphicIndex: userBrandSelected?.ad_index_graphic ?? null
+    }).then((res) => {
+      var m = filteredCards
+      m[index] = res
+      setData([...m])
+      UserAPI.selectPosition({
+          id: token._id,
+          isUnselect: true,
+          ads_poitions_selected: {
+              brand_id: res._id,
+          }
+      }).then((resUser) => {
+        setLoginUser(resUser)
+      })
+  })
+  }
 
   return (
     <div className="brand-list">
@@ -150,21 +191,28 @@ function BrandsCard({ filter }) {
           <div className="card-item" key={card._id} >
             <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
               {/* <a href={card.link} target="_self"> */}
-                {/* <a href={card.link} target="_self" onClick={(e) => {
+              {/* <a href={card.link} target="_self" onClick={(e) => {
                 e.preventDefault();
                 handleCardClick(card.link);
               }}></a> */}
-                <img src={card.image} alt={card.title} />
+              <img src={card.image} alt={card.title} />
               {/* </a> */}
               <p>Website Type: {card.type}</p>
             </div>
             <div className="card-content">
-              <div className="card-like" onClick={() => handleLike(card, index)}>
-                <FontAwesomeIcon
-                  icon={faHeart}
-                  className={card.like.includes(loginUser?._id) ? 'like-icon active' : 'like-icon'}
-                />
-                <p>{card.like.length}</p>
+              <div className='flex-row'>
+                <div className="card-like" onClick={() => handleLike(card, index)}>
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    className={card.like.includes(loginUser?._id) ? 'like-icon active' : 'like-icon'}
+                  />
+                  <p>{card.like.length}</p>
+                </div>
+                {renderVoteBanner(card._id)}
+              </div>
+              <hr />
+              <div className="brand-vote-status" onClick={() => loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === card._id) ?  cancelVoteHandle(index) : positionSelectHandle(card._id)}>
+                {(loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === card._id) ? "click here for cancel voted" : "click here to vote")}
               </div>
             </div>
           </div>

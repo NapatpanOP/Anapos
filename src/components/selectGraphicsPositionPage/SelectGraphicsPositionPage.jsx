@@ -19,8 +19,11 @@ const SelectGraphicsPositionPage = () => {
     const [show, setShow] = useState(false);
     // const [formParam, setFormParam] = useState(null);
     const [idState, setId] = useState('');
-    const [position, setPosition] = useState(5)
+    const [position, setPosition] = useState()
     const [selectedGraphicIndex, setSelectedGraphicIndex] = useState();
+
+    const [currentPositionIndex, setCurrentPositionIndex] = useState();
+    const [currentGraphicIndex, setCurrentGraphicIndex] = useState();
 
     useEffect(() => {
         const setup = () => {
@@ -32,7 +35,14 @@ const SelectGraphicsPositionPage = () => {
                 BrandAPI.getById(location.state.id).then((res) => {
                     console.log(res)
                     setBrand(res)
+                    UserAPI.getById(token._id).then((resUser) => {
+                        const userBrandSelected = resUser.ads_poitions_selected.find(({ brand_id }) => brand_id === res._id);
+                        console.log(userBrandSelected)
+                        setCurrentPositionIndex(userBrandSelected?.ad_index_position ?? null)
+                        setCurrentGraphicIndex(userBrandSelected?.ad_index_graphic ?? null)
+                    })
                 })
+                
             } else {
                 navigate('/')
             }
@@ -50,33 +60,29 @@ const SelectGraphicsPositionPage = () => {
     };
 
     const confirmHandle = () => {
-        var requestData = brand
-        requestData.adsPositions[location.state.position].selected_counts += 1
-        requestData.adsPositions[location.state.position].images_urls[selectedGraphicIndex].selected_counts += 1
+        // var requestData = brand
+        // requestData.adsPositions[location.state.position].selected_counts += 1
+        // requestData.adsPositions[location.state.position].images_urls[selectedGraphicIndex].selected_counts += 1
         setShow(false)
-        BrandAPI.updateBrandById(requestData).then((res) => {
+        BrandAPI.addBrandPositionCount({
+            id: brand._id,
+            positionIndex: location.state.position,
+            graphicIndex: selectedGraphicIndex,
+            currentPositionIndex: currentPositionIndex,
+            currentGraphicIndex: currentGraphicIndex
+        }).then((res) => {
             var requestUser = token
-            UserAPI.getById(token._id).then((user) => {
-                if (user?.ads_poitions_selected) {
-                    user.ads_poitions_selected.push({
-                        brand_id: res._id,
-                        brand_title: res.title,
-                        ad_position: position,
-                        ad_graphic: selectedGraphicIndex
-                    })
-                } else {
-                    user["ads_poitions_selected"] = [{
-                        brand_id: res._id,
-                        brand_title: res.title,
-                        ad_position: position,
-                        ad_graphic: selectedGraphicIndex
-                    }]
+            UserAPI.selectPosition({
+                id: token._id,
+                ads_poitions_selected: {
+                    brand_id: res._id,
+                    brand_title: res.title,
+                    ad_index_position: position,
+                    ad_index_graphic: selectedGraphicIndex
                 }
-                UserAPI.updateUserById(user).then(() => {
-                    navigate('/')
-                })
+            }).then(() => {
+                navigate('/')
             })
-
         })
     }
 
@@ -93,7 +99,7 @@ const SelectGraphicsPositionPage = () => {
     const renderButtonList = () => {
         if (brand) {
             return brand.adsPositions[location.state.position].images_urls.map((img, index) => {
-                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className="btn btn-outline-dark">POSITION {index + 1} {img.selected_counts}</button>
+                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index ? "btn-dark" : "btn-outline-dark"}`}>GRAPHIC {index + 1}</button>
             })
         } else {
             return

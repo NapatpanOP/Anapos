@@ -4,9 +4,15 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { BrandAPI } from '../apis/brandAPI';
 import './SelectPositionPage.css'
+import { UserAPI } from '../apis/userAPI';
+import { useAuthContext } from '../core/contexts/AuthProvider';
 
 function SelectPositionPage() {
+    const { token } = useAuthContext()
     const [show, setShow] = useState(false);
+    const [idState, setId] = useState('');
+    
+    const [currentPositionIndex, setCurrentPositionIndex] = useState();
 
     const handleClose = () => setShow(false);
 
@@ -22,24 +28,6 @@ function SelectPositionPage() {
     const navigate = useNavigate();
     const location = useLocation()
 
-    // var brand
-    const setup = () => {
-        console.log(location.state)
-        if (location.state) {
-            selectId = location.state.id
-            refreshData()
-        } else {
-            navigate('/')
-        }
-    }
-
-    const refreshData = () => {
-        BrandAPI.getById(selectId).then((res) => {
-            console.log(res)
-            setBrand(res)
-            // brand = res
-        })
-    }
 
     const confirmHandle = () => {
         setShow(false)
@@ -48,15 +36,32 @@ function SelectPositionPage() {
     }
 
     useEffect(() => {
-        // refreshData()
+        const setup = () => {
+            console.log(location.state)
+            if (location.state) {
+                setId(location.state.id)
+                BrandAPI.getById(location.state.id).then((res) => {
+                    console.log(res)
+                    setBrand(res)
+                    UserAPI.getById(token._id).then((resUser) => {
+                        const userBrandSelected = resUser.ads_poitions_selected.find(({ brand_id }) => brand_id === res._id);
+                        console.log(userBrandSelected)
+                        setCurrentPositionIndex(userBrandSelected?.ad_index_position ?? null)
+                    })
+                })
+                
+            } else {
+                navigate('/')
+            }
+        }
+
         setup()
     }, [])
-
     const renderButtonList = () => {
         console.log('test ', brand)
         if (brand) {
             return brand.adsPositions.map((img, index) => {
-                return <button onClick={() => onClickGraphicHandle(brand._id, index)} type="button" key={index} className="btn btn-outline-dark">POSITION {index +1}</button>
+                return <button onClick={() => onClickGraphicHandle(brand._id, index)} type="button" key={index} className={`btn ${currentPositionIndex == index ? "btn-dark" : "btn-outline-dark"}`}>POSITION {index +1}</button>
             })
         } else {
             return
