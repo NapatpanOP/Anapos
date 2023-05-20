@@ -29,12 +29,12 @@ export const MenuItems = [
       cName: "nev-links",
       permission: 'admin'
     },
-    {
-      title: "Graph",
-      url: "/admin-graph",
-      cName: "nev-links",
-      permission: 'admin'
-    },
+    // {
+    //   title: "Graph",
+    //   url: "/admin-graph",
+    //   cName: "nev-links",
+    //   permission: 'admin'
+    // },
     {
       title: "Suggestion",
       url: "/admin-suggestion",
