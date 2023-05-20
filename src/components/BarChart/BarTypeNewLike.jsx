@@ -5,11 +5,14 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarTypeNewLike() {
+  const filterredPortal = data.filter((item) => {
+    return item.type === "New";
+});
   const [userData, setData] = useState({
-    labels: ['Sanook', 'Dailynews', 'ThaiRath'],
+    labels: filterredPortal.map((item) => item.title),
     datasets: [{
       label: "News Website",
-      data: data.map((data) => data.like_news),
+      data: data.map((item) => item.like.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',

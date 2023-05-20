@@ -5,11 +5,14 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarTypePortalLike() {
+  const filterredPortal = data.filter((item) => {
+      return item.type === "Portal";
+  });
   const [userData, setData] = useState({
-    labels: ['Youtube', 'Viu', 'TrueID'],
+    labels: filterredPortal.map((item) => item.title),
     datasets: [{
       label: "Portal Website",
-      data: data.map((data) => data.like_portal),
+      data: data.map((item) => item.like.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',

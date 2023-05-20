@@ -6,10 +6,10 @@ import './BarChart.css'
 
 function BarAllLike() {
   const [userData, setData] = useState({
-    labels: data.map((data) => data.name),
+    labels: data.map((item) => item.title),
     datasets: [{
       label: "OVERVIEW",
-      data: data.map((data) => data.like_all),
+      data: data.map((item) => item?.like?.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',

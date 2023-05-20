@@ -13,6 +13,7 @@ function SelectPositionPage() {
     const [idState, setId] = useState('');
     
     const [currentPositionIndex, setCurrentPositionIndex] = useState();
+    const [selectPosition, setSelectPosition] = useState();
 
     const handleClose = () => setShow(false);
 
@@ -20,10 +21,10 @@ function SelectPositionPage() {
     const onClickGraphicHandle = (id, position) => {
         console.log(id)
         selectId = id
-        selectPosition = position
+        setSelectPosition(position)
         setShow(true)
     };
-    var selectPosition = 0
+    
     const [brand, setBrand] = useState(null)
     const navigate = useNavigate();
     const location = useLocation()

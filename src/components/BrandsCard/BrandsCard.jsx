@@ -139,7 +139,7 @@ function BrandsCard({ filter }) {
 
   useEffect(() => {
     const setup = () => {
-      UserAPI.getById(token._id).then((resUser) => {
+      UserAPI.getById(loginUser?._id).then((resUser) => {
         console.log(resUser)
         
         setLoginUser(resUser)

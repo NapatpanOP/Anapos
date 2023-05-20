@@ -21,11 +21,13 @@
 .position-img-list {
     width: 100%;
     display: flex;
+    row-gap: 2rem;
+    flex-flow: wrap;
     justify-content: center;
     column-gap: 5%;
-    row-gap: 10%;
+    /* row-gap: 10%; */
 }
 
 .position-img-list img {
-    max-height: 30vh;
+    max-height: 40vh;
 }

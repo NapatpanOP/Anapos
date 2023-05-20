@@ -106,6 +106,17 @@ const SelectGraphicsPositionPage = () => {
         }
     }
 
+    const renderImageList = () => {
+        if (brand) {
+            return brand.adsPositions[location.state.position].images_urls.map((img, index) => {
+                console.log(img)
+                return <img src={img.images_url} alt="" key={index}/> 
+            })
+        } else {
+            return
+        }
+    }
+
 
     return (
         <div className="position-container">
@@ -113,10 +124,10 @@ const SelectGraphicsPositionPage = () => {
             <div className="button-list-contain">
                 {renderButtonList()}
             </div>
+            <hr />
+            <hr />
             <div className="position-img-list">
-                <img src="./src/assets/brand07.jpg" alt="" />
-                <img src="./src/assets/brand07.jpg" alt="" />
-                <img src="./src/assets/brand07.jpg" alt="" />
+                {renderImageList()}
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
