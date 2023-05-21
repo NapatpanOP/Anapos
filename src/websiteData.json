@@ -1175,40 +1175,6 @@
                            }
                       ],
                       "selected_counts": 0
-                },
-                {
-                  "images_urls": [ 
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-1.jpg",
-                               "selected_counts": 0
-                           },
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-2.jpg",
-                               "selected_counts": 0
-                           },
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP8/ADGP8-3.jpg",
-                               "selected_counts": 0
-                           }
-                      ],
-                      "selected_counts": 0
-                },
-                {
-                  "images_urls": [ 
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-1.jpg",
-                               "selected_counts": 0
-                           },
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-2.jpg",
-                               "selected_counts": 0
-                           },
-                           { 
-                               "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP9/ADGP9-3.jpg",
-                               "selected_counts": 0
-                           }
-                      ],
-                      "selected_counts": 0
                 }
         ]
     }
