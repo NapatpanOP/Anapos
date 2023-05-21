@@ -35,7 +35,7 @@ function GraphPosition() {
   const renderrBoxContent = () => {
     if (mode == 'position') {
       return <div className="box-content">
-        <img src={youtubePosition} alt="position-photo" className="position-photo" />
+        <img src={brandData?.full_image} alt="position-photo" className="position-photo" />
 
         <div className="full-box">
           <div className="bar-chart">

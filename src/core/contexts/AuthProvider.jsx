@@ -28,6 +28,7 @@ const AuthProvider = ({ children }) => {
       localStorage.setItem(localTokenKey, JSON.stringify(response));
       setToken(response);
       const origin = location.state?.from?.pathname || '/';
+      console.log(location)
       navigate(origin);
     }
   };
