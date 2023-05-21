@@ -41,7 +41,7 @@ function GraphPosition() {
       <div class="box-content">
         <img src={youtubePosition} alt="position-photo" className="position-photo"/>
 
-        {/* <BarPositionYoutube/> */}
+        <BarPositionYoutube/>
         {/* <BarPositionViu/> */}
         {/* <BarPositionTrueID/> */}
         {/* <BarPositionJib/> */}
