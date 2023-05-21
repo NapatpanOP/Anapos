@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.add-status {
+  color: #26996b;
+}
+
 .sug-page {
   display: flex;
   flex-direction: column;
@@ -27,7 +31,7 @@ body {
   box-sizing: border-box;
 }
 
-.sug-form form {
+.sug-form #div-form {
   display: flex;
   flex-direction: column;
   align-items: center;

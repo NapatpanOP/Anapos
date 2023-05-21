@@ -9,7 +9,7 @@ import { Icon } from '@material-ui/core';
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Nevbar = () => {
-  const { token, AuthAction } = useAuthContext();
+  const { token, AuthAction, adminToken } = useAuthContext();
   const currentLocation = useLocation();
   var loginUser = token;
   // console.log(token)
@@ -50,7 +50,7 @@ const Nevbar = () => {
     } else {
       return <Dropdown
         open={open}
-        trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+        trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{adminToken.email.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
         menu={[
           <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
         ]}

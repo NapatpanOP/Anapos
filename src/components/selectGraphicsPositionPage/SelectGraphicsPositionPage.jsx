@@ -25,6 +25,8 @@ const SelectGraphicsPositionPage = () => {
     const [currentPositionIndex, setCurrentPositionIndex] = useState();
     const [currentGraphicIndex, setCurrentGraphicIndex] = useState();
 
+    const [comment, setNote] = useState('');
+
     useEffect(() => {
         const setup = () => {
             console.log(location.state)
@@ -69,11 +71,19 @@ const SelectGraphicsPositionPage = () => {
             positionIndex: location.state.position,
             graphicIndex: selectedGraphicIndex,
             currentPositionIndex: currentPositionIndex,
-            currentGraphicIndex: currentGraphicIndex
+            currentGraphicIndex: currentGraphicIndex,
+            comment: {
+                user_id: token._id,
+                comment: comment
+            }
         }).then((res) => {
             var requestUser = token
             UserAPI.selectPosition({
                 id: token._id,
+                comment: {
+                    brand_id: brand._id,
+                    comment: comment
+                },
                 ads_poitions_selected: {
                     brand_id: res._id,
                     brand_title: res.title,
@@ -99,7 +109,7 @@ const SelectGraphicsPositionPage = () => {
     const renderButtonList = () => {
         if (brand) {
             return brand.adsPositions[location.state.position].images_urls.map((img, index) => {
-                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index ? "btn-dark" : "btn-outline-dark"}`}>GRAPHIC {index + 1}</button>
+                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>GRAPHIC {index + 1}</button>
             })
         } else {
             return
@@ -117,7 +127,7 @@ const SelectGraphicsPositionPage = () => {
         }
     }
 
-    const [comment, setNote] = useState('');
+    
 
     const handleNoteChange = (event) => {
         setNote(event.target.value);

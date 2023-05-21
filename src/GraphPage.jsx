@@ -68,13 +68,13 @@ function PageGraph() {
       case 'overview':
         return <BarAllLike data={brands} />
       case 'type':
-        return <>
+        return <div className="filter-type">
           <BarTypePortalLike data={brands} />
 
           <BarTypeNewLike data={brands} />
 
           <BarTypeBusinessLike data={brands} />
-        </>
+        </div>
       case 'sex':
         return <>
           <BarMaleLike data={brands} allUser={allUser} />

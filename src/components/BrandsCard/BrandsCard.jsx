@@ -167,6 +167,7 @@ function BrandsCard({ filter }) {
     const userBrandSelected = loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === filteredCards[index]._id);
     BrandAPI.addBrandPositionCount({
       id: filteredCards[index]._id,
+      user_id: token._id,
       isUnselect: true,
       currentPositionIndex: userBrandSelected?.ad_index_position ?? null,
       currentGraphicIndex: userBrandSelected?.ad_index_graphic ?? null
@@ -176,6 +177,7 @@ function BrandsCard({ filter }) {
       setData([...m])
       UserAPI.selectPosition({
           id: token._id,
+          brand_id: filteredCards[index]._id,
           isUnselect: true,
           ads_poitions_selected: {
               brand_id: res._id,

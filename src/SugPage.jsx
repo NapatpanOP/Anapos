@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import './SugPage.css';
+import { SuggestionAPI } from './apis/suggestion/SuggestionAPI';
+import { useAuthContext } from './core/contexts/AuthProvider';
 // import { database } from './firebase';
 
 function SugPage() {
+const { token } = useAuthContext()
 
   const [websiteName, setWebsiteName] = useState('');
   const [websiteType, setWebsiteType] = useState('');
   const [note, setNote] = useState('');
   const [websiteUrl, setWebsiteUrl] = useState('');
+  const [addStatus, setAddStatus] = useState()
 
   const handleNameChange = (event) => {
     setWebsiteName(event.target.value);
@@ -45,10 +49,30 @@ function SugPage() {
     setWebsiteUrl('');
   };
 
+  const addSuggestion = async ()  => {
+    setAddStatus(null)
+    const response = await SuggestionAPI.add({
+      user_id: token._id,
+      web_title: websiteName,
+      type_of_web: websiteType,
+      description: note,
+      url_of_web:  websiteUrl
+    })
+    setAddStatus('success')
+
+  }
+
+  const renderAddStatus = () => {
+    if(addStatus != null) {
+      return <div className='add-status'>{addStatus}</div>
+    }
+  }
+
   return (
     <div className="sug-page">
       <div className="sug-form">
-        <form onSubmit={handleSubmit}>
+        
+        <div id='div-form'>
           <div className="sug-header">
             <h>SUGGESTION</h>
           </div>
@@ -77,8 +101,9 @@ function SugPage() {
             <input className="url-form" type="url" id="website-url" value={websiteUrl} onChange={handleUrlChange} required />
           </div>
 
-          <button type="submit-sug" class='submit-sug'>CONFIRM</button>
-        </form>
+          {renderAddStatus()}
+          <button type="submit-sug" class='submit-sug' onClick={() => addSuggestion()}>CONFIRM</button>
+        </div>
       </div>
     </div>
   );
