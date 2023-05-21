@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.graph-all-position {
+  width: 50%;
+}
+
 .main-logo {
   top: 10px;
   position: relative;

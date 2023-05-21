@@ -11,7 +11,7 @@ import BarTypeNewLike from "./components/BarChart/BarTypeNewLike";
 import BarTypeBusinessLike from "./components/BarChart/BarTypeBusinessLike";
 import { BrandAPI } from "./apis/brandAPI";
 import { UserAPI } from "./apis/userAPI";
-import { data } from'./components/data.json'
+// import { data } from'./components/data.json'
 import { Link } from 'react-router-dom';
 import { Container } from "@material-ui/core";
 
@@ -20,11 +20,13 @@ function PageGraph() {
   const navigate = useNavigate();
   const [allUser, setAllUser] = useState([])
   const [brands, setBrands] = useState([])
+
   if (!token) {
     navigate("/login");
   }
 
-  const [viewGraph, setGraph] = useState("");
+  const [viewGraph, setGraph] = useState("overview");
+  const [mode, setMode] = useState("specific")
 
   useEffect(() => {
     const setup = () => {
@@ -40,61 +42,89 @@ function PageGraph() {
     setup()
   }, [])
 
-  return (
-    <div>
-      <p className="text-head">Graph</p>
+  const onSelectBrandHandle = (brand) => {
+    navigate("/graphposition", { state: { brand: brand } })
+  }
 
-      <div class="bt-graph">
-        <button type="button" className="btn btn-outline-dark ">
-          SPECIFIC
-        </button>
-        <button type="button" className="btn btn-outline-dark">
-          OVERVIEW
-        </button>
-      </div>
-
-      <div className="graphPage">
+  const renderFilterOverview = () => {
+    if (mode == 'overview') {
+      return <div className="graphPage">
         <select
           id="viewGraph"
           value={viewGraph}
           onChange={(e) => setGraph(e.target.value)}
         >
-          <option value="overview">OVERVIEW</option>
-          <option value="type">TYPE</option>
-          <option value="sex">SEX</option>
+          <option key={"overview"} value="overview">OVERVIEW</option>
+          <option key={"type"} value="type">TYPE</option>
+          <option key={"sex"} value="sex">SEX</option>
         </select>
       </div>
 
-    {/* Specific */}
-      <div class="card-graph">
+    }
+  }
+
+  const renderOverviewGraph = () => {
+    switch (viewGraph) {
+      case 'overview':
+        return <BarAllLike data={brands} />
+      case 'type':
+        return <>
+          <BarTypePortalLike data={brands} />
+
+          <BarTypeNewLike data={brands} />
+
+          <BarTypeBusinessLike data={brands} />
+        </>
+      case 'sex':
+        return <>
+          <BarMaleLike data={brands} allUser={allUser} />
+
+          <BarFemaleLike data={brands} allUser={allUser} />
+
+          <BarOtherLike data={brands} allUser={allUser} />
+        </>
+      default:
+        break;
+    }
+  }
+
+  const renderPageContent = () => {
+    switch (mode) {
+      case 'specific':
+        return <div class="card-graph">
         <div class="card-grid">
-          {data.map((item) => (
-            <div class="card-container-graph">
-              <Link to={`/graphposition`} className="card">
-                <div className="product-card">
-                  <img src={item.image} alt={item.name} />
-                </div>
-              </Link>
+          {brands.map((item, index) => (
+            <div class="card-container-graph" key={index}>
+              <div onClick={() => onSelectBrandHandle(item)} className="product-card">
+                <img src={item.image} alt={item.name} />
+              </div>
             </div>
           ))}
         </div>
       </div>
+      case 'overview':
+        return renderOverviewGraph()
+      default:
+        break;
+    }
+  }
 
+  return (
+    <div>
+      <p className="text-head">Graph</p>
 
-      {/* กราฟ Overview */}
-      <BarAllLike data={brands}/>
+      <div class="bt-graph">
+        <button type="button" onClick={() => setMode('specific')} className={`btn ${mode == 'specific' ? 'btn-dark' : 'btn-outline-dark'}`}>
+          SPECIFIC
+        </button>
+        <button type="button" onClick={() => setMode('overview')} className={`btn ${mode == 'overview' ? 'btn-dark' : 'btn-outline-dark'}`}>
+          OVERVIEW
+        </button>
+      </div>
 
-      <BarTypePortalLike  data={brands}/>
+      {renderFilterOverview()}
 
-      <BarTypeNewLike data={brands} />
-
-      <BarTypeBusinessLike data={brands}/>
-
-      <BarMaleLike data={brands} allUser={allUser} />
-
-      <BarFemaleLike data={brands} allUser={allUser}/>
-
-      <BarOtherLike data={brands} allUser={allUser}/>
+      {renderPageContent()}
     </div>
   );
 }
