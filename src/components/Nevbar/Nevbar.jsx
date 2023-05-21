@@ -98,7 +98,7 @@ const Nevbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/src/assets/Logo.png" alt="Logo" />
+        <img src="/assets/Logo.png" alt="Logo" />
       </div>
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul >
