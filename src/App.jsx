@@ -16,7 +16,7 @@ import AdminSignin from "./admin/AdminSignin/AdminSignin"
 import AdminSignup from "./admin/AdminSignup/AdminSignup"
 import ConclusionPage from "./admin/Conclusion/ConclusionPage"
 import ProtectedAdminRoute from "./core/helpers/routers/ProtectedAdminRoute"
-import AdminGraphPage from "./admin/GraphPage/AdminGraphPage"
+import AdminUserDataPage from "./admin/GraphPage/AdminUserDataPage"
 import AdminSuggestionPage from "./admin/Suggestion/AdminSuggestionPage"
 
 function App() {
@@ -49,9 +49,9 @@ function App() {
           <ProtectedAdminRoute>
             <ConclusionPage />
           </ProtectedAdminRoute>}/>
-        <Route path="/admin-graph" element={
+        <Route path="/admin-userdata" element={
           <ProtectedAdminRoute>
-            <AdminGraphPage />
+            <AdminUserDataPage />
           </ProtectedAdminRoute>}/>
         <Route path="/admin-suggestion" element={
           <ProtectedAdminRoute>

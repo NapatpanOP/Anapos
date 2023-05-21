@@ -1,4 +1,5 @@
 .position-container {
+    position: relative;
     width: 100vw;
     min-height: 95vh;
     display: flex;
@@ -16,9 +17,11 @@
     display: flex;
     column-gap: 3%;
     justify-content: center;
+    margin: 2rem;
 }
 
 .position-img-list {
+    position: relative;
     width: 100%;
     display: flex;
     row-gap: 2rem;
@@ -30,4 +33,38 @@
 
 .position-img-list img {
     max-height: 40vh;
+    position: relative;
+    width: auto;
+}
+
+.comment-form {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.comment-banner {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.comment-banner label {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .position-img-list img {
+        max-width: 350px;
+    }
+
+    .image-banner {
+        max-width: 320px;
+    }
+
+    .comment-form {
+        width: 50%;
+    }
 }

@@ -117,17 +117,26 @@ const SelectGraphicsPositionPage = () => {
         }
     }
 
+    const [comment, setNote] = useState('');
+
+    const handleNoteChange = (event) => {
+        setNote(event.target.value);
+    };
 
     return (
         <div className="position-container">
             <img className="image-banner" src={brand?.image} alt={brand?.title} />
-            <div className="button-list-contain">
-                {renderButtonList()}
-            </div>
-            <hr />
-            <hr />
+            {/* <hr />
+            <hr /> */}
             <div className="position-img-list">
                 {renderImageList()}
+            </div>
+            <div className="comment-banner">
+                <label htmlFor="comment">Reasons to choose this graphic?</label>
+                <textarea className="comment-form" id="comment" value={comment} onChange={handleNoteChange}></textarea>
+            </div>
+            <div className="button-list-contain">
+                {renderButtonList()}
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -148,27 +157,3 @@ const SelectGraphicsPositionPage = () => {
 }
 
 export default SelectGraphicsPositionPage;
-
-// {
-//     "title": "Card 5",
-//     "image": "brand05.jpg",
-//     "full_image": "",
-//     "like": [],
-//     "type": "New",
-//     "link": "/dailynewspage",
-//     "adsPositions": [
-//         {
-//           "selected_counts": 0,
-//           "images_urls": [
-//               {
-//                   "selected_counts": 0,
-//                   "images_url": ""
-//               },
-//               {
-//                   "selected_counts": 0,
-//                   "images_url": ""
-//               }
-//           ]
-//       }
-//     ]
-//   }

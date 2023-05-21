@@ -27,7 +27,7 @@ const Nevbar = () => {
 
   const adminPathList = [
     '/conclusion',
-    '/admin-graph',
+    '/admin-userdata',
     '/admin-suggestion'
   ]
 

@@ -79,11 +79,11 @@ function SelectPositionPage() {
                 <p>VARIOUS POSITIONS</p>
             </div>
 
+            <img src={brand?.full_image ?? ''} alt="position" className="position" />
+
             <div className="bt-position">
                 {renderButtonList()}
             </div>
-
-            <img src={brand?.full_image ?? ''} alt="position" className="position" />
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
