@@ -107,7 +107,7 @@ function BrandsCard({ filter }) {
 
   const renderWarning = () => {
     if (!token) {
-      return <div class="warning-banner" >
+      return <div className="warning-banner" >
         please login for vote  your favorite ads
       </div>
     }
@@ -139,17 +139,21 @@ function BrandsCard({ filter }) {
 
   useEffect(() => {
     const setup = () => {
-      UserAPI.getById(loginUser?._id).then((resUser) => {
-        console.log(resUser)
-        
-        setLoginUser(resUser)
-      })
+      if(token) {
+        UserAPI.getById(loginUser?._id).then((resUser) => {
+          console.log(resUser)
+          
+          setLoginUser(resUser)
+        })
+      } else {
+        setLoginUser(token)
+      }
     }
 
     setup()
     refreshAllBrands()
     refreshUserBrandsLike()
-  }, [])
+  }, [token])
 
   const renderVoteBanner = (id) => {
     if(loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === id)) {
@@ -188,7 +192,7 @@ function BrandsCard({ filter }) {
       {renderWarning()}
       <div className="card-container">
         {filteredCards.map((card, index) => (
-          <div className="card-item" key={card._id} >
+          <div className="card-item" key={card._id} style={{"pointerEvents": token != null ? "auto" : "none"}}>
             <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
               <img src={card.image} alt={card.title} />
               <p>Website Type: {card.type}</p>

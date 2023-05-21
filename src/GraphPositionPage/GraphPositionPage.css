@@ -4,6 +4,21 @@ body {
   padding: 0;
 }
 
+.box-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 5% 0 5%;
+}
+
+.left-contain {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
 .graph-all-position {
   width: 50%;
 }

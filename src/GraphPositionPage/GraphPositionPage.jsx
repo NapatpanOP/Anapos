@@ -34,22 +34,25 @@ function GraphPosition() {
 
   const renderrBoxContent = () => {
     if (mode == 'position') {
-      return <div class="box-content">
+      return <div className="box-content">
         <img src={youtubePosition} alt="position-photo" className="position-photo" />
 
-        <div class="full-box">
-          <div class="bar-chart">
+        <div className="full-box">
+          <div className="bar-chart">
             <BarChart chartData={chartData} />
           </div>
         </div>
 
       </div>
     } else {
-      console.log(brandData)
-      console.log(pageGraph)
-      return <div className="box-content">
-        <div class="full-box">
-          <div class="bar-chart">
+      return <div className="box-contain">
+        <div className="left-contain">
+          { brandData?.adsPositions[pageGraph]?.images_urls.map((image, index) => {
+            return <img key={index} src={image.images_url} alt="position-photo" className="position-photo" />
+          })}
+        </div>
+        <div className="full-box">
+          <div className="bar-chart">
             <BarChart chartData={{
               labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `GRAPHIC ${index + 1}`),
               datasets: [{
@@ -103,7 +106,7 @@ function GraphPosition() {
   return (
     <div>
       <img src={brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
-      <div class="bt-graph">
+      <div className="bt-graph">
         <button type="button" onClick={() => setMode('position')} className={`btn ${mode == 'position' ? 'btn-dark' : 'btn-outline-dark'}`}>
           POSITION
         </button>

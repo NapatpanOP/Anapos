@@ -91,10 +91,10 @@ function PageGraph() {
   const renderPageContent = () => {
     switch (mode) {
       case 'specific':
-        return <div class="card-graph">
-        <div class="card-grid">
+        return <div className="card-graph">
+        <div className="card-grid">
           {brands.map((item, index) => (
-            <div class="card-container-graph" key={index}>
+            <div className="card-container-graph" key={index}>
               <div onClick={() => onSelectBrandHandle(item)} className="product-card">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -113,7 +113,7 @@ function PageGraph() {
     <div>
       <p className="text-head">Graph</p>
 
-      <div class="bt-graph">
+      <div className="bt-graph">
         <button type="button" onClick={() => setMode('specific')} className={`btn ${mode == 'specific' ? 'btn-dark' : 'btn-outline-dark'}`}>
           SPECIFIC
         </button>

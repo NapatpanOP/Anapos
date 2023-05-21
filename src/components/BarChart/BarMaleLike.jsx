@@ -59,8 +59,8 @@ function BarMaleLike({ data, allUser }) {
   }, [allUser, data])
 
   return (
-    <div class="full-box">
-      <div class="bar-chart">
+    <div className="full-box">
+      <div className="bar-chart">
         <BarChart chartData={userData} />
       </div>
     </div>
