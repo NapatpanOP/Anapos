@@ -30,13 +30,22 @@ function App() {
     <AuthProvider className="App">
       {renderNav()}
       <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/typesweb" element={<TypesWebPage />}/>
+        <Route path="/" element={
+          <ProtectedRoute> 
+            <HomePage />
+          </ProtectedRoute>}/>
+        <Route path="/typesweb" element={
+          <ProtectedRoute> 
+            <TypesWebPage />
+          </ProtectedRoute>}/>
         <Route path="/graph" element={
           <ProtectedRoute> 
             <GraphPage />
           </ProtectedRoute>}/>
-        <Route path="/suggestion" element={<SugPage />}/>
+        <Route path="/suggestion" element={
+        <ProtectedRoute>
+          <SugPage />
+        </ProtectedRoute>}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
         <Route path="/select-graphics-position" element={<SelectGraphicsPositionPage /> }/>

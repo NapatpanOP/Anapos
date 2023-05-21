@@ -5,13 +5,14 @@ import './Nevbar.css'
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
-import { colors } from '@material-ui/core';
+import { Icon } from '@material-ui/core';
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Nevbar = () => {
   const { token, AuthAction } = useAuthContext();
   const currentLocation = useLocation();
   var loginUser = token;
-  console.log(token)
+  // console.log(token)
   const state = { clicked: false }
 
   const handleClick = () => {
@@ -30,7 +31,7 @@ const Nevbar = () => {
     '/admin-userdata',
     '/admin-suggestion'
   ]
-
+  
   const renderButton = () => {
     if (mode == 'user') {
       if (!token) {
@@ -38,10 +39,22 @@ const Nevbar = () => {
           <Button id='bt-login'>Log in</Button>
         </Link>
       } else {
-        return <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
+        return <Dropdown
+          open={open}
+          trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+          menu={[
+            <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
+          ]}
+        />
       }
     } else {
-      return <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
+      return <Dropdown
+        open={open}
+        trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+        menu={[
+          <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
+        ]}
+      />
     }
   }
   const { pathname } = useLocation();
@@ -50,6 +63,37 @@ const Nevbar = () => {
   useEffect(() => {
     setMode((adminPathList.indexOf(currentLocation.pathname) == -1 ? 'user' : 'admin'))
   }, [currentLocation.pathname]);
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
+  const handleMenuOne = () => {
+    // do something
+    setOpen(false);
+  };
+
+  const handleMenuTwo = () => {
+    // do something
+    setOpen(false);
+  };
+
+  const Dropdown = ({ open, trigger, menu }) => {
+    return (
+      <div className="dropdown-login">
+        {trigger}
+        {open ? (
+          <ul className="menu">
+            {menu.map((menuItem, index) => (
+              <li key={index} className="menu-item">{menuItem}</li>
+            ))}
+          </ul>
+        ) : null}
+      </div>
+    );
+  };
 
   return (
     <nav className="navbar">
@@ -70,8 +114,10 @@ const Nevbar = () => {
           })}
 
         </ul>
-        {renderButton()}
+          {renderButton()}
+
       </div>
+
       <div className={`${isMenuOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}`} onClick={handleMenuToggle}>
         <span></span>
         <span></span>
