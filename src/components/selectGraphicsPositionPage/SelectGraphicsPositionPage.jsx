@@ -11,7 +11,7 @@ import { baseImageUrl } from "../../core/store/localVariable";
 // useReducer
 
 const SelectGraphicsPositionPage = () => {
-    const { token } = useAuthContext();
+    const { token, loadingAction } = useAuthContext();
     // const { id, position } = useParams();
     const navigate = useNavigate();
     const location = useLocation()
@@ -35,6 +35,7 @@ const SelectGraphicsPositionPage = () => {
                 setId(location.state.id)
                 setPosition(location.state.position)
                 console.log(location.state.id)
+                loadingAction.onLoading(true)
                 BrandAPI.getById(location.state.id).then((res) => {
                     console.log(res)
                     setBrand(res)
@@ -43,6 +44,7 @@ const SelectGraphicsPositionPage = () => {
                         console.log(userBrandSelected)
                         setCurrentPositionIndex(userBrandSelected?.ad_index_position ?? null)
                         setCurrentGraphicIndex(userBrandSelected?.ad_index_graphic ?? null)
+                        loadingAction.onLoading(false)
                     })
                 })
                 
@@ -67,6 +69,7 @@ const SelectGraphicsPositionPage = () => {
         // requestData.adsPositions[location.state.position].selected_counts += 1
         // requestData.adsPositions[location.state.position].images_urls[selectedGraphicIndex].selected_counts += 1
         setShow(false)
+        loadingAction.onLoading(true)
         BrandAPI.addBrandPositionCount({
             id: brand._id,
             positionIndex: location.state.position,
@@ -92,6 +95,7 @@ const SelectGraphicsPositionPage = () => {
                     ad_index_graphic: selectedGraphicIndex
                 }
             }).then(() => {
+                loadingAction.onLoading(false)
                 navigate('/')
             })
         })

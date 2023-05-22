@@ -18,6 +18,7 @@ import ConclusionPage from "./admin/Conclusion/ConclusionPage"
 import ProtectedAdminRoute from "./core/helpers/routers/ProtectedAdminRoute"
 import AdminUserDataPage from "./admin/GraphPage/AdminUserDataPage"
 import AdminSuggestionPage from "./admin/Suggestion/AdminSuggestionPage"
+import { useEffect, useState } from "react"
 
 function App() {
   const curLocation = useLocation();
@@ -26,6 +27,7 @@ function App() {
       return <Nevbar/>
     }
   }
+
   return (
     <AuthProvider className="App">
       {renderNav()}

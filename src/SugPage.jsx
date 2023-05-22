@@ -5,7 +5,7 @@ import { useAuthContext } from './core/contexts/AuthProvider';
 // import { database } from './firebase';
 
 function SugPage() {
-const { token } = useAuthContext()
+const { token, loadingAction } = useAuthContext()
 
   const [websiteName, setWebsiteName] = useState('');
   const [websiteType, setWebsiteType] = useState('');
@@ -51,13 +51,17 @@ const { token } = useAuthContext()
 
   const addSuggestion = async ()  => {
     setAddStatus(null)
-    const response = await SuggestionAPI.add({
+    loadingAction.onLoading(true)
+    await SuggestionAPI.add({
       user_id: token._id,
       web_title: websiteName,
       type_of_web: websiteType,
       description: note,
       url_of_web:  websiteUrl
+    }).then(() => {
+      loadingAction.onLoading(false)
     })
+    
     setAddStatus('success')
 
   }
@@ -74,7 +78,7 @@ const { token } = useAuthContext()
         
         <div id='div-form'>
           <div className="sug-header">
-            <h>SUGGESTION</h>
+            <h1>SUGGESTION</h1>
           </div>
           <div className="form-group">
             <label htmlFor="website-name">Website Name*:</label>
@@ -102,7 +106,7 @@ const { token } = useAuthContext()
           </div>
 
           {renderAddStatus()}
-          <button type="submit-sug" class='submit-sug' onClick={() => addSuggestion()}>CONFIRM</button>
+          <button type="submit-sug" className='submit-sug' onClick={() => addSuggestion()}>CONFIRM</button>
         </div>
       </div>
     </div>

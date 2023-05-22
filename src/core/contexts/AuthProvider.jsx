@@ -3,6 +3,7 @@ import { LoginAPI } from "../../apis/auth/loginAPI";
 import CryptoJS from "crypto-js";
 import { useNavigate, useLocation } from "react-router";
 import { SigninAPI } from "../../apis/admin/SigninAPI";
+import LoadingOverlay from "../components/loading/LoadingOverlay";
 
 const AuthContext = createContext({});
 const localTokenKey = 'token'
@@ -17,6 +18,8 @@ const AuthProvider = ({ children }) => {
 
   const localAdmin = JSON.parse(localStorage.getItem('adminToken')) ?? null
   const [adminToken, setAdminToken] = useState(localAdmin);
+
+  const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate();
   const location = useLocation()
@@ -57,6 +60,10 @@ const AuthProvider = ({ children }) => {
     navigate('/admin');
   };
 
+  const handleLoading = (loading) => {
+    setIsLoading(loading)
+  }
+
   const authStore = {
     token,
     adminToken,
@@ -66,11 +73,15 @@ const AuthProvider = ({ children }) => {
       onSetAdminSignin: setAdminSignin,
       onAdminLogout: handleAdminLogout,
       onSetUserSignin: setUserSignin
+    },
+    loadingAction: {
+      onLoading: handleLoading
     }
   };
 
   return (
     <AuthContext.Provider value={authStore}>
+      {isLoading && <LoadingOverlay />}
       {children}
     </AuthContext.Provider>
   );

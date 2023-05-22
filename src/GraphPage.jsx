@@ -10,14 +10,14 @@ import BarTypePortalLike from "./components/BarChart/BarTypePortalLike";
 import BarTypeNewLike from "./components/BarChart/BarTypeNewLike";
 import BarTypeBusinessLike from "./components/BarChart/BarTypeBusinessLike";
 import { BrandAPI } from "./apis/brandAPI";
-import { UserAPI } from "./apis/userAPI";
+import { UserAPI, testLoading } from "./apis/userAPI";
 // import { data } from'./components/data.json'
 import { Link } from 'react-router-dom';
 import { Container } from "@material-ui/core";
 import { baseImageUrl } from "./core/store/localVariable";
 
 function PageGraph() {
-  const { token } = useAuthContext();
+  const { token, loadingAction } = useAuthContext();
   const navigate = useNavigate();
   const [allUser, setAllUser] = useState([])
   const [brands, setBrands] = useState([])
@@ -31,13 +31,16 @@ function PageGraph() {
 
   useEffect(() => {
     const setup = () => {
+      loadingAction.onLoading(true)
       BrandAPI.getAll().then((res) => {
         console.log(res)
         setBrands(res)
         UserAPI.getAll().then((resUser) => {
           setAllUser(resUser)
+          loadingAction.onLoading(false)
         })
       })
+      
     }
 
     setup()

@@ -1,6 +1,13 @@
+import { useAuthContext } from '../core/contexts/AuthProvider'
 import { api } from './configs/axiosConfig'
 import { defineCancelApiObject } from "./configs/axiosUtils"
 
+export const testLoading = () => {
+  const { loadingAction } = useAuthContext()
+  const load = () => {
+    loadingAction.onLoading(true)
+  }
+}
 export const UserAPI = {
   getAll: async function () {
     try {

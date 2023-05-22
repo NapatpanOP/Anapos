@@ -131,9 +131,25 @@
   cursor: pointer;
 }
 
+.mobile-btn {
+  display: none !important;
+}
+
+.web-btn {
+  /* display: flex !important; */
+}
+
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;
+  }
+
+  .mobile-btn {
+    display: block !important;
+  }
+
+  .web-btn {
+    display: none !important;
   }
 
   .navbar-menu ul li {

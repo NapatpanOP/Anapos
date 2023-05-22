@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router';
 import { baseImageUrl } from '../../core/store/localVariable';
 
 function BrandsCard({ filter }) {
-  const { token } = useAuthContext();
+  const { token, loadingAction } = useAuthContext();
   const navigate = useNavigate();
 
   console.log('init brands card')
@@ -22,16 +22,20 @@ function BrandsCard({ filter }) {
 
   const refreshUserBrandsLike = () => {
     if (!token) { return }
+    loadingAction.onLoading(true)
     UserAPI.getUserLike({ id: loginUser._id }).then((res) => {
       console.log(res)
       setUserLike(res)
+      loadingAction.onLoading(false)
     })
   }
 
   console.log('user like ', userLike)
   const refreshAllBrands = () => {
+    loadingAction.onLoading(true)
     BrandAPI.getAll().then((v) => {
       setData(v)
+      loadingAction.onLoading(false)
     })
   }
   // const data = BrandAPI.getAll() ?? [];
@@ -44,19 +48,23 @@ function BrandsCard({ filter }) {
       userLike.push(item._id)
       updateUser.brands_like = userLike
       console.log(updateUser)
+      loadingAction.onLoading(true)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
         setLoginUser(res)
         userLike = res.brands_like
         localStorage.setItem('token', JSON.stringify(loginUser))
+        loadingAction.onLoading(false)
       })
       console.log(loginUser._id)
       item.like.push(loginUser._id)
       console.log(item)
+      loadingAction.onLoading(true)
       BrandAPI.updateLike(item).then((res) => {
         var m = filteredCards
         m[index] = res
         setData([...m])
+        loadingAction.onLoading(false)
       })
 
       // setLikes(likes.filter((id) => id !== itemId));
@@ -68,11 +76,13 @@ function BrandsCard({ filter }) {
       }
       updateUser.brands_like = userLike
       console.log(updateUser)
+      loadingAction.onLoading(true)
       UserAPI.updateBrandsLike(updateUser).then((res) => {
         console.log(res)
         setLoginUser(res)
         userLike = res.brands_like
         localStorage.setItem('token', JSON.stringify(loginUser))
+        loadingAction.onLoading(false)
       })
       console.log(loginUser._id)
       // item.like.push(loginUser._id)
@@ -81,10 +91,12 @@ function BrandsCard({ filter }) {
         item.like.splice(targetBIndex, 1); // 2nd parameter means remove one item only
       }
       console.log(item)
+      loadingAction.onLoading(true)
       BrandAPI.updateLike(item).then((res) => {
         var m = filteredCards
         m[index] = res
         setData([...m])
+        loadingAction.onLoading(false)
       })
     }
     // else {
@@ -141,10 +153,12 @@ function BrandsCard({ filter }) {
   useEffect(() => {
     const setup = () => {
       if(token) {
+        loadingAction.onLoading(true)
         UserAPI.getById(loginUser?._id).then((resUser) => {
           console.log(resUser)
           
           setLoginUser(resUser)
+          loadingAction.onLoading(false)
         })
       } else {
         setLoginUser(token)
@@ -166,6 +180,7 @@ function BrandsCard({ filter }) {
 
   const cancelVoteHandle = (index) => {
     const userBrandSelected = loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === filteredCards[index]._id);
+    loadingAction.onLoading(true)
     BrandAPI.addBrandPositionCount({
       id: filteredCards[index]._id,
       user_id: token._id,
@@ -184,6 +199,7 @@ function BrandsCard({ filter }) {
               brand_id: res._id,
           }
       }).then((resUser) => {
+        loadingAction.onLoading(false)
         setLoginUser(resUser)
       })
   })

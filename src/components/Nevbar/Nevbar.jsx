@@ -32,7 +32,7 @@ const Nevbar = () => {
     '/admin-userdata',
     '/admin-suggestion'
   ]
-  
+
   const renderButton = () => {
     if (mode == 'user') {
       if (!token) {
@@ -40,22 +40,22 @@ const Nevbar = () => {
           <Button id='bt-login'>Log in</Button>
         </Link>
       } else {
-        return <Dropdown
+        return <><Dropdown
           open={open}
-          trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+          trigger={<button onClick={handleOpen} className='web-btn'><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
           menu={[
             <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
           ]}
-        />
+        /> <Button className='mobile-btn' onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button></>
       }
     } else {
-      return <Dropdown
-        open={open}
-        trigger={<button onClick={handleOpen}><div className='circle-icon'><strong>{adminToken.email.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
-        menu={[
-          <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
-        ]}
-      />
+        return <><Dropdown
+          open={open}
+          trigger={<button className='web-btn' onClick={handleOpen}><div className='circle-icon'><strong>{adminToken.email.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+          menu={[
+            <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
+          ]}
+        /><Button className='mobile-btn' onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button></>
     }
   }
   const { pathname } = useLocation();
@@ -115,7 +115,7 @@ const Nevbar = () => {
           })}
 
         </ul>
-          {renderButton()}
+        {renderButton()}
 
       </div>
 

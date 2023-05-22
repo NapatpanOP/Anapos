@@ -9,7 +9,7 @@ import { useAuthContext } from '../core/contexts/AuthProvider';
 import { baseImageUrl } from '../core/store/localVariable';
 
 function SelectPositionPage() {
-    const { token } = useAuthContext()
+    const { token, loadingAction } = useAuthContext()
     const [show, setShow] = useState(false);
     const [idState, setId] = useState('');
     
@@ -42,6 +42,7 @@ function SelectPositionPage() {
             console.log(location.state)
             if (location.state) {
                 setId(location.state.id)
+                loadingAction.onLoading(true)
                 BrandAPI.getById(location.state.id).then((res) => {
                     console.log(res)
                     setBrand(res)
@@ -49,6 +50,7 @@ function SelectPositionPage() {
                         const userBrandSelected = resUser.ads_poitions_selected.find(({ brand_id }) => brand_id === res._id);
                         console.log(userBrandSelected)
                         setCurrentPositionIndex(userBrandSelected?.ad_index_position ?? null)
+                        loadingAction.onLoading(false)
                     })
                 })
                 
