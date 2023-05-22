@@ -6,6 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { UserAPI } from "../../apis/userAPI";
 import { useAuthContext } from "../../core/contexts/AuthProvider";
+import { baseImageUrl } from "../../core/store/localVariable";
 
 // useReducer
 
@@ -120,7 +121,7 @@ const SelectGraphicsPositionPage = () => {
         if (brand) {
             return brand.adsPositions[location.state.position].images_urls.map((img, index) => {
                 console.log(img)
-                return <img src={img.images_url} alt="" key={index}/> 
+                return <img src={baseImageUrl+img.images_url} alt="" key={index}/> 
             })
         } else {
             return
@@ -135,7 +136,7 @@ const SelectGraphicsPositionPage = () => {
 
     return (
         <div className="position-container">
-            <img className="image-banner" src={brand?.image} alt={brand?.title} />
+            <img className="image-banner" src={baseImageUrl+brand?.image} alt={brand?.title} />
             {/* <hr />
             <hr /> */}
             <div className="position-img-list">

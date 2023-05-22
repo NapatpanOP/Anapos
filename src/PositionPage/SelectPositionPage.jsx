@@ -6,6 +6,7 @@ import { BrandAPI } from '../apis/brandAPI';
 import './SelectPositionPage.css'
 import { UserAPI } from '../apis/userAPI';
 import { useAuthContext } from '../core/contexts/AuthProvider';
+import { baseImageUrl } from '../core/store/localVariable';
 
 function SelectPositionPage() {
     const { token } = useAuthContext()
@@ -73,13 +74,13 @@ function SelectPositionPage() {
     
     return (
         <div>
-            <img src={brand?.logo_brand} alt="logo" className="main-logo" />
+            <img src={ baseImageUrl + brand?.logo_brand} alt="logo" className="main-logo" />
 
             <div className="headtext">
                 <p>VARIOUS POSITIONS</p>
             </div>
 
-            <img src={brand?.full_image ?? ''} alt="position" className="position" />
+            <img src={ baseImageUrl + brand?.full_image ?? ''} alt="position" className="position" />
 
             <div className="bt-position">
                 {renderButtonList()}

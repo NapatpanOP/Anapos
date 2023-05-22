@@ -9,6 +9,7 @@ import BarPositionJib from "../components/BarChart/GraphJib/BarPositionJib";
 import BarGraphicsBanner from "../components/BarChart/BarChartGraphicsBanner/BarGraphicsBanner";
 import BarChart from "../components/BarChart/BarChart";
 import { useLocation } from "react-router";
+import { baseImageUrl } from "../core/store/localVariable";
 
 function GraphPosition() {
 
@@ -35,7 +36,7 @@ function GraphPosition() {
   const renderrBoxContent = () => {
     if (mode == 'position') {
       return <div className="box-content">
-        <img src={brandData?.full_image} alt="position-photo" className="position-photo" />
+        <img src={baseImageUrl+brandData?.full_image} alt="position-photo" className="position-photo" />
 
         <div className="full-box">
           <div className="bar-chart">
@@ -48,7 +49,7 @@ function GraphPosition() {
       return <div className="box-contain">
         <div className="left-contain">
           { brandData?.adsPositions[pageGraph]?.images_urls.map((image, index) => {
-            return <img key={index} src={image.images_url} alt="position-photo" className="position-photo" />
+            return <img key={index} src={baseImageUrl+image.images_url} alt="position-photo" className="position-photo" />
           })}
         </div>
         <div className="full-box">
@@ -105,7 +106,7 @@ function GraphPosition() {
 
   return (
     <div>
-      <img src={brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
+      <img src={baseImageUrl+brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
       <div className="bt-graph">
         <button type="button" onClick={() => setMode('position')} className={`btn ${mode == 'position' ? 'btn-dark' : 'btn-outline-dark'}`}>
           POSITION

@@ -14,6 +14,7 @@ import { UserAPI } from "./apis/userAPI";
 // import { data } from'./components/data.json'
 import { Link } from 'react-router-dom';
 import { Container } from "@material-ui/core";
+import { baseImageUrl } from "./core/store/localVariable";
 
 function PageGraph() {
   const { token } = useAuthContext();
@@ -96,7 +97,7 @@ function PageGraph() {
           {brands.map((item, index) => (
             <div className="card-container-graph" key={index}>
               <div onClick={() => onSelectBrandHandle(item)} className="product-card">
-                <img src={item.image} alt={item.name} />
+                <img src={baseImageUrl+item.image} alt={item.name} />
               </div>
             </div>
           ))}

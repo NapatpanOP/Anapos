@@ -7,6 +7,7 @@ import { UserAPI } from '../../apis/userAPI';
 import './BrandsCard.css';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
 import { useNavigate } from 'react-router';
+import { baseImageUrl } from '../../core/store/localVariable';
 
 function BrandsCard({ filter }) {
   const { token } = useAuthContext();
@@ -196,7 +197,7 @@ function BrandsCard({ filter }) {
         {filteredCards.map((card, index) => (
           <div className="card-item" key={card._id} style={{"pointerEvents": token != null ? "auto" : "none"}}>
             <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
-              <img src={card.image} alt={card.title} />
+              <img src={baseImageUrl + card.image} alt={card.title} />
               <p>Website Type: {card.type}</p>
             </div>
             <div className="card-content">

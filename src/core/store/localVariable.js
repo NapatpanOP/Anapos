@@ -1,0 +1,1 @@
+export const baseImageUrl = "https://okioki-service.onrender.com/images"
