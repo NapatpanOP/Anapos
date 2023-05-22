@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
 import { Icon } from '@material-ui/core';
 import { BsThreeDotsVertical } from "react-icons/bs";
+import logo from '../../assets/Logo.png'
 
 const Nevbar = () => {
   const { token, AuthAction, adminToken } = useAuthContext();
@@ -98,7 +99,7 @@ const Nevbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/assets/Logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul >

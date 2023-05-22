@@ -18,12 +18,9 @@ function HomePage() {
       </div>
         
         <div className="head-web">
-          <p>WEBSITE</p> 
+          <p>About the website</p> 
         </div>
         
-        <div className="brands-list-home">
-          <BrandsCard/>
-        </div>
     </div>
     
   );

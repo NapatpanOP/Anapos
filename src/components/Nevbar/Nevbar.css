@@ -157,10 +157,12 @@
     background-color: #F8F8F8;
     padding: 10px;
   }
+
   .open ul {
     display: flex;
     flex-direction: column;
   }
+
 }
 
 #bt-logout {
@@ -182,4 +184,8 @@
   background-color: rgb(201, 26, 26);
   border: none;
   color: #fff;
+}
+
+.dropdown-login button {
+  background-color: #F8F8F8;
 }
