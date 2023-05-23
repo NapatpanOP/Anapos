@@ -11,7 +11,7 @@ const AdminSignup = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const { AuthAction } = useAuthContext();
+  const { AuthAction, loadingAction } = useAuthContext();
 
   const navigate = useNavigate();
 
@@ -36,8 +36,10 @@ const AdminSignup = () => {
   };
 
   const signup = (admin) => {
+    loadingAction.onLoading(true)
     admin.password = CryptoJS.AES.encrypt(admin.password, 'OKIOKI007').toString();
     SignupAPI.signup(admin).then((response) => {
+      loadingAction.onLoading(false)
         if(response?.message) {
             setErrorMessage(response.message)
         } else {
@@ -52,7 +54,7 @@ const AdminSignup = () => {
   return (
     <div className="register-container">
       <div className="register-form-container">
-        <form onSubmit={handleSubmit}>
+        <div>
           <h2>SIGN UP FOR ACCESS</h2>
           <div className="form-group">
             <label htmlFor="email">EMAIL*</label>
@@ -88,7 +90,7 @@ const AdminSignup = () => {
               </Link>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   )

@@ -22,6 +22,7 @@ export const LoginAPI = {
     console.log(user)
     try {
       const response = await api.post('/login', user)
+      console.log(response)
       return response.data
     } catch (err) {
       return err

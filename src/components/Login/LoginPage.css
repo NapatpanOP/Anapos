@@ -25,7 +25,7 @@ body {
   height: 100vh;
 }
 
-.login-container form {
+.login-container>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,9 @@ body {
 .login-form  {
   width: 80%;
   margin: auto;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-form h2 {
@@ -102,7 +105,7 @@ input[type="password"]:focus {
     min-height: 100vh;
   }
 
-  .login-container form {
+  .login-container >div {
     min-width: 600px;
   }
   .signup-container {
@@ -113,7 +116,7 @@ input[type="password"]:focus {
 
 /* apply styles for smaller screens */
 @media screen and (max-width: 767px) {
-  .login-container form {
+  .login-container >div {
     min-width: 80%;
   }
 }

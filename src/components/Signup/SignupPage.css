@@ -17,7 +17,7 @@ body {
   height: 100vh;
 }
 
-.register-form-container form {
+.register-form-container>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@ body {
   min-width: 500px;
 }
 
-.register-form-container {
+.register-form-container>div {
   margin: auto;
 }
 

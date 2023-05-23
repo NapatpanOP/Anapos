@@ -17,7 +17,7 @@ const validatePassword = (password) => {
 };
 
 const AdminSignin = () => {
-  const { AuthAction } = useAuthContext();
+  const { AuthAction, loadingAction } = useAuthContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -45,9 +45,11 @@ const AdminSignin = () => {
   };
 
   const signin = async (admin) => {
+    loadingAction.onLoading(true)
     console.log(admin)
     admin.password = CryptoJS.AES.encrypt(admin.password, 'OKIOKI007').toString();
     const response = await SigninAPI.signin(admin)
+    loadingAction.onLoading(false)
     if (!response?.message) {
       AuthAction.onSetAdminSignin(response)
       navigate('/conclusion');
@@ -58,7 +60,7 @@ const AdminSignin = () => {
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
+      <div>
         <div className="login-form">
           <h2>Admin Sign in</h2>
           <div className="form-group">
@@ -93,7 +95,7 @@ const AdminSignin = () => {
             </Link>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

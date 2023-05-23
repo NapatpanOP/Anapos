@@ -25,9 +25,13 @@ const AuthProvider = ({ children }) => {
   const location = useLocation()
   const handleLogin = async (user) => {
     console.log(user)
+    setIsLoading(true)
     user.password = CryptoJS.AES.encrypt(user.password, 'OKIOKI007').toString();
     const response = await LoginAPI.login(user)
-    if (!response?.name) {
+    setIsLoading(false)
+    if (response?.message) {
+      return response.message
+    }else{
       localStorage.setItem(localTokenKey, JSON.stringify(response));
       setToken(response);
       const origin = location.state?.from?.pathname || '/';

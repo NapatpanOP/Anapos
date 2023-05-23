@@ -21,13 +21,14 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [loginError, setLoginError] = useState();
 
   // const ciphertext = CryptoJS.AES.encrypt("1234", 'OKIOKI007').toString();
   // const login = LoginAPI.login({email: "mail@mail.com", password:ciphertext})
   // console.log(login)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
+    // e.preventDefault();
     setEmailError("");
     setPasswordError("");
 
@@ -42,22 +43,14 @@ const LoginPage = () => {
     }
 
     console.log("Email:", email, "Password:", password);
+    var errMessage = await AuthAction.onLogin({email: email, password: password})
+    // console.log("test")
+    setLoginError(errMessage)
   };
-
-  const login = async (user) => {
-    user.password = CryptoJS.AES.encrypt(user.password, 'OKIOKI007').toString();
-    const response = await LoginAPI.login(user)
-    console.log(response)
-    if(!response?.name) {
-      localStorage.setItem("user", JSON.stringify(response))
-       navigate("/")
-    }
-    
-  }
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
+      <div>
         <div className="login-form">
           <h2>Log in</h2>
           <div className="form-group">
@@ -82,16 +75,18 @@ const LoginPage = () => {
             />
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
-          <button onClick={() => AuthAction.onLogin({email: email, password: password})} type="submit" className="btn btn-primary btn-success">
+          {loginError && <p className="error">{loginError}</p>}
+          <button onClick={() => handleSubmit()} className="btn btn-primary btn-success">
             Log in
           </button>
+          <hr />
           <div class="signup-container">
             <Link to="../Signup">
               <button type="signup">Sign up</button>
             </Link>
           </div>
         </div>
-      </form>
+        </div>
     </div>
   );
 };

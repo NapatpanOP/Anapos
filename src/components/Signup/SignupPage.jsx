@@ -54,7 +54,7 @@ function SignupPage() {
   return (
     <div className="register-container">
       <div className="register-form-container">
-        <form onSubmit={handleSubmit}>
+        <div>
           <h2>SIGN UP FOR ACCESS</h2>
           <div className="form-group">
             <label htmlFor="username">USER*</label>
@@ -125,7 +125,7 @@ function SignupPage() {
               </Link>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   )
