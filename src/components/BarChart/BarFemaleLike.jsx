@@ -18,6 +18,7 @@ function BarFemaleLike({data, allUser}) {
       label: "Female",
       data: likeList.map((item) => item?.length),
       backgroundColor: [
+        '#D071D9',
         '#FD8A8A',
         '#F1F7B5',
         '#88D7B5',
@@ -26,7 +27,6 @@ function BarFemaleLike({data, allUser}) {
         '#9EA1D4',
         '#FF5858',
         '#7371D9',
-        '#D071D9',
       ],
     }]
   }) 
@@ -38,6 +38,7 @@ function BarFemaleLike({data, allUser}) {
         label: "FEMALE",
         data: likeList.map((item) => item?.length),
         backgroundColor: [
+          '#D071D9',
           '#FD8A8A',
           '#F1F7B5',
           '#88D7B5',
@@ -46,7 +47,6 @@ function BarFemaleLike({data, allUser}) {
           '#9EA1D4',
           '#FF5858',
           '#7371D9',
-          '#D071D9',
         ],
       }]
     })

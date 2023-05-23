@@ -67,8 +67,15 @@ body {
 }
 
 .filter-type {
+  padding: 0 10% 0 10%;
+  position: relative;
+  width: 100%;
   display: flex;
-  padding: 10% 10% 0 10%;
+  row-gap: 2rem;
+  flex-flow: wrap;
+  column-gap: 5%;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {

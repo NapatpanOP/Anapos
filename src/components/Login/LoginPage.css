@@ -114,9 +114,10 @@ input[type="password"]:focus {
 
 }
 
-/* apply styles for smaller screens */
-@media screen and (max-width: 767px) {
-  .login-container >div {
-    min-width: 80%;
+@media screen and (max-width: 575px) {
+
+  .login-form h2 {
+    font-size: 16px;
   }
+ 
 }

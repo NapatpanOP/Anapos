@@ -114,9 +114,6 @@ button[type="login"]:hover {
 
 /* apply styles for larger screens */
 @media screen and (min-width: 768px) {
-  .register-container {
-    min-height: 100vh;
-  }
 
   .register-container form {
     min-width: 600px;
@@ -127,9 +124,16 @@ button[type="login"]:hover {
 
 }
 
-/* apply styles for smaller screens */
-@media screen and (max-width: 767px) {
-  .register-container form {
-    min-width: 80%;
-  }
-}
+@media screen and (max-width: 575px) {
+
+  .register-container {
+     min-width: 320px;
+     padding: 20px;
+     font-size: 12px;
+   }
+ 
+   .register-form-container h2 {
+     font-size: 16px;
+     font-weight: bold;
+   }
+ }

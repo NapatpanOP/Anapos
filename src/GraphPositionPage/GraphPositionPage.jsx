@@ -46,10 +46,10 @@ function GraphPosition() {
 
       </div>
     } else {
-      return <div className="box-contain">
+      return <div className="box-content">
         <div className="left-contain">
           { brandData?.adsPositions[pageGraph]?.images_urls.map((image, index) => {
-            return <img key={index} src={baseImageUrl+image.images_url} alt="position-photo" className="position-photo" />
+            return <img key={index} src={baseImageUrl+image.images_url} alt="position-photo" className="graphics-photo" />
           })}
         </div>
         <div className="full-box">
@@ -60,8 +60,8 @@ function GraphPosition() {
                 label: `POSITION ${pageGraph + 1}`,
                 data: brandData?.adsPositions[pageGraph]?.images_urls.map((item) => item.selected_counts),
                 backgroundColor: [
-                  '#FD8A8A',
                   '#F1F7B5',
+                  '#FD8A8A',
                   '#88D7B5',
                   '#00ADB5',
                   '#61A48D',
@@ -89,13 +89,13 @@ function GraphPosition() {
           label: location.state.brand?.title,
           data: location.state.brand?.adsPositions.map((item) => item.selected_counts),
           backgroundColor: [
+            '#FF5858',
+            '#88D7B5',
             '#FD8A8A',
             '#F1F7B5',
-            '#88D7B5',
             '#00ADB5',
             '#61A48D',
             '#9EA1D4',
-            '#FF5858',
             '#7371D9',
             '#D071D9',
           ],

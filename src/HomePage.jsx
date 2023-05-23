@@ -11,7 +11,7 @@ function HomePage() {
       <div className="full-size">
         <div className="box">
           <p className="box-text1">Welcome to ...</p>
-          <p className="box-text2">OKIOKI</p>
+          <p className="box-text2">Anapos</p>
           <p className="box-text3">This is a website that explores the design structure of each website.</p>
         </div>
         <img src={picturRoomGirl} alt="Image" className="picture-roomGirl"/>
