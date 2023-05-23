@@ -135,10 +135,6 @@
   display: none !important;
 }
 
-.web-btn {
-  /* display: flex !important; */
-}
-
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;

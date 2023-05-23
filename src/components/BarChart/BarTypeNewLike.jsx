@@ -14,8 +14,8 @@ function BarTypeNewLike({data}) {
       label: "News Website",
       data: data.map((item) => item.like.length),
       backgroundColor: [
-        '#FD8A8A',
         '#F1F7B5',
+        '#FD8A8A',
         '#88D7B5',
       ],
     }]
@@ -28,8 +28,8 @@ function BarTypeNewLike({data}) {
         label: "News Website",
         data: data.map((item) => item.like.length),
         backgroundColor: [
-          '#FD8A8A',
           '#F1F7B5',
+          '#FD8A8A',
           '#88D7B5',
         ],
       }]

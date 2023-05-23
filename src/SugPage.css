@@ -104,22 +104,27 @@ button[type='submit-sug']:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .sug-form {
-    min-height: 100vh;
-  }
-
+  
   .sug-form form {
     min-width: 600px;
   }
+
   .submit-sug {
     margin-bottom: 10%;
   }
 
 }
 
-/* apply styles for smaller screens */
-@media screen and (max-width: 767px) {
-  .sug-form form {
-    min-width: 80%;
+@media screen and (max-width: 575px) {
+
+ .sug-form #div-form {
+    min-width: 320px;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .sug-form #div-form h1 {
+    font-size: 16px;
+    font-weight: bold;
   }
 }

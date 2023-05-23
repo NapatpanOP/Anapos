@@ -14,9 +14,9 @@ function BarTypePortalLike({data}) {
       label: "Portal Website",
       data: data.map((item) => item.like.length),
       backgroundColor: [
+        '#88D7B5',
         '#FD8A8A',
         '#F1F7B5',
-        '#88D7B5',
       ],
     }]
   })
@@ -28,9 +28,9 @@ function BarTypePortalLike({data}) {
         label: "Portal Website",
         data: data.map((item) => item.like.length),
         backgroundColor: [
+          '#88D7B5',
           '#FD8A8A',
           '#F1F7B5',
-          '#88D7B5',
         ],
       }]
     })

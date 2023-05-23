@@ -18,6 +18,7 @@ function BarOtherLike({data, allUser}) {
       label: "OTHER",
       data: likeList.map((item) => item?.length),
       backgroundColor: [
+        '#7371D9',
         '#FD8A8A',
         '#F1F7B5',
         '#88D7B5',
@@ -25,7 +26,6 @@ function BarOtherLike({data, allUser}) {
         '#61A48D',
         '#9EA1D4',
         '#FF5858',
-        '#7371D9',
         '#D071D9',
       ],
     }]
@@ -38,6 +38,7 @@ function BarOtherLike({data, allUser}) {
         label: "OTHER",
         data: likeList.map((item) => item?.length),
         backgroundColor: [
+          '#7371D9',
           '#FD8A8A',
           '#F1F7B5',
           '#88D7B5',
@@ -45,7 +46,6 @@ function BarOtherLike({data, allUser}) {
           '#61A48D',
           '#9EA1D4',
           '#FF5858',
-          '#7371D9',
           '#D071D9',
         ],
       }]
