@@ -1,5 +1,4 @@
 import "./HomePage.css"
-import BrandsCard from "./components/BrandsCard/BrandsCard";
 import picturRoomGirl from "./assets/Room - Girl Working.png";
 import { useAuthContext } from "./core/contexts/AuthProvider";
 
