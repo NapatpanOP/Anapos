@@ -33,9 +33,8 @@ function App() {
       {renderNav()}
       <Routes>
         <Route path="/" element={
-          <ProtectedRoute> 
             <HomePage />
-          </ProtectedRoute>}/>
+          }/>
         <Route path="/typesweb" element={
           <ProtectedRoute> 
             <TypesWebPage />
