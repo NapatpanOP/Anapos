@@ -3,3 +3,11 @@
   margin: 0;
   border: 0;
 }
+
+#navbar {
+  width: 100%;
+  /* opacity: 100%; */
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+}

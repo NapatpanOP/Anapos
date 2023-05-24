@@ -30,7 +30,9 @@ function App() {
 
   return (
     <AuthProvider className="App">
-      {renderNav()}
+      <div id="navbar">
+        {renderNav()}
+      </div>
       <Routes>
         <Route path="/" element={
             <HomePage />
