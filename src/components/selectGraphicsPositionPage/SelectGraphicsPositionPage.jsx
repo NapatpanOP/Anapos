@@ -113,9 +113,9 @@ const SelectGraphicsPositionPage = () => {
 
     const renderButtonList = () => {
         if (brand) {
-            return brand.adsPositions[location.state.position].images_urls.map((img, index) => {
+            return <> {brand.adsPositions[location.state.position].images_urls.map((img, index) => {
                 return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>GRAPHIC {index + 1}</button>
-            })
+            })} <button onClick={() => onClickGraphicHandle(-1)} type="button" key={-1} className={`btn ${currentGraphicIndex ==-1 && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>NON SELECT</button></>
         } else {
             return
         }
