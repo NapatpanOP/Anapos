@@ -31,7 +31,7 @@ function GraphPosition() {
       return <div className="box-content">
         <img src={baseImageUrl+brandData?.full_image} alt="position-photo" className="position-photo" />
 
-        <div className="full-box">
+        <div className="full-box-graph">
           <div className="bar-chart">
             <BarChart chartData={chartData} />
           </div>
@@ -45,7 +45,7 @@ function GraphPosition() {
             return <img key={index} src={baseImageUrl+image.images_url} alt="position-photo" className="graphics-photo" />
           })}
         </div>
-        <div className="full-box">
+        <div className="full-box-graph">
           <div className="bar-chart">
             <BarChart chartData={{
               labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `GRAPHIC ${index + 1}`),
@@ -97,9 +97,26 @@ function GraphPosition() {
     }
   }, [brandData])
 
+  const textDescription = () => {
+    if (mode ==  'position') {
+      return <div>
+        <p className='text-description'>Shows the number of clicks in different locations of 
+        the website and displays the data in graphs.</p>
+      </div>
+    }
+    else {
+      return <div>
+        <p className='text-description'>Displays design selection information for each position. 
+        And the data is displayed in graph form.</p>
+      </div>
+    }
+  }
+
   return (
     <div>
       <img src={baseImageUrl+brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
+      
+      {textDescription()}
 
       <div className="bt-graph">
         <button type="button" onClick={() => setMode('position')} className={`btn ${mode == 'position' ? 'btn-dark' : 'btn-outline-dark'}`}>

@@ -4,13 +4,6 @@ body {
   padding: 0;
 }
 
-.box-contain {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0 5% 0 5%;
-}
-
 .left-contain {
   position: relative;
   width: 100%;
@@ -32,8 +25,12 @@ body {
   width: 50%;
 }
 
-.full-box {
-  padding: 50px;
+.full-box-graph {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  padding: 2%;
 }
 
 .main-logo {
@@ -101,8 +98,11 @@ body {
     font-size: 14px;
   }
 
-  .full-box {
-    padding: 2px;
+  .full-box-graph {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 60%;
   }
 
   .left-contain img  {
@@ -132,7 +132,10 @@ body {
     margin-right: auto;
   }
 
-  .full-box {
-    padding: 2px;
+  .full-box-graph {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 90%;
   }
 }
