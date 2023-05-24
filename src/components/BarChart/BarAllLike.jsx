@@ -45,25 +45,10 @@ function BarAllLike({data}) {
     })
   },  [data])
 
-  const config = {
-    type: 'bar',
-    data: data,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          ticks: {
-            stepSize: 1
-          }
-        }
-      }
-    },
-  };
-
   return (
     <div className="full-box">
       <div className="bar-chart">
-        <BarChart chartData={userData} chartOptions={config}/>
+        <BarChart chartData={userData}/>
       </div>
     </div>
   )

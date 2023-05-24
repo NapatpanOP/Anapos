@@ -1,7 +1,7 @@
 body {
-  font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 .add-status {
@@ -104,7 +104,7 @@ button[type='submit-sug']:hover {
 }
 
 @media screen and (min-width: 768px) {
-  
+
   .sug-form form {
     min-width: 600px;
   }
