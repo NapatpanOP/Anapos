@@ -11,49 +11,49 @@
 }
 
 * {
-box-sizing: border-box;
-margin: 0;
-border: 0;
-font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 .logo {
-position: relative;
-display: block;
-width: 100%;
-max-width: 530px;
-height: auto;
-margin-left: auto;
-margin-right: auto;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 530px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .headtext {
-position: relative;
-top: 0;
-left: 5%;
-font-weight: 600;
-font-size: 2rem;
-margin-bottom: 1rem;
-width: fit-content;
+  position: relative;
+  top: 0;
+  left: 5%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: fit-content;
 }
 
 .position {
-position: relative;
-display: block;
-width: 100%;
-max-width: 800px;
-height: auto;
-margin-left: auto;
-margin-right: auto;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bt-position {
-text-align: center;
-margin: 2rem;
+  text-align: center;
+  margin: 2rem;
 }
 
 .bt-position button {
-margin: 5px;
+  margin: 5px;
 }
 
 .text-description {
@@ -88,15 +88,24 @@ margin: 5px;
 }
 
 @media screen and (max-width: 575px) {
-.logo {
-  max-width: 320px;
-}
+  .logo {
+    max-width: 320px;
+  }
 
-.headtext {
-  font-size: 1.2rem;
-}
+  .headtext {
+    font-size: 1.2rem;
+  }
 
-.position {
-  max-width: 400px;
-}
+  .position {
+    max-width: 400px;
+  }
+
+  .bt-position {
+    margin: 1rem;
+  }
+
+  .bt-position button {
+    font-size: 14px;
+  }
+
 }
