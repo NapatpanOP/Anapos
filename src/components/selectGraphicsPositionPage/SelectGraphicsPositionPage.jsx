@@ -140,7 +140,9 @@ const SelectGraphicsPositionPage = () => {
 
     return (
         <div className="position-container">
-            <img className="image-banner" src={baseImageUrl+brand?.image} alt={brand?.title} />
+            {/* <img className="image-banner" src={baseImageUrl+brand?.image} alt={brand?.title} /> */}
+            <img src={ baseImageUrl + brand?.logo_brand} alt="logo" className="main-logo" />
+            <p className='text-description'>Choose the design that's right for you. by clicking on the banner at the bottom of this page.</p>
             {/* <hr />
             <hr /> */}
             <div className="position-img-list">

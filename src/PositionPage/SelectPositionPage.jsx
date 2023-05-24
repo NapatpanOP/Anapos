@@ -77,7 +77,7 @@ function SelectPositionPage() {
     return (
         <div>
             <img src={ baseImageUrl + brand?.logo_brand} alt="logo" className="main-logo" />
-
+            <p className='text-description'>This section shows various ad placements. On that website if you are interested in any position, click to select below</p>
             <div className="headtext">
                 <p>VARIOUS POSITIONS</p>
             </div>

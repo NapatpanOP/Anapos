@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./GraphPositionPage.css";
-import logo from '../assets/logoBrands/youtube.jpg'
-import youtubePosition from '../assets/positionPage/PositionYoutube.jpg'
-import BarPositionYoutube from '../components/BarChart/GraphYoutube/BarPositionYoutube'
-import BarPositionViu from "../components/BarChart/GraphViu/BarPositionViu";
-import BarPositionTrueID from "../components/BarChart/GraphTrueID/BarPositionTrueID";
-import BarPositionJib from "../components/BarChart/GraphJib/BarPositionJib";
-import BarGraphicsBanner from "../components/BarChart/BarChartGraphicsBanner/BarGraphicsBanner";
 import BarChart from "../components/BarChart/BarChart";
 import { useLocation } from "react-router";
 import { baseImageUrl } from "../core/store/localVariable";
