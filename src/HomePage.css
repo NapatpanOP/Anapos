@@ -54,13 +54,24 @@
   bottom: 0;
 }
 
-.head-web {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  display: flex;
-  align-items: center;
+.box-content-home {
+  width: 100%;
   justify-content: center;
+}
+
+.head-text {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 33px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  color: #343979;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5%;
 }
 
 #bt-start {
@@ -74,6 +85,58 @@
 
 #bt-start:hover {
   background-color: #B281E9;
+}
+
+.brands-list-home {
+  margin-top: 5%;
+}
+
+.card-grid-steps {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% 2% 50px 2%;
+  justify-content: center;
+}
+
+.card {
+  flex-basis: 20%;
+  max-width: 20%;
+  margin: 0 1.5% 30px;
+  border: 1.5px solid rgba(116, 116, 116, 1);
+  border-radius: 21px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  margin-top: 20%;
+  width: 20%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.card h3 {
+  margin-top: 10%;
+  font-weight: bold;
+  color: #3e3e3e;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card p {
+  font-family: 'Anuphan', sans-serif;
+  padding: 5px;
+  margin-top: 15%;
+  margin-bottom: 20%;
+  font-size: 1.1rem;
+}
+
+.card-content {
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* orientation: landscape แนวนอน
@@ -110,23 +173,22 @@ orientation: portrait แนวตั้ง */
     bottom: 0;
   }
   
-  .head-web {
-    left: 40%;
+  .head-text {
     top: 80%;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   #bt-start {
     left: 10%;
     top: 16%;
   }
-  /* .picture-roomGirl{
-      display: none;
-    } */
-}
 
-.brands-list-home {
-  margin-top: 5%;
+  .card {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  
 }
 
 @media screen and (max-width: 575px) {
@@ -164,6 +226,12 @@ orientation: portrait แนวตั้ง */
     left: 10%;
     top: 37%;
   }
+
+  .head-text {
+    top: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 15%;
+  }
   
 }
 
@@ -180,4 +248,5 @@ orientation: portrait แนวตั้ง */
     left: 10%;
     top: 37%;
   }
+  
 }

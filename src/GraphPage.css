@@ -38,7 +38,6 @@ body {
 }
 
 .card-grid {
-  
   display: flex;
   flex-wrap: wrap;
   margin: 0 2% 50px 2%;
