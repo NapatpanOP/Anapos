@@ -107,6 +107,7 @@ function GraphPosition() {
   return (
     <div>
       <img src={baseImageUrl+brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
+
       <div className="bt-graph">
         <button type="button" onClick={() => setMode('position')} className={`btn ${mode == 'position' ? 'btn-dark' : 'btn-outline-dark'}`}>
           POSITION

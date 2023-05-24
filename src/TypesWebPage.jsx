@@ -6,6 +6,7 @@ const TypesWeb = () => {
   return (
     <div>
       <p className="text-head">Types Of Websites</p>
+      <p className='text-description'>Show different websites and ad placements with ad designs to choose from.</p>
 
       <Fragment>
         <BrandsCard filter={true}/>

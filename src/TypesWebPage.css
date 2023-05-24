@@ -45,3 +45,8 @@
   margin-bottom: 50px;
   justify-content: center;
 }
+
+.text-description {
+  position: relative;
+  text-align: center;
+}
