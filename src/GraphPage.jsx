@@ -70,8 +70,7 @@ function PageGraph() {
   const textDescription = () => {
     if (mode ==  'overview') {
       return <div>
-        <p className='text-description'>The graphs in this section show various information. 
-        Divided by overview, gender, and type.</p>
+        <p className='text-description'>The graphs in this section show various information. from pressing the heart Divided by overview, type, and sex.</p>
       </div>
 
     }

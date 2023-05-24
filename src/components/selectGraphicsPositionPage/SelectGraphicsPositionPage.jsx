@@ -161,10 +161,10 @@ const SelectGraphicsPositionPage = () => {
                 </Modal.Header>
                 <Modal.Body>If sure to select this position, press Save and press Next.</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" class='btn btn-success' id='bt-close' onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={() => confirmHandle()}>
+                    <Button variant="primary" class='btn btn-success' id='bt-next' onClick={() => confirmHandle()}>
                         Next
                     </Button>
                 </Modal.Footer>

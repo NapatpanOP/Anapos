@@ -61,6 +61,26 @@ margin: 5px;
   text-align: center;
 }
 
+#bt-close {
+  background-color: rgb(255, 85, 85);
+  border: none;
+}
+
+#bt-next {
+  background-color: #37D295;
+  border: none;
+}
+
+#bt-next:hover {
+  background-color: rgb(41, 161, 113);
+}
+
+#bt-close:hover {
+  background-color: rgb(201, 26, 26);
+  border: none;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
 .headtext {
   font-size: 1.5rem;
