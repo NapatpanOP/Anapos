@@ -220,11 +220,11 @@
 
 .content-sug {
   width: 100%;
-  height: 75vh;
+  height: 72vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #30489A;
+  background-color: #3B9D8F;
   bottom: 0;
 }
 
@@ -273,7 +273,7 @@
   border: 3px solid #f8f8f8;
   justify-content: center;
   border-radius: 10px;
-  background-color: #9e95e6;
+  background-color: #9098D8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
