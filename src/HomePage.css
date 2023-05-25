@@ -76,18 +76,16 @@
 
 #bt-start {
   position: relative;
-  display: grid;
+  display: flex;
   left: 4%;
   top: 15%;
   background-color: #3963C1;
   border: none;
-  text-decoration: none;
   cursor: pointer;
 }
 
 #bt-start:hover {
   background-color: #B281E9;
-  text-decoration: none;
 }
 
 .brands-list-home {
