@@ -13,8 +13,15 @@
 
 @media only screen and (max-width: 768px) {
   .full-box {
-    width: 90%;
+    width: 100%;
     display: flex;
     margin: auto;
+    padding: 50px;
+  }
+} 
+
+@media only screen and (max-width: 390px) {
+  .full-box {
+    padding: 5px;
   }
 } 
