@@ -89,7 +89,7 @@ function HomePage() {
       <div class="content-graph">
         <div class="content-graph-specific">
           <h3>Specific</h3>
-          <p>แสดงข้อมูลการเลือกแต่ละเว็บไซต์โดยเฉพาะ ได้แก่ ตำแหน่ง และ รูปแบบกราฟิกโฆษณา</p>
+          <p>แสดงข้อมูลการเลือกของแต่ละเว็บไซต์โดยเฉพาะ ได้แก่ ตำแหน่ง และ รูปแบบกราฟิกโฆษณา</p>
           <img src={specificPage} alt="specificPage" />
         </div>
         <div class="content-graph-overview">
