@@ -18,7 +18,7 @@ function HomePage() {
         <div className="box">
           <p className="box-text1">
             This is a website that explores the design structure of each
-            website. test
+            website.
           </p>
           <div class="box-description">
             <p className="box-text2">
