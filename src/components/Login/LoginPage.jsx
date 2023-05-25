@@ -49,9 +49,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <div>
-        <div className="login-form">
+    <div class="login-container-box">
+      <div class="login-form">
+        <div class="login-box">
           <h2>Log in</h2>
           <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -76,7 +76,7 @@ const LoginPage = () => {
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
           {loginError && <p className="error">{loginError}</p>}
-          <button onClick={() => handleSubmit()} className="btn btn-primary btn-success">
+          <button onClick={() => handleSubmit()} className="btn btn-primary btn-success" id="bt-login">
             Log in
           </button>
           <hr />

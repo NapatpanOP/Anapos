@@ -112,11 +112,11 @@ button[type="login"]:hover {
 } */
 
 /* apply styles for larger screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
 
   .register-container-box {
     height: fit-content;
-    margin-top: 5%;
+    margin-top: 20%;
     margin-bottom: 5%;
   }
 
@@ -129,12 +129,20 @@ button[type="login"]:hover {
 
 }
 
+@media screen and (min-width: 768px) {
+
+  .register-container-box {
+    margin-top: 12%;
+  }
+
+}
+
 @media screen and (max-width: 575px) {
 
   .register-container-box {
      padding: 20px;
      font-size: 12px;
-     margin-top: 15%;
+     margin-top: 10%;
    }
  
    .register-box h2 {
@@ -144,7 +152,9 @@ button[type="login"]:hover {
 
    .register-box {
     min-width: 0;
+    width: 100%;
     box-shadow: none;
+    padding: 0;
   }
 }
 
@@ -157,7 +167,7 @@ button[type="login"]:hover {
    }
  
    .register-box h2 {
-     font-size: 1.7rem;
+     font-size: 1.6rem;
      font-weight: bold;
    }
 
