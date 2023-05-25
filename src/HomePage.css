@@ -16,14 +16,17 @@
   height: 57%;
   width: 100%;
   color: #ffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .box-text1 {
   position: relative;
   width: 479px;
-  height: 33px;
   left: 4%;
-  top: 10%;
+  top: 20%;
   font-size: 2rem;
   font-weight: bold;
   line-height: 40px;
@@ -34,9 +37,9 @@
 .box-description {
   position: relative;
   left: 4%;
-  top: 29%;
+  top: 15%;
   width: 655px;
-  height: 250px;
+  height: fit-content;
   display: flex;
 }
 
@@ -78,7 +81,7 @@
 #bt-start {
   position: relative;
   left: 4%;
-  top: 15%;
+  bottom: -30%;
   background-color: #3963C1;
   border: none;
   cursor: pointer;
@@ -300,16 +303,16 @@ orientation: portrait แนวตั้ง */
   .box-text1 {
     width: 80%;
     left: 10%;
-    top: 10%;
+    top: 30%;
     font-size: 2rem;
   }
 
   .box-description {
     position: relative;
     left: 10%;
-    top: 20%;
+    top: 10%;
     width: 81%;
-    height: 250px;
+    height: fit-content;
   }
 
   .box-text2 {
@@ -331,7 +334,7 @@ orientation: portrait แนวตั้ง */
 
   #bt-start {
     left: 10%;
-    top: 16%;
+    top: 25%;
   }
 
   .card {
@@ -365,13 +368,14 @@ orientation: portrait แนวตั้ง */
 
 @media screen and (max-width: 575px) {
   .box {
-    height: 570px;
+    height: 550px;
   }
 
   .box-text1 {
     font-size: 1.5rem;
-    top: 3%;
+    top: 20%;
     line-height: 30px;
+    height: fit-content;
   }
 
   .picture-roomGirl {
@@ -383,24 +387,21 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-description {
-    position: relative;
-    left: 10%;
-    top: 13%;
-    width: 80%;
-    height: 250px;
+    top: 10%;
   }
 
   .box-text2 {
-    font-size: 1rem;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   #bt-start {
     left: 10%;
-    top: 37%;
+    bottom: 20%;
   }
 
   .head-text {
-    top: 80%;
+    margin-top: 15%;
     font-size: 1.5rem;
     margin-bottom: 15%;
   }
@@ -459,7 +460,7 @@ orientation: portrait แนวตั้ง */
 
   #bt-start {
     left: 10%;
-    top: 37%;
+    bottom: 15%;
   }
 
   .box-sugform img {
@@ -490,12 +491,16 @@ orientation: portrait แนวตั้ง */
     z-index: 0;
   }
 
+  .box-description {
+    top: 10%;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
 
   .box {
-    height: 600px;
+    height: 550px;
   }
 
   .picture-roomGirl {
@@ -503,7 +508,7 @@ orientation: portrait แนวตั้ง */
   }
   
   #bt-start {
-    top: 40%;
+    bottom: 15%;
   }
 
   .box-sugform img {
@@ -517,5 +522,19 @@ orientation: portrait แนวตั้ง */
   .sug-text p {
     font-size: 14px;
     padding: 2px;
+  }
+
+  .box-description {
+    top: 10%;
+  }
+
+  .box-text1 {
+    height: fit-content;
+    top: 25%;
+  }
+
+  .box-text2 {
+    font-size: 14px;
+    line-height: 30px;
   }
 }
