@@ -46,7 +46,7 @@ function HomePage() {
               <img src={iconNum1} alt="icon1" />
               <div className="card-content">
                 <h3>Step 1</h3>
-                <p>ไปที่หน้า Type of websites</p>
+                <p>ผู้ใช้ใหม่ต้องทำการลงทะเบียนก่อนเข้าใช้งานเว็บไซต์ หากผู้ใช้มีบัญชีอยู่แล้วให้ทำการล็อกอินเพื่อเข้าใช้งาน<br/><br/>จากนั้นกดปุ่มเพื่อไปที่หน้า<br/>Types of websites</p>
               </div>
             </div>
             <div className="card">
@@ -93,7 +93,7 @@ function HomePage() {
         </div>
         <div class="content-graph-overview">
           <h3>Overview</h3>
-          <p>ระบุข้อมูลต่างๆโดยใช้จากการกดหัวใจของผู้ใช้ มีหัวข้อต่อนี้ ภาพรวม ประเภทเว็บ และ เพศ</p>
+          <p>แสดงข้อมูลต่างๆจากการกดหัวใจของผู้ใช้ มีหัวข้อดังต่อไปนี้ ภาพรวม ประเภทเว็บไซต์ และ เพศ</p>
           <img src={overviewPage} alt="specificPage" />
         </div>
       </div>
