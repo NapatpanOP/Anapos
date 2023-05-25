@@ -48,7 +48,7 @@ function GraphPosition() {
         <div className="full-box-graph">
           <div className="bar-chart">
             <BarChart chartData={{
-              labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `GRAPHIC ${index + 1}`),
+              labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `BANNER ${index + 1}`),
               datasets: [{
                 label: `POSITION ${pageGraph + 1}`,
                 data: brandData?.adsPositions[pageGraph]?.images_urls.map((item) => item.selected_counts),
