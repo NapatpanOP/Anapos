@@ -77,7 +77,7 @@ function SelectPositionPage() {
     return (
         <div>
             <img src={ baseImageUrl + brand?.logo_brand} alt="logo" className="main-logo" />
-
+            <p className='text-description'>This section shows various ad placements. On that website if you are interested in any position, click to select below</p>
             <div className="headtext">
                 <p>VARIOUS POSITIONS</p>
             </div>
@@ -94,10 +94,10 @@ function SelectPositionPage() {
                 </Modal.Header>
                 <Modal.Body>If sure to select this position, press Save and press Next.</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" class='btn btn-success' id='bt-close' onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={() => confirmHandle()}>
+                    <Button variant="primary" class='btn btn-success' id='bt-next' onClick={() => confirmHandle()}>
                         Next
                     </Button>
                 </Modal.Footer>

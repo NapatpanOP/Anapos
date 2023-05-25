@@ -114,7 +114,7 @@ const SelectGraphicsPositionPage = () => {
     const renderButtonList = () => {
         if (brand) {
             return <> {brand.adsPositions[location.state.position].images_urls.map((img, index) => {
-                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>GRAPHIC {index + 1}</button>
+                return <button onClick={() => onClickGraphicHandle(index)} type="button" key={index} className={`btn ${currentGraphicIndex ==index && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>BANNER {index + 1}</button>
             })} <button onClick={() => onClickGraphicHandle(-1)} type="button" key={-1} className={`btn ${currentGraphicIndex ==-1 && currentPositionIndex == location.state.position ? "btn-dark" : "btn-outline-dark"}`}>NON SELECT</button></>
         } else {
             return
@@ -140,7 +140,9 @@ const SelectGraphicsPositionPage = () => {
 
     return (
         <div className="position-container">
-            <img className="image-banner" src={baseImageUrl+brand?.image} alt={brand?.title} />
+            {/* <img className="image-banner" src={baseImageUrl+brand?.image} alt={brand?.title} /> */}
+            <img src={ baseImageUrl + brand?.logo_brand} alt="logo" className="main-logo" />
+            <p className='text-description'>Choose the design that's right for you. by clicking on the banner at the bottom of this page.</p>
             {/* <hr />
             <hr /> */}
             <div className="position-img-list">
@@ -159,10 +161,10 @@ const SelectGraphicsPositionPage = () => {
                 </Modal.Header>
                 <Modal.Body>If sure to select this position, press Save and press Next.</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" class='btn btn-success' id='bt-close' onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={() => confirmHandle()}>
+                    <Button variant="primary" class='btn btn-success' id='bt-next' onClick={() => confirmHandle()}>
                         Next
                     </Button>
                 </Modal.Footer>

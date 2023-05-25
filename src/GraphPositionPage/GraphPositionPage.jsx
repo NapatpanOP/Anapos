@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./GraphPositionPage.css";
-import logo from '../assets/logoBrands/youtube.jpg'
-import youtubePosition from '../assets/positionPage/PositionYoutube.jpg'
-import BarPositionYoutube from '../components/BarChart/GraphYoutube/BarPositionYoutube'
-import BarPositionViu from "../components/BarChart/GraphViu/BarPositionViu";
-import BarPositionTrueID from "../components/BarChart/GraphTrueID/BarPositionTrueID";
-import BarPositionJib from "../components/BarChart/GraphJib/BarPositionJib";
-import BarGraphicsBanner from "../components/BarChart/BarChartGraphicsBanner/BarGraphicsBanner";
 import BarChart from "../components/BarChart/BarChart";
 import { useLocation } from "react-router";
 import { baseImageUrl } from "../core/store/localVariable";
@@ -38,7 +31,7 @@ function GraphPosition() {
       return <div className="box-content">
         <img src={baseImageUrl+brandData?.full_image} alt="position-photo" className="position-photo" />
 
-        <div className="full-box">
+        <div className="full-box-graph">
           <div className="bar-chart">
             <BarChart chartData={chartData} />
           </div>
@@ -52,10 +45,10 @@ function GraphPosition() {
             return <img key={index} src={baseImageUrl+image.images_url} alt="position-photo" className="graphics-photo" />
           })}
         </div>
-        <div className="full-box">
+        <div className="full-box-graph">
           <div className="bar-chart">
             <BarChart chartData={{
-              labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `GRAPHIC ${index + 1}`),
+              labels: brandData?.adsPositions[pageGraph]?.images_urls.map((_, index) => `BANNER ${index + 1}`),
               datasets: [{
                 label: `POSITION ${pageGraph + 1}`,
                 data: brandData?.adsPositions[pageGraph]?.images_urls.map((item) => item.selected_counts),
@@ -104,9 +97,27 @@ function GraphPosition() {
     }
   }, [brandData])
 
+  const textDescription = () => {
+    if (mode ==  'position') {
+      return <div>
+        <p className='text-description'>Shows the number of clicks in different locations of 
+        the website and displays the data in graphs.</p>
+      </div>
+    }
+    else {
+      return <div>
+        <p className='text-description'>Displays design selection information for each position. 
+        And the data is displayed in graph form.</p>
+      </div>
+    }
+  }
+
   return (
     <div>
       <img src={baseImageUrl+brandData?.logo_brand ?? ""} alt="logo-banner" className="main-logo" />
+      
+      {textDescription()}
+
       <div className="bt-graph">
         <button type="button" onClick={() => setMode('position')} className={`btn ${mode == 'position' ? 'btn-dark' : 'btn-outline-dark'}`}>
           POSITION

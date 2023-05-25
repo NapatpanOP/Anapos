@@ -38,7 +38,6 @@ body {
 }
 
 .card-grid {
-  
   display: flex;
   flex-wrap: wrap;
   margin: 0 2% 50px 2%;
@@ -77,6 +76,12 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+
+.text-description {
+  position: relative;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 768px) {
   .card-container-graph {

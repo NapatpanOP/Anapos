@@ -10,7 +10,7 @@ body {
   margin-bottom: 20px;
 }
 
-.login-container {
+.login-container-box {
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -25,22 +25,30 @@ body {
   height: 100vh;
 }
 
-.login-container>div {
+.login-container-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .login-form  {
   width: 80%;
   margin: auto;
   align-items: center;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  min-width: 500px;
 }
 
 .login-form h2 {
@@ -49,6 +57,15 @@ body {
 
 .form-group {
   margin: 10px;
+}
+
+#bt-login {
+  background-color: #37D295;
+  border: none;
+}
+
+#bt-login:hover {
+  background-color: rgb(41, 161, 113);
 }
 
 /* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
@@ -100,14 +117,12 @@ input[type="password"]:focus {
 }
 
 /* apply styles for larger screens */
-@media screen and (min-width: 768px) {
-  .login-container {
-    min-height: 100vh;
-  }
+@media screen and (min-width: 820px) {
 
-  .login-container >div {
+  .login-container {
     min-width: 600px;
   }
+  
   .signup-container {
     margin-bottom: 10%;
   }
@@ -119,5 +134,20 @@ input[type="password"]:focus {
   .login-form h2 {
     font-size: 16px;
   }
+
+  .login-box {
+    min-width: 0;
+    box-shadow: none;
+    padding: 0;
+  }
  
+}
+
+@media screen and (max-width: 390px) {
+
+   .login-box {
+    min-width: 0;
+    box-shadow: none;
+    padding: 0;
+  }
 }

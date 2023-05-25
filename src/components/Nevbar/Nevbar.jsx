@@ -6,7 +6,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useAuthContext } from '../../core/contexts/AuthProvider';
 import { Icon } from '@material-ui/core';
-import { BsThreeDotsVertical } from "react-icons/bs";
 import logo from '../../assets/Logo.png'
 
 const Nevbar = () => {
@@ -42,7 +41,7 @@ const Nevbar = () => {
       } else {
         return <><Dropdown
           open={open}
-          trigger={<button onClick={handleOpen} className='web-btn'><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+          trigger={<button onClick={handleOpen} className='web-btn'><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div></button>}
           menu={[
             <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
           ]}
@@ -51,7 +50,7 @@ const Nevbar = () => {
     } else {
         return <><Dropdown
           open={open}
-          trigger={<button className='web-btn' onClick={handleOpen}><div className='circle-icon'><strong>{adminToken.email.charAt(0).toUpperCase()}</strong></div><BsThreeDotsVertical /></button>}
+          trigger={<button className='web-btn' onClick={handleOpen}><div className='circle-icon'><strong>{adminToken.email.charAt(0).toUpperCase()}</strong></div></button>}
           menu={[
             <Button onClick={() => AuthAction.onAdminLogout()} id='bt-logout'>Log out</Button>
           ]}

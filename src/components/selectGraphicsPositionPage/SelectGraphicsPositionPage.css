@@ -13,11 +13,12 @@
 }
 
 .button-list-contain {
-    width: 100%;
-    display: flex;
-    column-gap: 3%;
-    justify-content: center;
+    text-align: center;
     margin: 2rem;
+}
+
+.button-list-contain button {
+    margin: 5px;
 }
 
 .position-img-list {
@@ -32,7 +33,7 @@
 }
 
 .position-img-list img {
-    max-height: 40vh;
+    max-height: 25vh;
     position: relative;
     width: auto;
 }
@@ -40,7 +41,7 @@
 .comment-form {
     width: 100%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -55,7 +56,32 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+.text-description {
+    position: relative;
+    text-align: center;
+}
+
+#bt-close {
+    background-color: rgb(255, 85, 85);
+    border: none;
+}
+  
+#bt-next {
+    background-color: #37D295;
+    border: none;
+}
+  
+#bt-next:hover {
+    background-color: rgb(41, 161, 113);
+}
+  
+#bt-close:hover {
+    background-color: rgb(201, 26, 26);
+    border: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 820px) {
     .position-img-list img {
         max-width: 350px;
     }
@@ -65,6 +91,28 @@
     }
 
     .comment-form {
-        width: 50%;
+        width: 60%;
+        font-size: 14px;
     }
+
+    .button-list-contain button {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .button-list-contain {
+        margin: 1rem;
+    }
+
+    .button-list-contain button {
+        font-size: 14px;
+    }
+
 }

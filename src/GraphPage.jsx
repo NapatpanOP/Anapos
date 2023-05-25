@@ -67,6 +67,15 @@ function PageGraph() {
     }
   }
 
+  const textDescription = () => {
+    if (mode ==  'overview') {
+      return <div>
+        <p className='text-description'>The graphs in this section show various information. from pressing the heart Divided by overview, type, and sex.</p>
+      </div>
+
+    }
+  }
+
   const renderOverviewGraph = () => {
     switch (viewGraph) {
       case 'overview':
@@ -116,7 +125,7 @@ function PageGraph() {
   return (
     <div>
       <p className="text-head">Graph</p>
-
+      {textDescription()}
       <div className="bt-graph">
         <button type="button" onClick={() => setMode('specific')} className={`btn ${mode == 'specific' ? 'btn-dark' : 'btn-outline-dark'}`}>
           SPECIFIC

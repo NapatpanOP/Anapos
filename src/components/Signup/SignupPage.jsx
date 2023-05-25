@@ -13,7 +13,7 @@ function SignupPage() {
   const [ageRange, setAgeRange] = useState("");
 
   const [errorMessage, setErrorMessage] = useState();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { AuthAction } = useAuthContext();
 
   const handleSubmit = (e) => {
@@ -37,24 +37,24 @@ function SignupPage() {
   };
 
   const register = (user) => {
-    user['brands_like'] = []
-    user['ad_template'] = []
-    user.password = CryptoJS.AES.encrypt(user.password, 'OKIOKI007').toString();
+    user["brands_like"] = [];
+    user["ad_template"] = [];
+    user.password = CryptoJS.AES.encrypt(user.password, "OKIOKI007").toString();
     RegisterAPI.register(user).then((response) => {
-      if(response?.message) {
-        setErrorMessage(response.message)
+      if (response?.message) {
+        setErrorMessage(response.message);
       } else {
-        AuthAction.onSetUserSignin(response)
-        console.log(response)
-        navigate('/')
-    }
-    })
-  }
+        AuthAction.onSetUserSignin(response);
+        console.log(response);
+        navigate("/");
+      }
+    });
+  };
 
   return (
-    <div className="register-container">
-      <div className="register-form-container">
-        <div>
+    <div className="register-container-box">
+      <div className="register-form">
+        <div class="register-box">
           <h2>SIGN UP FOR ACCESS</h2>
           <div className="form-group">
             <label htmlFor="username">USER*</label>
@@ -115,7 +115,19 @@ function SignupPage() {
             </select>
             <p className="text-error">{errorMessage}</p>
             <div className="Signup-submit">
-              <button onClick={() => register({ username: username, password: password, email: email, sex: sex, age_range: ageRange })} type="submit" className="btn btn-primary Signup-submit btn-success">
+              <button
+                onClick={() =>
+                  register({
+                    username: username,
+                    password: password,
+                    email: email,
+                    sex: sex,
+                    age_range: ageRange,
+                  })
+                }
+                type="submit"
+                className="btn btn-primary Signup-submit btn-success"
+              >
                 CONFIRM
               </button>
             </div>
@@ -128,7 +140,7 @@ function SignupPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default SignupPage;
