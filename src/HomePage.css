@@ -467,6 +467,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-content-home {
+    position: relative;
     margin-top: 20%;
   }
 
