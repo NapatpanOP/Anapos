@@ -5,14 +5,14 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarTypeNewLike({data}) {
-  const filterredPortal = data.filter((item) => {
+  const filterredNew = data.filter((item) => {
     return item.type === "New";
 });
   const [userData, setData] = useState({
-    labels: filterredPortal.map((item) => item.title),
+    labels: filterredNew.map((item) => item.title),
     datasets: [{
       label: "News Website",
-      data: data.map((item) => item.like.length),
+      data: filterredNew.map((item) => item.like.length),
       backgroundColor: [
         '#F1F7B5',
         '#FD8A8A',
@@ -23,10 +23,10 @@ function BarTypeNewLike({data}) {
 
   useEffect(() => {
     setData({
-      labels: filterredPortal.map((item) => item.title),
+      labels: filterredNew.map((item) => item.title),
       datasets: [{
         label: "News Website",
-        data: data.map((item) => item.like.length),
+        data: filterredNew.map((item) => item.like.length),
         backgroundColor: [
           '#F1F7B5',
           '#FD8A8A',

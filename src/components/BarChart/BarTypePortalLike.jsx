@@ -12,7 +12,7 @@ function BarTypePortalLike({data}) {
     labels: filterredPortal.map((item) => item.title),
     datasets: [{
       label: "Portal Website",
-      data: data.map((item) => item.like.length),
+      data: filterredPortal.map((item) => item.like.length),
       backgroundColor: [
         '#88D7B5',
         '#FD8A8A',
@@ -26,7 +26,7 @@ function BarTypePortalLike({data}) {
       labels: filterredPortal.map((item) => item.title),
       datasets: [{
         label: "Portal Website",
-        data: data.map((item) => item.like.length),
+        data: filterredPortal.map((item) => item.like.length),
         backgroundColor: [
           '#88D7B5',
           '#FD8A8A',
