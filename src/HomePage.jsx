@@ -7,6 +7,7 @@ import iconNum3 from "./assets/icon/icon-num3.png";
 import iconNum4 from "./assets/icon/icon-num4.png";
 import specificPage from "./assets/pageScreen/specific.png";
 import overviewPage from "./assets/pageScreen/overview.png";
+import sugPage from './assets/pageScreen/sugFom.png'
 
 function HomePage() {
   const { token } = useAuthContext();
@@ -94,14 +95,30 @@ function HomePage() {
         <div class="content-graph-overview">
           <h3>Overview</h3>
           <p>แสดงข้อมูลต่างๆจากการกดหัวใจของผู้ใช้ มีหัวข้อดังต่อไปนี้ ภาพรวม ประเภทเว็บไซต์ และ เพศ</p>
-          <img src={overviewPage} alt="specificPage" />
+          <img src={overviewPage} alt="overviewPage" />
         </div>
       </div>
 
       <div className="head-text">
-          <p>Suggestion</p>
+        <p>Suggestion</p>
       </div>
 
+      <div class="content-sug">
+        <div class="box-sugform">
+          <p class="text-sugform">หน้าเสนอแนะเพิ่มเติม เมื่อผู้ใช้ต้องการเสนอเว็บไซต์อื่นนอกเหนือจากตัวอย่างที่เรานำมา</p>
+          <div class="box-sugform-text">
+            <img src={sugPage} alt="sugPage" />
+            <div class="sug-text">
+              <p>
+                <b>Website Name :</b> ระบุชื่อของเว็บไซต์ที่สนใจ<br/>
+                <b>Types of Websites :</b> ระบุประเภทของเว็บไซต์<br/>
+                <b>Note :</b> คำอธิบายเพิ่มเติมว่าทำไมถึงอยากให้เพิ่มเข้ามา<br/>
+                <b>URL of Websites :</b> นำ URL มาใส่เพื่อให้ง่ายต่อการหาเว็บไซต์นั้นๆ<br/>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   );
