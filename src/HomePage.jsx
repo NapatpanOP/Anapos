@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import picturRoomGirl from "./assets/Room - Girl Working.png";
 import { useAuthContext } from "./core/contexts/AuthProvider";
+import { Link, useLocation } from 'react-router-dom';
 import iconNum1 from "./assets/icon/icon-num1.png";
 import iconNum2 from "./assets/icon/icon-num2.png";
 import iconNum3 from "./assets/icon/icon-num3.png";
@@ -30,9 +31,11 @@ function HomePage() {
               เพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์ของตนให้ดียิ่งขึ้น
             </p>
           </div>
-          <button type="button" class="btn btn-success" id="bt-start">
-            Get Started
-          </button>
+          <Link to="./typesweb">
+            <button type="button" class="btn btn-success" id="bt-start">
+              Get Started
+            </button>
+          </Link>
         </div>
         <img src={picturRoomGirl} alt="Image" className="picture-roomGirl" />
       </div>
