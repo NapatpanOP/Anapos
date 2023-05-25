@@ -139,6 +139,85 @@
   text-align: center;
 }
 
+.content-graph {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+
+.content-graph-specific {
+  width: 45%;
+  height: 500px;
+  margin: 10px;
+  background-color: #9098D8;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.content-graph-specific h3 {
+  position: relative;
+  margin-top: 20px;
+  color: #F8F8F8;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-graph-specific p {
+  font-family: 'Anuphan', sans-serif;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #F8F8F8;
+}
+
+.content-graph-specific img {
+  position: relative;
+  margin-top: 15px;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px solid #666d9d;
+}
+
+.content-graph-overview {
+  width: 45%;
+  height: 500px;
+  margin: 10px;
+  background-color: #3B9D8F;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.content-graph-overview h3 {
+  position: relative;
+  margin-top: 20px;
+  color: #F8F8F8;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-graph-overview p {
+  font-family: 'Anuphan', sans-serif;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #F8F8F8;
+}
+
+.content-graph-overview img {
+  position: relative;
+  margin-top: 15px;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px solid #2c7368;
+}
+
 /* orientation: landscape แนวนอน
 orientation: portrait แนวตั้ง */
 @media only screen and (max-width: 820px) {
@@ -188,6 +267,13 @@ orientation: portrait แนวตั้ง */
     max-width: 50%;
   }
 
+  .content-graph-specific {
+    height: 400px;
+  }
+
+  .content-graph-overview {
+    height: 400px;
+  }
   
 }
 
@@ -231,6 +317,31 @@ orientation: portrait แนวตั้ง */
     top: 80%;
     font-size: 1.5rem;
     margin-bottom: 15%;
+  }
+
+  .card {
+    flex-basis: 80%;
+    max-width: 80%;
+  }
+
+  .content-graph-specific {
+    flex-basis: 80%;
+    max-width: 80%;
+    height: 350px;
+  }
+
+  .content-graph-specific h3 {
+    font-size: 2rem;
+  }
+
+  .content-graph-overview {
+    flex-basis: 80%;
+    max-width: 80%;
+    height: 350px;
+  }
+
+  .content-graph-overview h3 {
+    font-size: 2rem;
   }
   
 }

@@ -5,6 +5,8 @@ import iconNum1 from "./assets/icon/icon-num1.png";
 import iconNum2 from "./assets/icon/icon-num2.png";
 import iconNum3 from "./assets/icon/icon-num3.png";
 import iconNum4 from "./assets/icon/icon-num4.png";
+import specificPage from "./assets/pageScreen/specific.png";
+import overviewPage from "./assets/pageScreen/overview.png";
 
 function HomePage() {
   const { token } = useAuthContext();
@@ -81,6 +83,20 @@ function HomePage() {
 
       <div className="head-text">
           <p>Summary graphs</p>
+      </div>
+
+      <div class="content-graph">
+        <div class="content-graph-specific">
+          <h3>Specific</h3>
+          <p>แสดงข้อมูลแต่ละเว็บไซต์โดยเฉพาะ ได้แก่ ตำแหน่ง และ รูปแบบกราฟิกโฆษณา</p>
+          <img src={specificPage} alt="specificPage" />
+        </div>
+        <div class="content-graph-overview">
+          <h3>Overview</h3>
+          <p>ระบุข้อมูลต่างๆโดยใช้จากการกดหัวใจของผู้ใช้ มีหัวข้อต่อนี้ ภาพรวม ประเภทเว็บ และ เพศ</p>
+          <img src={specificPage} alt="specificPage" />
+        </div>
+
       </div>
 
     </div>

@@ -16,9 +16,11 @@ body {
 }
 
 .sug-header {
-  font-size: 32px;
+  width: 100%;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
 }
 
 .text-input {
