@@ -220,7 +220,7 @@
 
 .content-sug {
   width: 100%;
-  height: 100%;
+  height: 75vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -321,7 +321,7 @@ orientation: portrait แนวตั้ง */
     bottom: 0;
   }
   
-  .head-text {
+  .head-text p {
     top: 80%;
     font-size: 2rem;
   }
@@ -411,7 +411,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .content-graph-specific h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .content-graph-overview {
@@ -421,7 +421,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .content-graph-overview h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .box-sugform-text {
@@ -435,17 +435,27 @@ orientation: portrait แนวตั้ง */
     height: 560px;
   }
 
-  .picture-roomGirl{
-      display: none;
-  }
-
   #bt-start {
     left: 10%;
     top: 37%;
   }
+
+  .box-sugform img {
+    width: 250px;
+  }
   
-  /* .sug-text {
+  .sug-text {
     margin-top: 0;
-  } */
+    padding: 10px;
+  }
+
+  .content-sug {
+    height: 100vh;
+  }
+
+  .sug-text p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 }
