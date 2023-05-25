@@ -4,20 +4,19 @@ body {
   padding: 0;
 }
 
-.register-form-container h2 {
+.register-box h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.register-container {
+.register-container-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.register-form-container>div {
+.register-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +27,7 @@ body {
   min-width: 500px;
 }
 
-.register-form-container>div {
+.register-box{
   margin: auto;
 }
 
@@ -115,7 +114,13 @@ button[type="login"]:hover {
 /* apply styles for larger screens */
 @media screen and (min-width: 768px) {
 
-  .register-container form {
+  .register-container-box {
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .register-container-box form {
     min-width: 600px;
   }
   .signup-container {
@@ -126,14 +131,46 @@ button[type="login"]:hover {
 
 @media screen and (max-width: 575px) {
 
-  .register-container {
+  .register-container-box {
+     padding: 20px;
+     font-size: 12px;
+     margin-top: 15%;
+   }
+ 
+   .register-box h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+   }
+
+   .register-box {
+    min-width: 0;
+    box-shadow: none;
+  }
+}
+
+ @media screen and (max-width: 390px) {
+
+  .register-form  {
      min-width: 320px;
      padding: 20px;
      font-size: 12px;
    }
  
-   .register-form-container h2 {
-     font-size: 16px;
+   .register-box h2 {
+     font-size: 1.7rem;
      font-weight: bold;
    }
- }
+
+   .register-box {
+    min-width: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .register-container-box {
+    margin-top: 0;
+  }
+}
