@@ -94,10 +94,14 @@ function HomePage() {
         <div class="content-graph-overview">
           <h3>Overview</h3>
           <p>ระบุข้อมูลต่างๆโดยใช้จากการกดหัวใจของผู้ใช้ มีหัวข้อต่อนี้ ภาพรวม ประเภทเว็บ และ เพศ</p>
-          <img src={specificPage} alt="specificPage" />
+          <img src={overviewPage} alt="specificPage" />
         </div>
-
       </div>
+
+      <div className="head-text">
+          <p>Suggestion</p>
+      </div>
+
 
     </div>
   );
