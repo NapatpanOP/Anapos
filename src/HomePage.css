@@ -464,11 +464,13 @@ orientation: portrait แนวตั้ง */
 
   .picture-roomGirl {
     position: relative;
+    margin-bottom: 20%;
   }
 
   .box-content-home {
     position: relative;
     margin-top: 20%;
+    z-index: 0;
   }
 
 }
