@@ -462,6 +462,14 @@ orientation: portrait แนวตั้ง */
     margin-right: 0;
   }
 
+  .picture-roomGirl {
+    position: relative;
+  }
+
+  .box-content-home {
+    margin-top: 20%;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
