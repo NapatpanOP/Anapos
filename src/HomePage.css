@@ -463,3 +463,18 @@ orientation: portrait แนวตั้ง */
   }
 
 }
+
+@media screen and (max-width: 375px) {
+
+  .box {
+    height: 600px;
+  }
+
+  .picture-roomGirl {
+    display: none;
+  }
+  
+  #bt-start {
+    top: 40%;
+  }
+}
