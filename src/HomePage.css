@@ -11,10 +11,11 @@
 }
 
 .box {
+  position: relative;
   background: #42AFB4;
   height: 57%;
   width: 100%;
-  color: #ffff
+  color: #ffff;
 }
 
 .box-text1 {
@@ -36,6 +37,7 @@
   top: 29%;
   width: 655px;
   height: 250px;
+  display: flex;
 }
 
 .box-text2 {
@@ -63,8 +65,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  height: fit-content;
+  height: 33px;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 40px;
@@ -76,7 +77,6 @@
 
 #bt-start {
   position: relative;
-  display: flex;
   left: 4%;
   top: 15%;
   background-color: #3963C1;
@@ -221,7 +221,7 @@
 
 .content-sug {
   width: 100%;
-  height: 72vh;
+  height: 75vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -270,7 +270,7 @@
   position: relative;
   margin-top: 20%;
   width: 90%;
-  height: 200px;
+  height: fit-content;
   border: 3px solid #f8f8f8;
   justify-content: center;
   border-radius: 10px;
@@ -281,9 +281,7 @@
 .sug-text p {
   font-family: 'Anuphan', sans-serif;
   position: relative;
-  margin-top: 5%;
-  margin-left: 50px;
-  margin-right: 10px;
+  padding: 40px;
   line-height: 30px;
   color: #F8F8F8;
 }
@@ -351,13 +349,16 @@ orientation: portrait แนวตั้ง */
 
   .sug-text {
     width: 100%;
-    padding: 20px;
     height: fit-content;
   }
 
   .sug-text p {
-    margin-left: 0;
+    padding: 10%;
     font-size: 15px;
+  }
+
+  .content-sug {
+    height: fit-content;
   }
   
 }
@@ -432,6 +433,22 @@ orientation: portrait แนวตั้ง */
   .box-sugform-text {
     grid-template-columns: 1fr;
   }
+
+  .box-sugform img {
+    width: 70%;
+  }
+
+  .content-sug {
+    height: 100vh;
+  }
+
+  .sug-text {
+    margin-top: 10%;
+  }
+
+  .sug-text p {
+    padding: 10%;
+  }
   
 }
 
@@ -459,8 +476,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .sug-text p {
-    margin-left: 0;
-    margin-right: 0;
+    padding: 20px;
   }
 
   .picture-roomGirl {
@@ -488,5 +504,18 @@ orientation: portrait แนวตั้ง */
   
   #bt-start {
     top: 40%;
+  }
+
+  .box-sugform img {
+    width: 200px;
+  }
+
+  .text-sugform {
+    font-size: 16px;
+  }
+
+  .sug-text p {
+    font-size: 14px;
+    padding: 2px;
   }
 }
