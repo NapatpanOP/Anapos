@@ -76,7 +76,7 @@
 
 #bt-start {
   position: relative;
-  /* display: inline-block; */
+  display: inline-block;
   left: 4%;
   top: 15%;
   background-color: #3963C1;
