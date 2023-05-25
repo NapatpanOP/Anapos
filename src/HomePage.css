@@ -287,6 +287,10 @@
   color: #F8F8F8;
 }
 
+.sug-text b  {
+  color: #0e1c3a;
+}
+
 /* orientation: landscape แนวนอน
 orientation: portrait แนวตั้ง */
 @media only screen and (max-width: 820px) {
