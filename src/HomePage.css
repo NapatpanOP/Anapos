@@ -8,25 +8,30 @@
 .full-size {
   width: 100%;
   height: 100vh;
-}
 
-.box {
-  position: relative;
-  background: #42AFB4;
-  height: 57%;
-  width: 100%;
-  color: #ffff;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 }
 
+.box {
+  position: relative;
+  background: #42AFB4;
+  height: 57vh;
+  width: 100%;
+  color: #ffff;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px; */
+}
+
 .box-text1 {
   position: relative;
   width: 479px;
   left: 4%;
-  top: 20%;
+  top: 8%;
   font-size: 2rem;
   font-weight: bold;
   line-height: 40px;
@@ -37,7 +42,7 @@
 .box-description {
   position: relative;
   left: 4%;
-  top: 15%;
+  top: 8%;
   width: 655px;
   height: fit-content;
   display: flex;
@@ -86,7 +91,7 @@
 #bt-start {
   position: relative;
   left: 4%;
-  bottom: -30%;
+  bottom: -9%;
   background-color: #3963C1;
   border: none;
   cursor: pointer;
@@ -309,7 +314,7 @@ orientation: portrait แนวตั้ง */
   .box-text1 {
     width: 80%;
     left: 10%;
-    top: 30%;
+    top: 10%;
     font-size: 2rem;
   }
 
@@ -340,7 +345,7 @@ orientation: portrait แนวตั้ง */
 
   #bt-start {
     left: 10%;
-    top: 25%;
+    bottom: -12%;
   }
 
   .card {
@@ -379,7 +384,7 @@ orientation: portrait แนวตั้ง */
 
   .box-text1 {
     font-size: 1.5rem;
-    top: 20%;
+    top: 10%;
     line-height: 30px;
     height: fit-content;
   }
@@ -403,7 +408,7 @@ orientation: portrait แนวตั้ง */
 
   #bt-start {
     left: 10%;
-    bottom: 20%;
+    bottom: -10%;
   }
 
   .head-text {
@@ -467,7 +472,7 @@ orientation: portrait แนวตั้ง */
 
   #bt-start {
     left: 10%;
-    bottom: 10%;
+    bottom: -10%;
   }
 
   .box-sugform img {
@@ -507,7 +512,7 @@ orientation: portrait แนวตั้ง */
 @media screen and (max-width: 375px) {
 
   .box {
-    height: 550px;
+    height: 560px;
   }
 
   .picture-roomGirl {
@@ -515,7 +520,7 @@ orientation: portrait แนวตั้ง */
   }
   
   #bt-start {
-    bottom: 15%;
+    bottom: -12%;
   }
 
   .box-sugform img {
@@ -537,11 +542,12 @@ orientation: portrait แนวตั้ง */
 
   .box-text1 {
     height: fit-content;
-    top: 25%;
+    top: 8%;
   }
 
   .box-text2 {
     font-size: 12px;
     line-height: 30px;
+    top: 2%;
   }
 }
