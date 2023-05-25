@@ -287,6 +287,7 @@
   padding: 40px;
   line-height: 30px;
   color: #F8F8F8;
+  margin: 0;
 }
 
 .sug-text b  {
@@ -449,6 +450,7 @@ orientation: portrait แนวตั้ง */
 
   .sug-text p {
     padding: 10px;
+    font-size: 14px;
   }
   
 }
