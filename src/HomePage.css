@@ -26,7 +26,7 @@
   position: relative;
   width: 479px;
   left: 4%;
-  top: 15%;
+  top: 25%;
   font-size: 2rem;
   font-weight: bold;
   line-height: 40px;
@@ -37,7 +37,7 @@
 .box-description {
   position: relative;
   left: 4%;
-  top: 8%;
+  top: 15%;
   width: 655px;
   height: fit-content;
   display: flex;
@@ -86,7 +86,7 @@
 #bt-start {
   position: relative;
   left: 4%;
-  bottom: -9%;
+  bottom: -25%;
   background-color: #3963C1;
   border: none;
   cursor: pointer;
