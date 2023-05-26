@@ -157,7 +157,7 @@ const SelectGraphicsPositionPage = () => {
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Position selection</Modal.Title>
+                    <Modal.Title>Banner selection</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>If sure to select this banner, press Save and press Next.</Modal.Body>
                 <Modal.Footer>
