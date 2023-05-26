@@ -159,7 +159,7 @@ const SelectGraphicsPositionPage = () => {
                 <Modal.Header closeButton>
                     <Modal.Title>Position selection</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>If sure to select this position, press Save and press Next.</Modal.Body>
+                <Modal.Body>If sure to select this banner, press Save and press Next.</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" class='btn btn-success' id='bt-close' onClick={handleClose}>
                         Close
