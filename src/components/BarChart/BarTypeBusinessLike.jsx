@@ -5,14 +5,14 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarTypeBusinessLike({data}) {
-  const filterredPortal = data.filter((item) => {
+  const filterredBusiness = data.filter((item) => {
     return item.type === "Business";
 });
   const [userData, setData] = useState({
-    labels: filterredPortal.map((item) => item.title),
+    labels: filterredBusiness.map((item) => item.title),
     datasets: [{
       label: "Busness Website",
-      data: data.map((item) => item.like.length),
+      data: filterredBusiness.map((item) => item.like.length),
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',
@@ -23,10 +23,10 @@ function BarTypeBusinessLike({data}) {
 
   useEffect(() => {
     setData({
-      labels: filterredPortal.map((item) => item.title),
+      labels: filterredBusiness.map((item) => item.title),
       datasets: [{
         label: "Busness Website",
-        data: data.map((item) => item.like.length),
+        data: filterredBusiness.map((item) => item.like.length),
         backgroundColor: [
           '#FD8A8A',
           '#F1F7B5',
