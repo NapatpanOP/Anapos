@@ -182,11 +182,12 @@
   margin-left: 10px;
   margin-right: 10px;
   color: #F8F8F8;
+  font-size: 14px;
 }
 
 .content-graph-specific img {
   position: relative;
-  margin-top: 15px;
+  margin-top: 20px;
   width: 90%;
   border-radius: 10px;
   border: 3px solid #666d9d;
@@ -217,11 +218,12 @@
   margin-left: 10px;
   margin-right: 10px;
   color: #F8F8F8;
+  font-size: 14px;
 }
 
 .content-graph-overview img {
   position: relative;
-  margin-top: 15px;
+  margin-top: 0;
   width: 90%;
   border-radius: 10px;
   border: 3px solid #2c7368;
@@ -420,7 +422,7 @@ orientation: portrait แนวตั้ง */
   .content-graph-specific {
     flex-basis: 80%;
     max-width: 80%;
-    height: 350px;
+    height: 370px;
   }
 
   .content-graph-specific h3 {
@@ -430,7 +432,7 @@ orientation: portrait แนวตั้ง */
   .content-graph-overview {
     flex-basis: 80%;
     max-width: 80%;
-    height: 350px;
+    height: 370px;
   }
 
   .content-graph-overview h3 {
@@ -500,6 +502,22 @@ orientation: portrait แนวตั้ง */
 
   .box-description {
     top: 10%;
+  }
+
+  .content-graph-specific {
+    flex-basis: 80%;
+    max-width: 80%;
+    height: 350px;
+  }
+
+  .content-graph-specific h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-graph-overview {
+    flex-basis: 80%;
+    max-width: 80%;
+    height: 350px;
   }
 
 }
