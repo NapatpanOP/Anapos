@@ -8,11 +8,12 @@ function BarTypePortalLike({data}) {
   const filterredPortal = data.filter((item) => {
       return item.type === "Portal";
   });
+  
   const [userData, setData] = useState({
     labels: filterredPortal.map((item) => item.title),
     datasets: [{
       label: "Portal Website",
-      data: filterredPortal.map((item) => item.like.length),
+      data: null,
       backgroundColor: [
         '#88D7B5',
         '#FD8A8A',
@@ -26,7 +27,13 @@ function BarTypePortalLike({data}) {
       labels: filterredPortal.map((item) => item.title),
       datasets: [{
         label: "Portal Website",
-        data: filterredPortal.map((item) => item.like.length),
+        data:filterredPortal.map((item) => {
+          var positionAllCounts = 0
+          item.adsPositions.forEach((position) => {
+            positionAllCounts += position.selected_counts
+          })
+          return positionAllCounts
+        }),
         backgroundColor: [
           '#88D7B5',
           '#FD8A8A',
@@ -39,7 +46,7 @@ function BarTypePortalLike({data}) {
   return (
     <div className="full-box">
       <div className="bar-chart">
-        <BarChart chartData={userData}/>
+          <BarChart chartData={userData}/>
       </div>
     </div>
   )

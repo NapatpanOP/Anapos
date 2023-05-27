@@ -8,15 +8,11 @@ import './BarChart.css'
 function BarMaleLike({ data, allUser }) {
   var maleUser = allUser.filter((user) => user.sex == 'MALE')
 
-  var likeList = []
-  data.forEach((brand) => {
-    likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
-  });
   const [userData, setData] = useState({
     labels: data.map((item) => item.title),
     datasets: [{
       label: "MALE",
-      data: likeList.map((item) => item?.length),
+      data: null,
       backgroundColor: [
         '#9EA1D4',
         '#FD8A8A',
@@ -33,16 +29,22 @@ function BarMaleLike({ data, allUser }) {
 
   useEffect(() => {
     var maleUser = allUser.filter((user) => user.sex == 'MALE')
-    console.log(maleUser)
-    var likeList = []
-    data.forEach((brand) => {
-      likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
-    });
+    var positionBrandStore = {} 
+    data.forEach((brand) => { 
+      positionBrandStore[brand._id] = 0
+    })
+    maleUser.forEach((user) => {
+      user.ads_poitions_selected.forEach((ads) => {
+        console.log(ads)
+        positionBrandStore[ads.brand_id] += 1
+      })
+      
+    })
     setData({
       labels: data.map((item) => item.title),
       datasets: [{
         label: "MALE",
-        data: likeList.map((item) => item?.length),
+        data: Object.values(positionBrandStore),
         backgroundColor: [
           '#9EA1D4',
           '#FD8A8A',

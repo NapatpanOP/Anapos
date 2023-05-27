@@ -12,7 +12,7 @@ function BarTypeBusinessLike({data}) {
     labels: filterredBusiness.map((item) => item.title),
     datasets: [{
       label: "Busness Website",
-      data: filterredBusiness.map((item) => item.like.length),
+      data: null,
       backgroundColor: [
         '#FD8A8A',
         '#F1F7B5',
@@ -26,7 +26,13 @@ function BarTypeBusinessLike({data}) {
       labels: filterredBusiness.map((item) => item.title),
       datasets: [{
         label: "Busness Website",
-        data: filterredBusiness.map((item) => item.like.length),
+        data: filterredBusiness.map((item) => {
+          var positionAllCounts = 0
+          item.adsPositions.forEach((position) => {
+            positionAllCounts += position.selected_counts
+          })
+          return positionAllCounts
+        }),
         backgroundColor: [
           '#FD8A8A',
           '#F1F7B5',

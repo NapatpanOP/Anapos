@@ -12,7 +12,7 @@ function BarTypeNewLike({data}) {
     labels: filterredNew.map((item) => item.title),
     datasets: [{
       label: "News Website",
-      data: filterredNew.map((item) => item.like.length),
+      data: null,
       backgroundColor: [
         '#F1F7B5',
         '#FD8A8A',
@@ -26,7 +26,13 @@ function BarTypeNewLike({data}) {
       labels: filterredNew.map((item) => item.title),
       datasets: [{
         label: "News Website",
-        data: filterredNew.map((item) => item.like.length),
+        data: filterredNew.map((item) => {
+          var positionAllCounts = 0
+          item.adsPositions.forEach((position) => {
+            positionAllCounts += position.selected_counts
+          })
+          return positionAllCounts
+        }),
         backgroundColor: [
           '#F1F7B5',
           '#FD8A8A',

@@ -8,15 +8,17 @@ import './BarChart.css'
 function BarOtherLike({data, allUser}) {
   var maleUser = allUser.filter((user) => user.sex == 'OTHER')
 
-  var likeList = [] 
-  data.forEach((brand) => {
-    likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
-  });
+  
+  // var likeList = [] 
+  
+  // data.forEach((brand) => {
+  //   likeList.push(maleUser.filter((m) => brand.like.includes(m._id)))
+  // });
   const [userData, setData] = useState({
     labels: data.map((data) => data.title),
     datasets: [{
       label: "OTHER",
-      data: likeList.map((item) => item?.length),
+      data: null,
       backgroundColor: [
         '#7371D9',
         '#FD8A8A',
@@ -32,11 +34,22 @@ function BarOtherLike({data, allUser}) {
   }) 
 
   useEffect(() => {
+    var positionBrandStore = {} 
+    data.forEach((brand) => { 
+      positionBrandStore[brand._id] = 0
+    })
+    maleUser.forEach((user) => {
+      user.ads_poitions_selected.forEach((ads) => {
+        console.log(ads)
+        positionBrandStore[ads.brand_id] += 1
+      })
+      
+    })
     setData({
       labels: data.map((data) => data.title),
       datasets: [{
         label: "OTHER",
-        data: likeList.map((item) => item?.length),
+        data: Object.values(positionBrandStore),
         backgroundColor: [
           '#7371D9',
           '#FD8A8A',

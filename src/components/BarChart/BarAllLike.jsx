@@ -9,7 +9,7 @@ function BarAllLike({data}) {
     labels: data.map((item) => item.title),
     datasets: [{
       label: "OVERVIEW",
-      data: data.map((item) => item?.like?.length),
+      data: null,
       backgroundColor: [
         '#00ADB5',
         '#FD8A8A',
@@ -29,7 +29,13 @@ function BarAllLike({data}) {
       labels: data.map((item) => item.title),
       datasets: [{
         label: "OVERVIEW",
-        data: data.map((item) => item?.like?.length),
+        data: data.map((item) => {
+          var positionAllCounts = 0
+          item.adsPositions.forEach((position) => {
+            positionAllCounts += position.selected_counts
+          })
+          return positionAllCounts
+        }),
         backgroundColor: [
           '#00ADB5',
           '#FD8A8A',
