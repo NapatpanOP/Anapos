@@ -39,6 +39,31 @@ const ConclusionPage = () => {
             ))}
           </tbody>
         </table>
+        {allBrand?.map((brand, brand_index) => (
+          <div key={brand_index}>
+            <h1>{brand?.title}</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>position</th>
+                  <th>banner 1</th>
+                  <th>banner 2</th>
+                  <th>banner 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                {brand?.adsPositions?.map((position, pos_index) => (
+                  <tr key={pos_index}>
+                    <td>position {pos_index + 1}</td>
+                    {position?.images_urls?.map((banner, banner_index) => (
+                      <td key={banner_index}>{banner.selected_counts}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
       </div>
 
       {/* <div class="box-table-allWebsite">
