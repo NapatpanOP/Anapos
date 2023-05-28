@@ -1,42 +1,71 @@
-import React from 'react';
-import { data } from '../../components/data.json';
-import './ConclusionPage.css';
+import React from "react";
+// import { data } from '../../components/data.json';
+import { useEffect, useState } from "react";
+import { BrandAPI } from "../../apis/brandAPI";
+import "./ConclusionPage.css";
 
 const ConclusionPage = () => {
-    return (
-        <div class="box-table">
-            <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>All Like</th>
-                    <th>Male Like</th>
-                    <th>Female Like</th>
-                    <th>Other Like</th>
-                    <th>Position Max</th>
-                    <th>Position Min</th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.map((item) => (
-                    <tr key={item.id}>
-                    <td>{item.id}</td>
-                    <td>{item.name}</td>
-                    <td>{item.type}</td>
-                    <td>{item.like_all}</td>
-                    <td>{item.like_male}</td>
-                    <td>{item.like_female}</td>
-                    <td>{item.like_other}</td>
-                    <td>{item.position_max}</td>
-                    <td>{item.position_min}</td>
-                    </tr>
-                ))}
-            </tbody>
-            </table>
-        </div>
-    )
-}
 
-export default ConclusionPage
+  const [allBrand, setAllBrand] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await BrandAPI.getAll();
+      setAllBrand(response);
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <div class="box-table">
+        <p>ALL Brand</p>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Like</th>
+            </tr>
+          </thead>
+          <tbody>
+            {allBrand.map((brand, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{brand.title}</td>
+                <td>{brand.type}</td>
+                <td>{brand.like.length}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* <div class="box-table-allWebsite">
+        <p>Youtube</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Like</th>
+            </tr>
+          </thead>
+          <tbody>
+            {allBrand.map((brand, index) => (
+              <tr key={index}>
+                <td>Position {brand.adsPositions.join(", ")}</td>
+                <td>{brand.title}</td>
+                <td>{brand.type}</td>
+                <td>{brand.like.length}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div> */}
+    </div>
+  );
+};
+
+export default ConclusionPage;
