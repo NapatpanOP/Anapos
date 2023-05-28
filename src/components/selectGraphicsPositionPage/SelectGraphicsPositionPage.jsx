@@ -96,7 +96,7 @@ const SelectGraphicsPositionPage = () => {
                 }
             }).then(() => {
                 loadingAction.onLoading(false)
-                navigate('/')
+                navigate('/typesweb')
             })
         })
     }
