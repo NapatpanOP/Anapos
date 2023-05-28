@@ -59,12 +59,16 @@ body {
   margin: 10px;
 }
 
-#bt-login {
+#bt-login-page {
   background-color: #37D295;
   border: none;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 14px 20px;
+  margin: 8px 0;
 }
 
-#bt-login:hover {
+#bt-login-page:hover {
   background-color: rgb(41, 161, 113);
 }
 
@@ -96,7 +100,8 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-top: 1%;
 }
 
 button[type="signup"] {
@@ -105,6 +110,7 @@ button[type="signup"] {
   cursor: pointer;
   background-color: #FFFFFF;
   border: none;
+  font-size: 1.1rem;
 }
 
 button[type="signup"]:hover {
@@ -150,4 +156,5 @@ input[type="password"]:focus {
     box-shadow: none;
     padding: 0;
   }
+  
 }

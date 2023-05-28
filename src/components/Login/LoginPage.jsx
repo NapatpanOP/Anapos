@@ -76,10 +76,9 @@ const LoginPage = () => {
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
           {loginError && <p className="error">{loginError}</p>}
-          <button onClick={() => handleSubmit()} className="btn btn-primary btn-success" id="bt-login">
+          <button onClick={() => handleSubmit()} className="btn btn-primary btn-success" id="bt-login-page">
             Log in
           </button>
-          <hr />
           <div class="signup-container">
             <Link to="../Signup">
               <button type="signup">Sign up</button>

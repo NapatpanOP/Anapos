@@ -92,6 +92,7 @@ button[type="submit"] {
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 button[type="login"] {
@@ -100,17 +101,13 @@ button[type="login"] {
   cursor: pointer;
   background-color: #FFFFFF;
   border: none;
+  font-size: 1.1rem;
 }
 
 button[type="login"]:hover {
   color: #f32a2a;
 }
 
-/* @media (min-width: 768px) {
-  .form-container {
-    min-width: 320px;
-  }
-} */
 
 /* apply styles for larger screens */
 @media screen and (min-width: 820px) {
@@ -124,6 +121,7 @@ button[type="login"]:hover {
   .register-container-box form {
     min-width: 600px;
   }
+
   .signup-container {
     margin-bottom: 10%;
   }
