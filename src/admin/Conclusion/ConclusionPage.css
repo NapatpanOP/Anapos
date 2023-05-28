@@ -40,7 +40,7 @@ td {
   font-weight: bold;
   color: rgb(255, 255, 255);
   line-height: 50px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .box-table tbody tr:nth-child(even) {
@@ -61,5 +61,10 @@ td {
 
   .box-table p {
     font-size: 1.3rem;
+  }
+
+  .box-table th {
+    font-size: 1rem;
+    line-height: 30px;
   }
 }

@@ -41,20 +41,20 @@ const ConclusionPage = () => {
         </table>
         {allBrand?.map((brand, brand_index) => (
           <div key={brand_index}>
-            <h1>{brand?.title}</h1>
+            <p>{brand?.title}</p>
             <table>
               <thead>
                 <tr>
-                  <th>position</th>
-                  <th>banner 1</th>
-                  <th>banner 2</th>
-                  <th>banner 3</th>
+                  <th>Position</th>
+                  <th>Banner 1</th>
+                  <th>Banner 2</th>
+                  <th>Banner 3</th>
                 </tr>
               </thead>
               <tbody>
                 {brand?.adsPositions?.map((position, pos_index) => (
                   <tr key={pos_index}>
-                    <td>position {pos_index + 1}</td>
+                    <td>Position {pos_index + 1}</td>
                     {position?.images_urls?.map((banner, banner_index) => (
                       <td key={banner_index}>{banner.selected_counts}</td>
                     ))}
@@ -66,29 +66,6 @@ const ConclusionPage = () => {
         ))}
       </div>
 
-      {/* <div class="box-table-allWebsite">
-        <p>Youtube</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Position</th>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Like</th>
-            </tr>
-          </thead>
-          <tbody>
-            {allBrand.map((brand, index) => (
-              <tr key={index}>
-                <td>Position {brand.adsPositions.join(", ")}</td>
-                <td>{brand.title}</td>
-                <td>{brand.type}</td>
-                <td>{brand.like.length}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div> */}
     </div>
   );
 };
