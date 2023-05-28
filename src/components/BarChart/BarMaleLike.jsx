@@ -6,7 +6,6 @@ import BarChart from './BarChart';
 import './BarChart.css'
 
 function BarMaleLike({ data, allUser }) {
-  var maleUser = allUser.filter((user) => user.sex == 'MALE')
 
   const [userData, setData] = useState({
     labels: data.map((item) => item.title),
@@ -29,6 +28,7 @@ function BarMaleLike({ data, allUser }) {
 
   useEffect(() => {
     var maleUser = allUser.filter((user) => user.sex == 'MALE')
+    console.log(maleUser)
     var positionBrandStore = {} 
     data.forEach((brand) => { 
       positionBrandStore[brand._id] = 0
