@@ -24,7 +24,6 @@ const AdminUserDataPage = () => {
             <tr>
               <th>ID</th>
               <th>Username</th>
-              <th>Email</th>
               <th>Sex</th>
               <th>Age_range</th>
             </tr>
@@ -34,7 +33,6 @@ const AdminUserDataPage = () => {
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{user.username}</td>
-                <td>{user.email}</td>
                 <td>{user.sex}</td>
                 <td>{user.age_range}</td>
               </tr>
