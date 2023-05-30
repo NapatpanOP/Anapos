@@ -108,6 +108,10 @@ button[type="login"]:hover {
   color: #f32a2a;
 }
 
+.ck-confirm {
+  margin-left: 10px;
+}
+
 
 /* apply styles for larger screens */
 @media screen and (min-width: 820px) {

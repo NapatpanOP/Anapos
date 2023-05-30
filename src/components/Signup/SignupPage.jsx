@@ -15,14 +15,20 @@ function SignupPage() {
   const [errorMessage, setErrorMessage] = useState();
   const navigate = useNavigate();
   const { AuthAction } = useAuthContext();
+  const [isChecked, setIsChecked] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username && email && password && sex && ageRange) {
-      console.log({ username, email, password, sex, ageRange });
-      // ส่งข้อมูลไปยัง API หรือทำการส่งไปบันทึกในฐานข้อมูล
+    if (username && email && password && sex && ageRange && isChecked) {
+      register({
+        username: username,
+        password: password,
+        email: email,
+        sex: sex,
+        age_range: ageRange,
+      });
     } else {
-      alert("Please fill in all fields");
+      alert("Please fill in all fields and confirm registration.");
     }
   };
 
@@ -40,21 +46,25 @@ function SignupPage() {
     user["brands_like"] = [];
     user["ad_template"] = [];
     user.password = CryptoJS.AES.encrypt(user.password, "OKIOKI007").toString();
-    RegisterAPI.register(user).then((response) => {
-      if (response?.message) {
-        setErrorMessage(response.message);
-      } else {
-        AuthAction.onSetUserSignin(response);
-        console.log(response);
-        navigate("/");
-      }
-    });
+    RegisterAPI.register(user)
+      .then((response) => {
+        if (response?.message) {
+          setErrorMessage(response.message);
+        } else {
+          AuthAction.onSetUserSignin(response);
+          console.log(response);
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
     <div className="register-container-box">
       <div className="register-form">
-        <div class="register-box">
+        <div className="register-box">
           <h2>SIGN UP FOR ACCESS</h2>
           <div className="form-group">
             <label htmlFor="username">USER*</label>
@@ -114,6 +124,12 @@ function SignupPage() {
               <option value="<55">&lt;55</option>
             </select>
             <p className="text-error">{errorMessage}</p>
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={(e) => setIsChecked(e.target.checked)}
+            />
+            <label htmlFor="confirm" class="ck-confirm">Agree to collect information for the pape</label>
             <div className="Signup-submit">
               <button
                 onClick={() =>
