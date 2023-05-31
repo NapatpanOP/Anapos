@@ -11,7 +11,7 @@
 }
 
 .navbar-logo img {
-  height: 30px;
+  height: 38px;
   margin-left: 3rem;
 }
 
@@ -183,15 +183,19 @@
   border: none;
   text-align: center;
   color: #fff;
+  font-family: 'Anuphan', sans-serif;
 }
 
 #bt-login {
   background-color: #F7C873;
   border: none;
+  color: #434343;
+  font-family: 'Anuphan', sans-serif;
 }
 
 #bt-login:hover {
   background-color: #b08c49;
+  color: #fff;
 }
 
 #bt-logout:hover {

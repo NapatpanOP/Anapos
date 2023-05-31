@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import picturRoomGirl from "./assets/Room - Girl Working.png";
+import React, { useState, useEffect } from "react";
 import { useAuthContext } from "./core/contexts/AuthProvider";
 import { Link, useLocation } from "react-router-dom";
 import picture2 from "./assets/picture/pt-2.jpg";
@@ -204,6 +204,12 @@ function HomePage() {
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="full-size5">
+            <div class="box5">
+
             </div>
           </div>
         </div>

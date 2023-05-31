@@ -36,16 +36,16 @@ const Nevbar = () => {
     if (mode == 'user') {
       if (!token) {
         return <Link to="../Login" if>
-          <Button id='bt-login'>Log in</Button>
+          <Button id='bt-login'>สมัครสมาชิก</Button>
         </Link>
       } else {
         return <><Dropdown
           open={open}
           trigger={<button onClick={handleOpen} className='web-btn'><div className='circle-icon'><strong>{token.username.charAt(0).toUpperCase()}</strong></div></button>}
           menu={[
-            <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button>
+            <Button onClick={() => AuthAction.onLogout()} id='bt-logout'>ออกจากระบบ</Button>
           ]}
-        /> <Button className='mobile-btn' onClick={() => AuthAction.onLogout()} id='bt-logout'>Log out</Button></>
+        /> <Button className='mobile-btn' onClick={() => AuthAction.onLogout()} id='bt-logout'>ออกจากระบบ</Button></>
       }
     } else {
         return <><Dropdown

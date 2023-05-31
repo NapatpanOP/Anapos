@@ -249,8 +249,8 @@
 
 .pt-3 {
   width: 100%;
-  height: 50vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-3.jpg);
+  height: 60vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -285,7 +285,7 @@
   background: #f6f6f6;
   border-radius: 46px;
   position: relative;
-  top: -3rem;
+  top: -5rem;
 }
 
 .box4-text {
@@ -339,6 +339,12 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 48px 0px 48px 48px;
+  transition: box-shadow 0.3s ease;
+}
+
+.box4-card1:hover, .box4-card2:hover, .box4-card3:hover,
+.box4-card4:hover, .box4-card5:hover, .box4-card6:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .box4-card2 {
@@ -354,6 +360,7 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 48px;
+  transition: box-shadow 0.3s ease;
 }
 
 .box4-card3 {
@@ -369,6 +376,7 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 0px 48px 48px 48px;
+  transition: box-shadow 0.3s ease;
 }
 
 .box4-card4 {
@@ -384,6 +392,7 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 48px 48px 0px 48px;
+  transition: box-shadow 0.3s ease;
 }
 
 .box4-card5 {
@@ -399,6 +408,7 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 48px;
+  transition: box-shadow 0.3s ease;
 }
 
 .box4-card6 {
@@ -414,6 +424,7 @@
   color: #434343;
   border: 1px solid #F7C873;
   border-radius: 48px 48px 48px 0px;
+  transition: box-shadow 0.3s ease;
 }
 
 .card-container-box4 p, h5 {
@@ -439,6 +450,27 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   color: #434343;
+}
+
+.full-size5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 50rem;
+}
+
+.box5 {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* orientation: landscape แนวนอน
