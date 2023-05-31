@@ -6,6 +6,13 @@ import picture2 from "./assets/picture/pt-2.jpg";
 import icontypesweb from "./assets/icon/icon-typeweb.png"
 import icongrapg from "./assets/icon/icon-graph.png"
 import iconnews from "./assets/icon/icon-news.png"
+import iconpeople from "./assets/icon/icon-people.png"
+import iconword from "./assets/icon/icon-word.png"
+import iconsocial from "./assets/icon/icon-social.png"
+import icongroup from "./assets/icon/icon-group.png"
+import iconaverage from "./assets/icon/icon-average.png"
+import iconnumone from "./assets/icon/icon-num1.png"
+import iconphone from "./assets/icon/icon-phone.png"
 
 function HomePage() {
   const { token } = useAuthContext();
@@ -100,14 +107,17 @@ function HomePage() {
             <div class="pt-3">
               <div class="box3">
                 <div class="box3-text1">
+                  <img src={iconpeople} alt="icon" class="icon" />
                   <h1>71.75 ล้านคน</h1>
                   <p>ประชากรทั้งหมดในไทย</p>
                 </div>
                 <div class="box3-text2">
+                  <img src={iconword} alt="icon" class="icon" />
                   <h1>61.21 ล้านคน</h1>
                   <p>การใช้อินเทอร์เน็ตในประเทศไทย</p>
                 </div>
                 <div class="box3-text3">
+                  <img src={iconsocial} alt="icon" class="icon" />
                   <h1>8 ชั่วโมง 6 นาที</h1>
                   <p>เวลาในการใช้สื่อมัลติมีเดียออนไลน์ของคนไทยใน 1 วัน</p>
                 </div>
@@ -125,7 +135,8 @@ function HomePage() {
                 </p>
               </div>
               <div class="card-container-box4">
-                <div class="box4-card1">
+                <div class="box4-card1"> 
+                  <img src={icongroup} alt="icon" class="icon" />
                   <h5>การใช้ดิจิตอลไม่ค่อยเติบโต</h5>
                   <p>
                     จำนวนผู้ใช้งานอินเทอร์เน็ตเองเพิ่มขึ้นแค่ 1.9% จากปีก่อน{" "}
@@ -137,6 +148,7 @@ function HomePage() {
                   </Link>
                 </div>
                 <div class="box4-card2">
+                  <img src={iconaverage} alt="icon" class="icon" />
                   <h5>ค่าเฉลี่ยอายุคนไทยในปี 2023</h5>
                   <p>คนประเทศไทยปัจจุบันมีอายุโดยเฉลี่ยอยู่ 40.1 ปี</p>
                   <Link to="#">
@@ -146,6 +158,7 @@ function HomePage() {
                   </Link>
                 </div>
                 <div class="box4-card3">
+                  <img src={iconword} alt="icon" class="icon" />
                   <h5>การเข้าถึงอินเทอร์เน็ต</h5>
                   <p>การเข้าใช้อินเทอร์เน็ตของไทยนั้นอยู่ที่ 85.3%</p>
                   <Link to="#">
@@ -155,6 +168,7 @@ function HomePage() {
                   </Link>
                 </div>
                 <div class="box4-card4">
+                  <img src={iconsocial} alt="icon" class="icon" />
                   <h5>ค่าเฉลี่ยการเข้าอินเทอร์เน็ตผ่านคอมพิวเตอร์จากทั่วโลก</h5>
                   <p>คนไทยออนไลน์ผ่านคอมพิวเตอร์วันละ 3 ชั่วโมง 1 นาที</p>
                   <Link to="#">
@@ -164,6 +178,7 @@ function HomePage() {
                   </Link>
                 </div>
                 <div class="box4-card5">
+                  <img src={iconnumone} alt="icon" class="icon" />
                   <h5>เว็บไซต์ที่คนไทยเข้าชมมากที่สุด</h5>
                   <p>
                     คนประเทศไทยเข้า Google มากที่สุดเป็นอันดับ 1 ของเว็บทั้งหมด
@@ -175,6 +190,7 @@ function HomePage() {
                   </Link>
                 </div>
                 <div class="box4-card6">
+                  <img src={iconphone} alt="icon" class="icon" />
                   <h5>
                     สัดส่วนการใช้เวลาเล่นอินเทอร์เน็ตระหว่างคอมพิวเตอร์กับมือถือ
                   </h5>
