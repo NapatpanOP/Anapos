@@ -101,7 +101,7 @@ const Nevbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
-        <ul >
+        <ul>
           {MenuItems.map((item, index) => {
             if (item.permission == mode)
               return (

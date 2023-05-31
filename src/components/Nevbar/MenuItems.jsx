@@ -1,24 +1,30 @@
 export const MenuItems = [
     {
-      title: "Home",
+      title: "หน้าหลัก",
       url: "/",
       cName: "nev-links",
       permission: 'user'
     },
     {
-      title: "Types of websites",
+      title: "เกี่ยวกับ",
+      url: "/about",
+      cName: "nev-links",
+      permission: 'user'
+    },
+    {
+      title: "ประเภทเว็บไซต์",
       url: "/typesweb",
       cName: "nev-links",
       permission: 'user'
     },
     {
-      title: "Graph",
+      title: "กราฟ",
       url: "/graph",
       cName: "nev-links",
       permission: 'user'
     },
     {
-      title: "Suggestion",
+      title: "ข้อเสนอแนะ",
       url: "/suggestion",
       cName: "nev-links",
       permission: 'user'

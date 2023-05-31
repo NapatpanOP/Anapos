@@ -1,14 +1,11 @@
 import "./HomePage.css";
 import picturRoomGirl from "./assets/Room - Girl Working.png";
 import { useAuthContext } from "./core/contexts/AuthProvider";
-import { Link, useLocation } from 'react-router-dom';
-import iconNum1 from "./assets/icon/icon-num1.png";
-import iconNum2 from "./assets/icon/icon-num2.png";
-import iconNum3 from "./assets/icon/icon-num3.png";
-import iconNum4 from "./assets/icon/icon-num4.png";
-import specificPage from "./assets/pageScreen/specific.png";
-import overviewPage from "./assets/pageScreen/overview.png";
-import sugPage from './assets/pageScreen/sugFom.png'
+import { Link, useLocation } from "react-router-dom";
+import picture2 from "./assets/picture/pt-2.jpg";
+import icontypesweb from "./assets/icon/icon-typeweb.png"
+import icongrapg from "./assets/icon/icon-graph.png"
+import iconnews from "./assets/icon/icon-news.png"
 
 function HomePage() {
   const { token } = useAuthContext();
@@ -17,112 +14,184 @@ function HomePage() {
     <div>
       <div className="full-size">
         <div className="box">
-          <p className="box-text1">
-            This is a website that explores the design structure of each
-            website.
-          </p>
-          <div class="box-description">
-            <p className="box-text2">
+          <p className="box-text1">ยินดีต้อนรับสู่</p>
+          <div class="box-description1">
+            <p className="box-text2">ANALYZES THE POSITION</p>
+          </div>
+          <div class="box-description2">
+            <p className="box-text3">
               เว็บแอปพลิเคชั่นเพื่อรวบรวมข้อมูลการวางตำแหน่งโฆษณาสำหรับเว็บไซต์แต่ละประเภท
               โดยเรานำเว็บไซต์มาจากการจัดอันดับเว็บไซต์ที่มีผู้เข้าชมมากที่สุดอันดับที่
               1 ถึง 3 ในประเภทสื่อให้ความบันเทิง ข่าวสาร และสินค้าไอที
-              ซึ่งผู้ใช้จะมีส่วนช่วยในการรวบรวมข้อมูลเพื่อหาตำแหน่งการวางโฆษณาจากการเลือกเว็บไซต์ที่ตนเข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุด
-              เว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดเลือกในรูปแบบของกราฟข้อมูล
-              เพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์ของตนให้ดียิ่งขึ้น
             </p>
           </div>
-          <Link to="./typesweb">
-            <button type="button" class="btn btn-success" id="bt-start">
-              Get Started
-            </button>
-          </Link>
-        </div>
-        <img src={picturRoomGirl} alt="Image" className="picture-roomGirl" />
-      </div>
 
-      <div class="box-content-home">
-        <div className="head-text">
-          <p>Steps to use</p>
-        </div>
-
-        <div className="card-grid-steps">
-            <div className="card">
-              <img src={iconNum1} alt="icon1" />
-              <div className="card-content">
-                <h3>Step 1</h3>
-                <p>ผู้ใช้ใหม่ต้องทำการลงทะเบียนก่อนเข้าใช้งานเว็บไซต์ หากผู้ใช้มีบัญชีอยู่แล้วให้ทำการล็อกอินเพื่อเข้าใช้งาน<br/><br/>จากนั้นกดปุ่มเพื่อไปที่หน้า<br/>Types of websites</p>
-              </div>
-            </div>
-            <div className="card">
-              <img src={iconNum2} alt="icon2" />
-              <div className="card-content">
-                <h3>Step 2</h3>
-                <p>
-                  กดเข้าเว็บไซต์ที่ใช้งานประจำหรือ<br/>ที่ชอบการวางตำแหน่งโฆษณา<br/><br/>
-                  ส่วนนี้ผู้ใช้สามารถกดถูกใจเว็บไซต์ที่ชื่นชอบการวางตำแหน่งได้
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src={iconNum3} alt="icon3" />
-              <div className="card-content">
-                <h3>Step 3</h3>
-                <p>
-                  ดูภาพการวางตำแหน่งโฆษณา จากนั้นกดปุ่มเพื่อเลือกตำแหน่งโฆษณาที่ถูกใจ
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src={iconNum4} alt="icon3" />
-              <div className="card-content">
-                <h3>Step 4</h3>
-                <p>
-                  เว็บไซต์จะพาไปยังหน้าเลือกกราฟิกของโฆษณาตำแหน่งที่ผู้ใช้เลือก ดูภาพกราฟิกเพื่อเลือกรูปแบบที่ชอบ
-                  สามารถแสดงความคิดเห็นเกี่ยวกับกราฟิกได้ อันดับสุดท้ายกดปุ่มเพื่อเลือกกราฟิกเป็นอันเสร็จสิ้น
-                </p>
-              </div>
-            </div>
+          <div class="bt-link-home">
+            <Link to="#">
+              <button
+                type="button"
+                class="btn btn-outline-warning"
+                id="bt-about"
+              >
+                เกี่ยวกับ
+              </button>
+            </Link>
+            <Link to="#">
+              <button
+                type="button"
+                class="btn btn-outline-warning"
+                id="bt-news"
+              >
+                ข่าวสาร
+              </button>
+            </Link>
           </div>
-      </div>
 
-      <div className="head-text">
-          <p>Summary graphs</p>
-      </div>
-
-      <div class="content-graph">
-        <div class="content-graph-specific">
-          <h3>Specific</h3>
-          <p>แสดงข้อมูลการเลือกของแต่ละเว็บไซต์โดยเฉพาะ ได้แก่ ตำแหน่ง และ รูปแบบกราฟิกโฆษณา</p>
-          <img src={specificPage} alt="specificPage" />
-        </div>
-        <div class="content-graph-overview">
-          <h3>Overview</h3>
-          <p>แสดงข้อมูลโดยรวมจากการเลือกตำแหน่งโฆษณาบนหน้าเว็บไซต์ของผู้ใช้ แบ่งข้อมูลเป็น<br/> ภาพรวม ตามประเภทเว็บไซต์ และ ตามเพศของผู้ใช้</p>
-          <img src={overviewPage} alt="overviewPage" />
-        </div>
-      </div>
-
-      <div className="head-text">
-        <p>Suggestion</p>
-      </div>
-
-      <div class="content-sug">
-        <div class="box-sugform">
-          <p class="text-sugform">หน้าเสนอแนะเพิ่มเติม เมื่อผู้ใช้ต้องการเสนอเว็บไซต์อื่นนอกเหนือจากตัวอย่างที่เรานำมา</p>
-          <div class="box-sugform-text">
-            <img src={sugPage} alt="sugPage" />
-            <div class="sug-text">
+          <div class="box-content">
+            <div class="box-content1">
+              <img src={icontypesweb} alt="icon" class="icon" />
+              <h5>ประเภทของเว็บไซต์</h5>
               <p>
-                <b>Website Name :</b> ระบุชื่อของเว็บไซต์ที่สนใจ<br/>
-                <b>Types of Websites :</b> ระบุประเภทของเว็บไซต์<br/>
-                <b>Note :</b> คำอธิบายเพิ่มเติมว่าทำไมถึงอยากให้เพิ่มเข้ามา<br/>
-                <b>URL of Websites :</b> นำ URL มาใส่เพื่อให้ง่ายต่อการหาเว็บไซต์นั้นๆ<br/>
+                โดยจะแบ่งเว็บไซต์ทั้งหมดเป็นแต่ละประเภทดังนี้ บรรเทิง ข่าวสาร
+                และธุรกิจ
+              </p>
+            </div>
+            <div class="box-content2">
+              <img src={icongrapg} alt="icon" class="icon" />
+              <h5>กราฟ</h5>
+              <p>
+                แสดงผลต่างๆ ที่ผู้ใช้ได้ทำการเลือกต่างๆโดยหลักแล้วมีในรูปแบบ
+                เฉพาะ และภาพรวม
+              </p>
+            </div>
+            <div class="box-content3">
+              <img src={iconnews} alt="icon" class="icon" />
+              <h5>ข้อเสนอแนะ</h5>
+              <p>
+                ผู้ใช้สามารถแนะนำเว็บไซต์ต่างๆที่ผู้ใช้สนใจอยากให้นำมาวิเคราะห์ตำแหน่งโฆษณา
               </p>
             </div>
           </div>
+
+          <div class="full-size2">
+            <div class="box2">
+              <p class="head-box2">เกี่ยวกับ Anapos</p>
+              <h4>เว็บไซต์นี้ใช้สำรวจโครงสร้างการออกแบบของแต่ละเว็บไซต์</h4>
+              <p>
+                เป็นเว็บแอพพลิเคชั่นเพื่อรวบรวมข้อมูลการจัดวางตำแหน่งโฆษณาสำหรับเว็บไซต์แต่ละประเภท
+                โดยเรานำเว็บไซต์มาจากการจัดอันดับเว็บไซต์ที่มีผู้เข้าชมมากที่สุดในประเทศไทยซึ่งส่วนมากเป็น
+                ประเภทสื่อให้ความบันเทิง ข่าวสาร และธุรกิจ
+              </p>
+              <p>
+                ซึ่งผู้ใช้จะมีส่วนช่วยในการรวบรวมข้อมูลเพื่อหาตำแหน่งการวางโฆษณาจากการเลือกเว็บไซต์ที่ตน
+                เข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุดซึ่งเว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดที่เลือกในรูปแบบของกราฟข้อมูลเพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์
+                หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
+              </p>
+              <Link to="#">
+                <button type="button" class="btn btn-warning" id="bt-more">
+                  เพิ่มเติมเกี่ยวกับเรา
+                </button>
+              </Link>
+            </div>
+            <img src={picture2} alt="pt-2" class="pt-2" />
+          </div>
+
+          <div class="full-size3">
+            <div class="pt-3">
+              <div class="box3">
+                <div class="box3-text1">
+                  <h1>71.75 ล้านคน</h1>
+                  <p>ประชากรทั้งหมดในไทย</p>
+                </div>
+                <div class="box3-text2">
+                  <h1>61.21 ล้านคน</h1>
+                  <p>การใช้อินเทอร์เน็ตในประเทศไทย</p>
+                </div>
+                <div class="box3-text3">
+                  <h1>8 ชั่วโมง 6 นาที</h1>
+                  <p>เวลาในการใช้สื่อมัลติมีเดียออนไลน์ของคนไทยใน 1 วัน</p>
+                </div>
+              </div>
+            </div>
+            <div class="box4">
+              <div class="box4-text">
+                <p class="box4-text-head">ข้อมูลข่าวสารจาก</p>
+                <h1>Global Digital Stat 2023</h1>
+                <p>
+                  เป็นรายงาน Digital 2023 Global Overview Report ของ We Are
+                  Social โดยจะนำสถิติพฤติกรรมการการเข้า
+                  สื่อออนไลน์จากคนทั่วโลกในแต่ละปี
+                  ซึ่งทางเราจะเน้นข้อมูลของคนไทยเป็นหลัก
+                </p>
+              </div>
+              <div class="card-container-box4">
+                <div class="box4-card1">
+                  <h5>การใช้ดิจิตอลไม่ค่อยเติบโต</h5>
+                  <p>
+                    จำนวนผู้ใช้งานอินเทอร์เน็ตเองเพิ่มขึ้นแค่ 1.9% จากปีก่อน{" "}
+                  </p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+                <div class="box4-card2">
+                  <h5>ค่าเฉลี่ยอายุคนไทยในปี 2023</h5>
+                  <p>คนประเทศไทยปัจจุบันมีอายุโดยเฉลี่ยอยู่ 40.1 ปี</p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+                <div class="box4-card3">
+                  <h5>การเข้าถึงอินเทอร์เน็ต</h5>
+                  <p>การเข้าใช้อินเทอร์เน็ตของไทยนั้นอยู่ที่ 85.3%</p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+                <div class="box4-card4">
+                  <h5>ค่าเฉลี่ยการเข้าอินเทอร์เน็ตผ่านคอมพิวเตอร์จากทั่วโลก</h5>
+                  <p>คนไทยออนไลน์ผ่านคอมพิวเตอร์วันละ 3 ชั่วโมง 1 นาที</p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+                <div class="box4-card5">
+                  <h5>เว็บไซต์ที่คนไทยเข้าชมมากที่สุด</h5>
+                  <p>
+                    คนประเทศไทยเข้า Google มากที่สุดเป็นอันดับ 1 ของเว็บทั้งหมด
+                  </p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+                <div class="box4-card6">
+                  <h5>
+                    สัดส่วนการใช้เวลาเล่นอินเทอร์เน็ตระหว่างคอมพิวเตอร์กับมือถือ
+                  </h5>
+                  <p>
+                    เวลาที่ออนไลน์ทั้งหมดเกือบ 2 ใน 3 นั้นเข้าผ่านมือถือเป็นหลัก
+                  </p>
+                  <Link to="#">
+                    <button type="button" class="btn btn-warning" id="bt-readmore">
+                      อ่านเพิ่มเติม
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   );
 }
