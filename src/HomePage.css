@@ -5,6 +5,12 @@
   font-family: 'Archivo', sans-serif;
 }
 
+.container-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .full-size {
   width: 100%;
   height: 90vh;
@@ -231,6 +237,7 @@
   border-radius: 18px;
   color: #F8F8F8;
   font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
 }
 
 #bt-more:hover {
@@ -266,6 +273,8 @@
   gap: 10rem;
   justify-content: center;
   align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .box3 p, h1 {
@@ -443,6 +452,7 @@
   background: #F7C873;
   border-radius: 8px;
   border: none;
+  font-family: 'Anuphan', sans-serif;
 }
 
 #bt-readmore:hover {
@@ -468,14 +478,192 @@
   background-attachment: fixed;
   background-size: 100% 100%;
   object-fit: cover;
-  display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  text-align: center;
 }
+
+.box5 p, h2 {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.text-head-box5 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.head-box5 {
+  margin-top: 3rem;
+}
+
+.head-box5-brand {
+  color: #F7C873;
+}
+
+#bt-more2 {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 1rem;
+
+  background: #F7C873;
+  border-radius: 18px;
+  color: #F8F8F8;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Anuphan', sans-serif;
+}
+
+#bt-more2:hover {
+  cursor: pointer;
+  background: #F8F8F8;
+  color: #F7C873;
+  border: 2px solid #F7C873;
+}
+
+.name-brand-box5 {
+  color: #F7C873;
+  font-weight: bold;
+  word-spacing: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.full-size6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 30rem;
+}
+
+.box6 {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  text-align: center;
+  color: #434343;
+}
+
+.box6 p, h2 {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.box6 h2 {
+  font-weight: bold;
+}
+
+.text-head-box6 {
+  color: #F7C873;
+}
+
+.card-container-box6 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+
+.box6-card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  padding: 1.5rem;
+  margin: 0 1.5% 30px;
+  border-radius: 21px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 48px;
+  transition: background-color 0.3s ease;
+}
+
+.box6-card:hover {
+  background-color: #F7C873;
+  color: #f6f6f6;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text-brand-box6 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.box6-card:hover .text-head-box6 {
+  color: #f6f6f6;
+}
+
+
+.text-box6 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.box6-vote {
+  position: absolute;
+  bottom: 4rem;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background-color: #F7C873;
+  transition: background-color 0.3s ease;
+}
+
+.box6-card:hover .box6-vote {
+  background-color: #f6f6f6;
+  }
+
+.box6-vote p {
+  margin: 1rem;
+  border: 1px solid #F7C873;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.box6-card:hover .box6-vote p {
+  background-color: #f6f6f6;
+  color: #F7C873;
+}
+
+.full-size7 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+}
+
+.box7-content {
+  width: 90%;
+  position: relative;
+  color: #434343;
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  top: 20rem;
+  left: 15rem;
+}
+
 
 /* orientation: landscape แนวนอน
 orientation: portrait แนวตั้ง */
-@media only screen and (max-width: 820px) {
+/* @media only screen and (max-width: 820px) {
   .box {
     height: 450px;
   }
@@ -553,4 +741,4 @@ orientation: portrait แนวตั้ง */
   #bt-start {
     bottom: -30%;
   }
-}
+} */
