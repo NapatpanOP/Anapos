@@ -5,10 +5,10 @@
   font-family: 'Archivo', sans-serif;
 }
 
-.container-home {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+.content {
+  position: relative;
+  width: 100%;
+  height: 105vh;
 }
 
 .full-size {
@@ -72,7 +72,7 @@
   font-size: 1rem;
   line-height: 33px;
   text-align: center;
-  width: 959px;
+  width: 70%;
 }
 
 #bt-about {
@@ -114,7 +114,6 @@
 .icon {
   width: 50px;
   height: 50px;
-  overflow: hidden;
   margin: 20px;
   margin-top: 25px;
 }
@@ -131,16 +130,22 @@
 }
 
 .bt-link-home {
+  position: relative;
+  width: 100%;
   justify-content: space-between;
+  text-align: center;
 }
 
 .box-content {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  top: 15rem;
+  align-items: center;
+  bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .box-content h5 {
@@ -163,6 +168,8 @@
   position: relative;
   width: 393px;
   height: 269px;
+  justify-content: center;
+  text-align: center;
 
   background: #F7C873;
   border-radius: 45px 0px 45px 45px;
@@ -174,6 +181,8 @@
   height: 269px;
   margin-left: 10px;
   margin-right: 10px;
+  justify-content: center;
+  text-align: center;
 
   background: #F7C873;
   border-radius: 45px 0px 45px 45px;
@@ -183,6 +192,8 @@
   position: relative;
   width: 393px;
   height: 269px;
+  justify-content: center;
+  text-align: center;
 
   background: #F7C873;
   border-radius: 45px 45px 45px 0px;
@@ -191,41 +202,54 @@
 .full-size2 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box2 {
   width: 45%;
   position: relative;
   color: #434343;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   text-align: left;
   gap: 10px;
-  top: 20rem;
-  left: 5rem;
+  padding: 5rem;
+  height: 100vh;
 }
 
-.box2 p, h4 {
+
+.box2 p, h3 {
   font-family: 'Anuphan', sans-serif;
 }
 
-.head-box2 {
+.head-box {
   color: #F7C873;
   font-size: 20px;
 }
 
+.box2 h3 {
+  font-weight: bold;
+}
+
 .pt-2 {
-  bottom: -4rem;
-  right: 5rem;
-  width: 572px;
-  height: 479px;
-  position: absolute;
+  position: relative;
+  width: 100%;
+  height: auto;
   border-radius: 46px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100% 100%;
+}
+
+.box2-img {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #bt-more {
@@ -250,8 +274,7 @@
 .full-size3 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  top: 10rem;
+  height: fit-content;
 }
 
 .pt-3 {
@@ -270,11 +293,10 @@
 .box3 {
   position: relative;
   display: flex;
-  gap: 10rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 100%;
 }
 
 .box3 p, h1 {
@@ -283,6 +305,12 @@
 
 .box3 h1 {
   font-weight: bold;
+}
+
+.box3-text {
+  color: #f6f6f6;
+  text-align: center;
+  margin: 2rem;
 }
 
 .box4 {
@@ -321,10 +349,6 @@
   margin-bottom: 1rem;
 }
 
-.box4-text-head {
-  color: #F7C873;
-}
-
 .card-container-box4 {
   position: relative;
   top: 2rem;
@@ -342,7 +366,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -363,7 +386,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -379,7 +401,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -395,7 +416,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -411,7 +431,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -427,7 +446,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   background: #f6f6f6;
   color: #434343;
@@ -465,8 +483,7 @@
 .full-size5 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  top: 50rem;
+  height: 60vh;
 }
 
 .box5 {
@@ -491,17 +508,18 @@
   font-family: 'Anuphan', sans-serif;
 }
 
-.text-head-box5 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
 .head-box5 {
   margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 .head-box5-brand {
   color: #F7C873;
+  font-size: 2.5rem;
+}
+
+.text-head-box5 {
+  font-weight: bold;
 }
 
 #bt-more2 {
@@ -534,8 +552,7 @@
 .full-size6 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  top: 30rem;
+  height: max-content;
 }
 
 .box6 {
@@ -580,7 +597,6 @@
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
-  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -646,18 +662,54 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-between;
+  justify-content: center;
 }
 
 .box7-content {
-  width: 90%;
   position: relative;
+  width: 90%;
+  height: max-content;
+  padding: 3rem;
+  border-radius: 40px;
   color: #434343;
   display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.box7-content-signup {
+  padding: 20px;
+  width: 50%;
+}
+
+.box7-content-howto {
+  padding: 20px;
+  width: 50%;
+}
+
+.box7-content-howto p {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.box7-content-howto h2 {
+  font-weight: bold;
+}
+
+.box7-step {
+  display: flex;
+  height: max-content;
+  align-items: center;
+}
+
+.box7-step p {
+  line-height: 30px;
+  margin: 0;
   text-align: left;
-  gap: 10px;
-  top: 20rem;
-  left: 15rem;
+  font-family: 'Anuphan', sans-serif;
 }
 
 

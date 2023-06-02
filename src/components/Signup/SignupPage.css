@@ -60,7 +60,7 @@ select {
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
-  border-radius: 8px;
+  border-radius: 12px;
   border-bottom: 2px solid #E0E0E0;
   width: 100%;
 }

@@ -65,9 +65,8 @@ function SignupHomePage() {
     <div className="register-container-home">
       <div className="register-form-home">
         <div className="register-box-home">
-          <h2>SIGN UP FOR ACCESS</h2>
           <div className="form-group-home">
-            <label htmlFor="username">USER*</label>
+            <label htmlFor="username">ชื่อผู้ใช้</label>
             <input
               type="text"
               id="username"
@@ -76,7 +75,7 @@ function SignupHomePage() {
             />
           </div>
           <div className="form-group-home">
-            <label htmlFor="email">EMAIL*</label>
+            <label htmlFor="email">อีเมลผู้ใช้</label>
             <input
               type="email"
               id="email"
@@ -86,7 +85,7 @@ function SignupHomePage() {
             />
           </div>
           <div className="form-group-home">
-            <label htmlFor="password">PASSWORD*</label>
+            <label htmlFor="password">รหัสผ่านผู้ใช้</label>
             <input
               type="password"
               id="password"
@@ -95,58 +94,66 @@ function SignupHomePage() {
               className={validatePassword(password) ? "" : "invalid"}
             />
           </div>
-          <div className="form-group-home">
-            <label htmlFor="sex">SEX*</label>
-            <select
-              id="sex"
-              value={sex}
-              onChange={(e) => setSex(e.target.value)}
-            >
-              <option value="">-- Please select --</option>
-              <option value="MALE">MALE</option>
-              <option value="FEMALE">FEMALE</option>
-              <option value="OTHER">OTHER</option>
-            </select>
-          </div>
-          <div className="form-group-home">
-            <label htmlFor="ageRange">AGE RANGE*</label>
-            <select
-              id="ageRange"
-              value={ageRange}
-              onChange={(e) => setAgeRange(e.target.value)}
-            >
-              <option value="">-- Please select --</option>
-              <option value=">18">&gt;18</option>
-              <option value="18-25">18 - 25</option>
-              <option value="26-35">26 - 35</option>
-              <option value="36-45">36 - 45</option>
-              <option value="46-55">46 - 55</option>
-              <option value="<55">&lt;55</option>
-            </select>
-            <p className="text-error">{errorMessage}</p>
-            <input
-              type="checkbox"
-              checked={isChecked}
-              onChange={(e) => setIsChecked(e.target.checked)}
-            />
-            <label htmlFor="confirm" class="ck-confirm-home">Agree to collect information for the pape</label>
-            <div className="Signup-submit-home">
-              <button
-                onClick={() =>
-                  register({
-                    username: username,
-                    password: password,
-                    email: email,
-                    sex: sex,
-                    age_range: ageRange,
-                  })
-                }
-                type="submit"
-                className="btn btn-primary Signup-submit btn-success"
+
+          <div className="select-group-home">
+            <div className="form-group-home">
+              <label htmlFor="sex">เพศ</label>
+              <select
+                id="sex"
+                value={sex}
+                onChange={(e) => setSex(e.target.value)}
               >
-                CONFIRM
-              </button>
+                <option value="">-- กรุณาเลือกข้อมูล --</option>
+                <option value="MALE">ชาย</option>
+                <option value="FEMALE">หญิง</option>
+                <option value="OTHER">อื่นๆ</option>
+              </select>
             </div>
+            <div className="form-group-home">
+              <label htmlFor="ageRange">อายุ</label>
+              <select
+                id="ageRange"
+                value={ageRange}
+                onChange={(e) => setAgeRange(e.target.value)}
+              >
+                <option value="">-- กรุณาเลือกข้อมูล --</option>
+                <option value=">18">&gt;18</option>
+                <option value="18-25">18 - 25</option>
+                <option value="26-35">26 - 35</option>
+                <option value="36-45">36 - 45</option>
+                <option value="46-55">46 - 55</option>
+                <option value="<55">&lt;55</option>
+              </select>
+            </div>
+          </div>
+
+          <p className="text-error">{errorMessage}</p>
+          <input
+            type="checkbox"
+            id="arrow-confirm"
+            checked={isChecked}
+            onChange={(e) => setIsChecked(e.target.checked)}
+          />
+          <label htmlFor="confirm" class="ck-confirm-home">
+            ยินยอมให้เก็บข้อมูลการเข้าใช้เว็บไซต์
+          </label>
+          <div className="Signup-submit-home">
+            <button
+              onClick={() =>
+                register({
+                  username: username,
+                  password: password,
+                  email: email,
+                  sex: sex,
+                  age_range: ageRange,
+                })
+              }
+              type="submit"
+              className="btn btn-primary Signup-submit btn-success"
+              id="bt-signup-home"
+            >
+              สมัครสมาชิก
+            </button>
           </div>
         </div>
       </div>
@@ -154,4 +161,4 @@ function SignupHomePage() {
   );
 }
 
-export default SignupHomePage
+export default SignupHomePage;

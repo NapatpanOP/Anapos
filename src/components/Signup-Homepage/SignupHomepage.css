@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.register-container-home {
+  text-align: left;
+  
+}
+
+.register-box-home label {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.form-group-home {
+  padding: 10px;
+}
+
+.form-group-home select {
+  font-family: 'Anuphan', sans-serif;
+  font-size: 15px;
+  height: max-content;
+}
+
+.form-group-home option {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.select-group-home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Signup-submit-home {
+  display: flex;
+  justify-content: center;
+}
+
+#bt-signup-home {
+  background-color: #F7C873;
+  width: 50%;
+  justify-content: center;
+  font-family: 'Anuphan', sans-serif;
+  font-weight: bold;
+  color: #434343;
+}
+
+#bt-signup-home:hover {
+  background-color: #c5a05b;
+  color: #f6f6f6;
+}
+
+#arrow-confirm {
+  margin-left: 1rem;
+}
+
+#arrow-confirm:checked {
+  background-color: #F7C873;
+}
+
+.ck-confirm-home {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+

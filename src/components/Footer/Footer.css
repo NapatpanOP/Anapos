@@ -1,0 +1,18 @@
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #434343;
+}
+
+.footer-content img {
+  width: 10rem;
+  margin: 2rem;
+}
+
+.footer-content p {
+  font-family: 'Anuphan', sans-serif;
+  color: #f6f6f6;
+}
