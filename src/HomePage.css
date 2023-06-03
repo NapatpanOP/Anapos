@@ -1008,6 +1008,10 @@ orientation: portrait แนวตั้ง */
     width: 90%;
   }
 
+  .box3-text {
+    margin: 10px;
+  }
+
   .head-box5 {
     font-size: 1.5rem;
   }
