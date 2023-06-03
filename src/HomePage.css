@@ -970,7 +970,7 @@ orientation: portrait แนวตั้ง */
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
   
   .box-text2 {
     font-size: 1.6rem;
@@ -983,6 +983,14 @@ orientation: portrait แนวตั้ง */
 
   .box2 {
     margin-top: 5rem;
+  }
+
+  .pt-3 {
+    background-size: 100vh 100vh;
+  }
+
+  .box5 {
+    background-size: 100vh 102vh;
   }
 
   .head-box5 {
