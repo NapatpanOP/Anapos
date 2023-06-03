@@ -136,7 +136,7 @@
   display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .navbar-menu {
     display: none;
   }
@@ -179,7 +179,7 @@
 }
 
 #bt-logout {
-  background-color: rgb(255, 85, 85);
+  background-color: rgb(238, 118, 118);
   border: none;
   text-align: center;
   color: #fff;
@@ -199,7 +199,7 @@
 }
 
 #bt-logout:hover {
-  background-color: rgb(201, 26, 26);
+  background-color: rgb(181, 65, 65);
   border: none;
   color: #fff;
 }

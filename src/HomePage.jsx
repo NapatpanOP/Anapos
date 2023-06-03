@@ -13,13 +13,17 @@ import icongroup from "./assets/icon/icon-group.png";
 import iconaverage from "./assets/icon/icon-average.png";
 import iconnumone from "./assets/icon/icon-num1.png";
 import iconphone from "./assets/icon/icon-phone.png";
-import iconnumtwo from "./assets/icon/icon-num2.png"
-import iconnumthree from "./assets/icon/icon-num3.png"
+import iconnumtwo from "./assets/icon/icon-num2.png";
+import iconnumthree from "./assets/icon/icon-num3.png";
 import SignupHomePage from "./components/Signup-Homepage/SignupHomePage";
 import Footer from "./components/Footer/Footer";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 function HomePage() {
   const { token } = useAuthContext();
+
+  const [counterOn, setCounterOn] = useState(false);
 
   return (
     <div>
@@ -88,48 +92,82 @@ function HomePage() {
 
       <div class="full-size2">
         <div class="box2">
-          <p class="head-box">เกี่ยวกับ Anapos</p>
-          <h3>เว็บไซต์นี้ใช้สำรวจโครงสร้างการออกแบบของแต่ละเว็บไซต์</h3>
-          <p>
-            เป็นเว็บแอพพลิเคชั่นเพื่อรวบรวมข้อมูลการจัดวางตำแหน่งโฆษณาสำหรับเว็บไซต์แต่ละประเภท
-            โดยเรานำเว็บไซต์มาจากการจัดอันดับเว็บไซต์ที่มีผู้เข้าชมมากที่สุดในประเทศไทยซึ่งส่วนมากเป็น
-            ประเภทสื่อให้ความบันเทิง ข่าวสาร และธุรกิจ
-          </p>
-          <p>
-            ซึ่งผู้ใช้จะมีส่วนช่วยในการรวบรวมข้อมูลเพื่อหาตำแหน่งการวางโฆษณาจากการเลือกเว็บไซต์ที่ตน
-            เข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุดซึ่งเว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดที่เลือกในรูปแบบของกราฟข้อมูลเพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์
-            หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
-          </p>
-          <Link to="#">
-            <button type="button" class="btn btn-warning" id="bt-more">
-              เพิ่มเติมเกี่ยวกับเรา
-            </button>
-          </Link>
-        </div>
-        <div class="box2-img">
-          <img src={picture2} alt="pt-2" class="pt-2" />
+          <div class="box2-content">
+            <p class="head-box">เกี่ยวกับ Anapos</p>
+            <h3>เว็บไซต์นี้ใช้สำรวจโครงสร้างการออกแบบของแต่ละเว็บไซต์</h3>
+            <p>
+              เป็นเว็บแอพพลิเคชั่นเพื่อรวบรวมข้อมูลการจัดวางตำแหน่งโฆษณาสำหรับเว็บไซต์แต่ละประเภท
+              โดยเรานำเว็บไซต์มาจากการจัดอันดับเว็บไซต์ที่มีผู้เข้าชมมากที่สุดในประเทศไทยซึ่งส่วนมากเป็น
+              ประเภทสื่อให้ความบันเทิง ข่าวสาร และธุรกิจ
+            </p>
+            <p>
+              ซึ่งผู้ใช้จะมีส่วนช่วยในการรวบรวมข้อมูลเพื่อหาตำแหน่งการวางโฆษณาจากการเลือกเว็บไซต์ที่ตน
+              เข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุดซึ่งเว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดที่เลือกในรูปแบบของกราฟข้อมูลเพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์
+              หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
+            </p>
+            <Link to="#">
+              <button type="button" class="btn btn-warning" id="bt-more">
+                เพิ่มเติมเกี่ยวกับเรา
+              </button>
+            </Link>
+          </div>
+          <div class="box2-img">
+            <img src={picture2} alt="pt-2" class="pt-2" />
+          </div>
         </div>
       </div>
 
       <div class="full-size3">
         <div class="pt-3">
-          <div class="box3">
-            <div class="box3-text">
-              <img src={iconpeople} alt="icon" class="icon" />
-              <h1>71.75 ล้านคน</h1>
-              <p>ประชากรทั้งหมดในไทย</p>
+          <ScrollTrigger
+            onEnter={() => setCounterOn(true)}
+            onExit={() => setCounterOn(false)}
+          >
+            <div class="box3">
+              <div class="box3-text">
+                <img src={iconpeople} alt="icon" class="icon" />
+                <h1>
+                  {counterOn && (
+                    <CountUp start={0} end="71" duration={2} delay={0} />
+                  )}
+                  .
+                  {counterOn && (
+                    <CountUp start={0} end="75" duration={2} delay={0} />
+                  )}
+                  &nbsp; ล้านคน
+                </h1>
+                <p>ประชากรทั้งหมดในไทย</p>
+              </div>
+              <div class="box3-text">
+                <img src={iconword} alt="icon" class="icon" />
+                <h1>
+                  {counterOn && (
+                    <CountUp start={0} end="61" duration={2} delay={0} />
+                  )}
+                  .
+                  {counterOn && (
+                    <CountUp start={0} end="21" duration={2} delay={0} />
+                  )}
+                  &nbsp; ล้านคน
+                </h1>
+                <p>การใช้อินเทอร์เน็ตในประเทศไทย</p>
+              </div>
+              <div class="box3-text">
+                <img src={iconsocial} alt="icon" class="icon" />
+                <h1>
+                  {counterOn && (
+                    <CountUp start={0} end="8" duration={3} delay={0} />
+                  )}
+                  &nbsp; ชั่วโมง &nbsp;
+                  {counterOn && (
+                    <CountUp start={0} end="6" duration={3} delay={0} />
+                  )}
+                  &nbsp; นาที
+                </h1>
+                <p>เวลาในการใช้สื่อมัลติมีเดียออนไลน์ของคนไทยใน 1 วัน</p>
+              </div>
             </div>
-            <div class="box3-text">
-              <img src={iconword} alt="icon" class="icon" />
-              <h1>61.21 ล้านคน</h1>
-              <p>การใช้อินเทอร์เน็ตในประเทศไทย</p>
-            </div>
-            <div class="box3-text">
-              <img src={iconsocial} alt="icon" class="icon" />
-              <h1>8 ชั่วโมง 6 นาที</h1>
-              <p>เวลาในการใช้สื่อมัลติมีเดียออนไลน์ของคนไทยใน 1 วัน</p>
-            </div>
-          </div>
+          </ScrollTrigger>
         </div>
         <div class="box4">
           <div class="box4-text">
@@ -295,13 +333,16 @@ function HomePage() {
               <img src={iconnumthree} alt="icon" class="icon" />
               <div class="box7-step-content">
                 <p>ข้อเสนอแนะ</p>
-                <p>สามารถเข้าไปกรอกรายละเอียดเว็บไซต์ที่สนใจเพื่อให้ทาง ANAPOS นำไปวิเคราะห์</p>
+                <p>
+                  สามารถเข้าไปกรอกรายละเอียดเว็บไซต์ที่สนใจเพื่อให้ทาง ANAPOS
+                  นำไปวิเคราะห์
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
