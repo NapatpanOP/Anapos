@@ -300,7 +300,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100vmax;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -964,9 +964,9 @@ orientation: portrait แนวตั้ง */
     background-size: 150vmax;
   }
   
-  .box5 {
+  /* .box5 {
     background-size: 100vmax;
-  }
+  } */
 
   .box4-text {
     width: 80%;
@@ -986,6 +986,10 @@ orientation: portrait แนวตั้ง */
 
   .box-content {
     bottom: -1rem;
+  }
+
+  .box-text2 {
+    font-size: 1.6rem;
   }
 
   .box2 {
@@ -1040,22 +1044,6 @@ orientation: portrait แนวตั้ง */
   .box7-content {
     padding: 0;
     box-shadow: none;
-  }
-
-}
-
-@media screen and (max-width: 390px) {
-
-  .full-size {
-    height: 55vh;
-  }
-  
-  .box-text2 {
-    font-size: 1.6rem;
-  }
-
-  .box2 {
-    margin-top: 5rem;
   }
 
 }
