@@ -18,6 +18,7 @@ import ConclusionPage from "./admin/Conclusion/ConclusionPage"
 import ProtectedAdminRoute from "./core/helpers/routers/ProtectedAdminRoute"
 import AdminUserDataPage from "./admin/GraphPage/AdminUserDataPage"
 import AdminSuggestionPage from "./admin/Suggestion/AdminSuggestionPage"
+import AboutPage from "./AboutPage"
 import { useEffect, useState } from "react"
 
 function App() {
@@ -36,7 +37,10 @@ function App() {
       <Routes>
         <Route path="/" element={
             <HomePage />
-          }/>
+        }/>
+        <Route path="/about" element={
+            <AboutPage />
+        }/>
         <Route path="/typesweb" element={
           <ProtectedRoute> 
             <TypesWebPage />

@@ -43,7 +43,7 @@ function HomePage() {
             </div>
           </div>
           <div class="bt-link-home">
-            <Link to="#">
+            <Link to="/about">
               <button
                 type="button"
                 class="btn btn-outline-warning"
@@ -105,7 +105,7 @@ function HomePage() {
               เข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุดซึ่งเว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดที่เลือกในรูปแบบของกราฟข้อมูลเพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์
               หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
             </p>
-            <Link to="#">
+            <Link to="/about">
               <button type="button" class="btn btn-warning" id="bt-more">
                 เพิ่มเติมเกี่ยวกับเรา
               </button>

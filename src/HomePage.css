@@ -382,7 +382,7 @@
 
 .box4-card1 {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
@@ -402,7 +402,7 @@
 
 .box4-card2 {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
@@ -417,7 +417,7 @@
 
 .box4-card3 {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
@@ -432,7 +432,7 @@
 
 .box4-card4 {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
@@ -462,7 +462,7 @@
 
 .box4-card6 {
   position: relative;
-  width: 320px;
+  width: 300px;
   height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
@@ -492,6 +492,7 @@
   border-radius: 8px;
   border: none;
   font-family: 'Anuphan', sans-serif;
+  margin-top: 3.5rem;
 }
 
 #bt-readmore:hover {
@@ -499,6 +500,18 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   color: #434343;
+}
+
+.box4-card4 #bt-readmore {
+  margin-top: 2.5rem;
+}
+
+.box4-card5 #bt-readmore {
+  margin-top: 3.7rem;
+}
+
+.box4-card6 #bt-readmore {
+  margin-top: 1rem;
 }
 
 .full-size5 {
