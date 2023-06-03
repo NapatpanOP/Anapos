@@ -962,17 +962,17 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
     background-attachment: fixed;
   }
   
   .box5 {
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
     background-attachment: fixed;
   }
-  
+
   .box4-text {
     width: 80%;
   }
