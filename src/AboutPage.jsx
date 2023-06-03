@@ -107,7 +107,7 @@ function AboutPage() {
 
               </div>
               <div class="dev-profile-about2">
-                  <div class="">
+                  <div class="dev-des">
 
                   </div>
               </div>

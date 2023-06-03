@@ -991,6 +991,10 @@ orientation: portrait แนวตั้ง */
     font-size: 1.6rem;
   }
 
+  .full-size2 {
+    margin-bottom: 1rem;
+  }
+
   .box2 {
     margin-top: 8rem;
   }
