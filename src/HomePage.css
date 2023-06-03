@@ -810,7 +810,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: auto 50%;
+    background-size: auto 100%;
     background-position: center top;
   }
 
