@@ -959,6 +959,14 @@ orientation: portrait แนวตั้ง */
     width: 85vw;
   }
 
+  .pt-3 {
+    background-size: 100vw 100vh;
+  }
+
+  .box5 {
+    background-size: 100vw 100vh;
+  }
+
   .box4-text {
     width: 80%;
   }
@@ -970,10 +978,13 @@ orientation: portrait แนวตั้ง */
 
 }
 
-@media screen and (max-width: 390px) {
-  
-  .box-text2 {
-    font-size: 1.6rem;
+@media screen and (max-width: 400px) {
+  .full-size {
+    height: 60vh;
+  }
+
+  .box2 {
+    margin-top: 10rem;
   }
 
   .box-content .icon {
@@ -981,23 +992,11 @@ orientation: portrait แนวตั้ง */
     height: 20%;
   }
 
-  .box2 {
-    margin-top: 5rem;
-  }
-
-  .pt-3 {
-    background-size: 100vh 100%;
-  }
-
-  .box5 {
-    background-size: 100vh 102%;
-  }
-
   .head-box5 {
     font-size: 1.5rem;
   }
 
-  .text-head-box5 {
+  .head-box5-brand {
     font-size: 1.5rem;
   }
 
@@ -1007,11 +1006,6 @@ orientation: portrait แนวตั้ง */
 
   .name-brand-box5 {
     word-spacing: 1rem;
-  }
-
-  .box7-content {
-    padding: 0;
-    box-shadow: none;
   }
 
   .box7-content-howto {
@@ -1031,6 +1025,28 @@ orientation: portrait แนวตั้ง */
   .box7-content-signup {
     width: 100%;
     margin-top: 1rem;
+  }
+
+
+  .box7-content {
+    padding: 0;
+    box-shadow: none;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+
+  .full-size {
+    height: 55vh;
+  }
+  
+  .box-text2 {
+    font-size: 1.6rem;
+  }
+
+  .box2 {
+    margin-top: 5rem;
   }
 
 }
