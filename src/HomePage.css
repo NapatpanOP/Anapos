@@ -960,11 +960,11 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: 100vw 100vh;
+    background-size: cover;
   }
 
   .box5 {
-    background-size: 100vw 100vh;
+    background-size: cover;
   }
 
   .box4-text {
@@ -985,6 +985,10 @@ orientation: portrait แนวตั้ง */
 
   .box2 {
     margin-top: 10rem;
+  }
+
+  .box-content {
+    bottom: 15px;
   }
 
   .box-content .icon {
