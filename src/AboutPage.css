@@ -318,6 +318,16 @@
     font-size: 1.5rem;
   }
 
+  .dev-profile-about1 {
+    width: 35vw;
+    height: 60vh;
+  }
+
+  .dev-profile-about2 {
+    width: 35vw;
+    height: 60vh;
+  }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -383,6 +393,16 @@
 
   .box4-content-about h1 {
     font-size: 1.5rem;
+  }
+
+  .dev-profile-about1 {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .dev-profile-about2 {
+    width: 50vw;
+    height: 50vh;
   }
 
 }
