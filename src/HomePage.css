@@ -961,12 +961,12 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: 150vmax;
+    background-size: cover;
   }
   
-  /* .box5 {
-    background-size: 100vmax;
-  } */
+  .box5 {
+    background-size: cover;
+  }
 
   .box4-text {
     width: 80%;
