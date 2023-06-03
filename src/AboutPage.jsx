@@ -24,10 +24,10 @@ function AboutPage() {
         </div>
       </div>
 
-      <div class="full-size2">
-          <div class="box2">
-            <div class="box2-content">
-              <p class="head-box">เกี่ยวกับ Anapos</p>
+      <div class="full-size-about2">
+          <div class="box2-about">
+            <div class="box2-content-about">
+              <p class="head-box2-about">เกี่ยวกับ Anapos</p>
               <h3>เว็บไซต์นี้ใช้สำรวจโครงสร้างการออกแบบของแต่ละเว็บไซต์</h3>
               <p>
                 เป็นเว็บแอพพลิเคชั่นเพื่อรวบรวมข้อมูลการจัดวางตำแหน่งโฆษณาสำหรับเว็บไซต์แต่ละประเภท
@@ -40,19 +40,19 @@ function AboutPage() {
                 หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
               </p>
             </div>
-            <div class="box2-img">
-              <img src={picture2} alt="pt-2" class="pt-2" />
+            <div class="box2-img-about">
+              <img src={picture2} alt="pt-2" class="pt-2-about" />
             </div>
           </div>
         </div>
 
-        <div class="pt-3">
+        <div class="full-size-about3">
           <ScrollTrigger
             onEnter={() => setCounterOn(true)}
             onExit={() => setCounterOn(false)}
           >
-            <div class="box3">
-              <div class="box3-text">
+            <div class="box3-about">
+              <div class="box3-text-about">
                 <img src={iconpeople} alt="icon" class="icon" />
                 <h1>
                   {counterOn && (
@@ -66,7 +66,7 @@ function AboutPage() {
                 </h1>
                 <p>ประชากรทั้งหมดในไทย</p>
               </div>
-              <div class="box3-text">
+              <div class="box3-text-about">
                 <img src={iconword} alt="icon" class="icon" />
                 <h1>
                   {counterOn && (
@@ -80,7 +80,7 @@ function AboutPage() {
                 </h1>
                 <p>การใช้อินเทอร์เน็ตในประเทศไทย</p>
               </div>
-              <div class="box3-text">
+              <div class="box3-text-about">
                 <img src={iconsocial} alt="icon" class="icon" />
                 <h1>
                   {counterOn && (

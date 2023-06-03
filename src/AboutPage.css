@@ -45,7 +45,7 @@
   filter: brightness(50%);
 }
 
-.full-size2 {
+.full-size-about2 {
   position: relative;
   width: 100%;
   height: max-content;
@@ -56,7 +56,7 @@
   align-items: center;
 }
 
-.box2 {
+.box2-about {
   position: relative;
   color: #434343;
   display: flex;
@@ -68,27 +68,27 @@
   gap: 10px;
 }
 
-.box2 p, h3 {
+.box2-about p, h3 {
   font-family: 'Anuphan', sans-serif;
 }
 
-.box2 h3 {
+.box2-about h3 {
   font-weight: bold;
   width: 60%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.box2-content {
+.box2-content-about {
   width: 45vw;
 }
 
-.head-box {
+.head-box2-about {
   color: #F7C873;
   font-size: 20px
 }
 
-.box2-img {
+.box2-img-about {
   position: relative;
   width: 45vw;
   padding: 2rem;
@@ -97,7 +97,7 @@
   align-items: center;
 }
 
-.pt-2 {
+.pt-2-about {
   position: relative;
   width: 100%;
   height: auto;
@@ -106,7 +106,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.pt-3 {
+.full-size-about3 {
   width: 100%;
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
@@ -119,7 +119,7 @@
   align-items: center;
 }
 
-.box3 {
+.box3-about {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -130,15 +130,15 @@
   margin-bottom: 5rem;
 }
 
-.box3 p, h1 {
+.box3-about p, h1 {
   font-family: 'Anuphan', sans-serif;
 }
 
-.box3 h1 {
+.box3-about h1 {
   font-weight: bold;
 }
 
-.box3-text {
+.box3-text-about {
   color: #f6f6f6;
   text-align: center;
   margin: 2rem;
