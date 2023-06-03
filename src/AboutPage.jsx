@@ -98,8 +98,21 @@ function AboutPage() {
           </ScrollTrigger>
         </div>
 
-        <div>
-          hello
+        <div class="full-size-about4">
+          <div class="box4-content-about">
+            <p>นักพัฒนา ANAPOS</p>
+            <h1>ทีมพัฒนาในการสร้าง ANAPOS</h1>
+            <div class="dev-about">
+              <div class="dev-profile-about1">
+
+              </div>
+              <div class="dev-profile-about2">
+                  <div class="">
+
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
 
     </div>

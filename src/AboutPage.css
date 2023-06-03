@@ -144,3 +144,59 @@
   margin: 2rem;
   width: 25vw;
 }
+
+.full-size-about4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box4-content-about {
+  text-align: center;
+}
+
+.box4-content-about p, h1 {
+  font-family: 'Anuphan', sans-serif;
+}
+
+.box4-content-about p {
+  font-size: 1rem;
+  color: #F7C873;
+}
+
+.box4-content-about h1 {
+  font-weight: bold;
+  color: #434343;
+}
+
+.dev-about {
+  margin-top: 2rem;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dev-profile-about1 {
+  width: 25vw;
+  height: 65vh;
+  margin: 1rem;
+  background-color: #F7C873;
+  border-radius: 55px 0px;
+}
+
+.dev-profile-about2 {
+  width: 25vw;
+  height: 65vh;
+  margin: 1rem;
+  background: url("./assets/picture/profile-op.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F7C873;
+  border-radius: 0px 55px;
+}

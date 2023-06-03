@@ -16,7 +16,7 @@
   height: 90vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center top;
   background-size: 100% 100%;
 }
@@ -300,8 +300,8 @@
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  background-size: 100vw 100vh;
   background-position: center;
   object-fit: cover;
   display: flex;
@@ -529,8 +529,8 @@
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-3.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  background-size: 100vw 100vh;
   object-fit: cover;
   justify-content: center;
   align-items: center;
