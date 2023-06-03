@@ -990,7 +990,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box5 {
-    background-size: 100vh 102vh;
+    background-size: 100vh 102%;
   }
 
   .head-box5 {
