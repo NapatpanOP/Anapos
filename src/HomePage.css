@@ -958,11 +958,11 @@ orientation: portrait แนวตั้ง */
     order: 1;
     width: 85vw;
   }
-
+  
   .pt-3 {
     background-size: 150vh;
   }
-
+  
   .box5 {
     background-size: 100vh;
   }
@@ -981,6 +981,10 @@ orientation: portrait แนวตั้ง */
 @media screen and (max-width: 400px) {
   .full-size {
     height: 60vh;
+  }
+
+  .box-content {
+    bottom: 10px;
   }
 
   .box2 {
