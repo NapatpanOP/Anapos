@@ -65,3 +65,12 @@
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 540px) {
+  .ck-confirm-home {
+    font-size: 14px;
+  }
+
+  #bt-signup-home {
+    width: 80%;
+  }
+}

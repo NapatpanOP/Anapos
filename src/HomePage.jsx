@@ -160,7 +160,7 @@ function HomePage() {
                   )}
                   &nbsp; ชั่วโมง &nbsp;
                   {counterOn && (
-                    <CountUp start={0} end="6" duration={3} delay={0} />
+                    <CountUp start={0} end="6" duration={4} delay={0} />
                   )}
                   &nbsp; นาที
                 </h1>
@@ -318,21 +318,21 @@ function HomePage() {
             <div class="box7-step">
               <img src={iconnumone} alt="icon" class="icon" />
               <div class="box7-step-content">
-                <p>ตำแหน่งโฆษณา</p>
+                <p class="box7-head-step">ตำแหน่งโฆษณา</p>
                 <p>สามารถเข้าและเลือกดูโฆษณาของตำแหน่งต่างๆได้</p>
               </div>
             </div>
             <div class="box7-step">
               <img src={iconnumtwo} alt="icon" class="icon" />
               <div class="box7-step-content">
-                <p>กราฟ</p>
+                <p class="box7-head-step">กราฟ</p>
                 <p>สามารถเข้าไปดูผลลัพธ์ได้โดยละเอียด</p>
               </div>
             </div>
             <div class="box7-step">
               <img src={iconnumthree} alt="icon" class="icon" />
               <div class="box7-step-content">
-                <p>ข้อเสนอแนะ</p>
+                <p class="box7-head-step">ข้อเสนอแนะ</p>
                 <p>
                   สามารถเข้าไปกรอกรายละเอียดเว็บไซต์ที่สนใจเพื่อให้ทาง ANAPOS
                   นำไปวิเคราะห์

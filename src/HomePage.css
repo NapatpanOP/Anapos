@@ -17,7 +17,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .box {
@@ -47,6 +47,8 @@
   height: fit-content;
   display: flex;
   justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .box-text2 {
@@ -308,6 +310,7 @@
 .box3 {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -327,6 +330,7 @@
   color: #f6f6f6;
   text-align: center;
   margin: 2rem;
+  width: 25vw;
 }
 
 .box4 {
@@ -372,13 +376,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .box4-card1 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -398,7 +403,7 @@
 .box4-card2 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -413,7 +418,7 @@
 .box4-card3 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -428,7 +433,7 @@
 .box4-card4 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -443,7 +448,7 @@
 .box4-card5 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -458,7 +463,7 @@
 .box4-card6 {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1.5rem;
   margin: 0 1.5% 30px;
   border-radius: 21px;
@@ -499,13 +504,14 @@
 .full-size5 {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 100%;
+  margin-bottom: 5rem;
 }
 
 .box5 {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -677,17 +683,18 @@
 .full-size7 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: max-content;
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
   justify-content: space-between;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .box7-content {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: max-content;
   padding: 3rem;
   border-radius: 40px;
@@ -695,16 +702,17 @@
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  justify-content: center;
 }
 
 .box7-content-signup {
   padding: 20px;
-  width: 50%;
+  width: 40vw;
 }
 
 .box7-content-howto {
   padding: 20px;
-  width: 50%;
+  width: 40vw;
 }
 
 .box7-content-howto p {
@@ -728,6 +736,9 @@
   font-family: 'Anuphan', sans-serif;
 }
 
+.box7-head-step {
+  font-weight: bold;
+}
 
 /* orientation: landscape แนวนอน
 orientation: portrait แนวตั้ง */
@@ -775,57 +786,267 @@ orientation: portrait แนวตั้ง */
     bottom: 7rem;
   }
 
+  .box2 {
+    margin-top: 10rem;
+  }
 
+  .box2-img {
+    padding: 10px;
+  }
+
+  .pt-3 {
+    height: 100%;
+  }
+
+  .box3-text {
+    width: 50vw;
+  }
+
+  .icon {
+    width: 25%;
+    height: 25%;
+  }
+
+  .box3 h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-container-box4 {
+    justify-content: center;
+  }
+
+  .card-container-box4 .icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .box5 {
+    height: max-content;
+    justify-content: center;
+  }
+
+  .head-box5 {
+    font-size: 2rem;
+  }
+
+  .head-box5-brand {
+    font-size: 2rem;
+  }
+
+  .box5 p {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .box7-content-signup {
+    padding: 5px;
+  }
+
+  .box7-content-howto {
+    padding: 5px;
+  }
+
+  .box7-step .icon {
+    width: 20%;
+    height: 20%;
+  }
+
+  .box4-card1 {
+    height: max-content;
+  }
+
+  .box4-card2 {
+    height: max-content;
+  }
+
+  .box4-card3 {
+    height: max-content;
+  }
+
+  .box4-card4 {
+    height: max-content;
+  }
+
+  .box4-card5 {
+    height: max-content;
+  }
+
+  .box4-card6 {
+    height: max-content;
+  }
 
 }
 
-/* @media screen and (max-width: 575px) {
-  .box {
-    height: 550px;
+@media screen and (max-width: 768px) {
+  .box-content {
+    bottom: 3rem;
   }
 
-  .box-text1 {
-    font-size: 1.5rem;
-    top: 30%;
-    line-height: 30px;
-    height: fit-content;
+  .box7-step .icon {
+    width: 10%;
+    height: 10%;
   }
 
-  .box-description {
-    top: 10%;
+  .box7-content-signup {
+    width: 60vw;
+    order: 2;
+    margin-top: 2rem;
   }
 
-  .box-text2 {
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  #bt-start {
-    left: 10%;
-    bottom: -30%;
+  .box7-content-howto {
+    width: 60vw;
+    order: 1;
   }
   
 }
 
-@media screen and (max-width: 390px) {
-  .box {
-    height: 560px;
+@media screen and (max-width: 540px) {
+
+  .content {
+    height: 150vh;
   }
 
-  #bt-start {
-    left: 10%;
-    bottom: -30%;
+  .full-size {
+    height: 55vh;
+    background-size: 100vh;
+  }
+
+  .box-content {
+    bottom: 20px;
+  }
+
+  .box-content1 {
+    width: 300px;
+    height: max-content;
+  }
+
+  .box-content2 {
+    width: 300px;
+    height: max-content;
+  }
+
+  .box-content3 {
+    width: 300px;
+    height: max-content;
+  }
+
+  .box2 {
+    margin-top: 15rem;
+  }
+
+  .box2-content {
+    order: 2;
+    margin-top: 2rem;
+    width: 70vw;
+  }
+
+  .box2-img {
+    order: 1;
+    width: 85vw;
+  }
+
+  .box4-text {
+    width: 80%;
+  }
+
+  .box5 p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  
+  .box-text2 {
+    font-size: 1.6rem;
+  }
+
+  .box-content .icon {
+    width: 20%;
+    height: 20%;
+  }
+
+  .box2 {
+    margin-top: 5rem;
+  }
+
+  .head-box5 {
+    font-size: 1.5rem;
+  }
+
+  .text-head-box5 {
+    font-size: 1.5rem;
+  }
+
+  .box5 p {
+    font-size: 14px;
+  }
+
+  .name-brand-box5 {
+    word-spacing: 1rem;
+  }
+
+  .box7-content {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .box7-content-howto {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .box7-content-howto .icon {
+    width: 20%;
+    height: 20%;
+  }
+
+  .box7-content-howto p {
+    font-size: 14px;
+  }
+
+  .box7-content-signup {
+    width: 100%;
+    margin-top: 1rem;
   }
 
 }
 
 @media screen and (max-width: 375px) {
 
-  .box {
-    height: 560px;
+  .full-size {
+    height: 65vh;
+    background-size: 110vh;
   }
-  
-  #bt-start {
-    bottom: -30%;
+
+  .box-text3 {
+    font-size: 14px;
   }
-} */
+
+  .box2 {
+    margin-top: 17rem;
+  }
+
+  .box2 h3 {
+    width: 90%;
+  }
+
+  .box4-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-container-box4 h5 {
+    font-size: 16px;
+  }
+
+  .card-container-box4 .icon {
+    margin-top: 15px;
+  }
+
+  .card-container-box6 {
+    padding: 0;
+  }
+
+}
