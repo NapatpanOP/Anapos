@@ -789,6 +789,7 @@ orientation: portrait แนวตั้ง */
 
   .bt-link-home {
     margin-top: 2.2rem;
+    margin-bottom: 2rem;
   }
 
   .content {
@@ -958,7 +959,7 @@ orientation: portrait แนวตั้ง */
     order: 1;
     width: 85vw;
   }
-  
+
   .pt-3 {
     background-size: 150vh;
   }
