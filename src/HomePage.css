@@ -810,10 +810,8 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    height: 100%;
     background-size: auto 100%;
     background-position: center;
-
   }
 
   .box3-text {
@@ -964,15 +962,9 @@ orientation: portrait แนวตั้ง */
     width: 85vw;
   }
 
-  .pt-3 {
-    background-size: auto 100%;
-    background-position: center;
-  }
-  
   .box5 {
     background-size: auto 100%;
     background-position: center;
-    background-attachment: fixed;
   }
 
   .box4-text {
