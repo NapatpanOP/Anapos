@@ -301,7 +301,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vmax;
+  background-size: 100% 100%;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -972,7 +972,7 @@ orientation: portrait แนวตั้ง */
     background-position: center;
     background-attachment: fixed;
   }
-
+  
   .box4-text {
     width: 80%;
   }
@@ -1000,6 +1000,7 @@ orientation: portrait แนวตั้ง */
   .box2 {
     margin-top: 10rem;
   }
+  
 
   .box-content .icon {
     width: 20%;
