@@ -17,6 +17,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center top;
   background-size: 100% 100%;
 }
 
@@ -961,14 +962,14 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: 100% 100%;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }
   
   .box5 {
-    background-size: 100% 100%;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }
 
