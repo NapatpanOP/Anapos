@@ -811,7 +811,7 @@ orientation: portrait แนวตั้ง */
 
   .pt-3 {
     background-size: auto 100%;
-    background-position: center;
+    background-position: center top;
   }
 
   .box3-text {
