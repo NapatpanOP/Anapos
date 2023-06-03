@@ -986,7 +986,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-size: 100vh 100vh;
+    background-size: 100vh 100%;
   }
 
   .box5 {
