@@ -762,7 +762,7 @@ orientation: portrait แนวตั้ง */
   .full-size {
     height: 40vh;
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .box {
@@ -830,7 +830,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .pt-3 {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .card-container-box4 {
@@ -846,7 +846,7 @@ orientation: portrait แนวตั้ง */
   .box5 {
     height: max-content;
     justify-content: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .head-box5 {
