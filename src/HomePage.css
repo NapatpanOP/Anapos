@@ -1021,7 +1021,6 @@ orientation: portrait แนวตั้ง */
 
   .box-content {
     bottom: -2rem;
-
   }
 
   .box-text2 {
@@ -1033,12 +1032,16 @@ orientation: portrait แนวตั้ง */
     margin-top: 0;
   }
 
+  .box-description2 {
+    margin-bottom: 1rem;
+  }
+
   .bt-link-home {
-    margin-top: 10px;
+    margin-top: auto;
   }
 
   .box2 {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .box-content .icon {
