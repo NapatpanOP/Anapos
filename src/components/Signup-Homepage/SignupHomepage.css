@@ -65,6 +65,23 @@
   margin-bottom: 1rem;
 }
 
+input[type="text"],
+input[type="password"],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  border-bottom: 2px solid #E0E0E0;
+  width: 100%;
+}
+
+select {
+  height: 45px;
+  color: #000000;
+}
+
 @media screen and (max-width: 540px) {
   .ck-confirm-home {
     font-size: 14px;

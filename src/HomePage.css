@@ -13,7 +13,8 @@
 
 .full-size {
   width: 100%;
-  height: 90vh;
+  height: max-content;
+  padding: 5rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,7 +34,6 @@
 
 .box-text1 {
   position: relative;
-  top: 5rem;
   font-size: 2rem;
   font-weight: bold;
   line-height: 40px;
@@ -44,7 +44,6 @@
 
 .box-description1 {
   position: relative;
-  top: 7rem;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -62,7 +61,6 @@
 
 .box-description2 {
   position: relative;
-  top: 8rem;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -83,7 +81,8 @@
   width: 100%;
   justify-content: space-between;
   text-align: center;
-  margin-top: 11rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #bt-about {
@@ -150,7 +149,7 @@
   bottom: 8rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  bottom: 10rem;
+  bottom: 5rem;
 }
 
 .box-content h5 {
@@ -770,12 +769,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-text1 {
-    top: 2rem;
     font-size: 1.5rem;
-  }
-
-  .box-description1 {
-    top: 2rem;
   }
 
   .box-text2 {
@@ -783,17 +777,13 @@ orientation: portrait แนวตั้ง */
     line-height: 40px;
   }
 
-  .box-description2 {
-    top: 2rem;
-  }
-
   .box-text3 {
     font-size: 16px;
   }
 
   .bt-link-home {
-    margin-top: 2.2rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .content {
@@ -801,7 +791,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-content {
-    bottom: 7rem;
+    bottom: 2rem;
   }
 
   .full-size2 {
@@ -902,8 +892,16 @@ orientation: portrait แนวตั้ง */
 }
 
 @media screen and (max-width: 768px) {
+  .full-size {
+    height: 50vh;
+  }
+
   .box-content {
     bottom: 3rem;
+  }
+
+  .box2 {
+    margin-top: 18rem;
   }
 
   .box7-step .icon {
@@ -926,17 +924,22 @@ orientation: portrait แนวตั้ง */
 
 @media screen and (max-width: 540px) {
 
+  .box-text1 {
+    margin-top: 2rem;
+  }
+
   .content {
     height: 150vh;
   }
 
   .full-size {
-    height: 55vh;
+    padding: 0;
+    height: 60vh;
     background-size: 100vh;
   }
 
   .box-content {
-    bottom: 15px;
+    bottom: -2rem;
   }
 
   .box-content1 {
@@ -955,7 +958,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box2 {
-    margin-top: 15rem;
+    margin-top: 20rem;
   }
 
   .box2-content {
@@ -967,6 +970,10 @@ orientation: portrait แนวตั้ง */
   .box2-img {
     order: 1;
     width: 85vw;
+  }
+
+  .box3-text {
+    margin: 0;
   }
 
   .box5 {
@@ -991,7 +998,8 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-content {
-    bottom: -1rem;
+    bottom: -2rem;
+
   }
 
   .box-text2 {
@@ -1004,6 +1012,7 @@ orientation: portrait แนวตั้ง */
 
   .box2 {
     margin-top: 8rem;
+    margin-bottom: 3rem;
   }
 
   .box-content .icon {
@@ -1035,8 +1044,11 @@ orientation: portrait แนวตั้ง */
     word-spacing: 1rem;
   }
 
+  .full-size7 {
+    padding-top: 0;
+  }
+
   .box7-content-howto {
-    margin-top: 2rem;
     width: 100%;
   }
 
@@ -1078,7 +1090,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box2 {
-    margin-top: 17rem;
+    margin-top: 20rem;
   }
 
   .box2 h3 {
