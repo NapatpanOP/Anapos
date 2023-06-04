@@ -329,7 +329,7 @@
   }
 
   .full-size-about3 {
-    background-attachment: none;
+    background-attachment: scroll;
   }
 
 }
