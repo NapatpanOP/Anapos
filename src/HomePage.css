@@ -13,7 +13,7 @@
 
 .full-size {
   width: 100%;
-  height: max-content;
+  height: 100vh;
   padding: 5rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
@@ -40,6 +40,7 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: 'Anuphan', sans-serif;
+  top: 3rem;
 }
 
 .box-description1 {
@@ -49,6 +50,7 @@
   justify-content: center;
   margin-left: 5px;
   margin-right: 5px;
+  top: 4rem;
 }
 
 .box-text2 {
@@ -74,6 +76,7 @@
   line-height: 33px;
   text-align: center;
   width: 70%;
+  top: 4rem;
 }
 
 .bt-link-home {
@@ -83,6 +86,7 @@
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  top: 4rem;
 }
 
 #bt-about {
@@ -149,7 +153,7 @@
   bottom: 8rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  bottom: 5rem;
+  bottom: 8rem;
 }
 
 .box-content h5 {
@@ -215,6 +219,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 10rem;
  
 }
 
@@ -292,6 +297,7 @@
   position: relative;
   width: 100%;
   height: fit-content;
+  top: 10rem;
 }
 
 .pt-3 {
@@ -520,6 +526,7 @@
   width: 100%;
   height: 100%;
   margin-bottom: 5rem;
+  top: 10rem;
 }
 
 .box5 {
@@ -589,6 +596,7 @@
   position: relative;
   width: 100%;
   height: max-content;
+  top: 10rem;
 }
 
 .box6 {
@@ -703,7 +711,8 @@
   padding: 2rem;
   justify-content: space-between;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
+  top: 10rem;
 }
 
 .box7-content {
@@ -791,7 +800,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box-content {
-    bottom: 2rem;
+    bottom: -5rem;
   }
 
   .full-size2 {
@@ -892,12 +901,25 @@ orientation: portrait แนวตั้ง */
 }
 
 @media screen and (max-width: 768px) {
+
   .full-size {
     height: 50vh;
   }
 
-  .box-content {
-    bottom: 3rem;
+  .box-text1 {
+    top: 0;
+  }
+
+  .box-description1 {
+    top: 0;
+  }
+
+  .box-text3 {
+    top: 0;
+  }
+
+  .bt-link-home {
+    top: 0;
   }
 
   .box2 {
@@ -958,7 +980,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .box2 {
-    margin-top: 20rem;
+    margin-top: 12rem;
   }
 
   .box2-content {
@@ -1007,12 +1029,12 @@ orientation: portrait แนวตั้ง */
   }
 
   .full-size2 {
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 0;
   }
 
   .box2 {
-    margin-top: 8rem;
-    margin-bottom: 3rem;
+    margin-top: 0;
   }
 
   .box-content .icon {
@@ -1077,12 +1099,16 @@ orientation: portrait แนวตั้ง */
 @media screen and (max-width: 375px) {
 
   .full-size {
-    height: 65vh;
+    height: 70vh;
     background-size: 110vh;
   }
 
   .box-text3 {
     font-size: 14px;
+  }
+
+  .bt-link-home {
+    margin-top: 1rem;
   }
 
   .full-size2 {

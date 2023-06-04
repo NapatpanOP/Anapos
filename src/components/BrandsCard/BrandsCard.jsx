@@ -213,8 +213,9 @@ function BrandsCard({ filter }) {
         {filteredCards.map((card, index) => (
           <div className="card-item" key={card._id} style={{"pointerEvents": token != null ? "auto" : "none"}}>
             <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
-              <img src={baseImageUrl + card.image} alt={card.title} />
-              <p>Website Type: {card.type}</p>
+              {/* <img src={baseImageUrl + card.image} alt={card.title} /> */}
+              <h1>{card.title}</h1>
+              <p>ประเภท: {card.type}</p>
             </div>
             <div className="card-content">
               <div className='flex-row'>
