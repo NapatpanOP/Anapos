@@ -1016,7 +1016,7 @@ orientation: portrait แนวตั้ง */
 
 @media screen and (max-width: 415px) {
   .full-size {
-    height: 58vh;
+    height: 60vh;
   }
 
   .box-content {
@@ -1037,7 +1037,7 @@ orientation: portrait แนวตั้ง */
   }
 
   .bt-link-home {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .box2 {
