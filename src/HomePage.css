@@ -1033,8 +1033,12 @@ orientation: portrait แนวตั้ง */
     margin-top: 0;
   }
 
+  .bt-link-home {
+    margin-top: 10px;
+  }
+
   .box2 {
-    margin-top: 0;
+    margin-top: 4rem;
   }
 
   .box-content .icon {
