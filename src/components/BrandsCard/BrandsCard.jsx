@@ -138,12 +138,15 @@ function BrandsCard({ filter }) {
     if (filter) {
       return (
         <div className="type-page">
-          <select onChange={handleFilter}>
+          <button class="bt-type1" onClick={() => handleFilter("บันเทิง")}>บันเทิง</button>
+          <button class="bt-type2" onClick={() => handleFilter("ข่าวสาร")}>ข่าวสาร</button>
+          <button class="bt-type3" onClick={() => handleFilter("ธุรกิจ")}>ธุรกิจ</button>
+          {/* <select onChange={handleFilter}>
             <option value="All">All</option>
             <option value="Portal">Portal</option>
             <option value="New">New</option>
             <option value="Business">Business</option>
-          </select>
+          </select> */}
         </div>
       );
     }
@@ -186,7 +189,7 @@ function BrandsCard({ filter }) {
     ) {
       return (
         <div className="voted-banner" onClick={() => handleLike(card, index)}>
-          Voted
+          โหวต
         </div>
       );
     }

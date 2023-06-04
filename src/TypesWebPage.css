@@ -5,6 +5,35 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.box1-text-type {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  color: #434343;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  top: 2rem;
+}
+
+.box1-text-type p, h1{
+  font-family: 'Anuphan', sans-serif;
+}
+
+.box1-text-type h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.head-box-type {
+  color: #F7C873;
+  font-size: 20px
+}
+
 .full-size-type {
   position: relative;
   width: 100%;
@@ -76,4 +105,44 @@
 .text-description {
   position: relative;
   text-align: center;
+}
+
+@media only screen and (max-width: 820px) {
+
+  .full-size-type {
+    height: 25vh;
+  }
+
+  .picture-head-type {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .text-head-type h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .text-head-type h1 {
+    font-size: 2rem;
+  }
+
+  .box1-text-type {
+    width: 70%;
+  }
+
+  .box1-text-type h1 {
+    font-size: 25px;
+  }
+
+  .type-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
 }
