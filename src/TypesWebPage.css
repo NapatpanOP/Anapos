@@ -5,14 +5,41 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.text-head {
+.full-size-type {
+  position: relative;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-type {
+  width: 100%;
+  height: 50vh;
+}
+
+.text-head-type {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
   text-align: center;
+  display: flex;
+}
+
+.text-head-type h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F7C873;
+}
+
+.picture-head-type {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
 }
 
 .type-page select {

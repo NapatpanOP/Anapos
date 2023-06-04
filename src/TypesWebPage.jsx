@@ -1,16 +1,26 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import './TypesWebPage.css';
 import BrandsCard from './components/BrandsCard/BrandsCard';
+import Footer from './components/Footer/Footer';
+import picture1 from "./assets/picture/pt-8.jpg"
 
 const TypesWeb = () => {
   return (
     <div>
-      <p className="text-head">Types Of Websites</p>
-      <p className='text-description'>Show different websites and ad placements with ad designs to choose from.</p>
+      <div class="full-size-type">
+        <div class="head-type">
+          <img class="picture-head-type" src={picture1} alt="pt-8" />
+          <div class="text-head-type">
+            <h1>ประเภทเว็บไซต์</h1>
+          </div>
+        </div>
+      </div>
 
       <Fragment>
         <BrandsCard filter={true}/>
       </Fragment>
+
+      <Footer/>
     </div>
   )
 }

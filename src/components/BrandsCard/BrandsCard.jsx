@@ -1,117 +1,123 @@
-import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 // import data from './data.json';
-import { BrandAPI } from '../../apis/brandAPI';
-import { UserAPI } from '../../apis/userAPI';
-import './BrandsCard.css';
-import { useAuthContext } from '../../core/contexts/AuthProvider';
-import { useNavigate } from 'react-router';
-import { baseImageUrl } from '../../core/store/localVariable';
+import { BrandAPI } from "../../apis/brandAPI";
+import { UserAPI } from "../../apis/userAPI";
+import "./BrandsCard.css";
+import { useAuthContext } from "../../core/contexts/AuthProvider";
+import { useNavigate } from "react-router";
+import { baseImageUrl } from "../../core/store/localVariable";
 
 function BrandsCard({ filter }) {
   const { token, loadingAction } = useAuthContext();
   const navigate = useNavigate();
 
-  console.log('init brands card')
-  const [loginUser, setLoginUser] = useState(token)
+  console.log("init brands card");
+  const [loginUser, setLoginUser] = useState(token);
   // var loginUser = JSON.parse(localStorage.getItem('user')) ?? false;
 
   const [cards, setData] = useState([]);
-  var [userLike, setUserLike] = useState([])
+  var [userLike, setUserLike] = useState([]);
 
   const refreshUserBrandsLike = () => {
-    if (!token) { return }
-    loadingAction.onLoading(true)
+    if (!token) {
+      return;
+    }
+    loadingAction.onLoading(true);
     UserAPI.getUserLike({ id: loginUser._id }).then((res) => {
-      console.log(res)
-      setUserLike(res)
-      loadingAction.onLoading(false)
-    })
-  }
+      console.log(res);
+      setUserLike(res);
+      loadingAction.onLoading(false);
+    });
+  };
 
-  console.log('user like ', userLike)
+  console.log("user like ", userLike);
   const refreshAllBrands = () => {
-    loadingAction.onLoading(true)
+    loadingAction.onLoading(true);
     BrandAPI.getAll().then((v) => {
-      setData(v)
-      loadingAction.onLoading(false)
-    })
-  }
+      setData(v);
+      loadingAction.onLoading(false);
+    });
+  };
   // const data = BrandAPI.getAll() ?? [];
   // console.log(data)
 
   const handleLike = (item, index) => {
-    if (!token) { return }
+    if (!token) {
+      return;
+    }
     if (!userLike.includes(item._id)) {
-      var updateUser = loginUser
-      userLike.push(item._id)
-      updateUser.brands_like = userLike
-      console.log(updateUser)
-      loadingAction.onLoading(true)
+      var updateUser = loginUser;
+      userLike.push(item._id);
+      updateUser.brands_like = userLike;
+      console.log(updateUser);
+      loadingAction.onLoading(true);
       UserAPI.updateBrandsLike(updateUser).then((res) => {
-        console.log(res)
-        setLoginUser(res)
-        userLike = res.brands_like
-        localStorage.setItem('token', JSON.stringify(loginUser))
-        loadingAction.onLoading(false)
-      })
-      console.log(loginUser._id)
-      item.like.push(loginUser._id)
-      console.log(item)
-      loadingAction.onLoading(true)
+        console.log(res);
+        setLoginUser(res);
+        userLike = res.brands_like;
+        localStorage.setItem("token", JSON.stringify(loginUser));
+        loadingAction.onLoading(false);
+      });
+      console.log(loginUser._id);
+      item.like.push(loginUser._id);
+      console.log(item);
+      loadingAction.onLoading(true);
       BrandAPI.updateLike(item).then((res) => {
-        var m = filteredCards
-        m[index] = res
-        setData([...m])
-        loadingAction.onLoading(false)
-      })
+        var m = filteredCards;
+        m[index] = res;
+        setData([...m]);
+        loadingAction.onLoading(false);
+      });
 
       // setLikes(likes.filter((id) => id !== itemId));
     } else {
-      var updateUser = loginUser
+      var updateUser = loginUser;
       const targetIndex = userLike.indexOf(item._id);
-      if (targetIndex > -1) { // only splice array when item is found
+      if (targetIndex > -1) {
+        // only splice array when item is found
         userLike.splice(targetIndex, 1); // 2nd parameter means remove one item only
       }
-      updateUser.brands_like = userLike
-      console.log(updateUser)
-      loadingAction.onLoading(true)
+      updateUser.brands_like = userLike;
+      console.log(updateUser);
+      loadingAction.onLoading(true);
       UserAPI.updateBrandsLike(updateUser).then((res) => {
-        console.log(res)
-        setLoginUser(res)
-        userLike = res.brands_like
-        localStorage.setItem('token', JSON.stringify(loginUser))
-        loadingAction.onLoading(false)
-      })
-      console.log(loginUser._id)
+        console.log(res);
+        setLoginUser(res);
+        userLike = res.brands_like;
+        localStorage.setItem("token", JSON.stringify(loginUser));
+        loadingAction.onLoading(false);
+      });
+      console.log(loginUser._id);
       // item.like.push(loginUser._id)
       const targetBIndex = item.like.indexOf(loginUser._id);
-      if (targetBIndex > -1) { // only splice array when item is found
+      if (targetBIndex > -1) {
+        // only splice array when item is found
         item.like.splice(targetBIndex, 1); // 2nd parameter means remove one item only
       }
-      console.log(item)
-      loadingAction.onLoading(true)
+      console.log(item);
+      loadingAction.onLoading(true);
       BrandAPI.updateLike(item).then((res) => {
-        var m = filteredCards
-        m[index] = res
-        setData([...m])
-        loadingAction.onLoading(false)
-      })
+        var m = filteredCards;
+        m[index] = res;
+        setData([...m]);
+        loadingAction.onLoading(false);
+      });
     }
     // else {
     //   setLikes([...likes, itemId]);
     // }
   };
 
-  const [selectedType, setSelectedType] = useState('All');
+  const [selectedType, setSelectedType] = useState("All");
 
   const handleFilter = (event) => {
     setSelectedType(event.target.value);
   };
 
   const filteredCards = cards.filter((card) => {
-    if (selectedType === 'All') {
+    if (selectedType === "All") {
       return true;
     } else {
       return card.type === selectedType;
@@ -120,90 +126,100 @@ function BrandsCard({ filter }) {
 
   const renderWarning = () => {
     if (!token) {
-      return <div className="warning-banner" >
-        please login for vote  your favorite ads
-      </div>
+      return (
+        <div className="warning-banner">
+          please login for vote your favorite ads
+        </div>
+      );
     }
-  }
+  };
 
   const renderFilter = () => {
     if (filter) {
-      return <div className="type-page">
-        <select onChange={handleFilter}>
-          <option value="All">All</option>
-          <option value="Portal">Portal</option>
-          <option value="New">New</option>
-          <option value="Business">Business</option>
-        </select>
-      </div>
+      return (
+        <div className="type-page">
+          <select onChange={handleFilter}>
+            <option value="All">All</option>
+            <option value="Portal">Portal</option>
+            <option value="New">New</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+      );
     }
-  }
+  };
 
   const handleCardClick = (url) => {
     if (token) {
       window.location.href = url;
     }
-  }
+  };
 
   const positionSelectHandle = (id) => {
-    console.log('test ', id)
-    navigate("/select-position", { state: { id: id } })
-  }
+    console.log("test ", id);
+    navigate("/select-position", { state: { id: id } });
+  };
 
   useEffect(() => {
     const setup = () => {
-      if(token) {
-        loadingAction.onLoading(true)
+      if (token) {
+        loadingAction.onLoading(true);
         UserAPI.getById(loginUser?._id).then((resUser) => {
-          console.log(resUser)
-          
-          setLoginUser(resUser)
-          loadingAction.onLoading(false)
-        })
-      } else {
-        setLoginUser(token)
-      }
-    }
+          console.log(resUser);
 
-    setup()
-    refreshAllBrands()
-    refreshUserBrandsLike()
-  }, [token])
+          setLoginUser(resUser);
+          loadingAction.onLoading(false);
+        });
+      } else {
+        setLoginUser(token);
+      }
+    };
+
+    setup();
+    refreshAllBrands();
+    refreshUserBrandsLike();
+  }, [token]);
 
   const renderVoteBanner = (id) => {
-    if(loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === id)) {
-      return <div className="voted-banner" onClick={() => handleLike(card, index)}>
-      Voted
-    </div>
+    if (
+      loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === id)
+    ) {
+      return (
+        <div className="voted-banner" onClick={() => handleLike(card, index)}>
+          Voted
+        </div>
+      );
     }
-  }
+  };
 
   const cancelVoteHandle = (index) => {
-    const userBrandSelected = loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === filteredCards[index]._id);
-    loadingAction.onLoading(true)
+    const userBrandSelected = loginUser?.ads_poitions_selected?.find(
+      ({ brand_id }) => brand_id === filteredCards[index]._id
+    );
+    loadingAction.onLoading(true);
     BrandAPI.addBrandPositionCount({
       id: filteredCards[index]._id,
       user_id: token._id,
       isUnselect: true,
       currentPositionIndex: userBrandSelected?.ad_index_position ?? null,
-      currentGraphicIndex: userBrandSelected?.ad_index_graphic ?? null
+      currentGraphicIndex: userBrandSelected?.ad_index_graphic ?? null,
     }).then((res) => {
-      var m = filteredCards
-      m[index] = res
-      setData([...m])
+      var m = filteredCards;
+      m[index] = res;
+      setData([...m]);
       UserAPI.selectPosition({
-          id: token._id,
-          brand_id: filteredCards[index]._id,
-          isUnselect: true,
-          ads_poitions_selected: {
-              brand_id: res._id,
-          }
+        id: token._id,
+        brand_id: filteredCards[index]._id,
+        isUnselect: true,
+        ads_poitions_selected: {
+          brand_id: res._id,
+        },
       }).then((resUser) => {
-        loadingAction.onLoading(false)
-        setLoginUser(resUser)
-      })
-  })
-  }
+        loadingAction.onLoading(false);
+        setLoginUser(resUser);
+      });
+    });
+  };
 
   return (
     <div className="brand-list">
@@ -211,26 +227,55 @@ function BrandsCard({ filter }) {
       {renderWarning()}
       <div className="card-container">
         {filteredCards.map((card, index) => (
-          <div className="card-item" key={card._id} style={{"pointerEvents": token != null ? "auto" : "none"}}>
-            <div className="card-image" onClick={() => positionSelectHandle(card._id)}>
+          <div
+            className="card-item"
+            key={card._id}
+            style={{ pointerEvents: token != null ? "auto" : "none" }}
+          >
+            <div
+              className="card-image"
+              onClick={() => positionSelectHandle(card._id)}
+            >
               {/* <img src={baseImageUrl + card.image} alt={card.title} /> */}
-              <h1>{card.title}</h1>
-              <p>ประเภท: {card.type}</p>
+              <h1 class="head-name-brand">{card.title}</h1>
+              <p class="text-name-type">ประเภท: {card.type}</p>
             </div>
             <div className="card-content">
-              <div className='flex-row'>
-                <div className="card-like" onClick={() => handleLike(card, index)}>
+              <div className="flex-row">
+                <div
+                  className="card-like"
+                  onClick={() => handleLike(card, index)}
+                >
                   <FontAwesomeIcon
                     icon={faHeart}
-                    className={card.like.includes(loginUser?._id) ? 'like-icon active' : 'like-icon'}
+                    className={
+                      card.like.includes(loginUser?._id)
+                        ? "like-icon active"
+                        : "like-icon"
+                    }
                   />
                   <p>{card.like.length}</p>
                 </div>
                 {renderVoteBanner(card._id)}
               </div>
               <hr />
-              <div className="brand-vote-status" onClick={() => loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === card._id) ?  cancelVoteHandle(index) : positionSelectHandle(card._id)}>
-                {(loginUser?.ads_poitions_selected?.find(({ brand_id }) => brand_id === card._id) ? "click here for cancel voted" : "click here to vote")}
+              <div className="brand-vote-card">
+                <div
+                  className="brand-vote-status"
+                  onClick={() =>
+                    loginUser?.ads_poitions_selected?.find(
+                      ({ brand_id }) => brand_id === card._id
+                    )
+                      ? cancelVoteHandle(index)
+                      : positionSelectHandle(card._id)
+                  }
+                >
+                  {loginUser?.ads_poitions_selected?.find(
+                    ({ brand_id }) => brand_id === card._id
+                  )
+                    ? "คลิกหากต้องการยกเลิกการโหวต"
+                    : "คลิกเพื่อโหวต"}
+                </div>
               </div>
             </div>
           </div>

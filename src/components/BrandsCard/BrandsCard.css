@@ -19,24 +19,45 @@
 }
 
 .card-item {
-  width: 25%;
-  margin: 0 1.5% 30px;
-  border: 1.5px solid rgba(116, 116, 116, 1);
-  border-radius: 21px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-}
-
-.card-img {
   position: relative;
-  overflow: hidden;
+  width: 320px;
+  height: 400px;
+  padding: 1.5rem;
+  margin: 0 1.5% 30px;
+  border-radius: 21px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 48px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.card-image img {
-  width: 80%;
-  height: auto;
-  cursor: pointer;
+.card-item:hover {
+  background-color: #F7C873;
+  color: #f6f6f6;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.head-name-brand {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: background-color .3s ease;
+}
+
+.card-item:hover .head-name-brand {
+  color: #f6f6f6;
+}
+
+.text-name-type {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Anuphan', sans-serif;
 }
 
 .voted-banner {
@@ -55,16 +76,38 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+}
+
+.brand-vote-card {
+  position: absolute;
+  bottom: 4rem;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background-color: #f7c873;
+  transition: background-color .3s ease;
+}
+
+.card-item:hover .brand-vote-card {
+  background-color: #f6f6f6;
 }
 
 .brand-vote-status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  margin: 1rem;
+  border: 1px solid #F7C873;
   border-radius: 10px;
-  border: 1.5px solid #747474;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
   cursor: pointer;
-  color: #747474;
+  transition: background-color .3s ease;
+}
+
+.card-item:hover .brand-vote-status {
+  background-color: #f6f6f6;
+  color: #F7C873;
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,15 +124,12 @@
   }
 }
 
-.card-item:hover {
-  border: 3px solid #2AB9B5;
-}
-
 .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  width: 100%;
 }
 
 .link-icon {
@@ -100,12 +140,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 40px;
+  width: 50%;
+  height: 50px;
   border-radius: 10px;
-  border: 1.5px solid #747474;
+  border: 1.5px solid #F7C873;
   cursor: pointer;
-  color: #747474;
+  color: #353535;
+  transition: background-color .3s ease;
+}
+
+.card-item:hover .card-like {
+  background-color: #f6f6f6;
 }
 
 .card-like p {
