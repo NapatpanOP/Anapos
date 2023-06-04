@@ -111,7 +111,7 @@
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: 100vw 100vh;
   background-position: center;
   object-fit: cover;
@@ -328,6 +328,10 @@
     height: 60vh;
   }
 
+  .full-size-about3 {
+    background-attachment: none;
+  }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -362,10 +366,6 @@
     margin: 0;
   }
 
-  .dev-about {
-    margin-left: 2rem;
-  }
-
   .dev-profile-about1 {
     width: 60vw;
   }
@@ -395,14 +395,18 @@
     font-size: 1.5rem;
   }
 
+  .dev-about h4 {
+    font-size: 1.1rem;
+  }
+
   .dev-profile-about1 {
-    width: 50vw;
-    height: 50vh;
+    width: 47vw;
+    height: 55vh;
   }
 
   .dev-profile-about2 {
-    width: 50vw;
-    height: 50vh;
+    width: 47vw;
+    height: 55vh;
   }
 
 }

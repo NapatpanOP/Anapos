@@ -16,7 +16,7 @@
   height: 90vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-1.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center top;
   background-size: 100% 100%;
 }
@@ -300,7 +300,7 @@
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-4.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: 100vw 100vh;
   background-position: center;
   object-fit: cover;
@@ -529,7 +529,7 @@
   height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/picture/pt-3.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: 100vw 100vh;
   object-fit: cover;
   justify-content: center;
@@ -758,9 +758,11 @@
 /* orientation: landscape แนวนอน
 orientation: portrait แนวตั้ง */
 @media only screen and (max-width: 820px) {
+
   .full-size {
     height: 40vh;
     background-size: 100%;
+    background-attachment: none;
   }
 
   .box {
@@ -827,6 +829,10 @@ orientation: portrait แนวตั้ง */
     font-size: 1.5rem;
   }
 
+  .pt-3 {
+    background-attachment: none;
+  }
+
   .card-container-box4 {
     justify-content: center;
   }
@@ -840,6 +846,7 @@ orientation: portrait แนวตั้ง */
   .box5 {
     height: max-content;
     justify-content: center;
+    background-attachment: none;
   }
 
   .head-box5 {
