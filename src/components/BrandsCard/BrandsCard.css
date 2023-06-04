@@ -33,8 +33,17 @@
   color: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 48px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.card-image {
+  cursor: pointer;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-item:hover {
@@ -128,7 +137,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
+  /* padding: 15px; */
   width: 100%;
 }
 
@@ -140,8 +149,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 50px;
+  width: 40%;
+  height: 40px;
   border-radius: 10px;
   border: 1.5px solid #F7C873;
   cursor: pointer;
