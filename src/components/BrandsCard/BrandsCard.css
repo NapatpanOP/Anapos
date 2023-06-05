@@ -87,7 +87,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  margin-bottom: 1rem;
 }
 
 .brand-vote-card {

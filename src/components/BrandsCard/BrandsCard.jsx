@@ -261,7 +261,7 @@ function BrandsCard({ filter }) {
                 </div>
                 {renderVoteBanner(card._id)}
               </div>
-              <hr />
+              {/* <hr /> */}
               <div className="brand-vote-card">
                 <div
                   className="brand-vote-status"
