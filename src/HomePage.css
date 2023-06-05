@@ -1006,6 +1006,7 @@ orientation: portrait แนวตั้ง */
 }
 
 @media screen and (max-width: 415px) {
+
   .full-size {
     height: 65vh;
   }
@@ -1020,7 +1021,18 @@ orientation: portrait แนวตั้ง */
 
   .full-size2 {
     top: 15rem;
-    margin-bottom: 5rem;
+  }
+
+  .full-size3 {
+    top: 15rem;
+  }
+
+  .full-size5 {
+    top: 15rem;
+  }
+
+  .full-size6 {
+    top: 15rem;
   }
 
   .box-description2 {
@@ -1062,6 +1074,7 @@ orientation: portrait แนวตั้ง */
 
   .full-size7 {
     padding-top: 0;
+    top: 15rem;
   }
 
   .box7-content-howto {
