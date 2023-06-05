@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import React, { useState, useEffect } from "react";
 import { useAuthContext } from "./core/contexts/AuthProvider";
-// import { Link, useLocation } from "react-router-dom";
+import { Link as ReactLink } from "react-router-dom";
 import picture2 from "./assets/picture/pt-2.jpg";
 import icontypesweb from "./assets/icon/icon-typeweb.png";
 import icongrapg from "./assets/icon/icon-graph.png";
@@ -113,11 +113,11 @@ function HomePage() {
               เข้าใช้งานเป็นประจำและทำการเลือกตำแหน่งโฆษณาที่ตนรู้สึกสะดุดตามากที่สุดซึ่งเว็บไซต์จะทำการแสดงข้อมูลที่ผู้ใช้ทั้งหมดที่เลือกในรูปแบบของกราฟข้อมูลเพื่อให้ผู้ใช้นำข้อมูลไปพัฒนาเว็บไซต์
               หรือนำโฆษณาของตนเองไปติดต่อการวางพื้นที่โฆษณาให้มีประสิทธิภาพดียิ่งขึ้น
             </p>
-            <Link to="/about">
+            <ReactLink to="/about">
               <button type="button" class="btn btn-warning" id="bt-more">
                 เพิ่มเติมเกี่ยวกับเรา
               </button>
-            </Link>
+            </ReactLink>
           </div>
           <div class="box2-img">
             <img src={picture2} alt="pt-2" class="pt-2" />

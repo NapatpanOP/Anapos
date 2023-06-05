@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { LoginAPI } from "../../apis/auth/loginAPI";
 import CryptoJS from "crypto-js";
 import { useNavigate, useLocation } from "react-router";
@@ -20,6 +20,13 @@ const AuthProvider = ({ children }) => {
   const [adminToken, setAdminToken] = useState(localAdmin);
 
   const [isLoading, setIsLoading] = useState(false)
+
+  const { pathname } = useLocation();
+
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const navigate = useNavigate();
   const location = useLocation()

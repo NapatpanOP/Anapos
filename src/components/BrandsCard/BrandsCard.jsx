@@ -112,8 +112,12 @@ function BrandsCard({ filter }) {
 
   const [selectedType, setSelectedType] = useState("All");
 
-  const handleFilter = (event) => {
-    setSelectedType(event.target.value);
+  // const handleFilter = (event) => {
+  //   setSelectedType(event.target.value);
+  // };
+
+  const handleFilter = (key) => {
+    setSelectedType(key);
   };
 
   const filteredCards = cards.filter((card) => {
