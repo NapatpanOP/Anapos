@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import React, { useState, useEffect } from "react";
 import { useAuthContext } from "./core/contexts/AuthProvider";
-import { Link as ReactLink } from "react-router-dom";
+import { Link as ReactLink, useNavigate } from "react-router-dom";
 import picture2 from "./assets/picture/pt-2.jpg";
 import icontypesweb from "./assets/icon/icon-typeweb.png";
 import icongrapg from "./assets/icon/icon-graph.png";
@@ -25,6 +25,11 @@ function HomePage() {
   const { token } = useAuthContext();
 
   const [counterOn, setCounterOn] = useState(false);
+  const navigate = useNavigate();
+
+  const newsClickHandle = (id) => {
+    navigate("/news", {state:{id: id}})
+  }
 
   const scrollToElement = (elementId) => {
     animateScroll.scrollTo(elementId, {
@@ -192,51 +197,46 @@ function HomePage() {
               <img src={icongroup} alt="icon" class="icon" />
               <h5>การใช้ดิจิตอลไม่ค่อยเติบโต</h5>
               <p>จำนวนผู้ใช้งานอินเทอร์เน็ตเองเพิ่มขึ้นแค่ 1.9% จากปีก่อน </p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
             <div class="box4-card2">
               <img src={iconaverage} alt="icon" class="icon" />
               <h5>ค่าเฉลี่ยอายุคนไทยในปี 2023</h5>
               <p>คนประเทศไทยปัจจุบันมีอายุโดยเฉลี่ยอยู่ 40.1 ปี</p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
             <div class="box4-card3">
               <img src={iconword} alt="icon" class="icon" />
               <h5>การเข้าถึงอินเทอร์เน็ต</h5>
               <p>การเข้าใช้อินเทอร์เน็ตของไทยนั้นอยู่ที่ 85.3%</p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
             <div class="box4-card4">
               <img src={iconsocial} alt="icon" class="icon" />
               <h5>ค่าเฉลี่ยการเข้าอินเทอร์เน็ตผ่านคอมพิวเตอร์จากทั่วโลก</h5>
               <p>คนไทยออนไลน์ผ่านคอมพิวเตอร์วันละ 3 ชั่วโมง 1 นาที</p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
             <div class="box4-card5">
               <img src={iconnumone} alt="icon" class="icon" />
               <h5>เว็บไซต์ที่คนไทยเข้าชมมากที่สุด</h5>
               <p>คนประเทศไทยเข้า Google มากที่สุดเป็นอันดับ 1 ของเว็บทั้งหมด</p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
             <div class="box4-card6">
               <img src={iconphone} alt="icon" class="icon" />
@@ -246,11 +246,10 @@ function HomePage() {
               <p>
                 เวลาที่ออนไลน์ทั้งหมดเกือบ 2 ใน 3 นั้นเข้าผ่านมือถือเป็นหลัก
               </p>
-              <Link to="#">
-                <button type="button" class="btn btn-warning" id="bt-readmore">
+              
+                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
-              </Link>
             </div>
           </div>
         </div>
