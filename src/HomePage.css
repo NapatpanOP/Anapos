@@ -214,13 +214,13 @@
   position: relative;
   width: 100%;
   height: max-content;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 10rem;
- 
+  padding: 2rem;
 }
 
 .box2 {
@@ -771,6 +771,7 @@ orientation: portrait แนวตั้ง */
     height: 40vh;
     background-size: 100%;
     background-attachment: scroll;
+    padding: 0;
   }
 
   .box {
@@ -805,10 +806,11 @@ orientation: portrait แนวตั้ง */
 
   .full-size2 {
     margin-bottom: 5rem;
+    top: 20rem;
   }
 
-  .box2 {
-    margin-top: 10rem;
+  .full-size3 {
+    top: 20rem;
   }
 
   .box2-img {
@@ -842,6 +844,10 @@ orientation: portrait แนวตั้ง */
     margin-top: 5px;
   }
 
+  .full-size5 {
+    top: 20rem;
+  }
+
   .box5 {
     height: max-content;
     justify-content: center;
@@ -859,6 +865,15 @@ orientation: portrait แนวตั้ง */
   .box5 p {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .full-size6 {
+    top: 20rem;
+  }
+
+  .full-size7 {
+    top: 18rem;
+    margin-bottom: 20rem;
   }
 
   .box7-content-signup {
@@ -906,24 +921,8 @@ orientation: portrait แนวตั้ง */
     height: 50vh;
   }
 
-  .box-text1 {
-    top: 0;
-  }
-
-  .box-description1 {
-    top: 0;
-  }
-
-  .box-text3 {
-    top: 0;
-  }
-
-  .bt-link-home {
-    top: 0;
-  }
-
-  .box2 {
-    margin-top: 18rem;
+  .full-size2 {
+    top: 24rem;
   }
 
   .box7-step .icon {
@@ -946,17 +945,13 @@ orientation: portrait แนวตั้ง */
 
 @media screen and (max-width: 540px) {
 
-  .box-text1 {
-    margin-top: 2rem;
-  }
-
   .content {
     height: 150vh;
   }
 
   .full-size {
     padding: 0;
-    height: 60vh;
+    height: 65vh;
     background-size: 100vh;
   }
 
@@ -977,10 +972,6 @@ orientation: portrait แนวตั้ง */
   .box-content3 {
     width: 300px;
     height: max-content;
-  }
-
-  .box2 {
-    margin-top: 12rem;
   }
 
   .box2-content {
@@ -1028,8 +1019,8 @@ orientation: portrait แนวตั้ง */
   }
 
   .full-size2 {
+    top: 15rem;
     margin-bottom: 5rem;
-    margin-top: 5rem;
   }
 
   .box-description2 {
@@ -1038,10 +1029,6 @@ orientation: portrait แนวตั้ง */
 
   .bt-link-home {
     margin-top: 5px;
-  }
-
-  .box2 {
-    margin-top: 5rem;
   }
 
   .box-content .icon {
@@ -1119,11 +1106,12 @@ orientation: portrait แนวตั้ง */
   }
 
   .full-size2 {
+    top: 25rem;
     margin-bottom: 1rem;
   }
 
-  .box2 {
-    margin-top: 20rem;
+  .full-size3 {
+    top: 25rem;
   }
 
   .box2 h3 {
@@ -1150,4 +1138,7 @@ orientation: portrait แนวตั้ง */
     padding: 0;
   }
 
+  .full-size7 {
+    top: 20rem;
+  }
 }
