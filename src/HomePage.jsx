@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import React, { useState, useEffect } from "react";
 import { useAuthContext } from "./core/contexts/AuthProvider";
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import picture2 from "./assets/picture/pt-2.jpg";
 import icontypesweb from "./assets/icon/icon-typeweb.png";
 import icongrapg from "./assets/icon/icon-graph.png";
@@ -19,11 +19,19 @@ import SignupHomePage from "./components/Signup-Homepage/SignupHomePage";
 import Footer from "./components/Footer/Footer";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import { Link, animateScroll } from "react-scroll";
 
 function HomePage() {
   const { token } = useAuthContext();
 
   const [counterOn, setCounterOn] = useState(false);
+
+  const scrollToElement = (elementId) => {
+    animateScroll.scrollTo(elementId, {
+      duration: 200,
+      smooth: true,
+    });
+  };
 
   return (
     <div>
@@ -43,20 +51,20 @@ function HomePage() {
             </div>
           </div>
           <div class="bt-link-home">
-            <Link to="/about">
+            <Link to="aboutpage-id" spy={true} smooth={true} duration={200}>
               <button
                 type="button"
-                class="btn btn-outline-warning"
+                className="btn btn-outline-warning"
                 id="bt-about"
               >
                 เกี่ยวกับ
               </button>
             </Link>
-            <Link to="#">
+            <Link to="newspage-id" spy={true} smooth={true} duration={200}>
               <button
                 type="button"
-                class="btn btn-outline-warning"
-                id="bt-news"
+                className="btn btn-outline-warning"
+                id="bt-about"
               >
                 ข่าวสาร
               </button>
@@ -90,7 +98,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div class="full-size2">
+      <div class="full-size2" id="aboutpage-id">
         <div class="box2">
           <div class="box2-content">
             <p class="head-box">เกี่ยวกับ Anapos</p>
@@ -169,7 +177,7 @@ function HomePage() {
             </div>
           </ScrollTrigger>
         </div>
-        <div class="box4">
+        <div class="box4" id="newspage-id">
           <div class="box4-text">
             <p class="head-box">ข้อมูลข่าวสารจาก</p>
             <h1>Global Digital Stat 2023</h1>
