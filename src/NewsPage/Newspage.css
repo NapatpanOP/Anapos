@@ -5,6 +5,59 @@
   font-family: 'Nunito', sans-serif;
 }
 
+/* one img */
+
+.two-side-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  column-gap: 4%;
+  padding: 4%;
+}
+ 
+.news-left-side {
+  flex: 6;
+  display: flex;
+  align-items: center;
+}
+
+.news-left-side img {
+  width: 100%;
+  border-radius: 30px;
+  border: 8px solid #ffffff;
+  box-shadow: 36px 35px 0px -11px rgb(57, 57, 57);
+}
+.news-right-side {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* two image */
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  padding: 2%;
+}
+
+.image-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4%;
+}
+
+.image-box img {
+  width: 30%;
+  border-radius: 20px;
+}
+
 .full-size-news {
   position: relative;
   width: 100%;
