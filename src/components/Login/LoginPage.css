@@ -40,6 +40,10 @@ body {
   flex-direction: column;
 }
 
+label {
+  font-family: 'Anuphan', sans-serif;
+}
+
 .login-box {
   display: flex;
   flex-direction: column;
@@ -60,16 +64,18 @@ body {
 }
 
 #bt-login-page {
-  background-color: #37D295;
+  background-color: #F7C873;
   border: none;
   width: 100%;
   font-size: 1.1rem;
   padding: 14px 20px;
   margin: 8px 0;
+  font-family: 'Anuphan', sans-serif;
 }
 
 #bt-login-page:hover {
-  background-color: rgb(41, 161, 113);
+  background-color: #c5a05b;
+  color: #f6f6f6;
 }
 
 /* ปรับ style ของ input fields ให้เข้ากับขนาดหน้าจอ */
@@ -111,6 +117,7 @@ button[type="signup"] {
   background-color: #FFFFFF;
   border: none;
   font-size: 1.1rem;
+  font-family: 'Anuphan', sans-serif;
 }
 
 button[type="signup"]:hover {

@@ -52,24 +52,24 @@ const LoginPage = () => {
     <div class="login-container-box">
       <div class="login-form">
         <div class="login-box">
-          <h2>Log in</h2>
+          <h2>ลงชื่อเข้าใช้</h2>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">อีเมล</label>
             <input
               type="email"
               id="email"
-              placeholder="Enter email"
+              placeholder="อีเมล"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             {emailError && <p className="error">{emailError}</p>}
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">รหัสผ่าน</label>
             <input
               type="password"
               id="password"
-              placeholder="Enter password"
+              placeholder="รหัสผ่าน"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -77,11 +77,11 @@ const LoginPage = () => {
           </div>
           {loginError && <p className="error">{loginError}</p>}
           <button onClick={() => handleSubmit()} className="btn btn-primary btn-success" id="bt-login-page">
-            Log in
+            ลงชื่อเข้าใช้
           </button>
           <div class="signup-container">
             <Link to="../Signup">
-              <button type="signup">Sign up</button>
+              <button type="signup">สมัครสมาชิก</button>
             </Link>
           </div>
         </div>

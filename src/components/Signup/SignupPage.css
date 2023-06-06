@@ -63,11 +63,20 @@ select {
   border-radius: 12px;
   border-bottom: 2px solid #E0E0E0;
   width: 100%;
+  font-family: 'Anuphan', sans-serif;
 }
 
 select {
   height: 45px;
-  color: #000000;
+  color: #3f3f3f;
+}
+
+#sex {
+  font-family: 'Anuphan', sans-serif;
+}
+
+#ageRange {
+  font-family: 'Anuphan', sans-serif;
 }
 
 .signup-submit {
@@ -83,8 +92,16 @@ select {
   height: inherit;
 }
 
+#bt-submit-signup {
+  background-color: #F7C873;
+}
+
+#bt-submit-signup:hover {
+  background-color: #c5a05b;
+  color: #f6f6f6;
+}
+
 button[type="submit"] {
-  background-color: #37D295;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -93,6 +110,7 @@ button[type="submit"] {
   cursor: pointer;
   width: 100%;
   font-size: 1.1rem;
+  font-family: 'Anuphan', sans-serif;
 }
 
 button[type="login"] {
@@ -102,6 +120,7 @@ button[type="login"] {
   background-color: #FFFFFF;
   border: none;
   font-size: 1.1rem;
+  font-family: 'Anuphan', sans-serif;
 }
 
 button[type="login"]:hover {

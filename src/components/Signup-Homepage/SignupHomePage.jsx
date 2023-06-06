@@ -72,26 +72,29 @@ function SignupHomePage() {
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              placeholder="ชื่อผู้ใช้"
             />
           </div>
           <div className="form-group-home">
-            <label htmlFor="email">อีเมลผู้ใช้</label>
+            <label htmlFor="email">อีเมล</label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={validateEmail(email) ? "" : "invalid"}
+              placeholder="อีเมล"
             />
           </div>
           <div className="form-group-home">
-            <label htmlFor="password">รหัสผ่านผู้ใช้</label>
+            <label htmlFor="password">รหัสผ่าน</label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={validatePassword(password) ? "" : "invalid"}
+              placeholder="รหัสผ่าน"
             />
           </div>
 
@@ -103,7 +106,7 @@ function SignupHomePage() {
                 value={sex}
                 onChange={(e) => setSex(e.target.value)}
               >
-                <option value="">-- กรุณาเลือกข้อมูล --</option>
+                <option value="">-- เพศ --</option>
                 <option value="MALE">ชาย</option>
                 <option value="FEMALE">หญิง</option>
                 <option value="OTHER">อื่นๆ</option>
@@ -116,7 +119,7 @@ function SignupHomePage() {
                 value={ageRange}
                 onChange={(e) => setAgeRange(e.target.value)}
               >
-                <option value="">-- กรุณาเลือกข้อมูล --</option>
+                <option value="">-- อายุ --</option>
                 <option value=">18">&gt;18</option>
                 <option value="18-25">18 - 25</option>
                 <option value="26-35">26 - 35</option>

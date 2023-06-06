@@ -65,57 +65,60 @@ function SignupPage() {
     <div className="register-container-box">
       <div className="register-form">
         <div className="register-box">
-          <h2>SIGN UP FOR ACCESS</h2>
+          <h2>สมัครสมาชิก</h2>
           <div className="form-group">
-            <label htmlFor="username">USER*</label>
+            <label htmlFor="username">ชื่อผู้ใช้*</label>
             <input
               type="text"
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              placeholder="ชื่อผู้ใช้"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">EMAIL*</label>
+            <label htmlFor="email">อีเมล*</label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={validateEmail(email) ? "" : "invalid"}
+              placeholder="อีเมล"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">PASSWORD*</label>
+            <label htmlFor="password">รหัสผ่าน*</label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={validatePassword(password) ? "" : "invalid"}
+              placeholder="รหัสผ่าน"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="sex">SEX*</label>
+            <label htmlFor="sex">เพศ*</label>
             <select
               id="sex"
               value={sex}
               onChange={(e) => setSex(e.target.value)}
             >
-              <option value="">-- Please select --</option>
-              <option value="MALE">MALE</option>
-              <option value="FEMALE">FEMALE</option>
-              <option value="OTHER">OTHER</option>
+              <option value="">-- เพศ --</option>
+              <option value="MALE">ชาย</option>
+              <option value="FEMALE">หญิง</option>
+              <option value="OTHER">อื่นๆ</option>
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="ageRange">AGE RANGE*</label>
+            <label htmlFor="ageRange">อายุ*</label>
             <select
               id="ageRange"
               value={ageRange}
               onChange={(e) => setAgeRange(e.target.value)}
             >
-              <option value="">-- Please select --</option>
+              <option value="">-- อายุ --</option>
               <option value=">18">&gt;18</option>
               <option value="18-25">18 - 25</option>
               <option value="26-35">26 - 35</option>
@@ -129,7 +132,7 @@ function SignupPage() {
               checked={isChecked}
               onChange={(e) => setIsChecked(e.target.checked)}
             />
-            <label htmlFor="confirm" class="ck-confirm">Agree to collect information for the pape</label>
+            <label htmlFor="confirm" class="ck-confirm">ยืนยันให้เก็บข้อมูลการเข้าใช้เว็บไซต์</label>
             <div className="Signup-submit">
               <button
                 onClick={() =>
@@ -142,14 +145,15 @@ function SignupPage() {
                   })
                 }
                 type="submit"
-                className="btn btn-primary Signup-submit btn-success"
+                className="btn btn-primary Signup-submit btn-success" 
+                id="bt-submit-signup"
               >
-                CONFIRM
+                สมัครสมาชิก
               </button>
             </div>
             <div class="login-containersignup">
               <Link to="../Login">
-                <button type="login">Log in</button>
+                <button type="login">ลงชื่อเข้าใช้</button>
               </Link>
             </div>
           </div>
