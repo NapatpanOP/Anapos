@@ -20,7 +20,7 @@ import AdminUserDataPage from "./admin/GraphPage/AdminUserDataPage"
 import AdminSuggestionPage from "./admin/Suggestion/AdminSuggestionPage"
 import AboutPage from "./AboutPage"
 import { useEffect, useState } from "react"
-import NewsPage1 from "./NewsPage/NewsPage1"
+import NewsPage from "./NewsPage/NewsPage"
 
 function App() {
   const curLocation = useLocation();
@@ -54,7 +54,7 @@ function App() {
         <ProtectedRoute>
           <SugPage />
         </ProtectedRoute>}/>
-        <Route path="/news" element={<NewsPage1/>}/>
+        <Route path="/news" element={<NewsPage/>}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage />}/>
         <Route path="/select-graphics-position" element={<SelectGraphicsPositionPage /> }/>
