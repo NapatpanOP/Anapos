@@ -207,7 +207,7 @@ function HomePage() {
               <h5>ค่าเฉลี่ยอายุคนไทยในปี 2023</h5>
               <p>คนประเทศไทยปัจจุบันมีอายุโดยเฉลี่ยอยู่ 40.1 ปี</p>
               
-                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
+                <button onClick={()=> newsClickHandle(2)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
             </div>
@@ -216,7 +216,7 @@ function HomePage() {
               <h5>การเข้าถึงอินเทอร์เน็ต</h5>
               <p>การเข้าใช้อินเทอร์เน็ตของไทยนั้นอยู่ที่ 85.3%</p>
               
-                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
+                <button onClick={()=> newsClickHandle(3)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
             </div>
@@ -225,7 +225,7 @@ function HomePage() {
               <h5>ค่าเฉลี่ยการเข้าอินเทอร์เน็ตผ่านคอมพิวเตอร์จากทั่วโลก</h5>
               <p>คนไทยออนไลน์ผ่านคอมพิวเตอร์วันละ 3 ชั่วโมง 1 นาที</p>
               
-                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
+                <button onClick={()=> newsClickHandle(4)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
             </div>
@@ -234,7 +234,7 @@ function HomePage() {
               <h5>เว็บไซต์ที่คนไทยเข้าชมมากที่สุด</h5>
               <p>คนประเทศไทยเข้า Google มากที่สุดเป็นอันดับ 1 ของเว็บทั้งหมด</p>
               
-                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
+                <button onClick={()=> newsClickHandle(5)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
             </div>
@@ -247,7 +247,7 @@ function HomePage() {
                 เวลาที่ออนไลน์ทั้งหมดเกือบ 2 ใน 3 นั้นเข้าผ่านมือถือเป็นหลัก
               </p>
               
-                <button onClick={()=> newsClickHandle(1)} type="button" class="btn btn-warning" id="bt-readmore">
+                <button onClick={()=> newsClickHandle(6)} type="button" class="btn btn-warning" id="bt-readmore">
                   อ่านเพิ่มเติม
                 </button>
             </div>

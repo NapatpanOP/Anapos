@@ -28,7 +28,7 @@ function NewsPage1() {
 
       <div>
         <div>
-          
+
         </div>
         <div>
 
