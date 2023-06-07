@@ -5,6 +5,7 @@ import picture1 from "../assets/picture/pt-9.png"
 import Footer from '../components/Footer/Footer'
 import { datanews as newsLists } from "./DataNews.json"
 import { baseImageUrl } from '../core/store/localVariable'
+import { text } from '@fortawesome/fontawesome-svg-core'
 
 function NewsPage1() {
   const [newsId, setNewsId] = useState()
@@ -24,23 +25,22 @@ function NewsPage1() {
             <img src={baseImageUrl + newsData.img[0]} />
           </div>
           <div className="news-right-side">
-            <h3>{newsData.head}</h3>
-            <p>{newsData.headDiscription}</p>
+            <p class="head-news-text">{newsData.head}</p>
+            <h3 class="head-discription-news">{newsData.headDiscription}</h3>
             <p>{newsData.discription}</p>
           </div>
         </div>
       } else {
         return <div className='column-container'>
           <div className="title">
-            <h3>{newsData.head}</h3>
+            <p class="head-news-text">{newsData.head}</p>
+            <h3 class="head-discription-news">{newsData.headDiscription}</h3>
+            <p>{newsData.discription}</p>
           </div>
           <div className="image-box">
             {newsData.img.map((img) => {
               return <img src={baseImageUrl + img}/>
             })}
-          </div>
-          <div>
-            <p>bottom content</p>
           </div>
         </div>
       }
