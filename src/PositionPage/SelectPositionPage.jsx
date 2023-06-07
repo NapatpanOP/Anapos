@@ -22,10 +22,10 @@ function SelectPositionPage() {
 
   const handleClose = () => setShow(false);
 
-  var selectId = "";
-  const onClickGraphicHandle = (id, position) => {
-    console.log(id);
-    selectId = id;
+  // var selectId = "";
+  const onClickGraphicHandle = (position) => {
+    // console.log(id);
+    // selectId = id;
     setSelectPosition(position);
     setShow(true);
   };
@@ -75,7 +75,7 @@ function SelectPositionPage() {
       return brand.adsPositions.map((img, index) => {
         return (
           <button
-            onClick={() => onClickGraphicHandle(brand._id, index)}
+            onClick={() => onClickGraphicHandle(index)}
             type="button"
             key={index}
             className={`btn ${
@@ -90,6 +90,27 @@ function SelectPositionPage() {
       return;
     }
   };
+
+  const renderSelectPage = () => {
+    if(brand != null) {
+      console.log(brand.title)
+      switch (brand.title) {
+        case "Youtube":
+          return <YoutubePosition selectPosHandle={() => onClickGraphicHandle()}/>
+          case "Viu":
+          case "TrueID":
+          case "Sanook":
+          case "Dailynews":
+          case "ThaiRath":
+          case "Banana":
+          case "Jib":
+          case "Advice":
+            break
+        default:
+          break;
+      }
+    }
+  }
 
   return (
     <div>
@@ -109,7 +130,7 @@ function SelectPositionPage() {
         <p>ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566</p>
       </div>
 
-        <YoutubePosition/>
+      {renderSelectPage()}
 
       {/* <img
         src={baseImageUrl + brand?.full_image ?? ""}
