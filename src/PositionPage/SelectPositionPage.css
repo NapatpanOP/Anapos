@@ -1,15 +1,3 @@
-.main-logo {
-  top: 10px;
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 530px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 0;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,25 +5,46 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.logo {
+.full-size-select-position {
   position: relative;
-  display: block;
   width: 100%;
-  max-width: 530px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.headtext {
-  position: relative;
-  top: 0;
-  left: 5%;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  width: fit-content;
+.head-select-position {
+  width: 100%;
+  height: 50vh;
 }
+
+.text-head-select-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+}
+
+.text-head-select-position h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text-head-position-web {
+  color: #F7C873;
+}
+
+.picture-head-select-position {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
 
 .position {
   position: relative;
