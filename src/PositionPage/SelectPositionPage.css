@@ -45,6 +45,26 @@
   filter: brightness(50%);
 }
 
+.box-text-position {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+  font-family: 'Archivo', sans-serif;
+  color: #434343;
+}
+
+.box-text-position h2 {
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.box-head-text-position {
+  color: #F7C873;
+  font-size: 20px;
+  margin-bottom: 0;
+}
 
 .position {
   position: relative;

@@ -95,9 +95,15 @@ function SelectPositionPage() {
           <img class="picture-head-select-position" src={picture1} alt="pt-7" />
           <div class="text-head-select-position">
             <h1>ประเภทเว็บไซต์</h1>
-            <h1 class="text-head-position-web">ANAPOS</h1>
+            <h1 class="text-head-position-web">{brand?.type}</h1>
           </div>
         </div>
+      </div>
+
+      <div class="box-text-position">
+        <p class="box-head-text-position">ประเภทเว็บไซต์ {brand?.type}</p>
+        <h2>{brand?.title}</h2>
+        <p>ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566</p>
       </div>
 
       <img
