@@ -26,6 +26,7 @@ function SelectPositionPage() {
   const onClickGraphicHandle = (position) => {
     // console.log(id);
     // selectId = id;
+    console.log(position)
     setSelectPosition(position);
     setShow(true);
   };
@@ -36,7 +37,6 @@ function SelectPositionPage() {
 
   const confirmHandle = () => {
     setShow(false);
-    console.log(selectId);
     navigate("/select-graphics-position", {
       state: { id: brand._id, position: selectPosition },
     });
@@ -96,16 +96,16 @@ function SelectPositionPage() {
       console.log(brand.title)
       switch (brand.title) {
         case "Youtube":
-          return <YoutubePosition selectPosHandle={() => onClickGraphicHandle()}/>
-          case "Viu":
-          case "TrueID":
-          case "Sanook":
-          case "Dailynews":
-          case "ThaiRath":
-          case "Banana":
-          case "Jib":
-          case "Advice":
-            break
+          return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+        case "Viu":
+        case "TrueID":
+        case "Sanook":
+        case "Dailynews":
+        case "ThaiRath":
+        case"Banana":
+        case "Jib":
+        case "Advice":
+          break
         default:
           break;
       }

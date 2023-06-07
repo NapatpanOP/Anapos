@@ -16,7 +16,7 @@ const SelectGraphicsPositionPage = () => {
     const navigate = useNavigate();
     const location = useLocation()
 
-    const [brand, setBrand] = useState(null)
+    const [brand, setBrand] = useState()
     const [show, setShow] = useState(false);
     // const [formParam, setFormParam] = useState(null);
     const [idState, setId] = useState('');
