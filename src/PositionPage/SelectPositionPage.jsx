@@ -7,7 +7,7 @@ import "./SelectPositionPage.css";
 import { UserAPI } from "../apis/userAPI";
 import { useAuthContext } from "../core/contexts/AuthProvider";
 import { baseImageUrl } from "../core/store/localVariable";
-import picture1 from "../assets/picture/pt-7.png";
+import picture1 from "../assets/picture/pt-10.jpg";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -92,7 +92,7 @@ function SelectPositionPage() {
     <div>
       <div class="full-size-select-position">
         <div class="head-select-position">
-          <img class="picture-head-select-position" src={picture1} alt="pt-7" />
+          <img class="picture-head-select-position" src={picture1} alt="pt-10" />
           <div class="text-head-select-position">
             <h1>ประเภทเว็บไซต์</h1>
             <h1 class="text-head-position-web">{brand?.type}</h1>
