@@ -266,11 +266,11 @@ function HomePage() {
             โดยจะนำเว็บไซต์ที่คนไทยนั้นเข้าชมมากที่สุดในปี 2022
             มาแบ่งเป็นประเภทต่างๆ
           </p>
-          <Link to="#">
+          <ReactLink to="/typesweb">
             <button type="button" class="btn btn-warning" id="bt-more2">
               ข้อมูลเว็บไซต์เว็บไซต์เพิ่มเติม
             </button>
-          </Link>
+          </ReactLink>
           <p class="name-brand-box5">
             YOUTUBE VIU TRUEID THAIRATH DAILYNEWS SANOOK BANANAIT ADVICE JIB
           </p>
