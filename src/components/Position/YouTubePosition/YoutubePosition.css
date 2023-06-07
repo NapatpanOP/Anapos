@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.full-size-youtube {
+  width: 80%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-yt-position1-1 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P1-1.png");
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.box-yt-position1-1:hover {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-PH1-1.png")
+}
+
+.topic-yt {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.box-yt-position1-2 {
+  position: relative;
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P1-2.png");
+  background-position: center;
+  width: 100%;
+  height: 14vh;
+}
+
+.box-yt-position {
+  margin-top: 2rem;
+  height: max-content;
+  display: flex;
+  margin-left: 4rem;
+  border-bottom: 2px solid black;
+}
+
+.box-yt-position2-1 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P2-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 325px;
+  border: 7px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.box-yt-position2-1:hover {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-PH2-1.png");
+}
+
+.box-yt-position2-2 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P2-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 325px;
+  border: 7px;
+  margin-left: 1rem;
+}
+
+.box-yt-position3-1 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P3-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 200px;
+  border: 7px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.box-yt-position3-1:hover {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-PH3-1.png");
+}
+
+.box-yt-position3-2 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P3-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border: 7px;
+  margin-left: 1rem;
+}
+
+.box-yt-position4-1 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P4-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 325px;
+  border: 7px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.box-yt-position4-1:hover {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-PH4-1.png");
+}
+
+.box-yt-position4-2 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P4-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 325px;
+  border: 7px;
+  margin-left: 1rem;
+}
+
+.box-yt-position-end {
+  margin-top: 2rem;
+  height: max-content;
+  display: flex;
+  margin-left: 4rem;
+}
+
+.box-yt-position5-1 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P5-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 200px;
+  border: 7px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.box-yt-position5-1:hover {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-PH5-1.png");
+}
+
+.box-yt-position5-2 {
+  background-image: url("../../../assets/positionPage//YoutubePosition/YT-P5-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border: 7px;
+  margin-left: 1rem;
+}

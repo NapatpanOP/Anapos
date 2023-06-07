@@ -8,6 +8,9 @@ import { UserAPI } from "../apis/userAPI";
 import { useAuthContext } from "../core/contexts/AuthProvider";
 import { baseImageUrl } from "../core/store/localVariable";
 import picture1 from "../assets/picture/pt-10.jpg";
+import Footer from "../components/Footer/Footer";
+
+import YoutubePosition from "../components/Position/YouTubePosition/YoutubePosition";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -106,13 +109,15 @@ function SelectPositionPage() {
         <p>ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566</p>
       </div>
 
-      <img
+        <YoutubePosition/>
+
+      {/* <img
         src={baseImageUrl + brand?.full_image ?? ""}
         alt="position"
         className="position"
       />
 
-      <div className="bt-position">{renderButtonList()}</div>
+      <div className="bt-position">{renderButtonList()}</div> */}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -140,6 +145,7 @@ function SelectPositionPage() {
           </Button>
         </Modal.Footer>
       </Modal>
+      <Footer/>
     </div>
   );
 }
