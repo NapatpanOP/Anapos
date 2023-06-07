@@ -326,7 +326,7 @@ function HomePage() {
               <img src={iconnumone} alt="icon" class="icon" />
               <div class="box7-step-content">
                 <p class="box7-head-step">ตำแหน่งโฆษณา</p>
-                <p>สามารถเข้าและเลือกดูโฆษณาของตำแหน่งต่างๆได้</p>
+                <p>สามารถเข้าและเลือกดูโฆษณาตำแหน่งต่างๆของแต่ละเว็บไซต์ได้</p>
               </div>
             </div>
             <div class="box7-step">
