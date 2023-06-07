@@ -6,7 +6,7 @@ import './BarChart.css'
 
 function BarTypeBusinessLike({data}) {
   const filterredBusiness = data.filter((item) => {
-    return item.type === "Business";
+    return item.type === "ธุรกิจ";
 });
   const [userData, setData] = useState({
     labels: filterredBusiness.map((item) => item.title),

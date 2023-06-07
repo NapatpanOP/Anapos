@@ -6,7 +6,7 @@ import './BarChart.css'
 
 function BarTypeNewLike({data}) {
   const filterredNew = data.filter((item) => {
-    return item.type === "New";
+    return item.type === "ข่าวสาร";
 });
   const [userData, setData] = useState({
     labels: filterredNew.map((item) => item.title),

@@ -6,7 +6,7 @@ import './BarChart.css'
 
 function BarTypePortalLike({data}) {
   const filterredPortal = data.filter((item) => {
-      return item.type === "Portal";
+      return item.type === "บันเทิง";
   });
   
   const [userData, setData] = useState({
