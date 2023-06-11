@@ -19,11 +19,13 @@ button:focus {
 .box-yt-position1-1 {
   background-image: url("../../../assets/positionPage//YoutubePosition/YT-P1-1.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 50vh;
   cursor: pointer;
   position: relative;
   background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
 .box-yt-position1-1:hover {
@@ -45,6 +47,7 @@ button:focus {
   position: relative;
   background-image: url("../../../assets/positionPage/YoutubePosition/YT-P1-2.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 14vh;
   background-size: cover;
@@ -65,10 +68,11 @@ button:focus {
 
   width: 200px;
   height: 325px;
-  border: 7px;
+  border-radius: 7px;
   margin-bottom: 2rem;
   cursor: pointer;
   background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
 .box-yt-position2-1:hover {
@@ -81,7 +85,7 @@ button:focus {
   background-repeat: no-repeat;
   width: 200px;
   height: 325px;
-  border: 7px;
+  border-radius: 7px;
   margin-left: 1rem;
   background-size: contain;
 }
@@ -93,10 +97,11 @@ button:focus {
 
   width: 200px;
   height: 200px;
-  border: 7px;
+  border-radius: 7px;
   margin-bottom: 2rem;
   cursor: pointer;
   background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
 .box-yt-position3-1:hover {
@@ -109,7 +114,7 @@ button:focus {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  border: 7px;
+  border-radius: 7px;
   margin-left: 1rem;
   background-size: cover;
 }
@@ -121,10 +126,11 @@ button:focus {
 
   width: 200px;
   height: 325px;
-  border: 7px;
+  border-radius: 7px;
   margin-bottom: 2rem;
   cursor: pointer;
   background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
 .box-yt-position4-1:hover {
@@ -138,7 +144,7 @@ button:focus {
 
   width: 200px;
   height: 325px;
-  border: 7px;
+  border-radius: 7px;
   margin-left: 1rem;
   background-size: cover;
 }
@@ -157,10 +163,11 @@ button:focus {
 
   width: 200px;
   height: 200px;
-  border: 7px;
+  border-radius: 7px;
   margin-bottom: 2rem;
   cursor: pointer;
   background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
 .box-yt-position5-1:hover {
@@ -173,7 +180,7 @@ button:focus {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  border: 7px;
+  border-radius: 7px;
   margin-left: 1rem;
   background-size: cover;
 }

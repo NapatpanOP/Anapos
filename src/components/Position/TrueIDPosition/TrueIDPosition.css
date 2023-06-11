@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.full-size-trueid {
+  width: 80%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-head-trueid {
+  width: 100%;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-trueid1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+
+  background: #D9D9D9;
+  border-radius: 16px;
+}
+
+.head-trueid {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 220px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 16px;
+  transition: background-image 0.3s ease;
+}
+
+.head-trueid:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-1.png");
+}
+
+.box-trueid1-1 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-1-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.box-truid-1 {
+  background-color: #000000;
+  margin-top: 1rem;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding-top: 2rem;
+  color: #ffffff;
+}
+
+.topic-trueid {
+  margin-left: 4rem;
+}
+
+.box-trueid-1-1 {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.box-trueid-1-2 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-1-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 223px;
+  height: 140px;
+  margin-left: 1rem;
+}
+
+.box-trueid-1-1-2 {
+  background-color: #D9D9D9;
+  width: 250px;
+  height: 250px;
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+}
+
+.box-truid-2 {
+  margin-top: 1rem;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.box-trueid-2-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-trueid-1-3 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-1-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 120px;
+}
+
+.box-truid-3-1 {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+}
+
+.trueid-ps-2 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 139px;
+  height: 139px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-2:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-2.png");
+}
+
+.trueid-ps-2-1 {
+  background-color: #D9D9D9;
+  width: 139px;
+  height: 139px;
+  border-radius: 7px;
+  margin-left: 1rem;
+}
+
+.trueid-ps-3 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-3:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-3.png");
+}
+
+.trueid-ps-3-1 {
+  background-color: #D9D9D9;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  margin-left: 1rem;
+}
+
+.trueid-ps-4 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-4:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-4.png");
+}
+
+.box-trueid-4 {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+
+.trueid-ps-4-1 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-4-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 70vh;
+  margin-left: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.trueid-ps-5 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-5:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-5.png");
+}
+
+.trueid-ps-5-1 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-5-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 41vh;
+  margin-left: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.trueid-ps-5-2 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-5-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 28.5vh;
+  margin-left: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.trueid-ps-6 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-6:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-6.png");
+}
+
+.trueid-ps-7 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 128px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-7:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-7.png");
+}
+
+.box-trueid-7-1 {
+  background-color: #D9D9D9;
+  width: 245px;
+  height: 313px;
+  border-radius: 7px;
+  margin-left: 1rem;
+}
+
+.box-truid-5 {
+  width: 100%;
+  height: max-content;
+}
+
+.trueid-ps-8 {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.trueid-ps-8:hover {
+  background-image: url("../../../assets/positionPage/TrueIDPosition/TID-PS-HW-8.png");
+}

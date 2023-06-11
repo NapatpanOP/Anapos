@@ -11,6 +11,8 @@ import picture1 from "../assets/picture/pt-10.jpg";
 import Footer from "../components/Footer/Footer";
 
 import YoutubePosition from "../components/Position/YouTubePosition/YoutubePosition";
+import ViuPosition from "../components/Position/ViuPosition/ViuPosition";
+import TrueIDPosition from "../components/Position/TrueIDPosition/TrueIDPosition";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -96,9 +98,11 @@ function SelectPositionPage() {
       console.log(brand.title)
       switch (brand.title) {
         case "Youtube":
-          return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+            return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "Viu":
+            return <ViuPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "TrueID":
+            return <TrueIDPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "Sanook":
         case "Dailynews":
         case "ThaiRath":
