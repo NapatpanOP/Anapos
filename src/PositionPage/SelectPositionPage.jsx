@@ -13,6 +13,7 @@ import Footer from "../components/Footer/Footer";
 import YoutubePosition from "../components/Position/YouTubePosition/YoutubePosition";
 import ViuPosition from "../components/Position/ViuPosition/ViuPosition";
 import TrueIDPosition from "../components/Position/TrueIDPosition/TrueIDPosition";
+import SanookPosition from "../components/Position/SanookPosition/SanookPosition";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -104,6 +105,7 @@ function SelectPositionPage() {
         case "TrueID":
             return <TrueIDPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "Sanook":
+            return <SanookPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "Dailynews":
         case "ThaiRath":
         case"Banana":

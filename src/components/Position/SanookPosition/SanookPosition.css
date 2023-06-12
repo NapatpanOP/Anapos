@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.full-size-sanook {
+  width: 80%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head-box-sanook {
+  width: 100%;
+  height: max-content;
+}
+
+.box-sn-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.box-position-sn1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49%;
+  height: 500px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn1:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-1.png");
+}
+
+
+.box-position-sn1-1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-1-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 49%;
+  height: 500px;
+}
+
+.box-sn-2-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box-position-sn2-1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-2-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 59%;
+  height: 500px;
+}
+
+.box-position-sn2 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 39%;
+  height: 500px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn2:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-2.png");
+}
+
+.box-sn-2-2 {
+  width: 100%;
+  height: max-content;
+}
+
+.box-position-sn2-2 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-2-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+}
+
+.box-sn-3-1 {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: left;
+  align-items: end;
+  gap: 1rem;
+}
+
+.box-position-sn3-1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-3-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 500px;
+}
+
+.box-position-sn3 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31%;
+  height: 430px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn3:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-3.png");
+}
+
+.box-position-sn4 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31%;
+  height: 430px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn4:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-4.png");
+}
+
+.box-sn-5 {
+  width: 100%;
+  height: max-content;
+  margin-top: 2rem;
+}
+
+.box-position-sn5 {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: left;
+  align-items: end;
+  gap: 1rem;
+}
+
+.topic-sanook-5 {
+  border-bottom: 6px solid #D9D9D9;
+  margin-top: 2rem;
+}
+
+.box-sn-5 {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: end;
+}
+
+.box-sn5-1 {
+  width: 300px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-position-sn5-1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-5-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 270px;
+}
+
+.box-position-sn6 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 70px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn6:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-6.png");
+}
+
+.box-position-sn5-2 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-5-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 430px;
+  height: 325px;
+}
+
+.box-position-sn5 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 325px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn5:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-5.png");
+}
+
+.box-sn-6 {
+  width: 100%;
+  height: max-content;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-sn-6-1 {
+  width: 48%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.box-sn-position-6-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.box-position-sn6-1 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-6-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 265px;
+  height: 245px;
+}
+
+
+.box-position-sn7 {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 245px;
+  border-radius: 7px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-sn7:hover {
+  background-image: url("../../../assets/positionPage/SanookPosition/SN-PS-HW-7.png");
+}
