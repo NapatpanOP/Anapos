@@ -1,23 +1,255 @@
-body {
-  font-family: 'Archivo', sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
 }
 
-.text-head {
+.full-size-graph1 {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-graph {
+  width: 100%;
+  height: 50vh;
+}
+
+.text-head-graph {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+}
+
+.text-head-graph h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text-head-graph-web {
+  color: #F7C873;
+}
+
+.picture-head-graph {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.text-dis-graph {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  margin-top: 25px;
+}
+
+.icon img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.bt-specific h4 {
+  font-weight: bold;
+}
+
+.bt-specific-at h4 {
+  font-weight: bold;
+}
+
+.btn.bt-specific {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F8F8F8;
+  border: 1px solid #F7C873;
+  border-radius: 45px 0px 45px 45px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.btn.bt-specific:hover {
+  background: #F7C873;
+}
+
+.bt-overview h4 {
+  font-weight: bold;
+}
+
+.bt-overview-at h4 {
+  font-weight: bold;
+}
+
+
+.btn.bt-overview {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F8F8F8;
+  border: 1px solid #F7C873;
+  border-radius: 45px 45px 45px 0px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.btn.bt-overview:hover {
+  background: #F7C873;
+}
+
+.btn.active {
+  background: #F7C873;
+}
+
+.btn.bt-specific-at {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 45px 0px 45px 45px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.btn.bt-specific-at:hover {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 45px 0px 45px 45px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.btn.bt-overview-at {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 45px 45px 45px 0px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.btn.bt-overview-at:hover {
+  width: 393px;
+  height: 269px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 45px 45px 45px 0px;
+  cursor: pointer;
+  color: #434343;
+}
+
+.box1-text-graph {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  color: #434343;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  top: 2rem;
+}
+
+.box1-text-graph p, h1{
+  font-family: 'Anuphan', sans-serif;
+}
+
+.box1-text-graph h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.head-box-graph{
+  color: #F7C873;
+  font-size: 20px
+}
+
+.bt-type1 {
+  border: 1px solid #F7C873;
+  border-radius: 18px 0px 18px 18px;
+  margin: 1rem;
+  width: max-content;
+}
+
+
+/* .text-head {
   width: 100%;
   margin-top: 30px;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
+} */
+
+.bt-graph-home {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #434343;
 }
 
-.bt-graph {
-  margin-left: 5%;
-}
-
-.bt-graph button {
+.bt-graph-home button {
   margin: 5px;
 }
 
@@ -35,6 +267,7 @@ body {
 
 .card-graph {
   margin: 50px;
+  margin-top: 5rem;
 }
 
 .card-grid {
@@ -45,24 +278,69 @@ body {
 }
 
 .card-container-graph {
-  width: 25%;
+  position: relative;
+  width: 320px;
+  height: 400px;
+  padding: 1.5rem;
   margin: 0 1.5% 30px;
-  border: 1.5px solid rgba(116, 116, 116, 1);
   border-radius: 21px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F7C873;
+  border: 1px solid #F7C873;
+  border-radius: 48px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .card-container-graph:hover {
-  border: 3px solid #2AB9B5;
+  background-color: #F7C873;
+  color: #f6f6f6;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.product-card img {
-  width: 100%;
-  height: auto;
+.head-name-brand {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: background-color .3s ease;
+}
+
+.card-container-graph:hover .head-name-brand {
+  color: #f6f6f6;
+}
+
+.box-view-vote {
+  position: absolute;
+  bottom: 4rem;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background-color: #f7c873;
+  transition: background-color .3s ease;
+}
+
+.card-container-graph:hover .box-view-vote {
+  background-color: #f6f6f6;
+}
+
+.box-view-vote p {
+  position: relative;
+  margin: 1rem;
+  border: 1px solid #F7C873;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
   cursor: pointer;
-  padding: 20px;
+  transition: background-color .3s ease;
+}
+
+.card-container-graph:hover .box-view-vote p {
+  background-color: #f6f6f6;
+  color: #F7C873;
 }
 
 .filter-type {
@@ -82,6 +360,7 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 
 
 @media only screen and (max-width: 768px) {
