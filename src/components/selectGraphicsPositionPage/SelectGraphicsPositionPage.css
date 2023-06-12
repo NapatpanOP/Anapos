@@ -1,4 +1,72 @@
-.position-container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: 'Archivo', sans-serif;
+}
+  
+.full-size-select-position {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+  
+.head-select-position {
+    width: 100%;
+    height: 50vh;
+}
+  
+.text-head-select-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+}
+  
+.text-head-select-position h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+  
+.text-head-position-web {
+    color: #F7C873;
+}
+  
+.picture-head-select-position {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.box-text-position {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Archivo', sans-serif;
+    color: #434343;
+}
+  
+.box-text-position h2 {
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 3rem;
+}
+  
+.box-head-text-position {
+    color: #F7C873;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+  
+/* .position-container {
     position: relative;
     width: 100vw;
     min-height: 95vh;
@@ -6,7 +74,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-}
+} */
 
 .image-banner {
     width: 20%;
@@ -21,6 +89,13 @@
     margin: 5px;
 }
 
+.box-img-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .position-img-list {
     position: relative;
     width: 100%;
@@ -33,9 +108,33 @@
 }
 
 .position-img-list img {
-    max-height: 25vh;
+    max-height: 40vh;
     position: relative;
     width: auto;
+    border-radius: 10px;
+}
+
+.bg-card-img {
+    background-color: #fbfbfb;
+    padding: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bg-card-img:hover {
+    background-color: #F7C873;
+}
+
+.bg-card-img h5 {
+    font-weight: bold;
+}
+
+.position-gp {
+    font-weight: bold;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    color: #434343;
 }
 
 .comment-form {
@@ -59,6 +158,14 @@
 .text-description {
     position: relative;
     text-align: center;
+}
+
+#bt-nonsend {
+    font-family: 'Anuphan', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    
 }
 
 #bt-close {

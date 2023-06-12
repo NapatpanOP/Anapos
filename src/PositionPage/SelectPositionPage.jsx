@@ -148,10 +148,10 @@ function SelectPositionPage() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Position selection</Modal.Title>
+          <Modal.Title>ยืนยันการเลือกตำแหน่ง</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          If sure to select this position, press Save and press Next.
+          คุณยืนยันที่จะเลือกตำแหน่งนี้ใช่หรือไม่? กดถัดไปเพื่อยืนยัน
         </Modal.Body>
         <Modal.Footer>
           <Button
@@ -160,7 +160,7 @@ function SelectPositionPage() {
             id="bt-close"
             onClick={handleClose}
           >
-            Close
+            ยกเลิก
           </Button>
           <Button
             variant="primary"
@@ -168,7 +168,7 @@ function SelectPositionPage() {
             id="bt-next"
             onClick={() => confirmHandle()}
           >
-            Next
+            ถัดไป
           </Button>
         </Modal.Footer>
       </Modal>
