@@ -40,13 +40,10 @@ const AdminSignin = () => {
       setPasswordError("Password must be at least 6 characters long.");
       return;
     }
-
-    console.log("Email:", email, "Password:", password);
   };
 
   const signin = async (admin) => {
     loadingAction.onLoading(true)
-    console.log(admin)
     admin.password = CryptoJS.AES.encrypt(admin.password, 'OKIOKI007').toString();
     const response = await SigninAPI.signin(admin)
     loadingAction.onLoading(false)

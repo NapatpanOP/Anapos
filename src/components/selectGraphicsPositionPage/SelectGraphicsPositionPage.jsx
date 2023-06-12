@@ -31,14 +31,11 @@ const SelectGraphicsPositionPage = () => {
 
   useEffect(() => {
     const setup = () => {
-      console.log(location.state);
       if (location.state) {
         setId(location.state.id);
         setPosition(location.state.position);
-        console.log(location.state.id);
         loadingAction.onLoading(true);
         BrandAPI.getById(location.state.id).then((res) => {
-          console.log(res);
           setBrand(res);
           UserAPI.getById(token._id).then((resUser) => {
             const userBrandSelected = resUser.ads_poitions_selected.find(
@@ -64,7 +61,6 @@ const SelectGraphicsPositionPage = () => {
 
   const onClickGraphicHandle = (index) => {
     setSelectedGraphicIndex(index);
-    console.log(idState);
     setShow(true);
   };
 

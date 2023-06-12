@@ -33,7 +33,6 @@ function PageGraph() {
     const setup = () => {
       loadingAction.onLoading(true)
       BrandAPI.getAll().then((res) => {
-        console.log(res)
         setBrands(res)
         UserAPI.getAll().then((resUser) => {
           setAllUser(resUser)

@@ -26,13 +26,11 @@ function BrandsCard({ filter }) {
     }
     loadingAction.onLoading(true);
     UserAPI.getUserLike({ id: loginUser._id }).then((res) => {
-      console.log(res);
       setUserLike(res);
       loadingAction.onLoading(false);
     });
   };
 
-  console.log("user like ", userLike);
   const refreshAllBrands = () => {
     loadingAction.onLoading(true);
     BrandAPI.getAll().then((v) => {
@@ -51,18 +49,14 @@ function BrandsCard({ filter }) {
       var updateUser = loginUser;
       userLike.push(item._id);
       updateUser.brands_like = userLike;
-      console.log(updateUser);
       loadingAction.onLoading(true);
       UserAPI.updateBrandsLike(updateUser).then((res) => {
-        console.log(res);
         setLoginUser(res);
         userLike = res.brands_like;
         localStorage.setItem("token", JSON.stringify(loginUser));
         loadingAction.onLoading(false);
       });
-      console.log(loginUser._id);
       item.like.push(loginUser._id);
-      console.log(item);
       loadingAction.onLoading(true);
       BrandAPI.updateLike(item).then((res) => {
         var m = filteredCards;
@@ -80,23 +74,19 @@ function BrandsCard({ filter }) {
         userLike.splice(targetIndex, 1); // 2nd parameter means remove one item only
       }
       updateUser.brands_like = userLike;
-      console.log(updateUser);
       loadingAction.onLoading(true);
       UserAPI.updateBrandsLike(updateUser).then((res) => {
-        console.log(res);
         setLoginUser(res);
         userLike = res.brands_like;
         localStorage.setItem("token", JSON.stringify(loginUser));
         loadingAction.onLoading(false);
       });
-      console.log(loginUser._id);
       // item.like.push(loginUser._id)
       const targetBIndex = item.like.indexOf(loginUser._id);
       if (targetBIndex > -1) {
         // only splice array when item is found
         item.like.splice(targetBIndex, 1); // 2nd parameter means remove one item only
       }
-      console.log(item);
       loadingAction.onLoading(true);
       BrandAPI.updateLike(item).then((res) => {
         var m = filteredCards;

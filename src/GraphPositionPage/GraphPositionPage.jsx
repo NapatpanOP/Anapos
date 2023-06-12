@@ -75,7 +75,6 @@ function GraphPosition() {
     if (location.state) {
 
       setBrandData(location.state.brand)
-      console.log(location.state.brand)
       setChartData({
         labels: location.state.brand?.adsPositions.map((_, index) => `POSITION ${index + 1}`),
         datasets: [{

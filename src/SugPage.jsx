@@ -78,35 +78,35 @@ const { token, loadingAction } = useAuthContext()
         
         <div id='div-form'>
           <div className="sug-header">
-            <h1>SUGGESTION</h1>
+            <h1>ข้อเสนอแนะ</h1>
           </div>
           <div className="form-group">
-            <label htmlFor="website-name">Website Name*:</label>
+            <label htmlFor="website-name">ชื่อเว็บไซต์*:</label>
             <input type="text" id="website-name" value={websiteName} onChange={handleNameChange} required />
           </div>
 
           <div className="form-group">
-            <label htmlFor="website-type">Types of Websites*:</label>
+            <label htmlFor="website-type">ประเภทเว็บไซต์*:</label>
             <select id="website-type" value={websiteType} onChange={handleTypeChange}>
-              <option value="">-- Please select --</option>
-              <option value="Portal">Portal</option>
-              <option value="New">New</option>
-              <option value="Business">Business</option>
+              <option value="">-- ประเภทเว็บไซต์ --</option>
+              <option value="Portal">บันเทิง</option>
+              <option value="New">ข่าวสาร</option>
+              <option value="Business">ธุรกิจ</option>
             </select>
           </div>
 
           <div className="form-group">
-            <label htmlFor="note">Note:</label>
+            <label htmlFor="note">เหตุผลที่เสนอเว็บไซต์นี้:</label>
             <textarea className="note-form" id="note" value={note} onChange={handleNoteChange}></textarea>
           </div>
 
           <div className="form-group">
-            <label htmlFor="website-url">URL of Websites*:</label>
+            <label htmlFor="website-url">URL ของเว็บไซต์*:</label>
             <input className="url-form" type="url" id="website-url" value={websiteUrl} onChange={handleUrlChange} required />
           </div>
 
           {renderAddStatus()}
-          <button type="submit-sug" className='submit-sug' onClick={() => addSuggestion()}>CONFIRM</button>
+          <button type="submit-sug" className='submit-sug' onClick={() => addSuggestion()}>ยืนยัน</button>
         </div>
       </div>
     </div>

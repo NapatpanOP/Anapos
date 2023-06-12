@@ -52,7 +52,6 @@ function SignupHomePage() {
           setErrorMessage(response.message);
         } else {
           AuthAction.onSetUserSignin(response);
-          console.log(response);
           navigate("/");
         }
       })

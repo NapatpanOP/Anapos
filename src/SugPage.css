@@ -86,7 +86,8 @@ body {
 }
 
 button[type="submit-sug"] {
-  background-color: #37D295;;
+  background-color: #F7C873;
+  font-family: 'Anuphan', sans-serif;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -94,10 +95,11 @@ button[type="submit-sug"] {
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 button[type='submit-sug']:hover {
-  background-color: #26996b;
+  background-color: #c5a05b;
 }
 
 #website-type {

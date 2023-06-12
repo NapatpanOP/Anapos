@@ -29,7 +29,6 @@ function SelectPositionPage() {
   const onClickGraphicHandle = (position) => {
     // console.log(id);
     // selectId = id;
-    console.log(position)
     setSelectPosition(position);
     setShow(true);
   };
@@ -47,18 +46,15 @@ function SelectPositionPage() {
 
   useEffect(() => {
     const setup = () => {
-      console.log(location.state);
       if (location.state) {
         setId(location.state.id);
         loadingAction.onLoading(true);
         BrandAPI.getById(location.state.id).then((res) => {
-          console.log(res);
           setBrand(res);
           UserAPI.getById(token._id).then((resUser) => {
             const userBrandSelected = resUser.ads_poitions_selected.find(
               ({ brand_id }) => brand_id === res._id
             );
-            console.log(userBrandSelected);
             setCurrentPositionIndex(
               userBrandSelected?.ad_index_position ?? null
             );
@@ -73,7 +69,6 @@ function SelectPositionPage() {
     setup();
   }, []);
   const renderButtonList = () => {
-    console.log("test ", brand);
     if (brand) {
       return brand.adsPositions.map((img, index) => {
         return (
@@ -96,7 +91,6 @@ function SelectPositionPage() {
 
   const renderSelectPage = () => {
     if(brand != null) {
-      console.log(brand.title)
       switch (brand.title) {
         case "Youtube":
             return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>

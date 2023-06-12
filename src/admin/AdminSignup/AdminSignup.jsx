@@ -44,7 +44,6 @@ const AdminSignup = () => {
             setErrorMessage(response.message)
         } else {
             AuthAction.onSetAdminSignin(response)
-            console.log(response)
             navigate('/conclusion')
         }
         
