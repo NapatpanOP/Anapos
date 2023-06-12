@@ -195,7 +195,7 @@
   width: 25vw;
   height: 70vh;
   margin: 1rem;
-  background: url("./assets/picture/profile-beer1.JPG");
+  background: url("./assets/picture/profile-beer1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -221,7 +221,7 @@
 }
 
 .dev-profile-about1:hover {
-  background: url("./assets/picture/profile-beer2.JPG");
+  background: url("./assets/picture/profile-beer2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
