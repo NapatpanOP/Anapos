@@ -8,13 +8,11 @@ function YoutubePosition({selectPosHandle, currentPositionIndex}) {
         <button class={[`box-yt-position1-1  ${
               currentPositionIndex == 0 ? "class-active" : "class-normal"
             }`]} onClick={() => selectPosHandle(0)}></button>
-        {/* <div class="box-yt-position1-1"></div> */}
         <div class="box-yt-position1-2"></div>
       </div>
       <h3 class="topic-yt">TOPIC</h3>
       <div class="box-yt-position">
         <button class="box-yt-position2-1" onClick={() => selectPosHandle(1)}></button>
-        {/* <div class="box-yt-position2-1"></div> */}
         <div class="box-yt-position2-2"></div>
         <div class="box-yt-position2-2"></div>
       </div>

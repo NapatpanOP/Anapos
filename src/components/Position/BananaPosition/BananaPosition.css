@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.full-size-banana {
+  width: 80%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bn-position1 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 10vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position1:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-1.png");
+}
+
+.bn-position1-1 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-1-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+}
+
+.bn-position2 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position2:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-2.png");
+}
+
+.box-banana1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-banana1-1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.box-banana1-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bn-position3 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position3:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-3.png");
+}
+
+.bn-position3-1 {
+  width: 32%;
+  height: 20vh;
+  background: #D9D9D9;
+}
+
+.bn-position4 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23.5%;
+  height: 50vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position4:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-4.png");
+}
+
+.bn-position4-1 {
+  width: 23.5%;
+  height: 50vh;
+  background: #D9D9D9;
+}
+
+.box-banana2-1 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.bn-position5 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49%;
+  height: 40vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position5:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-5.png");
+}
+
+.box-banana2-2 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.bn-position6 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position6:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-6.png");
+}
+
+.bn-position7 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position7:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-7.png");
+}
+
+.bn-position8 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position8:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-8.png");
+}
+
+.bn-position9 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position9:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-9.png");
+}
+
+.bn-position10 {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position10:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-10.png");
+}
