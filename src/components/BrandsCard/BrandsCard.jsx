@@ -153,7 +153,6 @@ function BrandsCard({ filter }) {
   };
 
   const positionSelectHandle = (id) => {
-    console.log("test ", id);
     navigate("/select-position", { state: { id: id } });
   };
 

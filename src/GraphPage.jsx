@@ -53,13 +53,15 @@ function PageGraph() {
     navigate("/graphposition", { state: { brand: brand } });
   };
 
+  const handleFilter = (key) => {
+    setMode(key);
+  };
+
   const renderFilterOverview = () => {
     if (mode == "overview") {
       return (
         <div className="graphPage">
-          <div class="bt-type1" onClick={() => handleFilter("overview")}>
-            <p>overview</p>
-          </div>
+         <button class="bt-type3" onClick={() => handleFilter("overview")}>Overview</button>
           {/* <select
             id="viewGraph"
             value={viewGraph}
