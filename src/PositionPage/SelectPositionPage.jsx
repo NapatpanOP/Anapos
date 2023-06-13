@@ -95,7 +95,7 @@ function SelectPositionPage() {
     if(brand != null) {
       switch (brand.title) {
         case "Youtube":
-            return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+            return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)} currentPositionIndex={currentPositionIndex}/>
         case "Viu":
             return <ViuPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "TrueID":

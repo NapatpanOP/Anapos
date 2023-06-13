@@ -68,7 +68,7 @@ function PageGraph() {
               className={`bt-gp btn ${
                 mode === "overview" ? "bt-gp-at" : "bt-gp"
               }`}
-              onClick={() => handleFilter("overview")}
+              onClick={() => setGraph("overview")}
             >
               <img src={iconoverview} alt="icon" class="icon-gp" />
             </button>
@@ -85,7 +85,7 @@ function PageGraph() {
             <button className={`bt-gp btn ${
                 mode === "type" ? "bt-gp-at" : "bt-gp"
               }`}
-              onClick={() => handleFilter("type")}>
+              onClick={() => setGraph("type")}>
               <img src={icontypeweb} alt="icon" class="icon-gp" />
             </button>
             <div class="text-bt-gp">
@@ -101,7 +101,7 @@ function PageGraph() {
             <button className={`bt-gp btn ${
                 mode === "sex" ? "bt-gp-at" : "bt-gp"
               }`}
-              onClick={() => handleFilter("sex")}>
+              onClick={() => setGraph("sex")}>
               <img src={iconsex} alt="icon" class="icon-gp" />
             </button>
             <div class="text-bt-gp">
@@ -216,7 +216,7 @@ function PageGraph() {
                 เพศ และ ประเภทของเว็บ
               </p>
             </div>
-            {/* {renderOverviewGraph()} */}
+            {renderOverviewGraph()}
           </div>
         );
       default:
@@ -276,10 +276,10 @@ function PageGraph() {
           <p>ข้อมูลส่วนนี้จะโชว์เรื่องของ ภาพรวมทั้งหมด เพศและประเภทของเว็บ</p>
         </div>
       </div>
-
-      {renderPageContent()}
-
+      
       {renderFilterOverview()}
+      
+      {renderPageContent()}
 
       <Footer />
     </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import "./YoutubePosition.css"
 
-function YoutubePosition({selectPosHandle}) {
+function YoutubePosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-youtube">
-      <div class="box-yt">
-        <button class="box-yt-position1-1" onClick={() => selectPosHandle(0)}></button>
+      <div  className="box-yt">
+        <button class={[`box-yt-position1-1  ${
+              currentPositionIndex == 0 ? "class-active" : "class-normal"
+            }`]} onClick={() => selectPosHandle(0)}></button>
         {/* <div class="box-yt-position1-1"></div> */}
         <div class="box-yt-position1-2"></div>
       </div>
