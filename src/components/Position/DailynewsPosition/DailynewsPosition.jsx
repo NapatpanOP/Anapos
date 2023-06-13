@@ -30,12 +30,74 @@ function DailynewsPosition() {
       </div>
 
       <div class="box-dailynews-4">
-        <h3 class="topic-dailynews-color">Highlights</h3>
+        <h3 class="topic-dailynews-color-4">Highlights</h3>
         <div class="box-dailynews-4-1">
           <div class="box-position-dn1-4"></div>
-          <div class="box-position-dn1-2"></div>
+          <div class="box-dailynews-4-2">
+            <div class="box-position-dn1-5"></div>
+            <div class="box-position-dn1-5"></div>
+            <div class="box-position-dn1-5"></div>
+            <div class="box-position-dn1-5"></div>
+          </div>
         </div>
       </div>
+
+      <div class="box-dailynews-4">
+        <h3 class="topic-dailynews-color-5">TOPIC</h3>
+        <div class="box-dailynews-4-1">
+          <button class="box-position-dn2"></button>
+          <div class="box-dailynews-5-2">
+            <h5>Title</h5>
+            <p>Text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-dailynews-4">
+        <h3 class="topic-dailynews-color-5">TOPIC</h3>
+        <div class="box-dailynews-4-1">
+          <button class="box-position-dn3"></button>
+          <div class="box-position-dn3-1"></div>
+          <div class="box-position-dn3-1"></div>
+        </div>
+      </div>
+
+      <div class="box-dailynews-4">
+        <h3 class="topic-dailynews-color-5">TOPIC</h3>
+        <div class="box-dailynews-4-1">
+          <button class="box-position-dn4"></button>
+          <div class="box-position-dn3-1"></div>
+          <div class="box-position-dn3-1"></div>
+        </div>
+      </div>
+
+      <div class="box-dailynews-5">
+        <button class="box-position-dn5"></button>
+        <h4 class="topic-daiynews-5">TOPIC</h4>
+      </div>
+
+      <div class="box-dailynews-6"></div>
+
+      <div class="box-dailynews-7">
+        <div class="box-dailynews-3-1">
+          <button class="box-position-dn6"></button>
+          <div class="box-position-dn6-1"></div>
+          <div class="box-position-dn6-1"></div>
+          <div class="box-position-dn6-1"></div>
+        </div>
+      </div>
+
+      <div class="box-dailynews-8">
+        <h3 class="topic-dailynews-3">TOPIC</h3>
+        <div class="box-dailynews-3-1">
+          <button class="box-position-dn7"></button>
+          <div class="box-position-dn6-1"></div>
+          <div class="box-position-dn6-1"></div>
+          <div class="box-position-dn6-1"></div>
+        </div>
+      </div>
+
+      <div class="box-dailynews-9"></div>
       
     </div>
   )
