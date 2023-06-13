@@ -3,6 +3,9 @@
   margin: 0;
   border: 0;
 }
+.bg-web {
+  background-color: #F2F2F2;
+}
 
 #navbar {
   width: 100%;
