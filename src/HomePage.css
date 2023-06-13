@@ -722,6 +722,7 @@
   padding: 3rem;
   border-radius: 40px;
   color: #434343;
+  background-color: #F8F8F8;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
