@@ -68,7 +68,7 @@ function PageGraph() {
             <div class="box-bt-gp">
               <button
                 className={`btn ${
-                  mode === "overview" ? "bt-gp-at1" : "bt-gp1"
+                  viewGraph == "overview" ? "bt-gp-at1" : "bt-gp1"
                 }`}
                 onClick={() => setGraph("overview")}
               >
@@ -86,7 +86,7 @@ function PageGraph() {
             <div class="box-bt-gp">
               <button
                 className={`btn ${
-                  mode === "type" ? "bt-gp-at2" : "bt-gp2"
+                  viewGraph == "type" ? "bt-gp-at1" : "bt-gp1"
                 }`}
                 onClick={() => setGraph("type")}
               >
@@ -102,7 +102,7 @@ function PageGraph() {
 
             <div class="box-bt-gp">
               <button
-                className={`btn ${mode === "sex" ? "bt-gp-at3" : "bt-gp3"}`}
+                className={`btn ${viewGraph == "sex" ? "bt-gp-at1" : "bt-gp1"}`}
                 onClick={() => setGraph("sex")}
               >
                 <img src={iconsex} alt="icon" class="icon-gp" />
