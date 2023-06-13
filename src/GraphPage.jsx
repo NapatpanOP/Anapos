@@ -20,6 +20,8 @@ import Footer from "./components/Footer/Footer";
 import picture1 from "./assets/picture/pt-11.jpg";
 import iconsearch from "./assets/icon/icon-search.png";
 import iconoverview from "./assets/icon/icon-overview.png";
+import icontypeweb from "./assets/icon/icon-typeweb.png";
+import iconsex from "./assets/icon/icon-sex.png"
 
 function PageGraph() {
   const { token, loadingAction } = useAuthContext();
@@ -61,7 +63,54 @@ function PageGraph() {
     if (mode == "overview") {
       return (
         <div className="graphPage">
-         <button class="bt-type3" onClick={() => handleFilter("overview")}>Overview</button>
+          <div class="box-bt-gp">
+            <button
+              className={`bt-gp btn ${
+                mode === "overview" ? "bt-gp-at" : "bt-gp"
+              }`}
+              onClick={() => handleFilter("overview")}
+            >
+              <img src={iconoverview} alt="icon" class="icon-gp" />
+            </button>
+            <div class="text-bt-gp">
+              <h5>ภาพรวมทั้งหมด</h5>
+              <p>
+                แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
+                โดยจะแสดงผลจากการเข้าไปโหวตของผู้ใช้
+              </p>
+            </div>
+          </div>
+
+          <div class="box-bt-gp">
+            <button className={`bt-gp btn ${
+                mode === "type" ? "bt-gp-at" : "bt-gp"
+              }`}
+              onClick={() => handleFilter("type")}>
+              <img src={icontypeweb} alt="icon" class="icon-gp" />
+            </button>
+            <div class="text-bt-gp">
+              <h5>ประเภทของเว็บไซต์</h5>
+              <p>
+              แสดงผลของมูลแต่ละประเภทโดยรายละเอียด
+              แบ่งตามแต่ละประเภทต่างๆ
+              </p>
+            </div>
+          </div>
+
+          <div class="box-bt-gp">
+            <button className={`bt-gp btn ${
+                mode === "sex" ? "bt-gp-at" : "bt-gp"
+              }`}
+              onClick={() => handleFilter("sex")}>
+              <img src={iconsex} alt="icon" class="icon-gp" />
+            </button>
+            <div class="text-bt-gp">
+              <h5>เพศ</h5>
+              <p>
+              จะแสดงข้อมูลการเลือกจากผู้ใช้โดยจะแบ่งเป็นแต่ละเพศที่เข้าไปเลือกเว็บเว็บต่างๆ
+              </p>
+            </div>
+          </div>
           {/* <select
             id="viewGraph"
             value={viewGraph}
@@ -161,8 +210,10 @@ function PageGraph() {
               <p class="head-box-graph">ภาพรวมทั้งหมด</p>
               <h1>เว็บไซต์ต่างๆใน ANAPOS</h1>
               <p>
-              ในส่วนนี้จะแสดงข้อมูลเว็บไซต์ทั้งหมดใน ANAPOS เป็นรูปแบบของภาพรวม โดยจะโชว์ผลเป็นรูปแบบกราฟ ซึ่งแบ่งได้ดังนี้
-              การแสดงผลภาพรวมของการโหวตทั้งหมดว่าเว็บในมีการเข้าโหวตมากที่สุด เพศ และ ประเภทของเว็บ
+                ในส่วนนี้จะแสดงข้อมูลเว็บไซต์ทั้งหมดใน ANAPOS
+                เป็นรูปแบบของภาพรวม โดยจะโชว์ผลเป็นรูปแบบกราฟ ซึ่งแบ่งได้ดังนี้
+                การแสดงผลภาพรวมของการโหวตทั้งหมดว่าเว็บในมีการเข้าโหวตมากที่สุด
+                เพศ และ ประเภทของเว็บ
               </p>
             </div>
             {/* {renderOverviewGraph()} */}

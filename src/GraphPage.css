@@ -204,6 +204,7 @@
   text-align: center;
   color: #434343;
   width: 60%;
+  height: max-content;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -222,6 +223,65 @@
 .head-box-graph{
   color: #F7C873;
   font-size: 20px
+}
+
+.graphPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  gap: 1rem;
+}
+
+.icon-gp {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  margin-top: 25px;
+}
+
+.icon-gp img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.box-bt-gp {
+  display: flex;
+  flex-direction: column;
+  color: #434343;
+  align-items: center;
+}
+
+.btn.bt-gp {
+  width: 150px;
+  padding: 1rem;
+  background: #fafafa;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.btn.bt-gp:hover {
+  border: 2px solid #F7C873;
+}
+
+.btn.bt-gp-at.active {
+  width: 150px;
+  padding: 1rem;
+  background: #F7C873;
+  border: 2px solid #F7C873;
+  border-radius: 20px;
+}
+
+.text-bt-gp {
+  width: 300px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.text-bt-gp h5 {
+  font-weight: bold;
 }
 
 /* .text-head {
