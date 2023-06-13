@@ -21,7 +21,7 @@ import picture1 from "./assets/picture/pt-11.jpg";
 import iconsearch from "./assets/icon/icon-search.png";
 import iconoverview from "./assets/icon/icon-overview.png";
 import icontypeweb from "./assets/icon/icon-typeweb.png";
-import iconsex from "./assets/icon/icon-sex.png"
+import iconsex from "./assets/icon/icon-sex.png";
 
 function PageGraph() {
   const { token, loadingAction } = useAuthContext();
@@ -62,56 +62,59 @@ function PageGraph() {
   const renderFilterOverview = () => {
     if (mode == "overview") {
       return (
-        <div className="graphPage">
-          <div class="box-bt-gp">
-            <button
-              className={`bt-gp btn ${
-                mode === "overview" ? "bt-gp-at" : "bt-gp"
-              }`}
-              onClick={() => setGraph("overview")}
-            >
-              <img src={iconoverview} alt="icon" class="icon-gp" />
-            </button>
-            <div class="text-bt-gp">
-              <h5>ภาพรวมทั้งหมด</h5>
-              <p>
-                แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
-                โดยจะแสดงผลจากการเข้าไปโหวตของผู้ใช้
-              </p>
+        <div>
+          {renderPageContent()}
+          <div className="graphPage">
+            <div class="box-bt-gp">
+              <button
+                className={`btn ${
+                  mode === "overview" ? "bt-gp-at1" : "bt-gp1"
+                }`}
+                onClick={() => setGraph("overview")}
+              >
+                <img src={iconoverview} alt="icon" class="icon-gp" />
+              </button>
+              <div class="text-bt-gp">
+                <h5>ภาพรวมทั้งหมด</h5>
+                <p>
+                  แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
+                  โดยจะแสดงผลจากการเข้าไปโหวตของผู้ใช้
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="box-bt-gp">
-            <button className={`bt-gp btn ${
-                mode === "type" ? "bt-gp-at" : "bt-gp"
-              }`}
-              onClick={() => setGraph("type")}>
-              <img src={icontypeweb} alt="icon" class="icon-gp" />
-            </button>
-            <div class="text-bt-gp">
-              <h5>ประเภทของเว็บไซต์</h5>
-              <p>
-              แสดงผลของมูลแต่ละประเภทโดยรายละเอียด
-              แบ่งตามแต่ละประเภทต่างๆ
-              </p>
+            <div class="box-bt-gp">
+              <button
+                className={`btn ${
+                  mode === "type" ? "bt-gp-at2" : "bt-gp2"
+                }`}
+                onClick={() => setGraph("type")}
+              >
+                <img src={icontypeweb} alt="icon" class="icon-gp" />
+              </button>
+              <div class="text-bt-gp">
+                <h5>ประเภทของเว็บไซต์</h5>
+                <p>
+                  แสดงผลของมูลแต่ละประเภทโดยรายละเอียด แบ่งตามแต่ละประเภทต่างๆ
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="box-bt-gp">
-            <button className={`bt-gp btn ${
-                mode === "sex" ? "bt-gp-at" : "bt-gp"
-              }`}
-              onClick={() => setGraph("sex")}>
-              <img src={iconsex} alt="icon" class="icon-gp" />
-            </button>
-            <div class="text-bt-gp">
-              <h5>เพศ</h5>
-              <p>
-              จะแสดงข้อมูลการเลือกจากผู้ใช้โดยจะแบ่งเป็นแต่ละเพศที่เข้าไปเลือกเว็บเว็บต่างๆ
-              </p>
+            <div class="box-bt-gp">
+              <button
+                className={`btn ${mode === "sex" ? "bt-gp-at3" : "bt-gp3"}`}
+                onClick={() => setGraph("sex")}
+              >
+                <img src={iconsex} alt="icon" class="icon-gp" />
+              </button>
+              <div class="text-bt-gp">
+                <h5>เพศ</h5>
+                <p>
+                  จะแสดงข้อมูลการเลือกจากผู้ใช้โดยจะแบ่งเป็นแต่ละเพศที่เข้าไปเลือกเว็บเว็บต่างๆ
+                </p>
+              </div>
             </div>
-          </div>
-          {/* <select
+            {/* <select
             id="viewGraph"
             value={viewGraph}
             onChange={(e) => setGraph(e.target.value)}
@@ -126,6 +129,8 @@ function PageGraph() {
               SEX
             </option>
           </select> */}
+          </div>
+          {renderOverviewGraph()}
         </div>
       );
     }
@@ -169,7 +174,7 @@ function PageGraph() {
     }
   };
 
-  const renderPageContent = () => {
+  const renderSpecific = () => {
     switch (mode) {
       case "specific":
         return (
@@ -203,6 +208,13 @@ function PageGraph() {
             </div>
           </div>
         );
+      default:
+        break;
+    }
+  };
+
+  const renderPageContent = () => {
+    switch (mode) {
       case "overview":
         return (
           <div>
@@ -216,7 +228,7 @@ function PageGraph() {
                 เพศ และ ประเภทของเว็บ
               </p>
             </div>
-            {renderOverviewGraph()}
+            {/* {renderOverviewGraph()} */}
           </div>
         );
       default:
@@ -276,10 +288,10 @@ function PageGraph() {
           <p>ข้อมูลส่วนนี้จะโชว์เรื่องของ ภาพรวมทั้งหมด เพศและประเภทของเว็บ</p>
         </div>
       </div>
-      
+
       {renderFilterOverview()}
-      
-      {renderPageContent()}
+
+      {renderSpecific()}
 
       <Footer />
     </div>
