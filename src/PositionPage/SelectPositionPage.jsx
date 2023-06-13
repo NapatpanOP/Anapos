@@ -15,6 +15,7 @@ import ViuPosition from "../components/Position/ViuPosition/ViuPosition";
 import TrueIDPosition from "../components/Position/TrueIDPosition/TrueIDPosition";
 import SanookPosition from "../components/Position/SanookPosition/SanookPosition";
 import DailynewsPosition from "../components/Position/DailynewsPosition/DailynewsPosition";
+import ThaiRathPosition from "../components/Position/ThaiRathPosition/ThaiRathPosition";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -104,6 +105,7 @@ function SelectPositionPage() {
         case "Dailynews":
             return <DailynewsPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "ThaiRath":
+            return <ThaiRathPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case"Banana":
         case "Jib":
         case "Advice":
