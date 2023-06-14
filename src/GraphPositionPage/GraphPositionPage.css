@@ -105,12 +105,27 @@ body {
   width: 50%;
 }
 
-.full-box-graph {
+.full-box-content-graph1 {
   position: relative;
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 2%;
+  gap: 2rem;
+}
+
+.full-box-graph-img {
+  width: 49%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.full-box-graph-barchart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
 }
 
 .main-logo {
@@ -124,36 +139,67 @@ body {
 }
 
 .bt-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.select-graphPage-position select {
   position: relative;
-  margin-left: 5%;
-}
-
-.bt-graph button {
-  margin: 5px;
-}
-
-.graphPage select {
-  margin-left: 5.4%;
-  margin-top: 10px;
+  left: 5rem;
   width: 150px;
   font-size: 16px;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #747474;
+  border: 1px solid #F7C873;
+  border-radius: 10px;
+  margin: 1rem;
+  font-family: 'Anuphan', sans-serif;
+  font-weight: bold;
+  color: #F7C873;
   background-color: #fff;
-  color: #333;
 }
 
-.position-photo {
+.position-photo-gp {
   width: 350px;
-  margin-left: 10%;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
-.box-content {
+.box-content-graph {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn.bt-position-gp {
+  border: 1px solid #F7C873;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Anuphan', sans-serif;
+  font-weight: bold;
+  color: #F7C873;
+  background-color: #fff;
+}
+
+.btn.bt-position-gp:hover {
+  color: #fff;
+  background-color: #F7C873;
+}
+
+.btn.bt-position-gp-at {
+  border: 1px solid #F7C873;
+  color: #fff;
+  background-color: #F7C873;
+  border-radius: 10px;
+  font-family: 'Anuphan', sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.btn.bt-position-gp-at:hover {
+  border: 1px solid #F7C873;
+  color: #fff;
+  background-color: #F7C873;
 }
 
 @media screen and (max-width: 820px) {

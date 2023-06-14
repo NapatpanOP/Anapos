@@ -4,6 +4,7 @@ import BarChart from "../components/BarChart/BarChart";
 import { useLocation } from "react-router";
 import { baseImageUrl } from "../core/store/localVariable";
 import picture1 from "../assets/picture/pt-11.jpg";
+import Footer from "../components/Footer/Footer";
 
 function GraphPosition() {
   const [pageGraph, setGraph] = useState(0);
@@ -14,7 +15,7 @@ function GraphPosition() {
   const renderFilter = () => {
     if (mode == "graphic") {
       return (
-        <div className="graphPage">
+        <div className="select-graphPage-position">
           <select
             id="pageGraph"
             value={pageGraph}
@@ -34,14 +35,16 @@ function GraphPosition() {
   const renderrBoxContent = () => {
     if (mode == "position") {
       return (
-        <div className="box-content">
-          <img
-            src={baseImageUrl + brandData?.full_image}
-            alt="position-photo"
-            className="position-photo"
-          />
+        <div className="full-box-content-graph1">
+          <div className="full-box-graph-img">
+            <img
+              src={baseImageUrl + brandData?.full_image}
+              alt="position-photo"
+              className="position-photo-gp"
+            />
+          </div>
 
-          <div className="full-box-graph">
+          <div className="full-box-graph-barchart">
             <div className="bar-chart">
               <BarChart chartData={chartData} />
             </div>
@@ -50,7 +53,7 @@ function GraphPosition() {
       );
     } else {
       return (
-        <div className="box-content">
+        <div className="box-content-graph">
           <div className="left-contain">
             {brandData?.adsPositions[pageGraph]?.images_urls.map(
               (image, index) => {
@@ -65,7 +68,7 @@ function GraphPosition() {
               }
             )}
           </div>
-          <div className="full-box-graph">
+          <div className="full-box-content-graph">
             <div className="bar-chart">
               <BarChart
                 chartData={{
@@ -137,9 +140,7 @@ function GraphPosition() {
           <div class="box1-text-type">
             <p class="head-box-type">ประเภทเว็บไซต์ {brandData?.type}</p>
             <h1>{brandData?.title}</h1>
-            <p>
-              แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบภาพรวมของผู้ใช้งาน
-            </p>
+            <p>แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบภาพรวมของผู้ใช้งาน</p>
           </div>
         </div>
       );
@@ -150,7 +151,8 @@ function GraphPosition() {
             <p class="head-box-type">ประเภทเว็บไซต์ {brandData?.type}</p>
             <h1>{brandData?.title}</h1>
             <p>
-              แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบเฉพาะเจาะจงตำแหน่ง เพื่อดูว่ากราฟิกแบบใดมีผู้ใช้เลือกบ้างและมีจำนวนเท่าไร
+              แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบเฉพาะเจาะจงตำแหน่ง
+              เพื่อดูว่ากราฟิกแบบใดมีผู้ใช้เลือกบ้างและมีจำนวนเท่าไร
             </p>
           </div>
         </div>
@@ -183,7 +185,7 @@ function GraphPosition() {
           type="button"
           onClick={() => setMode("position")}
           className={`btn ${
-            mode == "position" ? "btn-dark" : "btn-outline-dark"
+            mode == "position" ? "bt-position-gp-at" : "bt-position-gp"
           }`}
         >
           ภาพรวม
@@ -192,7 +194,7 @@ function GraphPosition() {
           type="button"
           onClick={() => setMode("graphic")}
           className={`btn ${
-            mode == "graphic" ? "btn-dark" : "btn-outline-dark"
+            mode == "graphic" ? "bt-position-gp-at" : "bt-position-gp"
           }`}
         >
           เจาะจงตำแหน่ง
@@ -202,6 +204,8 @@ function GraphPosition() {
       {renderFilter()}
 
       {renderrBoxContent()}
+      
+      <Footer/>
     </div>
   );
 }
