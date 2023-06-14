@@ -1,8 +1,9 @@
 import React from 'react'
+import "./JibPosition.css"
 
 function JibPosition() {
   return (
-    <div>
+    <div class="full-size-jib">
       
     </div>
   )
