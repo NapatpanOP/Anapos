@@ -191,35 +191,105 @@
   position: relative;
 }
 
-.type-page button {
+/* .type-page button {
   padding: 1rem;
   width: 10rem;
   font-weight: bold;
   font-family: 'Anuphan', sans-serif;
   color: #F7C873;
   background-color: #ffffff;
-}
+} */
 
-.type-page button:hover {
+/* .type-page button:hover {
   background-color: #F7C873;
   color: #ffffff;
   cursor: pointer;
-}
+} */
 
-.bt-type1 {
+.btn.bt-type1 {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #F7C873;
+  background-color: #ffffff;
   border: 1px solid #F7C873;
   border-radius: 18px 0px 18px 18px;
   margin: 1rem;
 }
 
-.bt-type2 {
+.btn.bt-type1-at {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #ffffff;
+  border: 1px solid #F7C873;
+  border-radius: 18px 0px 18px 18px;
+  background-color: #F7C873;
+  margin: 1rem;
+}
+
+.btn.bt-type2 {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #F7C873;
+  background-color: #ffffff;
   border: 1px solid #F7C873;
   border-radius: 18px;
   margin: 1rem;
 }
 
-.bt-type3 {
+.btn.bt-type2-at {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #ffffff;
+  border: 1px solid #F7C873;
+  border-radius: 18px;
+  background-color: #F7C873;
+  margin: 1rem;
+}
+
+.btn.bt-type3 {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #F7C873;
+  background-color: #ffffff;
   border: 1px solid #F7C873;
   border-radius: 18px 18px 18px 0px;
   margin: 1rem;
+}
+
+.btn.bt-type3-at {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-family: 'Anuphan', sans-serif;
+  color: #ffffff;
+  border: 1px solid #F7C873;
+  border-radius: 18px 18px 18px 0px;
+  background-color: #F7C873;
+  margin: 1rem;
+}
+
+.btn.bt-type1:hover,
+.btn.bt-type2:hover,
+.btn.bt-type3:hover {
+  background-color: #F7C873;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn.bt-type1-at:hover,
+.btn.bt-type2-at:hover,
+.btn.bt-type3-at:hover {
+  background-color: #F7C873;
+  color: #ffffff;
+  cursor: pointer;
 }

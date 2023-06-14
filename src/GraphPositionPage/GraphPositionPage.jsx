@@ -16,6 +16,7 @@ function GraphPosition() {
     if (mode == "graphic") {
       return (
         <div className="select-graphPage-position">
+          <p>เลือกตำแหน่งที่ต้องการได้ที่นี่</p>
           <select
             id="pageGraph"
             value={pageGraph}
@@ -53,49 +54,52 @@ function GraphPosition() {
       );
     } else {
       return (
-        <div className="box-content-graph">
-          <div className="left-contain">
-            {brandData?.adsPositions[pageGraph]?.images_urls.map(
-              (image, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={baseImageUrl + image.images_url}
-                    alt="position-photo"
-                    className="graphics-photo"
-                  />
-                );
-              }
-            )}
-          </div>
-          <div className="full-box-content-graph">
-            <div className="bar-chart">
-              <BarChart
-                chartData={{
-                  labels: brandData?.adsPositions[pageGraph]?.images_urls.map(
-                    (_, index) => `BANNER ${index + 1}`
-                  ),
-                  datasets: [
-                    {
-                      label: `POSITION ${pageGraph + 1}`,
-                      data: brandData?.adsPositions[pageGraph]?.images_urls.map(
-                        (item) => item.selected_counts
-                      ),
-                      backgroundColor: [
-                        "#F1F7B5",
-                        "#FD8A8A",
-                        "#88D7B5",
-                        "#00ADB5",
-                        "#61A48D",
-                        "#9EA1D4",
-                        "#FF5858",
-                        "#7371D9",
-                        "#D071D9",
-                      ],
-                    },
-                  ],
-                }}
-              />
+        <div className="full-box-content-graph2">
+           {renderFilter()}
+          <div className="full-box-content-graph2-1">
+            <div className="left-contain">
+              {brandData?.adsPositions[pageGraph]?.images_urls.map(
+                (image, index) => {
+                  return (
+                    <img
+                      key={index}
+                      src={baseImageUrl + image.images_url}
+                      alt="position-photo"
+                      className="graphics-photo"
+                    />
+                  );
+                }
+              )}
+            </div>
+            <div className="full-box-graph-barchart">
+              <div className="bar-chart">
+                <BarChart
+                  chartData={{
+                    labels: brandData?.adsPositions[pageGraph]?.images_urls.map(
+                      (_, index) => `BANNER ${index + 1}`
+                    ),
+                    datasets: [
+                      {
+                        label: `POSITION ${pageGraph + 1}`,
+                        data: brandData?.adsPositions[
+                          pageGraph
+                        ]?.images_urls.map((item) => item.selected_counts),
+                        backgroundColor: [
+                          "#F1F7B5",
+                          "#FD8A8A",
+                          "#88D7B5",
+                          "#00ADB5",
+                          "#61A48D",
+                          "#9EA1D4",
+                          "#FF5858",
+                          "#7371D9",
+                          "#D071D9",
+                        ],
+                      },
+                    ],
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -201,11 +205,11 @@ function GraphPosition() {
         </button>
       </div>
 
-      {renderFilter()}
+      {/* {renderFilter()} */}
 
       {renderrBoxContent()}
-      
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }

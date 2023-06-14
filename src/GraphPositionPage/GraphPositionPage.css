@@ -86,13 +86,13 @@ body {
 
 .left-contain {
   position: relative;
-  width: 100%;
+  width: 49%;
   display: flex;
   row-gap: 2rem;
   flex-flow: wrap;
   column-gap: 5%;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
 }
 
 .left-contain img {
@@ -110,6 +110,33 @@ body {
   display: flex;
   margin: auto;
   width: 80%;
+  padding: 2%;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 18px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.full-box-content-graph2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  padding: 2%;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 18px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.full-box-content-graph2-1 {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 100%;
   padding: 2%;
   gap: 2rem;
 }
@@ -146,14 +173,26 @@ body {
   gap: 1rem;
 }
 
+.select-graphPage-position {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-graphPage-position p {
+  font-weight: bold;
+  color: #434343;
+}
+
 .select-graphPage-position select {
   position: relative;
-  left: 5rem;
   width: 150px;
   font-size: 16px;
   border: 1px solid #F7C873;
   border-radius: 10px;
-  margin: 1rem;
   font-family: 'Anuphan', sans-serif;
   font-weight: bold;
   color: #F7C873;
@@ -174,6 +213,7 @@ body {
 .btn.bt-position-gp {
   border: 1px solid #F7C873;
   border-radius: 10px;
+  width: 10rem;
   padding: 1rem;
   font-family: 'Anuphan', sans-serif;
   font-weight: bold;
@@ -189,6 +229,7 @@ body {
 .btn.bt-position-gp-at {
   border: 1px solid #F7C873;
   color: #fff;
+  width: 10rem;
   background-color: #F7C873;
   border-radius: 10px;
   font-family: 'Anuphan', sans-serif;

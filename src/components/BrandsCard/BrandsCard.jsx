@@ -132,9 +132,27 @@ function BrandsCard({ filter }) {
     if (filter) {
       return (
         <div className="type-page">
-          <button class="bt-type1" onClick={() => handleFilter("บันเทิง")}>บันเทิง</button>
-          <button class="bt-type2" onClick={() => handleFilter("ข่าวสาร")}>ข่าวสาร</button>
-          <button class="bt-type3" onClick={() => handleFilter("ธุรกิจ")}>ธุรกิจ</button>
+          <button
+            class="bt-type1"
+            onClick={() => handleFilter("บันเทิง")}
+            className={`btn ${selectedType == "บันเทิง" ? "bt-type1-at" : "bt-type1"}`}
+          >
+            บันเทิง
+          </button>
+          <button
+            class="bt-type2"
+            onClick={() => handleFilter("ข่าวสาร")}
+            className={`btn ${selectedType == "ข่าวสาร" ? "bt-type2-at" : "bt-type2"}`}
+          >
+            ข่าวสาร
+          </button>
+          <button
+            class="bt-type3"
+            onClick={() => handleFilter("ธุรกิจ")}
+            className={`btn ${selectedType == "ธุรกิจ" ? "bt-type3-at" : "bt-type3"}`}
+          >
+            ธุรกิจ
+          </button>
           {/* <select onChange={handleFilter}>
             <option value="All">All</option>
             <option value="Portal">Portal</option>
