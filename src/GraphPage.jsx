@@ -148,7 +148,17 @@ function PageGraph() {
   const renderOverviewGraph = () => {
     switch (viewGraph) {
       case "overview":
-        return <BarAllLike data={brands} />;
+        return (
+          <div>
+            {/* <div class="text-dis-graph">
+              <p>
+                แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
+                โดยจะแสดงผลจากการเข้าไปโหวตของผู้ใช้
+              </p>
+            </div> */}
+            <BarAllLike data={brands} />
+          </div>
+        );
       case "type":
         return (
           <div className="filter-type">

@@ -18,6 +18,7 @@ import DailynewsPosition from "../components/Position/DailynewsPosition/Dailynew
 import ThaiRathPosition from "../components/Position/ThaiRathPosition/ThaiRathPosition";
 import BananaPosition from "../components/Position/BananaPosition/BananaPosition";
 import JibPosition from "../components/Position/JibPosition/JibPosition";
+import AdvicePosition from "../components/Position/AdvicePosition/AdvicePosition";
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -113,6 +114,7 @@ function SelectPositionPage() {
         case "Jib":
             return <JibPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
         case "Advice":
+            return <AdvicePosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
           break
         default:
           break;

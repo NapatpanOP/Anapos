@@ -421,7 +421,11 @@
   padding: 20px;
 }
 
-
+.text-dis-graph {
+  width: 100%;
+  height: max-content;
+  align-items: center;
+}
 
 @media only screen and (max-width: 768px) {
   .card-container-graph {
