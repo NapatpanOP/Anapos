@@ -47,6 +47,14 @@
 
 .box-text-position {
   display: flex;
+  flex-wrap: wrap;
+  font-family: 'Archivo', sans-serif;
+  color: #434343;
+  width: 90%;
+}
+
+.box-text-position2 {
+  display: flex;
   flex-direction: column;
   text-align: center;
   margin: 2rem;
@@ -54,7 +62,7 @@
   color: #434343;
 }
 
-.box-text-position h2 {
+.box-text-position2 h2 {
   font-weight: bold;
   margin: 1rem;
   font-size: 3rem;

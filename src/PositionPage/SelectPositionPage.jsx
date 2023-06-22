@@ -95,38 +95,79 @@ function SelectPositionPage() {
   };
 
   const renderSelectPage = () => {
-    if(brand != null) {
+    if (brand != null) {
       switch (brand.title) {
         case "Youtube":
-            return <YoutubePosition selectPosHandle={(index) => onClickGraphicHandle(index)} currentPositionIndex={currentPositionIndex}/>
+          return (
+            <YoutubePosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
+            />
+          );
         case "Viu":
-            return <ViuPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <ViuPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "TrueID":
-            return <TrueIDPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <TrueIDPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "Sanook":
-            return <SanookPosition selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <SanookPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "Dailynews":
-            return <DailynewsPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <DailynewsPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "ThaiRath":
-            return <ThaiRathPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
-        case"Banana":
-            return <BananaPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <ThaiRathPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
+        case "Banana":
+          return (
+            <BananaPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "Jib":
-            return <JibPosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
+          return (
+            <JibPosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
         case "Advice":
-            return <AdvicePosition  selectPosHandle={(index) => onClickGraphicHandle(index)}/>
-          break
+          return (
+            <AdvicePosition
+              selectPosHandle={(index) => onClickGraphicHandle(index)}
+            />
+          );
+          break;
         default:
           break;
       }
     }
-  }
+  };
 
   return (
     <div>
       <div class="full-size-select-position">
         <div class="head-select-position">
-          <img class="picture-head-select-position" src={picture1} alt="pt-10" />
+          <img
+            class="picture-head-select-position"
+            src={picture1}
+            alt="pt-10"
+          />
           <div class="text-head-select-position">
             <h1>ประเภทเว็บไซต์</h1>
             <h1 class="text-head-position-web">{brand?.type}</h1>
@@ -135,9 +176,20 @@ function SelectPositionPage() {
       </div>
 
       <div class="box-text-position">
-        <p class="box-head-text-position">ประเภทเว็บไซต์ {brand?.type}</p>
-        <h2>{brand?.title}</h2>
-        <p>ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566</p>
+        <div>
+          <img
+            src={baseImageUrl + brand?.web_image  ?? ""}
+          />
+        </div>
+        <div class="box-text-positio2">
+          <p class="box-head-text-position">ประเภทเว็บไซต์ {brand?.type}</p>
+          <h2>{brand?.title}</h2>
+          <p>
+            ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ
+            หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย
+            โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566
+          </p>
+        </div>
       </div>
 
       {renderSelectPage()}
@@ -176,7 +228,7 @@ function SelectPositionPage() {
           </Button>
         </Modal.Footer>
       </Modal>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
