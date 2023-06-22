@@ -175,19 +175,23 @@ function SelectPositionPage() {
         </div>
       </div>
 
-      <div class="box-text-position">
-        <div>
+      <div class="box-text-position-head">
+        <div class="box-text-position1">
           <img
-            src={baseImageUrl + brand?.web_image  ?? ""}
+            src={baseImageUrl + brand?.web_image ?? ""}
+            class="web-img-position"
           />
         </div>
-        <div class="box-text-positio2">
+        <div class="box-text-position2">
           <p class="box-head-text-position">ประเภทเว็บไซต์ {brand?.type}</p>
           <h2>{brand?.title}</h2>
           <p>
             ส่วนนี้แสดงตำแหน่งโฆษณาต่างๆ ในเว็บไซต์นั้นๆ
-            หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย
-            โดยตำแหน่งการจัดวางนั้นได้นำมาในวันที่ 1 พฤษภาคม 2566
+            โดยรูปภาพทางด้านซ้ายนั้นเป็นตัวอย่าง บางส่วนของเว็บไซต์
+            เพื่อให้ผู้ใช้เข้าใจว่าตำแหน่งไหนนำมาวิเคราะห์
+            ซึ่งจะมีกรอบสีเหลืองขอบ ไว้แสดงถึงตำแหน่ง
+            หากสนใจตำแหน่งไหนให้คลิกเลือกด้านล่างนี้ได้เลย โดยตำแหน่งการ
+            จัดวางนั้นได้นำมาในวันที่ 1 มิถุนายน 2566
           </p>
         </div>
       </div>

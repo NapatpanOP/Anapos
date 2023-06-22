@@ -45,26 +45,39 @@
   filter: brightness(50%);
 }
 
-.box-text-position {
+.box-text-position-head {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Archivo', sans-serif;
-  color: #434343;
-  width: 90%;
+  gap: 1rem;
+  width: 100%;
+  height: max-content;
+  padding: 2rem;
+}
+
+.box-text-position1 {
+  display: flex;
+  justify-content: center;
+  width: 49%;
+  padding: 1rem;
+}
+
+.web-img-position {
+  width: 600px;
 }
 
 .box-text-position2 {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 2rem;
+  width: 49%;
+  text-align: left;
+  justify-content: center;
   font-family: 'Archivo', sans-serif;
   color: #434343;
 }
 
 .box-text-position2 h2 {
   font-weight: bold;
-  margin: 1rem;
   font-size: 3rem;
 }
 
