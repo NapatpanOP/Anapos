@@ -196,6 +196,11 @@ function SelectPositionPage() {
         </div>
       </div>
 
+      <div class="box-text-position-example">
+        <p class="box-head-text-position">เลือกตำแหน่งโฆษณา</p>
+        <h3>ตำแหน่งของโฆษณาที่นำมาวิเคราะห์</h3>
+      </div>
+
       {renderSelectPage()}
 
       {/* <img
