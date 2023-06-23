@@ -157,10 +157,10 @@ const SelectGraphicsPositionPage = () => {
     if (brand) {
       return brand.adsPositions[location.state.position].images_urls.map(
         (img, index) => {
-          console.log(img);
           return (
             <div class="bg-card-img">
               <h5>การออกแบบ {index + 1}</h5>
+              <p>{img.discription}</p>
               <img
                 src={baseImageUrl + img.images_url}
                 alt=""

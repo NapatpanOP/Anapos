@@ -12,14 +12,17 @@
         "images_urls": [ 
                  { 
                      "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-1.jpg",
+                     "discription": "จะใช้รูปภาพเป็นพื้นหลัง โดยจะใช้ข้อความที่กระชับเพื่อให้เข้าใจได้ง่าย และข้อความที่ใหญ่เพื่อความชัดเจน",
                      "selected_counts": 0
                  },
                  { 
                      "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-2.jpg",
+                     "discription": "โดยจะมีการวางตำแหน่งของข้อความไว้บนสุด และขนาดของตัวอักษรให้พอดีกับ 1 บรรทัด",
                      "selected_counts": 0
                  },
                  { 
                      "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP1/YTGP1-3.jpg",
+                     "discription": "ตำแหน่งของข้อความจะอยู่ตรงกลางแล้วด้านหลังข้อความจะมีกรอบสีขาวเพี่อเน้นข้อความให้มีเด่นชัด",
                      "selected_counts": 0
                  }
             ],
@@ -29,14 +32,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-1.jpg",
+                       "discription": "ได้มีการโชว์ชื่อแล้วข้อความสั้นๆในการเชิญชวน",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-2.jpg",
+                       "discription": "ตรงกลางจะมีแค่โชว์โลโก้เพียงอย่างเดียว เพราะต้องการใช้ประสบการณ์ของผู้ใช้ที่เคยใช้อย่างเดียว",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP2/YTGP2-3.jpg",
+                       "discription": "มีเพียงชื่อที่เพิ่มเข้ามา เพื่อให้รู้ว่ามีชื่อเรียกว่าอะไร",
                        "selected_counts": 0
                    }
               ],
@@ -46,14 +52,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-1.jpg",
+                         "discription": "มีข้อความในส่วนของชื่อมาอย่างเดียว",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-2.jpg",
+                         "discription": "มีด้านของข้อความเชิญชวนในการคลิก",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP3/YTGP3-3.jpg",
+                         "discription": "ในส่วนของข้อความเชิญชวนนั้นจะทำเป็นในรูปแบบ Call to action เพื่อให้เข้าใจว่าสามารถคลิกได้",
                          "selected_counts": 0
                      }
                 ],
@@ -63,14 +72,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-1.jpg",
+                         "discription": "บอกชื่อเพียงอย่างเดียวในส่วนล่าง โดยข้อความนั้นจะมีพื้นหลังสีดำเพียงเล็กน้อยเพื่อให้ข้อความมีความเด่นชัด",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-2.jpg",
+                         "discription": "ข้อความกับตัวภาพพื้นหลังนั้น ต้องการให้มีความกลมกลืนกัน",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP4/YTGP4-3.jpg",
+                         "discription": "ตำแหน่งของชื่อนั้นได้มีการเปลี่ยนแปลงโดยได้นำมาไว้ตรงกลางของรูปภาพ และทำเงากับข้อความ",
                          "selected_counts": 0
                      }
                 ],
@@ -80,14 +92,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-1.jpg",
+                         "discription": "ตรงกลางจะมีแค่โชว์โลโก้เพียงอย่างเดียว เพราะต้องการใช้ประสบการณ์ของผู้ใช้ที่เคยใช้อย่างเดียว",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-2.jpg",
+                         "discription": "ได้มีการโชว์ชื่อแล้วข้อความสั้นๆในการเชิญชวน โดยจะเน้นในส่วนของข้อความเชิญชวนให้ใหญ่เพื่อแสดงให้ข้อความที่อยากจะอธิบาย",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Youtube/YTGP5/YTGP5-3.jpg",
+                         "discription": "มีเพียงชื่อที่เพิ่มเข้ามา เพื่อให้รู้ว่ามีชื่อเรียกว่าอะไร และเป็นตัวของภาคปีไหน",
                          "selected_counts": 0
                      }
                 ],
@@ -107,14 +122,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-1.jpg",
+                       "discription": "เป็นข้อความแสดงคุณสมบัติของตัวโฆษณา",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-2.jpg",
+                       "discription": "สีเหลืองจะเป็นข้อความตั้งคำถามเพื่อให้ผู้ใช้สนใจ ส่วนสีขาวบอกคุณสมบัติที่มี",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP1/VGP1-3.jpg",
+                       "discription": "สีเหลืองเน้นว่าตัวโฆษณานั้นมีชื่อว่าอะไร",
                        "selected_counts": 0
                    }
               ],
@@ -124,14 +142,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-1.jpg",
+                         "discription": "ใช้สีเหลืองเน้นข้อความที่ไม่ต้องการให้ผู้ใช้พลาดสิทธิพิเศษ",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-2.jpg",
+                         "discription": "ทำกรอบสีเขียวเพื่อเน้นสิทธิประโยชน์ของตัวโฆษณา ซึ่งทำให้รู้สึกว่าไม่อยากพลาด",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP2/VGP2-3.jpg",
+                         "discription": "เป็นการนำเสนอข้อความรายละเอียดของเนื้อหาว่ามีอะไรบ้างที่ผู้ใช้จะได้รับ",
                          "selected_counts": 0
                      }
                 ],
@@ -141,14 +162,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-1.jpg",
+                           "discription": "ใช้สีขาวกับข้อความเพื่อให้ข้อความเด่นเพราะพื้นหลังมีสีค่อนข้างทึบ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-2.jpg",
+                           "discription": "ตัวอักษรสีดำเพื่อให้กลมกลืนกับแบรนด์ที่ทำร่วมด้วย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP3/VGP3-3.jpg",
+                           "discription": "ในการทำตัวอักษรสีขาวนั้นเพื่อเน้นข้อความ เมื่อเวลาผู้ใช้มาเห็นจะได้ไม่รู้สึกพลาดอะไรไป",
                            "selected_counts": 0
                        }
                   ],
@@ -158,14 +182,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-1.jpg",
+                           "discription": "มีการเล่นสีกับตัวข้อความที่จะแสดงถึงสิทธิพิเศษ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-2.jpg",
+                           "discription": "อธิบายส่วนขยายในการใช้สิทธิ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Viu/VGP4/VGP4-3.jpg",
+                           "discription": "มีการแบ่งสีเพื่อโชว์โปรโมชั่น",
                            "selected_counts": 0
                        }
                   ],
@@ -185,14 +212,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-1.jpg",
+                       "discription": "ตัวอักษรใช้สีเดียวกันทั้งหมดโดยจะมีส่วนของคำอธิบายและ โลโก้ที่แสดงเท่านั้น",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-2.jpg",
+                       "discription": "มีการเพิ่ม call to action เข้ามาเพื่อให้รู้ว่าสามารถกดเข้าไปดูได้",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP1/TIDGP1-3.jpg",
+                       "discription": "จะเปลี่ยนรูปแบบพื้นหลังเเหลือแค่คำอธิบายและปุ่ม เพื่ออยากเน้นให้มากยิ่งขึ้น",
                        "selected_counts": 0
                    }
               ],
@@ -202,14 +232,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-1.jpg",
+                         "discription": "ตัวอักษรใช้สีเดียวกันทั้งหมด วางตัวอักษรไว้ตรงกึ่งกลาง",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-2.jpg",
+                         "discription": "ทำตัวเลขให้ใหญ่เห็นชัดเพื่อดึงดูดสิ่งที่ต้องการให้ผู้ใช้ได้รับ",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP2/TIDGP2-3.jpg",
+                         "discription": "ตัวเลขนั้นเป็นอีกสีหนึ่งเพื่อให้เห็นชัดและดึงดูดมากขึ้น",
                          "selected_counts": 0
                      }
                 ],
@@ -219,14 +252,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-1.jpg",
+                           "discription": "ตัวอักษรใช้สีเดียวกันทั้งหมด แต่จะเน้นตัวเลขให้ใหญ่ขึ้นเพื่อดึงดูดให้ผู้ใช้ได้อ่านข้อความเชิญชวน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-2.jpg",
+                           "discription": "ในส่วนของตัวเลข จะทำเป็นคล้ายเป็นตั๋วเพื่อให้รู้สึกตั๋วแลกเงิน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP3/TIDGP3-3.jpg",
+                           "discription": "เปลี่ยนสีตัวอักษรเป็นเหลืองทองทำให้รู้สึกอยากใช้จับจ่ายมากยิ่งขึ้น",
                            "selected_counts": 0
                        }
                   ],
@@ -236,14 +272,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-1.jpg",
+                           "discription": "ในวงกลมเป็นส่วนของราคา ที่ทำวงกลมนั้นเพื่อให้เป็นจุดสนใจของสายตา ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-2.jpg",
+                           "discription": "เพิ่มสีฟ้าตรงราคาเก่าเพื่อให้เห็นว่าราคาลดลงมากจากเท่าไหร่ ทำให้คนเห็นแล้วรู้สึกว่าอยากกดสั่ง",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP4/TIDGP4-3.jpg",
+                           "discription": "เพิ่มป้ายสีเหลืองและเงาเข้าไป เพื่อให้รู้สึกว่าเป็นที่นิยมและต้องการในตอนนี้ จึงทำให้รู้สึกยิ่งอยากกด",
                            "selected_counts": 0
                        }
                   ],
@@ -253,14 +292,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-1.jpg",
+                           "discription": "ใช้สีขาวตัดสีแดงทำให้ข้อความเห็นเด่นชัด",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-2.jpg",
+                           "discription": "เพิ่มส่วนของเงาเข้าไปเพื่อเน้นข้อความที่ต้องการจะอธิบาย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP5/TIDGP5-3.jpg",
+                           "discription": "มีการเพิ่มส่วนอธิบายเพิ่มเติมและกรอบให้เห็นเด่นชัด โดยมีการตั้งวันหมดอายุเพื่อให้ผู้ใช้รู้สึกว่าต้องรีบทำเพื่อจะได้ไม่เสียโอกาส",
                            "selected_counts": 0
                        }
                   ],
@@ -270,14 +312,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-1.jpg",
+                           "discription": "ตรงปุ่มshop now ข้างๆจะมีลูกศรไว้เพื่อดึงดูดให้อยากคลิก",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-2.jpg",
+                           "discription": "ได้ลบลูกศรออก แล้วเพิ่มขนาดตัวอักษรให้ใหญ่และเด่นชัดมากขึ้นแทน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP6/TIDGP6-3.jpg",
+                           "discription": "ด้านฝั่งซ้ายตัวอักษรนั้นได้เปลี่ยนสีเป็นสีแดง โดยนำสีมาจากพื้นหลัง",
                            "selected_counts": 0
                        }
                   ],
@@ -287,14 +332,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-1.jpg",
+                           "discription": "ตัวข้อความสิทธิประโยชน์นั้นจะทำตัวหนาเพื่อเน้น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-2.jpg",
+                           "discription": "ตัวข้อความสิทธิประโยชน์เปลี่ยนเป็นสีแดง เพื่อที่จะทำให้เห็นเด่นชัดกว่าส่วนอื่น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP7/TIDGP7-3.jpg",
+                           "discription": "พื้นหลังสีแดงทำให้ผู้ใช้ได้เห็นก่อนโฆษณาอื่น ๆ และนำสีมาจากแบรนด์",
                            "selected_counts": 0
                        }
                   ],
@@ -304,14 +352,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-1.jpg",
+                           "discription": "มีส่วนของบอกประโยชน์ที่ผู้ใช้จะได้รับ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-2.jpg",
+                           "discription": "ข้อความที่มีสีแดงนั้นทำเพื่อเน้นถึงประโยชน์ที่ผู้ใช้จะได้รับ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/TrueID/TIDGP8/TIDGP8-3.jpg",
+                           "discription": "มีการเพิ่มเข้ามาทำให้รู้ว่าสามารถกดคลิกเข้าไปดูรายละเอียดเพิ่มได้",
                            "selected_counts": 0
                        }
                   ],
@@ -331,14 +382,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-1.jpg",
+                       "discription": "ตัวข้อความใช้สีทึบเพื่อให้กลมกลืนกับตัวรูปภาพ โดยจะเป็นการโปรโมทด้วยข้อความที่กระชับ",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-2.jpg",
+                       "discription": "เลือกสีขาวเพื่อเน้นข้อความที่อยากให้ผู้ใช้ได้เห็นชัด",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP1/SNGP1-3.jpg",
+                       "discription": "มีการเพิ่มเงาในส่วนของข้อความเพื่อเน้นเข้าไปอีก",
                        "selected_counts": 0
                    }
               ],
@@ -348,14 +402,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-1.jpg",
+                         "discription": "ได้มีเงาเป็นส่วนขยายในการดึงดูดความสนใจมากขึ้น",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-2.jpg",
+                         "discription": "ทำกรอบสีเขียวเพื่อบ่งบอกช่องทางในการรับสิทธิได้เห็นได้ชัด",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP2/SNGP2-3.jpg",
+                         "discription": "บอกคุณสมบัติและช่องทางในการการับสิทธิ",
                          "selected_counts": 0
                      }
                 ],
@@ -365,14 +422,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-1.jpg",
+                           "discription": "แสดงในส่วนของหัวข้อเพียงอย่างเดียวเท่านั้น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-2.jpg",
+                           "discription": "มีการเพิ่มข้อความเพื่อแสดงคุณสมบัติที่ทำให้ผู้ใช้รู้ว่ามีอะไรบ้าง",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP3/SNGP3-3.jpg",
+                           "discription": "เปลี่ยนข้อความอธิบายเป็นสีดำเพื่อที่จะเน้นหัวข้อให้มีความเด่นชัดมากกว่า",
                            "selected_counts": 0
                        }
                   ],
@@ -382,14 +442,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-1.jpg",
+                           "discription": "เป็นข้อความการตั้งคำถามเพื่อให้ผู้ใช้อยากเข้ามารู้คำตอบ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-2.jpg",
+                           "discription": "เปลี่ยนสีข้อความเพื่อให้เห็นข้อความชัดขึ้น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP4/SNGP4-3.jpg",
+                           "discription": "มีการใส่กรอบสีดำในส่วนของข้อความเพื่อให้ข้อความนั้นอ่านได้ง่าย",
                            "selected_counts": 0
                        }
                   ],
@@ -399,14 +462,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-1.jpg",
+                           "discription": "มีการใส่ในเรื่องของเงาเพื่อเพิ่มการดึงดูด",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-2.jpg",
+                           "discription": "เปลี่ยนสีเพื่อให้เห็นข้อความที่อยากจะสื่อเด่นชัดมากขึ้น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP5/SNGP5-3.jpg",
+                           "discription": "มีข้อความที่แสดงออกว่าเป็นทุกอย่างสำหรับทุกคนเพื่อบงบอกความเป็นมิตรกับผู้ใช้",
                            "selected_counts": 0
                        }
                   ],
@@ -416,14 +482,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-1.jpg",
+                           "discription": "เป็นข้อความที่ทำให้เกิดความสงสัยเพื่อเป็นการกระตุ้นความอยากรู้",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-2.jpg",
+                           "discription": "สีแดงจะเป็นในส่วนของเน้นแบรนด์ให้เห็นว่ามีชื่อว่าอะไร",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP6/SNGP6-3.jpg",
+                           "discription": "ส่วนนี้มีการใส่เครื่องหมายตกใจเพื่อเป็นการกระตุ้นความสนใจจากผู้ใช้",
                            "selected_counts": 0
                        }
                   ],
@@ -433,14 +502,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-1.jpg",
+                           "discription": "เป็นข้อความประกาศที่แสดงให้เห็นว่ามีหลายรูปแบบ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-2.jpg",
+                           "discription": "ข้อความที่เป็นสีเหลืองเพื่อเน้นความสามารถที่มี",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Sanook/SNGP7/SNGP7-3.jpg",
+                           "discription": "มีการเพิ่มเงาในส่วนของสีเหลืองเพื่อให้เห็นเด่นชัดเข้าไปอีก",
                            "selected_counts": 0
                        }
                   ],
@@ -460,14 +532,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-1.jpg",
+                       "discription": "สีชมพูที่ใช้กับตัวอักษรนำเอามาจากสีหลักของเว็บไซต์ข่าว โดยใช้สีดำเป็นพื้นหลังเพื่อให้ตัวอักษรเด่นชัดมากขึ้น",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-2.jpg",
+                       "discription": "เปลี่ยนพื้นหลังเป็นสีขาวเพื่อให้รู้สึกว่าข้อความนั้นแยกกับตัวรูปภาพชัดเจน",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP1/DNGP1-3.jpg",
+                       "discription": "ทำตัวข้อความเป็นกึ่งกลางเพื่อดึงดูดจุดสายตาให้ไปในทางเดียวกัน",
                        "selected_counts": 0
                    }
               ],
@@ -477,14 +552,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-1.jpg",
+                         "discription": "ในการนำเอาตัวอักษรไว้ตรงกลางภาพนั้นเพื่อที่จะให้ตัวหนังสือมีความเด่นกว่าภาพ และเป็นใช้ข้อความที่กระชับ",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-2.jpg",
+                         "discription": "ขยับตัวข้อความไว้ด้านล่างเพื่อให้มีความบดบังภาพเกินไป แล้วในตัวข้อความก็จะมีเครื่องหมายเน้นย้ำไว้ ",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP2/DNGP2-3.jpg",
+                         "discription": "ตัวข้อความจะอยู่ในบรรทัดเดียวกันและแบ่งพื้นที่กับภาพโดยชัดเจนเพื่อไม่ให้บทบังกัน และในส่วนที่ต้องการเน้นจะมีข้อความที่ตัวใหญ่กว่า",
                          "selected_counts": 0
                      }
                 ],
@@ -494,14 +572,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-1.jpg",
+                           "discription": "มีแค่การโชว์รูปภาพเพียงอย่างเดียวเพื่อให้เห็นองค์ประกอบที่ชัด",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-2.jpg",
+                           "discription": "ข้อความที่ต้องการสื่อนั้น เป็นการบอกรายละเอียดที่ตรงไปตรงมาเวลาอ่านจะได้เข้าใจได้ง่าย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP3/DNGP3-3.jpg",
+                           "discription": "ข้อความที่ไว้ด้านบนนั้นต้องการจะแสดงให้เห็นถึงภาพมากกว่าเลยใช้สีที่มีความกลมกลืน แต่ก็อยากให้เห็นเลยมีการใส่เงาเพิ่มเข้าไป",
                            "selected_counts": 0
                        }
                   ],
@@ -511,14 +592,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-1.jpg",
+                           "discription": "ต้องการให้ในส่วนของข้อความนั้นมีความเด่นชัดมาก",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-2.jpg",
+                           "discription": "มีส่วนคำอธิบายที่โปรโมทเพื่อดึงดูดให้ผู้ใช้อยากคลิกเข้าไปลองติดตามดู",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP4/DNGP4-3.jpg",
+                           "discription": "เป็นการใช้ข้อความเพื่อให้ไม่รกสายตาโดยจะมีการบอกข้อความหลักๆไว้",
                            "selected_counts": 0
                        }
                   ],
@@ -528,14 +612,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-1.jpg",
+                           "discription": "ต้องการให้เห็นรูปภาพกับข้อความพร้อมกันโดยที่ยังสามารถเห็นข้อความที่ชัดเหมือนเดิม",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-2.jpg",
+                           "discription": "เป็นข้อความที่สร้างความตื่นเต้นของ แบรนด์เพื่อให้ผู้คนมีความสนใจมากขึ้นโดยจะมีในส่วนของเงาเพิ่มเข้ามาในข้อความ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP5/DNGP5-3.jpg",
+                           "discription": "ต้องการให้ข้อความมีความกลมกลืนกับรูปภาพมากที่สุด",
                            "selected_counts": 0
                        }
                   ],
@@ -545,14 +632,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-1.jpg",
+                           "discription": "ต้องการให้ข้อความมีความกลมกลืนกับรูปภาพมากที่สุด",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-2.jpg",
+                           "discription": "เป็นข้อความที่ดึงดูดผู้ใช้ที่มีความต้องการเหมือนกันเข้ามา",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP6/DNGP6-3.jpg",
+                           "discription": "ต้องการให้เห็นรูปภาพกับข้อความพร้อมกันโดยที่ยังสามารถเห็นข้อความที่ชัดเหมือนเดิม",
                            "selected_counts": 0
                        }
                   ],
@@ -562,14 +652,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-1.jpg",
+                           "discription": "เป็นข้อความการที่กระตุ้นกับผู้ใช้ ให้รูสึกชะงักคิด",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-2.jpg",
+                           "discription": "แบ่งในส่วนข้อความโดยหัวเรื่องจะเป็นตัวข้อความที่ใหญ่กว่าเพื่อให้เห็นได้ก่อน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Dailynews/DNGP7/DNGP7-3.jpg",
+                           "discription": "จัดข้อความในส่วนของกึ่งกลางของรูปภาพเพื่อให้ความมีความเด่นกว่า แล้วมีในส่วนของเงาเพิ่มเข้าไปอีก",
                            "selected_counts": 0
                        }
                   ],
@@ -589,14 +682,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-1.jpg",
+                       "discription": "แบ่งส่วนรูปกับข้อความแยกกันเพื่อได้เห็นตัวอักษรและรูปภาพที่ชัดเจน",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-2.jpg",
+                       "discription": "ต้องการเน้นข้อความมากกว่ารูปภาพเลยมีพื้นหลังสีดำหลังข้อความ",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP1/TRGP1-3.jpg",
+                       "discription": "ปรับพื้นหลังให้บางขึ้นเพื่อจะได้เห็นองค์ประกอบของรูปภาพมากยิ่งขึ้น ทำให้รูปภาพไม่รู้สึกถึงความอึดอัด",
                        "selected_counts": 0
                    }
               ],
@@ -606,14 +702,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-1.jpg",
+                         "discription": "เป็นการสร้างกรอบข้อความเพื่อให้เน้นในจุดที่อยากให้ผู้ใช้ได้อ่าน",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-2.jpg",
+                         "discription": "ข้อความที่แสดงออกมานั้นจะสื่อให้การเข้าถึงในการตอบคำถามเป็นเรื่องที่สามารถเรียนรู้ได้ง่าย",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP2/TRGP2-3.jpg",
+                         "discription": "มีการสลับสีซึ่งรูปแบบมาจากชื่อด้านบน",
                          "selected_counts": 0
                      }
                 ],
@@ -623,14 +722,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-1.jpg",
+                           "discription": "ได้มีการเปลี่ยนจากกรอบเป็นสีแล้วใส่เงาเพิ่มเข้าไปในตัวของข้อความที่อยากจะเน้นให้เห็น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-2.jpg",
+                           "discription": "ใส่กรอบสีส้มเพื่อให้ผู้ใช้ได้เห็นแล้วไม่รู้สึกพลาดโอกาสบางอย่างไป",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP3/TRGP3-3.jpg",
+                           "discription": "มีข้อความบรรยายโดยการจะแนะนำวิธีการในการใช้ให้เห็นถึงประโยชน์",
                            "selected_counts": 0
                        }
                   ],
@@ -640,14 +742,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-1.jpg",
+                           "discription": "มีการเชิญชวนด้วยข้อความให้เล่นการทาย ซึ่งเป็นการสร้างคำกระตุ้นกับผู้ใชข้ในรูปแบบเชิญชวน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-2.jpg",
+                           "discription": "ใช้ตัวอักษรสีขาวที่เป็นสีหลักตัวอักษรของภาพ ซึ่งทำให้ตัวข้อความนั้นเด่นขึ้น",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP4/TRGP4-3.jpg",
+                           "discription": "ตรงตัวอักษรได้มีการใส่เงาเพิ่มเข้าไปเพื่อให้เห็นได้ว่าเน้นจุดนี้",
                            "selected_counts": 0
                        }
                   ],
@@ -657,14 +762,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-1.jpg",
+                           "discription": "เป็นการบอกเตือนให้ผู้ใช้รู้สึกกังวล ทำให้ผู้ใช้นั้นรู้สึกมีความสนใจในเนื้อหา",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-2.jpg",
+                           "discription": "มีการทำตัวข้อความเป็นสีขาวเพื่อให้เห็นและอ่านได้ง่าย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP5/TRGP5-3.jpg",
+                           "discription": "ตัวข้อความจะมีการแบ่งหัวไว้ให้ผู้ใช้ที่สนใจเรื่องนี้อยู่แล้ว เข้ามาให้ในเรื่องที่ตนเองสนใจ",
                            "selected_counts": 0
                        }
                   ],
@@ -674,14 +782,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-1.jpg",
+                           "discription": "เป็นข้อความแสดงหัวข้อว่าคืออะไร",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-2.jpg",
+                           "discription": "ในการเล่นสีข้อความนี้ได้มาจากโลโก้ทางด้านขวามือ และได้มีการใส่เงาเพิ่มเติมเข้าไป",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP6/TRGP6-3.jpg",
+                           "discription": "มีคำอธิบายเพิ่มเข้ามาเพื่อแสดงให้เห็นว่าเป็นมิตรที่จะอยู่เคียงข้างไปตลอด",
                            "selected_counts": 0
                        }
                   ],
@@ -691,14 +802,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-1.jpg",
+                           "discription": "เป็นการเล่นคำ เพื่อให้ผู้ใช้รู้สึกว่ามีทางแก้ไข",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-2.jpg",
+                           "discription": "ส่วนนี้จะเน้นข้อความสี ซึ่งอยากให้ผู้ใช้เห็นเป็นอันดับรองลงมาจากหัวด้านบน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Thairath/TRGP7/TRGP7-3.jpg",
+                           "discription": "มีการเล่นสีของข้อความมากขึ้นแต่ก็ยังเน้นในส่วนที่ต้องการให้เห็น โดยจะมีการใส่เงาเข้าไปเพิ่มเพื่อให้เห็นเป็นส่วนแรก",
                            "selected_counts": 0
                        }
                   ],
@@ -718,14 +832,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-1.jpg",
+                       "discription": "เป็นข้อความที่จะสื่อให้เห็นถึงความสามารถของตัวแบรนด์นั้น ๆ",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-2.jpg",
+                       "discription": "มีข้อความในส่วนขยายของเวลา เพื่อเป้นการกระตุ้นผู้ใช้ในการใช้งาน",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP1/BNGP1-3.jpg",
+                       "discription": "มีการบอกถึงเวลาเพียงอย่างเดียว เพื่อให้ผู้ใช้เกิดคำถามแล้ว คลิกเข้าไปดู",
                        "selected_counts": 0
                    }
               ],
@@ -735,14 +852,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-1.jpg",
+                         "discription": "เป็นการอธิบายข้อความเพื่อให้ผู้อ่านเข้าใจในตัวของแบรนด์ที่จะต้องการสื่อออกมา",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-2.jpg",
+                         "discription": "มีการเน้นข้อความในส่วนสีเหลืองเพื่อให้ผู้ใช้ตะหนักเห็น",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP2/BNGP2-3.jpg",
+                         "discription": "ในส่วนของกรอบสีเหลืองนั้นจะเป็นการแสดงข้อความที่ต้องการจะสื่อให้ผู้ใช้เห็นว่าเป็นมิตรต่อกัน",
                          "selected_counts": 0
                      }
                 ],
@@ -752,14 +872,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-1.jpg",
+                           "discription": "ส่วนนี้จะเป็นการอธิบายในการใช้งานเพื่อให้ผู้ใช้รู้สึกว่าง่ายแล้วอยากจะใช้",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-2.jpg",
+                           "discription": "บอกข้อความในการเชิญชวนให้ใช้ ซึ่งยังบอกสิทธิประโยชน์ที่จะได้รับ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP3/BNGP3-3.jpg",
+                           "discription": "จะมีการเน้นตัวข้อความที่ต้องการอยากให้ผู้ใช้ได้เห็น แล้วรู้สึกว่าจะได้ไม่พลาดอะไรไป",
                            "selected_counts": 0
                        }
                   ],
@@ -769,14 +892,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-1.jpg",
+                           "discription": "เป็นข้อความเชิญชวนที่เข้าใจได้ง่ายให้กับกลุ่มของผู้ใช้ที่มีปัญหาในเรื่องนั้น ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-2.jpg",
+                           "discription": "อยากให้ตัวของข้อความนั้นมีความกลมกลืนกับภาพพื้นหลัง",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP4/BNGP4-3.jpg",
+                           "discription": "ตัวข้อความสีฟ้าจะมีความเด่นกว่าในส่วนอื่น เพื่อให้ผู้ใช้เห็นเป็นอันดับแรก ๆ ในการตัดสินใจ",
                            "selected_counts": 0
                        }
                   ],
@@ -786,14 +912,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-1.jpg",
+                           "discription": "ต้องการเล่นสีกับตัวข้อความให้มีความน่าสนใจในตัวของโฆษณา",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-2.jpg",
+                           "discription": "ตัวข้อความที่ใช้สีขาวเพราะตัดกับพื้นหลังสีดำได้ดี ทำให้เห็นเป็นอันดับแรก ๆ ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP5/BNGP5-3.jpg",
+                           "discription": "เป็นการบอกโปรโมชั่น เพื่อให้ลูกค้าลูกว่าพลาดกับสิ่งนี้ไม่ได้",
                            "selected_counts": 0
                        }
                   ],
@@ -803,14 +932,17 @@
                 "images_urls": [ 
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-1.jpg",
+                             "discription": "มีการใช้ภาพของคนมาประกอบ เป็นการชี้นำสายตาโดยเรียกหลักการนี้ว่า Continuity",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-2.jpg",
+                             "discription": "ต้องการแบ่งอยากสัดส่วนของข้อความให้ชัดเจน",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP6/BNGP6-3.jpg",
+                             "discription": "ทำเส้นขอบให้กับตัวข้อความได้มีความเด่นชัดมากยิ่งขึ้น",
                              "selected_counts": 0
                          }
                     ],
@@ -820,14 +952,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-1.jpg",
+                               "discription": "ต้องการเน้นให้ข้อความมีความกลมกลืนกับตัวของรูปภาพ",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-2.jpg",
+                               "discription": "ใส่เงาเพื่อต้องการให้ตัวของข้อความมีความเด่นออกมาอย่างชัดเจน",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP7/BNGP7-3.jpg",
+                               "discription": "มีการแบ่งส่วนที่ชัดเจน โดยต้องการให้แบรนด์นั้นมีความเด่นมากกว่า",
                                "selected_counts": 0
                            }
                       ],
@@ -837,14 +972,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-1.jpg",
+                               "discription": "มีการเน้นในส่วนของส่วนลดเพื่อเพิ่มความต้องการในการอยากสมัครแล้วได้ส่วนลด",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-2.jpg",
+                               "discription": "เป็นข้อความที่เชิญชวนให้สมัครแล้ว มีการบออกสิทธิพิเศษที่จะได้หลังจากการสมัคร",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP8/BNGP8-3.jpg",
+                               "discription": "มีการทำปุ่มสมัครเพื่อให้ผู้ใช้เข้าใจว่าสามารถกดได้เลย",
                                "selected_counts": 0
                            }
                       ],
@@ -854,14 +992,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-1.jpg",
+                               "discription": "ต้องการจะโชว์ในส่วนของรูปภาพและข้อความให้มีความเด่นชัด แต่อยากให้เห็นในส่วนของข้อความก่อน",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-2.jpg",
+                               "discription": "ตัวของความได้ใช้สีจากผลิตพันธ์ในการนำเสนอออกมา และวางตำแหน่งตัวข้อความให้กึ่งกลางเพื่อจะได้เป็นสังเกตก่อน",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP9/BNGP9-3.jpg",
+                               "discription": "เป็นการใช้ข้อความนำเสนอสินค้าใหม่ เพื่อให้ผู้ใช้นั้นติดตามไม่ให้พลาดสินค้านั้น",
                                "selected_counts": 0
                            }
                       ],
@@ -871,14 +1012,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-1.jpg",
+                               "discription": "ข้อความทางขวามีการแนะนำการใช้งานเพื่อบอกผู้ใช้งานว่ามีประโยชน์ต่อผู้ใช้ยังไง โดยใช้สีขาวตัวข้อความส่วนใหญ่",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-2.jpg",
+                               "discription": "ลองเปลี่ยนสีของข้อความด้านขวาให้กลมกลืนกับพื้นสีชมพูข้างหลัง",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Banana/BNGP10/BNGP10-3.jpg",
+                               "discription": "ใช้สีดำในตัวของข้อความเพื่อให้เห็นเด่นชัดจากพื้นหลังสีเหลือง",
                                "selected_counts": 0
                            }
                       ],
@@ -898,14 +1042,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-1.jpg",
+                       "discription": "ในส่วนของราคานั้นที่มีสีเหลืองเพื่อผู้ใช้เห็นได้ชัดกว่าตัวชื่อของรุ่น ทำให้ผู้ใช้ตัดสินใจภายในครั้งแรก",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-2.jpg",
+                       "discription": "บอกชื่อแบรนด์พร้อมรุ่น โดยต้องการให้รูปและข้อความนั้นกลมกลืนไม่ขัดกัน",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP1/JBGP1-3.jpg",
+                       "discription": "ได้มีคำอธิบายส่วนขยายในการบอกราคาเพื่อให้ผู้ใช้ตัดสินใจ",
                        "selected_counts": 0
                    }
               ],
@@ -915,14 +1062,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-1.jpg",
+                         "discription": "มีข้อความและรูปภาพในการเปรียบเทียบเพื่อให้ผู้ใช้ตัดสินใจเลือกได้ง่ายยิ่งขึ้น",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-2.jpg",
+                         "discription": "เพิ่มส่วนของพื้นหลังเพื่อให้มีความดึงดูดน่าสนใจต่อผู้ใช้ในการเลือกดู",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP2/JBGP2-3.jpg",
+                         "discription": "มีการทำให้แบรนด์นั้นมีจุดเด่นโดยมีพื้นหลังสีดำหลังตัวข้อความ เพื่อต้องการให้ผู้ใช้ตัดสินใจด้วยแบรนด์เป็นอันดับแรก",
                          "selected_counts": 0
                      }
                 ],
@@ -932,14 +1082,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-1.jpg",
+                           "discription": "เน้นในส่วนของชื่อให้เด่นกว่าส่วนของคำอธิบาย โดยคำอธิบายนั้นจะใช้ในรูปแบบสั้นและเข้าใจง่าย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-2.jpg",
+                           "discription": "ใช้สีขาวเพื่อทำให้ตัวของข้อความนั้นมีความเด่นชัด และตรงกับสินค้า",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP3/JBGP3-3.jpg",
+                           "discription": "มีการทำให้แบรนด์นั้นมีจุดเด่นโดยมีพื้นหลังสีดำหลังตัวข้อความ เพื่อต้องการให้ผู้ใช้ตัดสินใจด้วยแบรนด์เป็นอันดับแรก",
                            "selected_counts": 0
                        }
                   ],
@@ -949,14 +1102,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-1.jpg",
+                           "discription": "นอกเหนือจากสีขาวนั้นต้องการจะให้เห็นก่อนเป็นอันดับแรกในการมองครั้งแรก",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-2.jpg",
+                           "discription": "การใช้สีขาวของข้อความเป็นส่วนใหญ่นั้นเพราะพื้นหลังมีสีดำทำให้เห็นตัวของข้อความนั้นชัดเจน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP4/JBGP4-3.jpg",
+                           "discription": "มีการเล่นสีในตัวของข้อความ เพราะจะได้แสดงจุดที่ต้องการจะเน้น",
                            "selected_counts": 0
                        }
                   ],
@@ -966,14 +1122,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-1.jpg",
+                           "discription": "ต้องให้ภาพมีความกลมกลืนกันไม่ขัดกัน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-2.jpg",
+                           "discription": "เป็นการบอกถึงตัวแบรนด์เป็นจุดหลัก โดยใช้พื้นหลังให้มีการกระตุ้นต่อผู้ใช้ในการหยุดดู",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP5/JBGP5-3.jpg",
+                           "discription": "เน้นในส่วนของแบรนด์เป็นหลัก โดยมีการใส่ในเรื่องของเงาเข้าไป",
                            "selected_counts": 0
                        }
                   ],
@@ -983,14 +1142,17 @@
                 "images_urls": [ 
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-1.jpg",
+                             "discription": "ตัวของข้อความนั้นที่ทำตัวบางเพื่อจะเน้นจุดขายของตัวสินค้าให้มีความเด่นที่สุด",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-2.jpg",
+                             "discription": "ต้องการให้ตัวของสินค้ามีความเด่นที่สุดอยู่ แต่ต้องการให้เห็นตัวขอข้อความที่ระบุรุ่นของสินค้า เพื่อให้ผู้ใช้ได้รู้จัก",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP6/JBGP6-3.jpg",
+                             "discription": "มีการทำให้ตัวของข้อความมีความเด่นชัดมากขึ้น ซึ่งจะทำให้มองง่ายเวลาจะดูพร้อมกับตัวของสินค้า",
                              "selected_counts": 0
                          }
                     ],
@@ -1000,14 +1162,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-1.jpg",
+                               "discription": "ตัวข้อความอยู่ในบรรทัดเดียวเพื่อจะได้ไม่รู้สึกอึดอัดในตัวของข้อความ",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-2.jpg",
+                               "discription": "เปลี่ยนตัวของข้อความเป็นสีขาวเพื่อให้มีความเด่นชัดของข้อความมากยิ่งขึ้น",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP7/JBGP7-3.jpg",
+                               "discription": "มีการบอกสรรพคุณเพื่อให้ทางผู้ใช้งานมีตัวเลือกในการตัดสินใจ",
                                "selected_counts": 0
                            }
                       ],
@@ -1017,14 +1182,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-1.jpg",
+                               "discription": "มีการบอกรุ่นและตัวของสินค้าเท่านั้น เพื่อต้องการจะโชว์ส่วนที่ต้องการอยากจะโชว์เพียงอย่างเดียว",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-2.jpg",
+                               "discription": "มีพื้นหลังรูปภาพเพิ่มขั้นมาเพื่อดึงดูดสายตาของผู้ใช้งาน",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP8/JBGP8-3.jpg",
+                               "discription": "ต้องการเน้นในส่วนของชื่อรุ่นให้เห็นเด่นชัดก่อนตัวสินค้า",
                                "selected_counts": 0
                            }
                       ],
@@ -1034,14 +1202,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-1.jpg",
+                               "discription": "ในส่วนนี้ต้องการให้ตัวของคำอธิบายเด่น เพื่อให้ผู้ใช้สะดุดตาในการต้องมาดูตัวของสินค้า",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-2.jpg",
+                               "discription": "ใช้สีเขียวเพราะต้องการให้กลมกลืนกับตัวรูปภาพ โดยอยากให้ในส่วนของราคาเด่นเป็นหลัก",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Jib/JBGP9/JBGP9-3.jpg",
+                               "discription": "ต้องการเน้นคำอธิบายเด่นเป็นหลัก แต่จะเปลี่ยนรูปแบบโดยจะใช้สีเขียวเป็นกรอบพื้นหลังของข้อความ",
                                "selected_counts": 0
                            }
                       ],
@@ -1061,14 +1232,17 @@
           "images_urls": [ 
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-1.jpg",
+                       "discription": "ข้อความมีการชักชวนเพื่อดึงดูดให้ลูกค้ามีความต้องการในโปรโมชั่นนี้",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-2.jpg",
+                       "discription": "ต้องการเน้นในส่วนของข้อความอธิบายเชิญชวนและ เวลาเพื่อให้ผู้ใช้ยิ่งรู้สึกว่าพลาดโอกาสนี้ไม่ได้",
                        "selected_counts": 0
                    },
                    { 
                        "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP1/ADGP1-3.jpg",
+                       "discription": "ส่วนนี้ต้องการเน้นในเรื่องของเวลา เพื่อให้ผู้ใช้รู้สึกว่าไม่อยากพลาดจากสิ่งนี้",
                        "selected_counts": 0
                    }
               ],
@@ -1078,14 +1252,17 @@
             "images_urls": [ 
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-1.jpg",
+                         "discription": "เปลี่ยนของข้อความเพื่อให้ในส่วนของสิทธิพิเศษนั้นเด่นกว่า ทำให้รู้สึกอยากหาที่สมัครเพื่อรับสินค้า",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-2.jpg",
+                         "discription": "ทำตัวหนาเพื่อยังอยากให้เห็นตัวของข้อความที่ยังอยากให้เห็น แต่ไม่ได้ต้องการให้เห็นเป็นอันดับแรก",
                          "selected_counts": 0
                      },
                      { 
                          "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP2/ADGP2-3.jpg",
+                         "discription": "มีข้อความในการบอกสิทธิพิเศษในการจะได้รับของต่าง ๆโดยเพียงการสมัครที่ง่าย",
                          "selected_counts": 0
                      }
                 ],
@@ -1095,14 +1272,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-1.jpg",
+                           "discription": "ใช้ข้อความที่สั้นและเป็นการกระตุ้นในการต้องหยุดดูของผู้ใช้งาน ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-2.jpg",
+                           "discription": "ต้องการให้สถานที่มีความเด่นชัดขึ้น แต่ก็ยังกลมกลืนกับเนื้อหาที่แสดง",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP3/ADGP3-3.jpg",
+                           "discription": "ในส่วนนี้ต้องการให้เห็นในส่วนของสถานที่เด่นชัดเพื่อไม่ให้ตกหล่นจากการอ่านเพียงแวบเดียว โดยข้อความเชิญชวนั้นก็ยังเป็นสิ่งดึงดูดเป็นอันดับแรก",
                            "selected_counts": 0
                        }
                   ],
@@ -1112,14 +1292,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP4/ADGP4-1.jpg",
+                           "discription": "เป็นการใช้ข้อความในการบอกความสามารถในสินค้า เพื่อเป็นทางเลือกในการตัดสินใจใจการซื้อ",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP4/ADGP4-2.jpg",
+                           "discription": "เน้นสีแดงเพื่อต้องการให้ขัดกับรูปภาพ ซึ่งจะทำให้เห็นเป็นอยากรู้มาก่อน",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/4/ADGP4-3.jpg",
+                           "discription": "เป็นการทำกรอบประกาศเพื่อที่จะให้เป็นจุดสนใจเป็นอันดับแรก ทางผู้ใช้นั้นจะได้ตัดสินใจได้เร็ว",
                            "selected_counts": 0
                        }
                   ],
@@ -1129,14 +1312,17 @@
               "images_urls": [ 
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-1.jpg",
+                           "discription": "มีในส่วนของข้อความที่ทำให้ผู้ใช้นั้นรู้สึกว่าต้องมีสินค้าตัวนี้ ถ้าไม่มีแล้วอาจทำให้รู้สึกคาดหาย",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-2.jpg",
+                           "discription": "ต้องการเน้นในส่วนของข้อความอธิบายและรุ่นของสินค้า แต่ต้องการแบ่งพื้นที่ในการมอง",
                            "selected_counts": 0
                        },
                        { 
                            "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP5/ADGP5-3.jpg",
+                           "discription": "จะเน้นในส่วนของรุ่นของสินค้า โดยจะมีการทำเงาให้เห็นเด่นชัดมากยิ่งขึ้น",
                            "selected_counts": 0
                        }
                   ],
@@ -1146,14 +1332,17 @@
                 "images_urls": [ 
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-1.jpg",
+                             "discription": "ต้องการเน้นในส่วนของวันเวลาที่จะหมด และส่วนลด โดยใช้สีไม่ให้เหมือนกับทุกส่วนในรูปภาพ ",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-2.jpg",
+                             "discription": "ใช้สีฟ้าในส่วนที่ต้องการขยายให้ผู้ใช้เห็นเป็นหลัก ซึ่งสีฟ้านั้นได้นำมาจากตัวของสินค้า",
                              "selected_counts": 0
                          },
                          { 
                              "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP6/ADGP6-3.jpg",
+                             "discription": "มีการบอกถึงประสิทธิภาพของแบรนด์ ซึ่งยังมีการแจกโปรและเวลาที่จำกัดเพื่อให้ผู้ใช้นั้นมีความต้องการสูงยิ่งขึ้น",
                              "selected_counts": 0
                          }
                     ],
@@ -1163,14 +1352,17 @@
                   "images_urls": [ 
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP7/ADGP7-1.jpg",
+                               "discription": "เป็นข้อความเชิญชวนที่อยากให้ผู้ใช้นั้นใช้กับแบรนด์โดยจะมีการโชว์ในส่วนของโปรโมชั่นให้เด่นเป็นหลัก",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP7/ADGP7-2.jpg",
+                               "discription": "ต้องการเน้นในส่วนของวันที่จะหมดอายุกิจกรรมของทางแบรนด์ เพื่อกระตุ้นตัวของผู้ใช้",
                                "selected_counts": 0
                            },
                            { 
                                "images_url": "./src/assets/GraphicsPositionBrand/Advice/ADGP7/ADGP7-3.jpg",
+                               "discription": "ต้องการสร้างกลมกลืนในองค์ประกอบของภาพแต่ก็ยังต้องการเน้นในส่วนของเวลาอยู่",
                                "selected_counts": 0
                            }
                       ],

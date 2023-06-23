@@ -31,12 +31,12 @@
 td {
   text-align: center;
   padding: 10px;
-  border-bottom: 2px solid #cbe9e6;
+  border-bottom: 2px solid #434343;
   
 }
 
 .box-table th {
-  background-color: #249e95;
+  background-color: #434343;
   font-weight: bold;
   color: rgb(255, 255, 255);
   line-height: 50px;
@@ -44,11 +44,11 @@ td {
 }
 
 .box-table tbody tr:nth-child(even) {
-  background-color: #cbe9e6;
+  background-color: #ead3a8;
 }
 
 .box-table tbody tr:hover {
-  background-color: #3b9e97;
+  background-color: #F7C873;
   color: #ffffff;
 }
 
