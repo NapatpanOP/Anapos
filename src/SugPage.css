@@ -144,3 +144,11 @@ button[type='submit-sug']:hover {
     box-shadow: none;
   }
 }
+
+@media screen and (max-width: 415px) {
+
+  .sug-page {
+    padding: 20px;
+  }
+
+}

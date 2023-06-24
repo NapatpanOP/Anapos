@@ -222,4 +222,13 @@
         font-size: 14px;
     }
 
+    .position-img-list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bg-card-img {
+        padding: 1rem;
+    }
+
 }

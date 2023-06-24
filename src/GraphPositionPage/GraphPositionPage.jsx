@@ -55,7 +55,7 @@ function GraphPosition() {
     } else {
       return (
         <div className="full-box-content-graph2">
-           {renderFilter()}
+          {renderFilter()}
           <div className="full-box-content-graph2-1">
             <div className="left-contain">
               {brandData?.adsPositions[pageGraph]?.images_urls.map(
@@ -182,34 +182,37 @@ function GraphPosition() {
         </div>
       </div>
 
-      {textDescription()}
+      <div class="box-content-graph-position">
 
-      <div className="bt-graph">
-        <button
-          type="button"
-          onClick={() => setMode("position")}
-          className={`btn ${
-            mode == "position" ? "bt-position-gp-at" : "bt-position-gp"
-          }`}
-        >
-          ภาพรวม
-        </button>
-        <button
-          type="button"
-          onClick={() => setMode("graphic")}
-          className={`btn ${
-            mode == "graphic" ? "bt-position-gp-at" : "bt-position-gp"
-          }`}
-        >
-          เจาะจงตำแหน่ง
-        </button>
+        {textDescription()}
+
+        <div className="bt-graph">
+          <button
+            type="button"
+            onClick={() => setMode("position")}
+            className={`btn ${
+              mode == "position" ? "bt-position-gp-at" : "bt-position-gp"
+            }`}
+          >
+            ภาพรวม
+          </button>
+          <button
+            type="button"
+            onClick={() => setMode("graphic")}
+            className={`btn ${
+              mode == "graphic" ? "bt-position-gp-at" : "bt-position-gp"
+            }`}
+          >
+            เจาะจงตำแหน่ง
+          </button>
+        </div>
+
+        {/* {renderFilter()} */}
+
+        {renderrBoxContent()}
+
+        <Footer />
       </div>
-
-      {/* {renderFilter()} */}
-
-      {renderrBoxContent()}
-
-      <Footer />
     </div>
   );
 }

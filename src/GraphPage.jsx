@@ -149,7 +149,7 @@ function PageGraph() {
     switch (viewGraph) {
       case "overview":
         return (
-          <div>
+          <div className="filter-gp">
             {/* <div class="text-dis-graph">
               <p>
                 แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
@@ -171,13 +171,13 @@ function PageGraph() {
         );
       case "sex":
         return (
-          <>
+          <div className="filter-gp">
             <BarMaleLike data={brands} allUser={allUser} />
 
             <BarFemaleLike data={brands} allUser={allUser} />
 
             <BarOtherLike data={brands} allUser={allUser} />
-          </>
+          </div>
         );
       default:
         break;

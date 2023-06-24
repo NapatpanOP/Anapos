@@ -144,14 +144,6 @@
 }
 
 .btn.bt-specific-at:hover {
-  width: 30%;
-  height: 25%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 0px 45px 45px;
@@ -176,14 +168,6 @@
 }
 
 .btn.bt-overview-at:hover {
-  width: 30%;
-  height: 25%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 45px 45px 0px;
@@ -303,8 +287,10 @@
 } */
 
 .bt-graph-home {
+  position: relative;
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   color: #434343;
@@ -448,10 +434,109 @@
 
 }
 
-@media only screen and (max-width: 480px) {
-  .card-container-graph {
-    flex-basis: 100%;
-    max-width: 100%;
+@media only screen and (max-width: 768px) {
+
+  .btn.bt-specific {
+    padding: 1rem;
+  }
+
+  .btn.bt-specific-at {
+    padding: 1rem;
+  }
+
+  .btn.bt-overview {
+    padding: 1rem;
+  }
+
+  .btn.bt-overview-at {
+    padding: 1rem;
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .head-graph {
+    max-height: 40vh;
+  }
+
+  .bt-graph-home {
+    margin-top: 10rem;
+  }
+
+  .text-head-graph-page {
+    top: 50%;
+  }
+
+  .text-dis-graph-head {
+    margin-top: 4rem;
+  }
+
+  .bt-overview h4 {
+    font-size: 1.2rem;
+  }
+
+  .bt-overview-at h4 {
+    font-size: 1.2rem;
+  }
+
+  .bt-specific h4 {
+    font-size: 1.2rem;
+  }
+
+  .bt-specific-at h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+
+  .text-head-graph-page h1 {
+    font-size: 2rem;
+  }
+  
+  .text-dis-graph-head {
+    margin-top: 5rem;
+    width: 280px;
+  }
+
+  .bt-graph-home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn.bt-specific {
+    width: 50%;
+    height: 25%;
+  }
+
+  .btn.bt-specific-at {
+    width: 50%;
+    height: 25%;
+  }
+
+  .btn.bt-overview {
+    width: 50%;
+    height: 25%;
+  }
+
+  .btn.bt-overview-at {
+    width: 50%;
+    height: 25%;
+  }
+
+  .box1-text-graph p {
+    font-size: 14px;
+  }
+
+  .filter-gp {
+    padding: 0 10% 0 10%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    row-gap: 2rem;
+    flex-flow: wrap;
+    column-gap: 5%;
+    justify-content: center;
+    margin-top: 20px
+  }
+}
