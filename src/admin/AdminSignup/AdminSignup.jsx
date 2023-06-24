@@ -54,38 +54,40 @@ const AdminSignup = () => {
     <div className="register-container">
       <div className="register-form-container">
         <div>
-          <h2>SIGN UP FOR ACCESS</h2>
+          <h2>ลงทะเบียนสำหรับแอดมิน</h2>
           <div className="form-group">
-            <label htmlFor="email">EMAIL*</label>
+            <label htmlFor="email">อีเมล*</label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={validateEmail(email) ? "" : "invalid"}
+              placeholder="อีเมล"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">PASSWORD*</label>
+            <label htmlFor="password">รหัสผ่าน*</label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={validatePassword(password) ? "" : "invalid"}
+              placeholder="รหัสผ่าน"
             />
           </div>
           <p className="text-error">{errorMessage}</p>
           <div className="form-group">
             
             <div className="Signup-submit">
-              <button onClick={() => signup({ email: email, password: password})} type="submit" className="btn btn-primary Signup-submit btn-success">
-                CONFIRM
+              <button onClick={() => signup({ email: email, password: password})} type="submit" className="btn btn-primary Signup-submit btn-success" id="admin-signup">
+                ลงทะเบียน
               </button>
             </div>
             <div class="login-containersignup">
               <Link to="/admin">
-                <button type="login">sign in</button>
+                <button type="login">ลงชื่อเข้าใช้</button>
               </Link>
             </div>
           </div>

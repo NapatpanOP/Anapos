@@ -60,8 +60,8 @@ body {
     width: 100%;
   }
   
-  button[type="submit"] {
-    background-color: #37D295;
+ #admin-signin {
+    background-color: #F7C873;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -69,6 +69,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
+  }
+
+  #admin-signin:hover {
+    background-color: #c5a05b;
   }
   
   .signup-container {
@@ -93,7 +97,7 @@ body {
   
   input[type="email"]:focus,
   input[type="password"]:focus {
-    border-bottom: 2px solid #26996b;
+    border-bottom: 2px solid #F7C873;
   }
   
   /* apply styles for larger screens */

@@ -87,8 +87,8 @@ body {
     height: inherit;
   }
   
-  button[type="submit"] {
-    background-color: #37D295;
+#admin-signup {
+    background-color: #F7C873;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -96,6 +96,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
+  }
+
+  #admin-signup:hover {
+    background-color: #c5a05b;
   }
   
   button[type="login"] {

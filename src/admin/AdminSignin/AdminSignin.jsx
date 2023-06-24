@@ -59,36 +59,36 @@ const AdminSignin = () => {
     <div className="login-container">
       <div>
         <div className="login-form">
-          <h2>Admin Sign in</h2>
+          <h2>ลงชื่อเข้าใช้สำหรับแอดมิน</h2>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">อีเมล*</label>
             <input
               type="email"
               id="email"
-              placeholder="Enter email"
+              placeholder="อีเมล"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             {emailError && <p className="error">{emailError}</p>}
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">รหัสผ่าน*</label>
             <input
               type="password"
               id="password"
-              placeholder="Enter password"
+              placeholder="รหัสผ่าน"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             {passwordError && <p className="error">{passwordError}</p>}
           </div>
           <p className="text-error">{errorMessage}</p>
-          <button onClick={() => signin({email: email, password: password})} type="submit" className="btn btn-primary btn-success">
-            Sign in
+          <button onClick={() => signin({email: email, password: password})} type="submit" className="btn btn-primary btn-success" id="admin-signin">
+            ลงชื่อเข้าใช้
           </button>
           <div class="signup-container">
             <Link to="/admin-signup">
-              <button type="signup">Sign up</button>
+              <button type="signup">ลงทะเบียน</button>
             </Link>
           </div>
         </div>
