@@ -253,7 +253,7 @@ function PageGraph() {
       <div class="full-size-graph1">
         <div class="head-graph">
           <img class="picture-head-graph" src={picture1} alt="pt-7" />
-          <div class="text-head-graph">
+          <div class="text-head-graph-page">
             <h1>ประเภท</h1>
             <h1 class="text-head-graph-web">กราฟ</h1>
           </div>
