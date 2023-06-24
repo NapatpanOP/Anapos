@@ -151,7 +151,6 @@ input[type="password"]:focus {
   .login-box {
     min-width: 0;
     box-shadow: none;
-    padding: 0;
   }
  
 }
@@ -161,7 +160,7 @@ input[type="password"]:focus {
    .login-box {
     min-width: 0;
     box-shadow: none;
-    padding: 0;
+    padding: 20px;
   }
   
 }

@@ -140,7 +140,7 @@ button[type='submit-sug']:hover {
  .sug-form #div-form {
 
     min-width: 0;
-    padding: 0;
+    padding: 20px;
     box-shadow: none;
   }
 }
