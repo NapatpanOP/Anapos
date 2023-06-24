@@ -173,7 +173,7 @@ function GraphPosition() {
             <h1>กราฟข้อมูล</h1>
             <h1 class="text-head-graph-web">{brandData?.title}</h1>
           </div>
-          <p class="text-dis-graph">
+          <p class="text-dis-graph-position">
             ข้อมูลที่มาแสดงผลมาจากการที่ผู้ใช้ได้เข้ามาเลือกตำแหน่งของโฆษณาบนเว็บไซต์{" "}
             {brandData?.title} ที่อยู่ใน ANAPOS ซึ่งสามารถแบ่งดูข้อมูลได้โดยมี
             การเลือกดูภาพรวมตำแหน่งโฆษณา และ

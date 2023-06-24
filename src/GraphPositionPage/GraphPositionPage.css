@@ -44,7 +44,7 @@ body {
   filter: brightness(50%);
 }
 
-.text-dis-graph {
+.text-dis-graph-position {
   position: absolute;
   left: 50%;
   top: 60%;
