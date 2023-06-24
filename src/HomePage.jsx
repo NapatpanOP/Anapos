@@ -300,7 +300,7 @@ function HomePage() {
             </div>
             <div class="box6-card">
               <h3 class="text-brand-box6">ADVICE</h3>
-              <p class="text-box6">ประเภท: ธุระกิจ</p>
+              <p class="text-box6">ประเภท: ธุรกิจ</p>
               <div class="box6-vote">
                 <p>คลิกเพื่อโหวต</p>
               </div>
