@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { UserAPI } from "../../apis/userAPI";
 import "../Conclusion/ConclusionPage.css";
+import Footer from "../../components/Footer/Footer";
 
 const AdminUserDataPage = () => {
 
@@ -40,7 +41,7 @@ const AdminUserDataPage = () => {
           </tbody>
         </table>
       </div>
-
+      <Footer />
     </div>
   );
 };

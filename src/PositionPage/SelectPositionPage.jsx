@@ -8,6 +8,7 @@ import { UserAPI } from "../apis/userAPI";
 import { useAuthContext } from "../core/contexts/AuthProvider";
 import { baseImageUrl } from "../core/store/localVariable";
 import picture1 from "../assets/picture/pt-10.jpg";
+
 import Footer from "../components/Footer/Footer";
 
 import YoutubePosition from "../components/Position/YouTubePosition/YoutubePosition";
@@ -19,6 +20,9 @@ import ThaiRathPosition from "../components/Position/ThaiRathPosition/ThaiRathPo
 import BananaPosition from "../components/Position/BananaPosition/BananaPosition";
 import JibPosition from "../components/Position/JibPosition/JibPosition";
 import AdvicePosition from "../components/Position/AdvicePosition/AdvicePosition";
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/js/src/modal'
 
 function SelectPositionPage() {
   const { token, loadingAction } = useAuthContext();
@@ -180,8 +184,23 @@ function SelectPositionPage() {
           <img
             src={baseImageUrl + brand?.web_image ?? ""}
             class="web-img-position"
+            data-bs-toggle="modal"
+            data-bs-target="#imageExample"
           />
+
+          <div className="modal fade" id="imageExample" tabIndex="-1" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-body">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <img src={baseImageUrl + brand?.web_image ?? ""} className="d-block w-100"/>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
+
         <div class="box-text-position2">
           <p class="box-head-text-position">ประเภทเว็บไซต์ {brand?.type}</p>
           <h2>{brand?.title}</h2>

@@ -64,6 +64,12 @@
 
 .web-img-position {
   width: 600px;
+  cursor: pointer;
+}
+
+.web-img-position:hover {
+  border: 1px solid #F7C873;
+  border-radius: 2px;
 }
 
 .box-text-position2 {
@@ -217,4 +223,5 @@
     width: 300px;
   }
 }
+
 

@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { BrandAPI } from "../../apis/brandAPI";
 import "./ConclusionPage.css";
+import Footer from "../../components/Footer/Footer";
 
 const ConclusionPage = () => {
 
@@ -65,7 +66,7 @@ const ConclusionPage = () => {
           </div>
         ))}
       </div>
-
+      <Footer />
     </div>
   );
 };

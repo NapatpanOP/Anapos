@@ -2,6 +2,7 @@ import React from 'react'
 import "./YoutubePosition.css"
 
 function YoutubePosition({selectPosHandle, currentPositionIndex}) {
+
   return (
     <div class="full-size-youtube">
       <div  className="box-yt">
