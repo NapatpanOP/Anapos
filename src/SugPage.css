@@ -102,7 +102,7 @@ button[type='submit-sug']:hover {
   background-color: #c5a05b;
 }
 
-#website-type {
+#websiteType {
   margin: 8px 0;
   font-family: 'Anuphan', sans-serif;
 }
@@ -113,6 +113,10 @@ button[type='submit-sug']:hover {
 
 .url-form {
   margin: 8px 0;
+}
+
+.error-message {
+  color: rgb(181, 65, 65);
 }
 
 @media screen and (min-width: 768px) {
