@@ -194,7 +194,7 @@ function SelectPositionPage() {
                     <div className="modal-body">
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                        <img src={baseImageUrl + brand?.web_image ?? ""} className="d-block w-100"/>
+                        <img src={baseImageUrl + brand?.fullweb_image ?? ""} className="d-block w-100"/>
                     </div>
                 </div>
             </div>
