@@ -87,7 +87,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #F8F8F8;
+  background-color: none;
   border: 1px solid #F7C873;
   border-radius: 45px 0px 45px 45px;
   cursor: pointer;
@@ -95,7 +95,7 @@
 }
 
 .btn.bt-specific:hover {
-  background: #F7C873;
+  background-color: #F7C873;
 }
 
 .bt-overview h4 {
@@ -116,7 +116,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #F8F8F8;
+  background-color: none;
   border: 1px solid #F7C873;
   border-radius: 45px 45px 45px 0px;
   cursor: pointer;
@@ -124,7 +124,7 @@
 }
 
 .btn.bt-overview:hover {
-  background: #F7C873;
+  background-color: #F7C873;
 }
 
 .btn.bt-specific-at {
@@ -136,7 +136,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #F7C873;
+  background-color: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 0px 45px 45px;
   cursor: pointer;
@@ -144,7 +144,7 @@
 }
 
 .btn.bt-specific-at:hover {
-  background: #F7C873;
+  background-color: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 0px 45px 45px;
   cursor: pointer;
@@ -160,7 +160,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #F7C873;
+  background-color: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 45px 45px 0px;
   cursor: pointer;
@@ -168,7 +168,7 @@
 }
 
 .btn.bt-overview-at:hover {
-  background: #F7C873;
+  background-color: #F7C873;
   border: 1px solid #F7C873;
   border-radius: 45px 45px 45px 0px;
   cursor: pointer;
@@ -241,7 +241,7 @@
 .btn.bt-gp3 {
   width: max-content;
   padding: 1rem;
-  background-color: #fafafa;
+  background-color: none;
   border: 2px solid #000000;
   border-radius: 20px;
 }
