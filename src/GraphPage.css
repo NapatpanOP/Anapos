@@ -87,7 +87,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: none;
+  background-color: #f8f8f8;
   border: 1px solid #F7C873;
   border-radius: 45px 0px 45px 45px;
   cursor: pointer;
@@ -116,7 +116,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: none;
+  background-color: #f8f8f8;
   border: 1px solid #F7C873;
   border-radius: 45px 45px 45px 0px;
   cursor: pointer;
