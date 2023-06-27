@@ -150,12 +150,6 @@ function PageGraph() {
       case "overview":
         return (
           <div className="filter-gp">
-            {/* <div class="text-dis-graph">
-              <p>
-                แสดงภาพรวมทั้งหมดของเว็บไซต์ใน ANAPOS
-                โดยจะแสดงผลจากการเข้าไปโหวตของผู้ใช้
-              </p>
-            </div> */}
             <BarAllLike data={brands} />
           </div>
         );
