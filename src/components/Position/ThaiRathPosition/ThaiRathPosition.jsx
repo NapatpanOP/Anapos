@@ -4,7 +4,9 @@ import "./ThaiRathPosition.css";
 function ThaiRathPosition({selectPosHandle}) {
   return (
     <div class="full-size-thairath">
-      <button class="tr-position1" onClick={() => selectPosHandle(0)}></button>
+      <button class={[`tr-position1 ${
+              currentPositionIndex == 0 ? "tr-position1-at" : "tr-position1"
+            }`]} onClick={() => selectPosHandle(0)}></button>
 
       <div class="box-tr2">
         <div class="tr-position1-1"></div>
@@ -14,14 +16,18 @@ function ThaiRathPosition({selectPosHandle}) {
       <div class="box-tr3">
         <div class="tr-position1-2"></div>
         <div class="box-tr3-1">
-          <button class="tr-position2" onClick={() => selectPosHandle(1)}></button>
+          <button class={[`tr-position2 ${
+              currentPositionIndex == 1 ? "tr-position2-at" : "tr-position2"
+            }`]} onClick={() => selectPosHandle(1)}></button>
           <div class="tr-position2-1"></div>
         </div>
       </div>
 
       <div class="box-tr4">
         <div class="tr-position3-1"></div>
-        <button class="tr-position3" onClick={() => selectPosHandle(2)}></button>
+        <button class={[`tr-position3 ${
+              currentPositionIndex == 2 ? "tr-position3-at" : "tr-position3"
+            }`]} onClick={() => selectPosHandle(2)}></button>
       </div>
 
       <div class="box-tr5">
@@ -34,7 +40,9 @@ function ThaiRathPosition({selectPosHandle}) {
       </div>
 
       <div class="box-tr6">
-        <button class="tr-position4" onClick={() => selectPosHandle(3)}></button>
+        <button class={[`tr-position4 ${
+              currentPositionIndex == 3 ? "tr-position4-at" : "tr-position4"
+            }`]} onClick={() => selectPosHandle(3)}></button>
       </div>
 
       <div class="box-tr7">
@@ -56,7 +64,9 @@ function ThaiRathPosition({selectPosHandle}) {
           <div class="tr-position5-1"></div>
           <div class="box-tr8-2">
             <div class="tr-position5-2"></div>
-            <button class="tr-position5" onClick={() => selectPosHandle(4)}></button>
+            <button class={[`tr-position5 ${
+              currentPositionIndex == 4 ? "tr-position5-at" : "tr-position5"
+            }`]} onClick={() => selectPosHandle(4)}></button>
           </div>
         </div>
       </div>
@@ -75,8 +85,12 @@ function ThaiRathPosition({selectPosHandle}) {
       </div>
 
       <div class="box-tr10">
-        <button class="tr-position6" onClick={() => selectPosHandle(5)}></button>
-        <button class="tr-position7" onClick={() => selectPosHandle(6)}></button>
+        <button class={[`tr-position6 ${
+              currentPositionIndex == 5 ? "tr-position6-at" : "tr-position6"
+            }`]} onClick={() => selectPosHandle(5)}></button>
+        <button class={[`tr-position7 ${
+              currentPositionIndex == 6 ? "tr-position7-at" : "tr-position7"
+            }`]} onClick={() => selectPosHandle(6)}></button>
       </div>
 
     </div>

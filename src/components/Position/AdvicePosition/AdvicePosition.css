@@ -50,6 +50,20 @@
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-1.png");
 }
 
+.av-position1-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position1-at:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-1.png");
+}
+
 .av-position2 {
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-2.png");
   background-position: center;
@@ -61,6 +75,20 @@
 }
 
 .av-position2:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-2.png");
+}
+
+.av-position2-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 10vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position2-at:hover {
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-2.png");
 }
 
@@ -82,6 +110,20 @@
 }
 
 .av-position3:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-3.png");
+}
+
+.av-position3-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position3-at:hover {
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-3.png");
 }
 
@@ -115,6 +157,20 @@
 }
 
 .av-position4:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-4.png");
+}
+
+.av-position4-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position4-at:hover {
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-4.png");
 }
 
@@ -157,6 +213,20 @@
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-5.png");
 }
 
+.av-position5-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 10vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position5-at:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-5.png");
+}
+
 .av-position5-1 {
   width: 32%;
   height: 10vh;
@@ -187,6 +257,20 @@
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-6.png");
 }
 
+.av-position6-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position6-at:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-6.png");
+}
+
 .av-position6-1 {
   width: 32%;
   height: 20vh;
@@ -214,5 +298,19 @@
 }
 
 .av-position7:hover {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-7.png");
+}
+
+.av-position7-at {
+  background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.av-position7-at:hover {
   background-image: url("../../../assets/positionPage/AdvicePosition/AV-PS-HW-7.png");
 }

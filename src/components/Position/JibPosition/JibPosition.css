@@ -44,6 +44,19 @@
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-1.png");
 }
 
+.jb-positon1-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 415px;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon1-at:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-1.png");
+}
 
 .jb-positon2 {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-2.png");
@@ -56,6 +69,20 @@
 }
 
 .jb-positon2:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-2.png");
+}
+
+.jb-positon2-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 415px;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon2-at:hover {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-2.png");
 }
 
@@ -78,6 +105,20 @@
 }
 
 .jb-positon3:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-3.png");
+}
+
+.jb-positon3-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon3-at:hover {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-3.png");
 }
 
@@ -111,6 +152,21 @@
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-4.png");
 }
 
+.jb-positon4-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon4-at:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-4.png");
+}
+
 .box-jib2-1 {
   width: 25%;
   height: max-content;
@@ -131,6 +187,21 @@
 }
 
 .jb-positon5:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-5.png");
+}
+
+.jb-positon5-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon5-at:hover {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-5.png");
 }
 
@@ -171,6 +242,21 @@
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-6.png");
 }
 
+.jb-positon6-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 90px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon6-at:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-6.png");
+}
+
 .jb-positon6-1 {
   margin-top: 1rem;
   width: 32%;
@@ -200,6 +286,21 @@
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-7.png");
 }
 
+.jb-positon7-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 45px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon7-at:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-7.png");
+}
+
 .jb-positon8 {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-8.png");
   background-position: center;
@@ -212,6 +313,21 @@
 }
 
 .jb-positon8:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-8.png");
+}
+
+.jb-positon8-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 450px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon8-at:hover {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-8.png");
 }
 
@@ -249,6 +365,21 @@
 }
 
 .jb-positon9:hover {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-9.png");
+}
+
+.jb-positon9-at {
+  background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  height: 150px;
+  margin-top: 1rem;
+  transition: background-image 0.3s ease;
+}
+
+.jb-positon9-at:hover {
   background-image: url("../../../assets/positionPage/JIbPosition/JB-PS-HW-9.png");
 }
 

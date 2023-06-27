@@ -28,6 +28,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-1.png");
 }
 
+.bn-position1-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 10vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position1-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-1.png");
+}
+
 .bn-position1-1 {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-1-1.png");
   background-position: center;
@@ -48,6 +62,20 @@
 }
 
 .bn-position2:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-2.png");
+}
+
+.bn-position2-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position2-at:hover {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-2.png");
 }
 
@@ -85,6 +113,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-3.png");
 }
 
+.bn-position3-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position3-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-3.png");
+}
+
 .bn-position3-1 {
   width: 32%;
   height: 20vh;
@@ -102,6 +144,20 @@
 }
 
 .bn-position4:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-4.png");
+}
+
+.bn-position4-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 23.5%;
+  height: 50vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position4-at:hover {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-4.png");
 }
 
@@ -133,6 +189,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-5.png");
 }
 
+.bn-position5-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49%;
+  height: 40vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position5-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-5.png");
+}
+
 .box-banana2-2 {
   display: flex;
   flex-direction: column;
@@ -153,6 +223,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-6.png");
 }
 
+.bn-position6-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position6-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-6.png");
+}
+
 .bn-position7 {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-7.png");
   background-position: center;
@@ -164,6 +248,20 @@
 }
 
 .bn-position7:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-7.png");
+}
+
+.bn-position7-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position7-at:hover {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-7.png");
 }
 
@@ -181,6 +279,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-8.png");
 }
 
+.bn-position8-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position8-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-8.png");
+}
+
 .bn-position9 {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-9.png");
   background-position: center;
@@ -195,6 +307,20 @@
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-9.png");
 }
 
+.bn-position9-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position9-at:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-9.png");
+}
+
 .bn-position10 {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-10.png");
   background-position: center;
@@ -206,5 +332,19 @@
 }
 
 .bn-position10:hover {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-10.png");
+}
+
+.bn-position10-at {
+  background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 20vh;
+  transition: background-image 0.3s ease;
+}
+
+.bn-position10-at:hover {
   background-image: url("../../../assets/positionPage/BananaPosition/BN-PS-HW-10.png");
 }

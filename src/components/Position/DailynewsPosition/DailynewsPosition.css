@@ -36,6 +36,20 @@
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-1.png");
 }
 
+.box-position-dn1-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 450px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn1-at:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-1.png");
+}
+
 .box-position-dn1-1 {
   width: 25%;
   height: 450px;
@@ -157,6 +171,20 @@
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-2.png");
 }
 
+.box-position-dn2-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 350px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn2-at:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-2.png");
+}
+
 .box-dailynews-5-2 {
   display: flex;
   flex-direction: column;
@@ -182,6 +210,20 @@
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-3.png");
 }
 
+.box-position-dn3-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  height: 150px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn3-at:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-3.png");
+}
+
 .box-position-dn3-1 {
   width: 25%;
   height: 150px;
@@ -199,6 +241,20 @@
 }
 
 .box-position-dn4:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-4.png");
+}
+
+.box-position-dn4-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  height: 150px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn4-at:hover {
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-4.png");
 }
 
@@ -225,6 +281,21 @@
 }
 
 .box-position-dn5:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-5.png");
+}
+
+.box-position-dn5-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55%;
+  height: 250px;
+  border-radius: 15px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn5-at:hover {
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-5.png");
 }
 
@@ -268,6 +339,21 @@
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-6.png");
 }
 
+.box-position-dn6-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 150px;
+  border-radius: 15px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn6-at:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-6.png");
+}
+
 .box-position-dn6-1 {
   width: 20%;
   height: 150px;
@@ -296,6 +382,21 @@
 }
 
 .box-position-dn7:hover {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-7.png");
+}
+
+.box-position-dn7-at {
+  background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 150px;
+  border-radius: 15px;
+  transition: background-image 0.3s ease;
+}
+
+.box-position-dn7-at:hover {
   background-image: url("../../../assets/positionPage/DailynewsPosition/DN-PS-HW-7.png");
 }
 
