@@ -1,7 +1,7 @@
 import React from "react";
 import "./ThaiRathPosition.css";
 
-function ThaiRathPosition({selectPosHandle}) {
+function ThaiRathPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-thairath">
       <button class={[`tr-position1 ${

@@ -1,7 +1,7 @@
 import React from "react";
 import "./TrueIDPosition.css";
 
-function TrueIDPosition({selectPosHandle}) {
+function TrueIDPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-trueid">
       <div class="box-head-trueid">

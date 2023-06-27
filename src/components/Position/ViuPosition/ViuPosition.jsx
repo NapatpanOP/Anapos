@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ViuPosition.css"
 
-function ViuPosition({selectPosHandle}) {
+function ViuPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-viu">
       <div class="head-viu">

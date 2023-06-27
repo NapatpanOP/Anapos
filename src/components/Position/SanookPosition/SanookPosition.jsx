@@ -1,7 +1,7 @@
 import React from "react";
 import "./SanookPosition.css";
 
-function SanookPosition({selectPosHandle}) {
+function SanookPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-sanook">
       <div class="head-box-sanook">

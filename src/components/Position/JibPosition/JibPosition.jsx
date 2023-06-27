@@ -1,7 +1,7 @@
 import React from "react";
 import "./JibPosition.css";
 
-function JibPosition({selectPosHandle}) {
+function JibPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-jib">
       <div class="box-jib1">

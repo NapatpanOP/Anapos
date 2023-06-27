@@ -1,7 +1,7 @@
 import React from 'react'
 import "./DailynewsPosition.css"
 
-function DailynewsPosition({selectPosHandle}) {
+function DailynewsPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-dailynews">
       <div class="head-box-dailynews">

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./BananaPosition.css"
 
-function BananaPosition({selectPosHandle}) {
+function BananaPosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-banana">
       <button class={[`bn-position1 ${

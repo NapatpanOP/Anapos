@@ -1,7 +1,7 @@
 import React from 'react'
 import "./AdvicePosition.css"
 
-function AdvicePosition({selectPosHandle}) {
+function AdvicePosition({selectPosHandle, currentPositionIndex}) {
   return (
     <div class="full-size-advice">
       <div class="box-av1">
