@@ -33,6 +33,16 @@ function GraphPosition() {
     }
   };
 
+  const chartOptions = {
+    maintainAspectRatio: false,
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  };
+
   const renderrBoxContent = () => {
     if (mode == "position") {
       return (
@@ -76,11 +86,11 @@ function GraphPosition() {
                 <BarChart
                   chartData={{
                     labels: brandData?.adsPositions[pageGraph]?.images_urls.map(
-                      (_, index) => `BANNER ${index + 1}`
+                      (_, index) => `กราฟิก ${index + 1}`
                     ),
                     datasets: [
                       {
-                        label: `POSITION ${pageGraph + 1}`,
+                        label: `ตำแหน่ง ${pageGraph + 1}`,
                         data: brandData?.adsPositions[
                           pageGraph
                         ]?.images_urls.map((item) => item.selected_counts),
@@ -112,7 +122,7 @@ function GraphPosition() {
       setBrandData(location.state.brand);
       setChartData({
         labels: location.state.brand?.adsPositions.map(
-          (_, index) => `POSITION ${index + 1}`
+          (_, index) => `ตำแหน่ง ${index + 1}`
         ),
         datasets: [
           {

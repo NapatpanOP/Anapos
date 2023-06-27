@@ -112,6 +112,7 @@ body {
   display: flex;
   margin: auto;
   width: 80%;
+  height: max-content;
   padding: 2%;
   gap: 2rem;
   margin-top: 2rem;
@@ -155,6 +156,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 49%;
+  position: relative;
 }
 
 .main-logo {
@@ -274,7 +276,8 @@ body {
   }
 
   .full-box-graph-barchart {
-    height: 20vh;
+    height: 30vh;
+    width: 100%;
   }
 
   .full-box-content-graph2-1 {
