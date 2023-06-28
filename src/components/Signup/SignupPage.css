@@ -10,10 +10,11 @@ body {
   margin-bottom: 20px;
 }
 
-.register-container-box {
+.register-container-box-page {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
 .register-box {

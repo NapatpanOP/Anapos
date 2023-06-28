@@ -25,10 +25,10 @@ function SignupPage() {
         password: password,
         email: email,
         sex: sex,
-        age_range: ageRange,
+        ageRange: ageRange,
       });
     } else {
-      alert("Please fill in all fields and confirm registration.");
+      setErrorMessage("กรุณากรอกข้อมูลให้ครบถ้วน");
     }
   };
 
@@ -62,7 +62,7 @@ function SignupPage() {
   };
 
   return (
-    <div className="register-container-box">
+    <div className="register-container-box-page">
       <div className="register-form">
         <div className="register-box">
           <h2>สมัครสมาชิก</h2>
@@ -135,17 +135,9 @@ function SignupPage() {
             <label htmlFor="confirm" class="ck-confirm">ยืนยันให้เก็บข้อมูลการเข้าใช้เว็บไซต์</label>
             <div className="Signup-submit">
               <button
-                onClick={() =>
-                  register({
-                    username: username,
-                    password: password,
-                    email: email,
-                    sex: sex,
-                    age_range: ageRange,
-                  })
-                }
+                onClick={handleSubmit}
                 type="submit"
-                className="btn btn-primary Signup-submit btn-success" 
+                className="btn btn-primary Signup-submit btn-success"
                 id="bt-submit-signup"
               >
                 สมัครสมาชิก

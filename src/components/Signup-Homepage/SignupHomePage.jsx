@@ -25,10 +25,10 @@ function SignupHomePage() {
         password: password,
         email: email,
         sex: sex,
-        age_range: ageRange,
+        ageRange: ageRange,
       });
     } else {
-      alert("Please fill in all fields and confirm registration.");
+      alert("กรุณากรอกข้อมูลให้ครบถ้วน");
     }
   };
 
@@ -141,15 +141,7 @@ function SignupHomePage() {
           </label>
           <div className="Signup-submit-home">
             <button
-              onClick={() =>
-                register({
-                  username: username,
-                  password: password,
-                  email: email,
-                  sex: sex,
-                  age_range: ageRange,
-                })
-              }
+              onClick={handleSubmit}
               type="submit"
               className="btn btn-primary Signup-submit btn-success"
               id="bt-signup-home"
