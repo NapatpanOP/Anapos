@@ -25,7 +25,7 @@ function SignupHomePage() {
         password: password,
         email: email,
         sex: sex,
-        ageRange: ageRange,
+        age_range: ageRange,
       });
     } else {
       alert("กรุณากรอกข้อมูลให้ครบถ้วน");
@@ -114,7 +114,7 @@ function SignupHomePage() {
             <div className="form-group-home">
               <label htmlFor="ageRange">อายุ</label>
               <select
-                id="ageRange"
+                id="age_range"
                 value={ageRange}
                 onChange={(e) => setAgeRange(e.target.value)}
               >

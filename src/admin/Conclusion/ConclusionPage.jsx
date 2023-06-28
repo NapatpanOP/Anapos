@@ -6,7 +6,6 @@ import "./ConclusionPage.css";
 import Footer from "../../components/Footer/Footer";
 
 const ConclusionPage = () => {
-
   const [allBrand, setAllBrand] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -17,54 +16,56 @@ const ConclusionPage = () => {
   }, []);
 
   return (
-    <div>
-      <div class="box-table">
-        <p>ALL Brand</p>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Like</th>
-            </tr>
-          </thead>
-          <tbody>
-            {allBrand.map((brand, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{brand.title}</td>
-                <td>{brand.type}</td>
-                <td>{brand.like.length}</td>
+    <div class="box-data">
+      <div class="box-content-data">
+        <div class="box-table">
+          <p>ALL Brand</p>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Like</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-        {allBrand?.map((brand, brand_index) => (
-          <div key={brand_index}>
-            <p>{brand?.title}</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Position</th>
-                  <th>Banner 1</th>
-                  <th>Banner 2</th>
-                  <th>Banner 3</th>
+            </thead>
+            <tbody>
+              {allBrand.map((brand, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{brand.title}</td>
+                  <td>{brand.type}</td>
+                  <td>{brand.like.length}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {brand?.adsPositions?.map((position, pos_index) => (
-                  <tr key={pos_index}>
-                    <td>Position {pos_index + 1}</td>
-                    {position?.images_urls?.map((banner, banner_index) => (
-                      <td key={banner_index}>{banner.selected_counts}</td>
-                    ))}
+              ))}
+            </tbody>
+          </table>
+          {allBrand?.map((brand, brand_index) => (
+            <div key={brand_index}>
+              <p>{brand?.title}</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Position</th>
+                    <th>Banner 1</th>
+                    <th>Banner 2</th>
+                    <th>Banner 3</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ))}
+                </thead>
+                <tbody>
+                  {brand?.adsPositions?.map((position, pos_index) => (
+                    <tr key={pos_index}>
+                      <td>Position {pos_index + 1}</td>
+                      {position?.images_urls?.map((banner, banner_index) => (
+                        <td key={banner_index}>{banner.selected_counts}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))}
+        </div>
       </div>
       <Footer />
     </div>

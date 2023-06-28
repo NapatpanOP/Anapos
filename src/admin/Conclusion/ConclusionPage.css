@@ -6,9 +6,7 @@
 
 .box-table {
   position: relative;
-  margin-top: 3rem;
   width: 80%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,6 +48,24 @@ td {
 .box-table tbody tr:hover {
   background-color: #F7C873;
   color: #ffffff;
+}
+
+.box-sug {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.box-data {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-content-data{
+  max-height: max-content;
+  max-width: 100%;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 575px) {

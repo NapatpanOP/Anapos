@@ -25,7 +25,7 @@ function SignupPage() {
         password: password,
         email: email,
         sex: sex,
-        ageRange: ageRange,
+        age_range: ageRange,
       });
     } else {
       setErrorMessage("กรุณากรอกข้อมูลให้ครบถ้วน");
@@ -114,7 +114,7 @@ function SignupPage() {
           <div className="form-group">
             <label htmlFor="ageRange">อายุ*</label>
             <select
-              id="ageRange"
+              id="age_range"
               value={ageRange}
               onChange={(e) => setAgeRange(e.target.value)}
             >
@@ -132,7 +132,7 @@ function SignupPage() {
               checked={isChecked}
               onChange={(e) => setIsChecked(e.target.checked)}
             />
-            <label htmlFor="confirm" class="ck-confirm">ยืนยันให้เก็บข้อมูลการเข้าใช้เว็บไซต์</label>
+            <label htmlFor="confirm" class="ck-confirm">ยืนยันให้เก็บข้อมูลการเข้าใช้เว็บไซต์</label>            
             <div className="Signup-submit">
               <button
                 onClick={handleSubmit}
