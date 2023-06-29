@@ -112,48 +112,56 @@ function SelectPositionPage() {
           return (
             <ViuPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "TrueID":
           return (
             <TrueIDPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "Sanook":
           return (
             <SanookPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "Dailynews":
           return (
             <DailynewsPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "ThaiRath":
           return (
             <ThaiRathPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "Banana":
           return (
             <BananaPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "Jib":
           return (
             <JibPosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
         case "Advice":
           return (
             <AdvicePosition
               selectPosHandle={(index) => onClickGraphicHandle(index)}
+              currentPositionIndex={currentPositionIndex}
             />
           );
           break;
