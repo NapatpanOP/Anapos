@@ -24,7 +24,7 @@ const AdminSuggestionPage = () => {
                 <th>ID</th>
                 <th>Website</th>
                 <th>Type</th>
-                <th>Description:</th>
+                <th>Description</th>
                 <th>URL</th>
               </tr>
             </thead>
