@@ -14,7 +14,7 @@ const AdminSuggestionPage = () => {
   }, []);
 
   return (
-    <div class="box-sug">
+    <div class="box-data">
       <div class="box-content-data">
         <div class="box-table">
           <p>Suggestion</p>
