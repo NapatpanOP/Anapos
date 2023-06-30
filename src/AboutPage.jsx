@@ -46,7 +46,7 @@ function AboutPage() {
         </div>
       </div>
 
-      <div class="full-size-about3">
+      {/* <div class="full-size-about3">
         <ScrollTrigger
           onEnter={() => setCounterOn(true)}
           onExit={() => setCounterOn(false)}
@@ -96,7 +96,7 @@ function AboutPage() {
             </div>
           </div>
         </ScrollTrigger>
-      </div>
+      </div> */}
 
       <div class="full-size-about4">
         <div class="box4-content-about">
