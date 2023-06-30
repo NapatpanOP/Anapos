@@ -287,7 +287,7 @@ function BrandsCard({ filter }) {
                   {loginUser?.ads_poitions_selected?.find(
                     ({ brand_id }) => brand_id === card._id
                   )
-                    ? "คลิกหากต้องการยกเลิกการโหวต"
+                    ? "ยกเลิกการโหวต"
                     : "คลิกเพื่อโหวต"}
                 </div>
               </div>
