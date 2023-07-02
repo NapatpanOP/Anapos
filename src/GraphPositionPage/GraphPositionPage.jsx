@@ -6,6 +6,9 @@ import { baseImageUrl } from "../core/store/localVariable";
 import picture1 from "../assets/picture/pt-11.jpg";
 import Footer from "../components/Footer/Footer";
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/js/src/modal'
+
 function GraphPosition() {
   const [pageGraph, setGraph] = useState(0);
   const [mode, setMode] = useState("position");
@@ -48,11 +51,29 @@ function GraphPosition() {
       return (
         <div className="full-box-content-graph1">
           <div className="full-box-graph-img">
-            <img
+          <img
+            src={baseImageUrl +  brandData?.web_image ?? ""}
+            class="position-photo-gp"
+            data-bs-toggle="modal"
+            data-bs-target="#imageExample"
+          />
+
+          <div className="modal fade" id="imageExample" tabIndex="-1" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-body">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <img src={baseImageUrl + brandData?.fullweb_image ?? ""} className="d-block w-100"/>
+                    </div>
+                </div>
+            </div>
+          </div>
+            {/* <img
               src={baseImageUrl + brandData?.full_image}
               alt="position-photo"
               className="position-photo-gp"
-            />
+            /> */}
           </div>
 
           <div className="full-box-graph-barchart">
@@ -154,7 +175,7 @@ function GraphPosition() {
           <div class="box1-text-type">
             <p class="head-box-type">ประเภทเว็บไซต์ {brandData?.type}</p>
             <h1>{brandData?.title}</h1>
-            <p>แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบภาพรวมของผู้ใช้งาน</p>
+            <p>แสดงข้อมูลการเลือกตำแหน่งโฆษณาแบบภาพรวมของผู้ใช้งาน โดยจะมีการประมาณราคาคร่าว ๆ ในแต่ละตำแหน่ง</p>
           </div>
         </div>
       );

@@ -98,9 +98,10 @@ body {
 }
 
 .left-contain img {
-  max-height: 20vh;
+  max-height: 150px;
   position: relative;
   width: auto;
+  padding: 1rem;
 }
 
 .graph-all-position {
@@ -204,7 +205,13 @@ body {
 }
 
 .position-photo-gp {
-  width: 350px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.position-photo-gp:hover {
+  border: 1px solid #F7C873;
+  border-radius: 2px;
 }
 
 .box-content-graph {
